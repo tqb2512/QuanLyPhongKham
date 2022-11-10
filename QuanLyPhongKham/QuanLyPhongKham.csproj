@@ -8,9 +8,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="GUI\" />
-    <Folder Include="Function\" />
-  </ItemGroup>
-
 </Project>
