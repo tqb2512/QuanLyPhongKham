@@ -1,6 +1,6 @@
-﻿namespace QuanLyPhongKham.GUI
+﻿namespace QuanLyPhongKham.GUI.MedicalRecordManagement
 {
-    partial class Form1
+    partial class MRM_MainForm
     {
         /// <summary>
         /// Required designer variable.
