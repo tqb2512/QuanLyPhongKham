@@ -27,7 +27,7 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
             //DataSource dựa vào tên của server SQL trên máy
             string dataSource = "Data Source=DESKTOP-UFNGE5T;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True";
             MRM_Functions mrm = new MRM_Functions();
-            DataTable table = mrm.getTableData(str, "SELECT * FROM PATIENT");
+            DataTable table = mrm.getTableData(dataSource, "SELECT * FROM PATIENT");
             dvgPatient.DataSource = table;
         }
     }
