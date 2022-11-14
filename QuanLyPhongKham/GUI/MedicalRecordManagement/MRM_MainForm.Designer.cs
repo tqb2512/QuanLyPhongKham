@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dvgPatient = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgPatient)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dvgPatient
+            // 
+            this.dvgPatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgPatient.Location = new System.Drawing.Point(12, 12);
+            this.dvgPatient.Name = "dvgPatient";
+            this.dvgPatient.RowHeadersWidth = 72;
+            this.dvgPatient.RowTemplate.Height = 37;
+            this.dvgPatient.Size = new System.Drawing.Size(1091, 307);
+            this.dvgPatient.TabIndex = 0;
+            // 
+            // MRM_MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1115, 463);
+            this.Controls.Add(this.dvgPatient);
+            this.Name = "MRM_MainForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MRM_MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dvgPatient)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private DataGridView dvgPatient;
     }
 }
