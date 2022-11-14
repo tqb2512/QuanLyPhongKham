@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyPhongKham.Function
+namespace QuanLyPhongKham.Function.PatientManagement
 {
-    internal class Class1
+    internal class PM_Functions
     {
     }
 }

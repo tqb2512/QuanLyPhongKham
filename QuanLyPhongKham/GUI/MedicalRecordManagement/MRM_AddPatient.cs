@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyPhongKham.GUI
+namespace QuanLyPhongKham.GUI.MedicalRecordManagement
 {
-    public partial class Form1 : Form
+    public partial class MRM_AddPatient : Form
     {
-        public Form1()
+        public MRM_AddPatient()
         {
             InitializeComponent();
         }
