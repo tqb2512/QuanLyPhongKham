@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongKham.GUI.PatientManagement
 {
-    partial class PM_ShowPatientList
+    partial class PM_ShowPatientListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,18 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonImportPatient = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonDeletePatient = new System.Windows.Forms.Button();
             this.buttonEditPatient = new System.Windows.Forms.Button();
             this.buttonDetailPatient = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonImportPatient = new System.Windows.Forms.Button();
+            this.ColumnPatientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPatientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPatientAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPatientPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPatientDOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -60,6 +65,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(607, 76);
             this.panel2.TabIndex = 1;
+            // 
+            // buttonImportPatient
+            // 
+            this.buttonImportPatient.Location = new System.Drawing.Point(198, 22);
+            this.buttonImportPatient.Name = "buttonImportPatient";
+            this.buttonImportPatient.Size = new System.Drawing.Size(102, 42);
+            this.buttonImportPatient.TabIndex = 5;
+            this.buttonImportPatient.Text = "Thêm thông tin";
+            this.buttonImportPatient.UseVisualStyleBackColor = true;
+            this.buttonImportPatient.Click += new System.EventHandler(this.buttonImportPatient_Click);
             // 
             // label1
             // 
@@ -96,7 +111,7 @@
             this.buttonDetailPatient.Name = "buttonDetailPatient";
             this.buttonDetailPatient.Size = new System.Drawing.Size(92, 42);
             this.buttonDetailPatient.TabIndex = 1;
-            this.buttonDetailPatient.Text = "Chi tiết";
+            this.buttonDetailPatient.Text = "Tải lại";
             this.buttonDetailPatient.UseVisualStyleBackColor = true;
             this.buttonDetailPatient.Click += new System.EventHandler(this.buttonDetailPatient_Click);
             // 
@@ -111,21 +126,47 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnPatientID,
+            this.ColumnPatientName,
+            this.ColumnPatientAddress,
+            this.ColumnPatientPhone,
+            this.ColumnPatientDOB});
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(607, 359);
             this.dataGridView1.TabIndex = 0;
             // 
-            // buttonImportPatient
+            // ColumnPatientID
             // 
-            this.buttonImportPatient.Location = new System.Drawing.Point(198, 22);
-            this.buttonImportPatient.Name = "buttonImportPatient";
-            this.buttonImportPatient.Size = new System.Drawing.Size(102, 42);
-            this.buttonImportPatient.TabIndex = 5;
-            this.buttonImportPatient.Text = "Thêm thông tin";
-            this.buttonImportPatient.UseVisualStyleBackColor = true;
-            this.buttonImportPatient.Click += new System.EventHandler(this.buttonImportPatient_Click);
+            this.ColumnPatientID.DataPropertyName = "PATIENT_ID";
+            this.ColumnPatientID.HeaderText = "ID";
+            this.ColumnPatientID.Name = "ColumnPatientID";
+            // 
+            // ColumnPatientName
+            // 
+            this.ColumnPatientName.DataPropertyName = "PATIENT_NAME";
+            this.ColumnPatientName.HeaderText = "Họ tên";
+            this.ColumnPatientName.Name = "ColumnPatientName";
+            // 
+            // ColumnPatientAddress
+            // 
+            this.ColumnPatientAddress.DataPropertyName = "PATIENT_ADDRESS";
+            this.ColumnPatientAddress.HeaderText = "Địa chỉ";
+            this.ColumnPatientAddress.Name = "ColumnPatientAddress";
+            // 
+            // ColumnPatientPhone
+            // 
+            this.ColumnPatientPhone.DataPropertyName = "PATIENT_PHONENUMBER";
+            this.ColumnPatientPhone.HeaderText = "Điện thoại";
+            this.ColumnPatientPhone.Name = "ColumnPatientPhone";
+            // 
+            // ColumnPatientDOB
+            // 
+            this.ColumnPatientDOB.DataPropertyName = "PATIENT_DATEOFBIRTH";
+            this.ColumnPatientDOB.HeaderText = "Ngày sinh";
+            this.ColumnPatientDOB.Name = "ColumnPatientDOB";
             // 
             // PM_ShowPatientList
             // 
@@ -156,5 +197,10 @@
         private Button buttonDetailPatient;
         private DataGridView dataGridView1;
         private Button buttonImportPatient;
+        private DataGridViewTextBoxColumn ColumnPatientID;
+        private DataGridViewTextBoxColumn ColumnPatientName;
+        private DataGridViewTextBoxColumn ColumnPatientAddress;
+        private DataGridViewTextBoxColumn ColumnPatientPhone;
+        private DataGridViewTextBoxColumn ColumnPatientDOB;
     }
 }

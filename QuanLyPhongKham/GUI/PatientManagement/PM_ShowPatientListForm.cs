@@ -9,18 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using QuanLyPhongKham.Function.PatientManagement;
+
 namespace QuanLyPhongKham.GUI.PatientManagement
 {
-    public partial class PM_ShowPatientList : Form
+    public partial class PM_ShowPatientListForm : Form
     {
-        public PM_ShowPatientList()
+        public PM_ShowPatientListForm()
         {
             InitializeComponent();
         }
 
         private void PM_ShowPatientList_Load(object sender, EventArgs e)
         {
-
+            
         }
 
 

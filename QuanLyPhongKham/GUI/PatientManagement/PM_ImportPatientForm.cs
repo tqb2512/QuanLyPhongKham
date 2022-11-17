@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyPhongKham.Function.PatientManagement;
 using QuanLyPhongKham.Classes;
+using System.Data.SqlClient;
 
 namespace QuanLyPhongKham.GUI.PatientManagement
 {
@@ -51,14 +52,41 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void buttonConfirmImportPatient_Click(object sender, EventArgs e)
         {
-            int patientID = Convert.ToInt32(textBoxPatientID.Text);
-            string patientName = textBoxPatientName.Text;
-            string patientPhone = textBoxPatientPhone.Text;
-            string patientAddress = textBoxPatientAddress.Text;
-            string patientDOB = dateTimePickerPatientDOB.Value.ToString("yyyy-MM-dd");
-            ImportPatient_Function importPatient_Function = new ImportPatient_Function();
-            importPatient_Function.ImportPatient(patientID, patientName, patientPhone, patientAddress, patientDOB);
-            MessageBox.Show("Thêm bệnh nhân thành công!");
+            TextBox[] textBox = { textBoxPatientID, textBoxPatientName, textBoxPatientAddress, textBoxPatientPhone };
+            for (int i = 0; i < textBox.Length; i++)
+            {
+                if (textBox[i].Text == "")
+                {
+                    MessageBox.Show("Xin hãy nhập đầy đủ thông tin!");
+                    return;
+                }
+            }
+
+            //Check if patient has the same ID
+            SqlConnection conn = new SqlConnection(@"Data Source=WIN-30FJQ771AK3;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True");
+            string sql = "SELECT * FROM PATIENT WHERE PATIENT_ID = '" + textBoxPatientID.Text + "'";
+            SqlDataAdapter dataadapter = new SqlDataAdapter(sql, conn);
+            DataSet dataSet = new DataSet();
+            conn.Open();
+            dataadapter.Fill(dataSet, "PATIENT");
+            conn.Close();
+            if (dataSet.Tables[0].Rows.Count > 0)
+            {
+                MessageBox.Show("Mã bệnh nhân đã tồn tại!");
+            }
+            else
+            {
+                int patientID = Convert.ToInt32(textBoxPatientID.Text);
+                string patientName = textBoxPatientName.Text;
+                string patientPhone = textBoxPatientPhone.Text;
+                string patientAddress = textBoxPatientAddress.Text;
+                string patientDOB = dateTimePickerPatientDOB.Value.ToString("yyyy-MM-dd");
+                PM_ImportPatientFunction importPatient_Function = new PM_ImportPatientFunction();
+                importPatient_Function.ImportPatient(patientID, patientName, patientPhone, patientAddress, patientDOB);
+                MessageBox.Show("Thêm bệnh nhân thành công!");
+            }
+
+            //UPdate data grid view
         }
     }
 }
