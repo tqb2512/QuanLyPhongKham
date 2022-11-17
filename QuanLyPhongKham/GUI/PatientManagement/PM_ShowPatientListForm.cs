@@ -29,10 +29,10 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+      
         }
 
-        private void buttonDetailPatient_Click(object sender, EventArgs e)
+        public void Load_Data()
         {
             SqlConnection conn = new SqlConnection(@"Data Source=WIN-30FJQ771AK3;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True");
             string sql = "SELECT * FROM PATIENT";
@@ -43,6 +43,11 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             conn.Close();
             dataGridView1.DataSource = dataSet;
             dataGridView1.DataMember = "PATIENT";
+        }
+        
+        private void buttonDetailPatient_Click(object sender, EventArgs e)
+        {
+            Load_Data();
         }
 
 
