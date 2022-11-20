@@ -11,7 +11,7 @@ namespace QuanLyPhongKham.Function.PatientManagement
 {
     internal class PM_DeletePatientFunction
     {
-        public void DeletePatient(int patientID)
+        public void DeletePatient(string patientID)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=WIN-30FJQ771AK3;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True");
             conn.Open();

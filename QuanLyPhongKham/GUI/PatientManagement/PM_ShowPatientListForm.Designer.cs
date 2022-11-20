@@ -94,6 +94,7 @@
             this.buttonDeletePatient.TabIndex = 3;
             this.buttonDeletePatient.Text = "Xóa";
             this.buttonDeletePatient.UseVisualStyleBackColor = true;
+            this.buttonDeletePatient.Click += new System.EventHandler(this.buttonDeletePatient_Click);
             // 
             // buttonEditPatient
             // 
@@ -137,6 +138,7 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(607, 359);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // ColumnPatientID
             // 
@@ -168,7 +170,7 @@
             this.ColumnPatientDOB.HeaderText = "Ngày sinh";
             this.ColumnPatientDOB.Name = "ColumnPatientDOB";
             // 
-            // PM_ShowPatientList
+            // PM_ShowPatientListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -176,7 +178,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "PM_ShowPatientList";
+            this.Name = "PM_ShowPatientListForm";
             this.Text = "ShowPatientListForm";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -59,8 +59,33 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         
         private void buttonEditPatient_Click(object sender, EventArgs e)
         {
-
+            
         }
+
+
+        //Kiểm tra nút nếu user đã click nút xóa hay chưa
+        private bool buttonDeletePatientWasClicked = false;
+        private void buttonDeletePatient_Click(object sender, EventArgs e)
+        {
+            buttonDeletePatientWasClicked = true;
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (buttonDeletePatientWasClicked == true)
+            {
+                //Lấy mã bệnh nhân
+                string patientID = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                //Xóa bệnh nhân
+                PM_DeletePatientFunction deletePatientFunction = new PM_DeletePatientFunction();
+                deletePatientFunction.DeletePatient(patientID);
+                //Load lại dữ liệu
+                Load_Data();
+                //Đặt lại giá trị cho biến nút xóa
+                buttonDeletePatientWasClicked = false;
+            }         
+        }
+
 
     }
 }

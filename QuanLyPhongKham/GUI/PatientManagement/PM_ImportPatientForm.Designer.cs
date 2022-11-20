@@ -60,7 +60,7 @@
             // 
             this.buttonConfirmImportPatient.Location = new System.Drawing.Point(191, 438);
             this.buttonConfirmImportPatient.Name = "buttonConfirmImportPatient";
-            this.buttonConfirmImportPatient.Size = new System.Drawing.Size(141, 52);
+            this.buttonConfirmImportPatient.Size = new System.Drawing.Size(146, 52);
             this.buttonConfirmImportPatient.TabIndex = 1;
             this.buttonConfirmImportPatient.Text = "Thêm thông tin";
             this.buttonConfirmImportPatient.UseVisualStyleBackColor = true;

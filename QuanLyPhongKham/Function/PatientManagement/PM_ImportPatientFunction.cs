@@ -13,7 +13,7 @@ namespace QuanLyPhongKham.Function.PatientManagement
     internal class PM_ImportPatientFunction
     {
         SqlConnection conn = new SqlConnection(@"Data Source=WIN-30FJQ771AK3;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True");
-        public void ImportPatient(int patientID, string patientName, string patientPhone, string patientAddress, string patientDOB)
+        public void ImportPatient(string patientID, string patientName, string patientPhone, string patientAddress, string patientDOB)
         {
             conn.Open();
             string sql = "INSERT INTO PATIENT VALUES ('" + patientID + "',N'" + patientName + "','" + patientPhone + "',N'" + patientAddress + "','" + patientDOB + "')";
