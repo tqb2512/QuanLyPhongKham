@@ -80,7 +80,6 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             textBoxPatientAddress.Text = "";
             textBoxPatientPhone.Text = "";
             dateTimePickerPatientDOB.Value = DateTime.Now;
-            //UPdate data grid view
         }
     }
 }

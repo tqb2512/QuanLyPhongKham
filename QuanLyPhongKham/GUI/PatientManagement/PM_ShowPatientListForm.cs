@@ -29,7 +29,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-      
+            
         }
 
         public void Load_Data()
@@ -56,14 +56,27 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             PM_ImportPatientForm importPatientForm = new PM_ImportPatientForm();
             importPatientForm.Show();
         }
-        
+
+        //Biến toàn cục lưu thông tin bệnh nhân đang được chọn
+        string patientID = "none";
+        string patientName = "none";
+        string patientAddress = "none";
+        string patientPhoneNumber = "none";
+        string patientDOB = "none";
+
         private void buttonEditPatient_Click(object sender, EventArgs e)
         {
-            
+            patientID = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            patientName = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            patientAddress = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            patientPhoneNumber = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            patientDOB = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            PM_EditPatientForm editPatientForm = new PM_EditPatientForm();
+            editPatientForm.Show();          
         }
 
 
-        //Kiểm tra nút nếu user đã click nút xóa hay chưa
+        //Kiểm tra button nếu user đã click button xóa 
         private bool buttonDeletePatientWasClicked = false;
         private void buttonDeletePatient_Click(object sender, EventArgs e)
         {
@@ -83,9 +96,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                 Load_Data();
                 //Đặt lại giá trị cho biến nút xóa
                 buttonDeletePatientWasClicked = false;
-            }         
+            }                   
         }
-
-
     }
 }
