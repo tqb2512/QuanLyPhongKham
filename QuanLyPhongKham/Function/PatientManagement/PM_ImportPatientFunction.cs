@@ -7,7 +7,6 @@ using System.Data.SqlClient;
 using QuanLyPhongKham.Classes;
 using QuanLyPhongKham.GUI.PatientManagement;
 
-
 namespace QuanLyPhongKham.Function.PatientManagement
 {
     internal class PM_ImportPatientFunction

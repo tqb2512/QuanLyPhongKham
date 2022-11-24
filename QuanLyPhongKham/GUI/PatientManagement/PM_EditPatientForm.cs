@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyPhongKham.Function.PatientManagement;
 using QuanLyPhongKham.GUI.PatientManagement;
+using System.Data.SqlClient;
 
 namespace QuanLyPhongKham.GUI.PatientManagement
 {
@@ -18,16 +19,39 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         {
             InitializeComponent();
         }
-
         private void buttonUpdatePatient_Click(object sender, EventArgs e)
         {
-            textBoxPatientID.Text = "";
-        }
+            TextBox[] textBox = { textBoxPatientID, textBoxPatientName, textBoxPatientAddress, textBoxPatientPhone };
+            for (int i = 0; i < 5; i++)
+            {
+                if (textBox[i].Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                    return;
+                }
+            }
+            string patientID = textBoxPatientID.Text;
+            string patientName = textBoxPatientName.Text;
+            string patientAddress = textBoxPatientAddress.Text;
+            string patientPhone = textBoxPatientPhone.Text;
+            string patientDOB = dateTimePickerPatientDOB.Value.ToString("yyyy-MM-dd");
 
+            PM_EditPatientFunction editPatient = new PM_EditPatientFunction();
+            editPatient.EditPatient(patientID, patientName, patientAddress, patientPhone, patientDOB);
+            MessageBox.Show("Cập nhật thông tin bệnh nhân thành công!");
+        }
+        public void LoadDataToEditForm(string id, string name, string address, string phone, string DOB)
+        {
+            textBoxPatientID.Text = id;
+            textBoxPatientName.Text = name;
+            textBoxPatientAddress.Text = address;
+            textBoxPatientPhone.Text = phone;
+            dateTimePickerPatientDOB.Text = DOB;
+        }
         private void PM_EditPatientForm_Load(object sender, EventArgs e)
         {
-            textBoxPatientID.Text = 
-            
+            PM_ShowPatientListForm showPatientListForm = new PM_ShowPatientListForm();
+            showPatientListForm.Load_Data();
         }
     }
 }

@@ -51,7 +51,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(3, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 441);
+            this.panel1.Size = new System.Drawing.Size(180, 441);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -61,14 +61,14 @@
             this.panel2.Controls.Add(this.buttonDeletePatient);
             this.panel2.Controls.Add(this.buttonEditPatient);
             this.panel2.Controls.Add(this.buttonDetailPatient);
-            this.panel2.Location = new System.Drawing.Point(189, 7);
+            this.panel2.Location = new System.Drawing.Point(189, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(607, 76);
+            this.panel2.Size = new System.Drawing.Size(544, 76);
             this.panel2.TabIndex = 1;
             // 
             // buttonImportPatient
             // 
-            this.buttonImportPatient.Location = new System.Drawing.Point(198, 22);
+            this.buttonImportPatient.Location = new System.Drawing.Point(200, 22);
             this.buttonImportPatient.Name = "buttonImportPatient";
             this.buttonImportPatient.Size = new System.Drawing.Size(102, 42);
             this.buttonImportPatient.TabIndex = 5;
@@ -80,7 +80,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(3, 30);
+            this.label1.Location = new System.Drawing.Point(17, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 25);
             this.label1.TabIndex = 4;
@@ -88,9 +88,9 @@
             // 
             // buttonDeletePatient
             // 
-            this.buttonDeletePatient.Location = new System.Drawing.Point(502, 22);
+            this.buttonDeletePatient.Location = new System.Drawing.Point(461, 22);
             this.buttonDeletePatient.Name = "buttonDeletePatient";
-            this.buttonDeletePatient.Size = new System.Drawing.Size(92, 42);
+            this.buttonDeletePatient.Size = new System.Drawing.Size(69, 42);
             this.buttonDeletePatient.TabIndex = 3;
             this.buttonDeletePatient.Text = "Xóa";
             this.buttonDeletePatient.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             // buttonEditPatient
             // 
-            this.buttonEditPatient.Location = new System.Drawing.Point(404, 22);
+            this.buttonEditPatient.Location = new System.Drawing.Point(384, 22);
             this.buttonEditPatient.Name = "buttonEditPatient";
-            this.buttonEditPatient.Size = new System.Drawing.Size(92, 42);
+            this.buttonEditPatient.Size = new System.Drawing.Size(71, 42);
             this.buttonEditPatient.TabIndex = 2;
             this.buttonEditPatient.Text = "Sửa đổi";
             this.buttonEditPatient.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // 
             // buttonDetailPatient
             // 
-            this.buttonDetailPatient.Location = new System.Drawing.Point(306, 22);
+            this.buttonDetailPatient.Location = new System.Drawing.Point(308, 22);
             this.buttonDetailPatient.Name = "buttonDetailPatient";
-            this.buttonDetailPatient.Size = new System.Drawing.Size(92, 42);
+            this.buttonDetailPatient.Size = new System.Drawing.Size(70, 42);
             this.buttonDetailPatient.TabIndex = 1;
             this.buttonDetailPatient.Text = "Tải lại";
             this.buttonDetailPatient.UseVisualStyleBackColor = true;
@@ -121,7 +121,7 @@
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Location = new System.Drawing.Point(189, 89);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(606, 359);
+            this.panel3.Size = new System.Drawing.Size(544, 359);
             this.panel3.TabIndex = 2;
             // 
             // dataGridView1
@@ -136,7 +136,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(607, 359);
+            this.dataGridView1.Size = new System.Drawing.Size(543, 359);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -174,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(736, 450);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

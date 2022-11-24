@@ -55,24 +55,19 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         {
             PM_ImportPatientForm importPatientForm = new PM_ImportPatientForm();
             importPatientForm.Show();
-        }
-
-        //Biến toàn cục lưu thông tin bệnh nhân đang được chọn
-        string patientID = "none";
-        string patientName = "none";
-        string patientAddress = "none";
-        string patientPhoneNumber = "none";
-        string patientDOB = "none";
+        }        
 
         private void buttonEditPatient_Click(object sender, EventArgs e)
         {
-            patientID = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            patientName = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            patientAddress = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            patientPhoneNumber = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            patientDOB = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            PM_EditPatientForm editPatientForm = new PM_EditPatientForm();
-            editPatientForm.Show();          
+
+                string patientID = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                string patientName = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                string patientAddress = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                string patientPhone = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                string patientDOB = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                PM_EditPatientForm editPatientForm = new PM_EditPatientForm();
+                editPatientForm.Show();
+                editPatientForm.LoadDataToEditForm(patientID, patientName, patientAddress, patientPhone, patientDOB);
         }
 
 
