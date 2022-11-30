@@ -9,13 +9,18 @@ namespace QuanLyPhongKham.Classes
 {
     internal class MedicalRecord
     {
-        private int ID { get; set; }
-        private DateTime Date { get; set; }
-        private string Diagnosis { get; set; }
-        private string Note { get; set; }
-        Patient Patient;
-        List<Drug> Drugs;
-        List<Service> Services;
+        public int ID { get; set; }
+        public DateTime Date { get; set; }
+        public string Diagnosis { get; set; }
+        public string Note { get; set; }
+        public Patient Patient;
+        public Employee Employee;
+        public List<Drug> Drugs;
+        public List<Service> Services;
+        public MedicalRecord()
+        {
+            
+        }
         public MedicalRecord(int id, DateTime date, Patient patient, List<Drug> drugs, List<Service> services, string diagnosis, string note)
         {
             ID = id;

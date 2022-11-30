@@ -8,17 +8,23 @@ namespace QuanLyPhongKham.Classes
 {
     internal class Drug
     {
-        private int ID { get; set; }
-        private string Name { get; set; }
-        private string Unit { get; set; }
-        private string Manufacturer { get; set; }
-        private string Description { get; set; }
-        private string Price { get; set; }
-        public Drug(int id, string name, string unit, string manufacturer, string description, string price)
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Unit { get; set; }
+        public int Quantity { get; set; }
+        public string Manufacturer { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
+        public Drug()
+        {
+            
+        }
+        public Drug(int id, string name, string unit, int quantity, string manufacturer, string description, decimal price)
         {
             ID = id;
             Name = name;
             Unit = unit;
+            Quantity = quantity;
             Manufacturer = manufacturer;
             Description = description;
             Price = price;

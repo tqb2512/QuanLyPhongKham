@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.medicalRecordDataGrid = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalRecordDataGrid)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // medicalRecordDataGrid
+            // 
+            this.medicalRecordDataGrid.AllowUserToAddRows = false;
+            this.medicalRecordDataGrid.AllowUserToDeleteRows = false;
+            this.medicalRecordDataGrid.AllowUserToResizeColumns = false;
+            this.medicalRecordDataGrid.AllowUserToResizeRows = false;
+            this.medicalRecordDataGrid.ColumnHeadersHeight = 40;
+            this.medicalRecordDataGrid.Location = new System.Drawing.Point(12, 172);
+            this.medicalRecordDataGrid.Name = "medicalRecordDataGrid";
+            this.medicalRecordDataGrid.ReadOnly = true;
+            this.medicalRecordDataGrid.RowHeadersVisible = false;
+            this.medicalRecordDataGrid.RowHeadersWidth = 72;
+            this.medicalRecordDataGrid.RowTemplate.Height = 37;
+            this.medicalRecordDataGrid.Size = new System.Drawing.Size(1500, 600);
+            this.medicalRecordDataGrid.TabIndex = 0;
+            this.medicalRecordDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.medicalRecordDataGrid_CellDoubleClick);
+            // 
+            // MRM_MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1523, 784);
+            this.Controls.Add(this.medicalRecordDataGrid);
+            this.Name = "MRM_MainForm";
+            this.Text = "MRM_MainForm";
+            this.Load += new System.EventHandler(this.MRM_MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.medicalRecordDataGrid)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private DataGridView medicalRecordDataGrid;
     }
 }
