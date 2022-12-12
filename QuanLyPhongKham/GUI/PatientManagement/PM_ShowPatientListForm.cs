@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,7 +30,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         public void Load_Data()
@@ -72,26 +73,49 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
 
         //Kiểm tra button nếu user đã click button xóa 
-        private bool buttonDeletePatientWasClicked = false;
         private void buttonDeletePatient_Click(object sender, EventArgs e)
         {
-            buttonDeletePatientWasClicked = true;
+            string patientID = textBox1.Text;
+            PM_Functions func = new PM_Functions();
+            func.DeletePatient(patientID);
+            Load_Data();
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            if (buttonDeletePatientWasClicked == true)
-            {
-                //Lấy mã bệnh nhân
-                string patientID = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                //Xóa bệnh nhân
-                PM_DeletePatientFunction deletePatientFunction = new PM_DeletePatientFunction();
-                deletePatientFunction.DeletePatient(patientID);
-                //Load lại dữ liệu
-                Load_Data();
-                //Đặt lại giá trị cho biến nút xóa
-                buttonDeletePatientWasClicked = false;
-            }                   
+            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void PM_ShowPatientListForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //string find_patientID = textBox5.Text;
+            SqlConnection connection = new SqlConnection(@"Data Source=WIN-30FJQ771AK3;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True");            
         }
     }
 }

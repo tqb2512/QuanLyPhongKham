@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PM_ImportPatientForm));
             this.buttonConfirmImportPatient = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBoxPatientID = new System.Windows.Forms.TextBox();
@@ -58,7 +59,7 @@
             // 
             // buttonConfirmImportPatient
             // 
-            this.buttonConfirmImportPatient.Location = new System.Drawing.Point(191, 438);
+            this.buttonConfirmImportPatient.Location = new System.Drawing.Point(193, 425);
             this.buttonConfirmImportPatient.Name = "buttonConfirmImportPatient";
             this.buttonConfirmImportPatient.Size = new System.Drawing.Size(146, 52);
             this.buttonConfirmImportPatient.TabIndex = 1;
@@ -70,7 +71,7 @@
             // 
             this.panel1.Controls.Add(this.textBoxPatientID);
             this.panel1.Controls.Add(this.labelID);
-            this.panel1.Location = new System.Drawing.Point(147, 12);
+            this.panel1.Location = new System.Drawing.Point(130, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(314, 74);
             this.panel1.TabIndex = 2;
@@ -95,7 +96,7 @@
             // 
             this.panel2.Controls.Add(this.textBoxPatientName);
             this.panel2.Controls.Add(this.labelName);
-            this.panel2.Location = new System.Drawing.Point(147, 92);
+            this.panel2.Location = new System.Drawing.Point(130, 92);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(314, 74);
             this.panel2.TabIndex = 3;
@@ -120,7 +121,7 @@
             // 
             this.panel3.Controls.Add(this.textBoxPatientPhone);
             this.panel3.Controls.Add(this.labelPhone);
-            this.panel3.Location = new System.Drawing.Point(147, 172);
+            this.panel3.Location = new System.Drawing.Point(130, 172);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(314, 74);
             this.panel3.TabIndex = 3;
@@ -145,7 +146,7 @@
             // 
             this.panel4.Controls.Add(this.textBoxPatientAddress);
             this.panel4.Controls.Add(this.labelAddress);
-            this.panel4.Location = new System.Drawing.Point(147, 252);
+            this.panel4.Location = new System.Drawing.Point(130, 252);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(314, 74);
             this.panel4.TabIndex = 3;
@@ -170,7 +171,7 @@
             // 
             this.panel5.Controls.Add(this.dateTimePickerPatientDOB);
             this.panel5.Controls.Add(this.labelDateOfBirth);
-            this.panel5.Location = new System.Drawing.Point(147, 332);
+            this.panel5.Location = new System.Drawing.Point(130, 332);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(314, 74);
             this.panel5.TabIndex = 3;
@@ -196,9 +197,9 @@
             // 
             this.panel6.Controls.Add(this.button1);
             this.panel6.Controls.Add(this.pictureBox1);
-            this.panel6.Location = new System.Drawing.Point(12, 53);
+            this.panel6.Location = new System.Drawing.Point(12, 12);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(108, 127);
+            this.panel6.Size = new System.Drawing.Size(112, 124);
             this.panel6.TabIndex = 4;
             // 
             // button1
@@ -207,22 +208,24 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
+            this.button1.Text = "Đổi ảnh";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(7, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(102, 82);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.WaitOnLoad = true;
             // 
             // PM_ImportPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 516);
+            this.ClientSize = new System.Drawing.Size(478, 505);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);

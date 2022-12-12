@@ -21,7 +21,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         }
         private void buttonUpdatePatient_Click(object sender, EventArgs e)
         {
-            TextBox[] textBox = { textBoxPatientID, textBoxPatientName, textBoxPatientAddress, textBoxPatientPhone };
+            TextBox[] textBox = { textBoxPatientName, textBoxPatientAddress, textBoxPatientPhone };
             for (int i = 0; i < 5; i++)
             {
                 if (textBox[i].Text == "")
@@ -30,7 +30,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                     return;
                 }
             }
-            string patientID = textBoxPatientID.Text;
+            string patientID = labelPatientID.Text;
             string patientName = textBoxPatientName.Text;
             string patientAddress = textBoxPatientAddress.Text;
             string patientPhone = textBoxPatientPhone.Text;
@@ -38,11 +38,12 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
             PM_EditPatientFunction editPatient = new PM_EditPatientFunction();
             editPatient.EditPatient(patientID, patientName, patientAddress, patientPhone, patientDOB);
+            MessageBox.Show("Bạn muốn thay đổi thông tin bệnh nhân ?");
             MessageBox.Show("Cập nhật thông tin bệnh nhân thành công!");
         }
         public void LoadDataToEditForm(string id, string name, string address, string phone, string DOB)
         {
-            textBoxPatientID.Text = id;
+            labelPatientID.Text = id;
             textBoxPatientName.Text = name;
             textBoxPatientAddress.Text = address;
             textBoxPatientPhone.Text = phone;
@@ -52,6 +53,11 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         {
             PM_ShowPatientListForm showPatientListForm = new PM_ShowPatientListForm();
             showPatientListForm.Load_Data();
+        }
+
+        private void labelPatientID_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

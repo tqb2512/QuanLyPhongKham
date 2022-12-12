@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBoxPatientID = new System.Windows.Forms.TextBox();
+            this.labelPatientID = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBoxPatientName = new System.Windows.Forms.TextBox();
@@ -53,19 +53,22 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBoxPatientID);
+            this.panel1.Controls.Add(this.labelPatientID);
             this.panel1.Controls.Add(this.labelID);
-            this.panel1.Location = new System.Drawing.Point(133, 27);
+            this.panel1.Location = new System.Drawing.Point(27, 27);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(314, 74);
             this.panel1.TabIndex = 3;
             // 
-            // textBoxPatientID
+            // labelPatientID
             // 
-            this.textBoxPatientID.Location = new System.Drawing.Point(15, 38);
-            this.textBoxPatientID.Name = "textBoxPatientID";
-            this.textBoxPatientID.Size = new System.Drawing.Size(282, 23);
-            this.textBoxPatientID.TabIndex = 1;
+            this.labelPatientID.AutoSize = true;
+            this.labelPatientID.Location = new System.Drawing.Point(18, 40);
+            this.labelPatientID.Name = "labelPatientID";
+            this.labelPatientID.Size = new System.Drawing.Size(22, 15);
+            this.labelPatientID.TabIndex = 1;
+            this.labelPatientID.Text = "---";
+            this.labelPatientID.Click += new System.EventHandler(this.labelPatientID_Click);
             // 
             // labelID
             // 
@@ -80,7 +83,7 @@
             // 
             this.panel2.Controls.Add(this.textBoxPatientName);
             this.panel2.Controls.Add(this.labelName);
-            this.panel2.Location = new System.Drawing.Point(133, 107);
+            this.panel2.Location = new System.Drawing.Point(27, 107);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(314, 74);
             this.panel2.TabIndex = 4;
@@ -105,7 +108,7 @@
             // 
             this.panel3.Controls.Add(this.textBoxPatientPhone);
             this.panel3.Controls.Add(this.labelPhone);
-            this.panel3.Location = new System.Drawing.Point(133, 187);
+            this.panel3.Location = new System.Drawing.Point(27, 187);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(314, 74);
             this.panel3.TabIndex = 5;
@@ -130,7 +133,7 @@
             // 
             this.panel4.Controls.Add(this.textBoxPatientAddress);
             this.panel4.Controls.Add(this.labelAddress);
-            this.panel4.Location = new System.Drawing.Point(133, 267);
+            this.panel4.Location = new System.Drawing.Point(27, 267);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(314, 74);
             this.panel4.TabIndex = 6;
@@ -155,7 +158,7 @@
             // 
             this.panel5.Controls.Add(this.dateTimePickerPatientDOB);
             this.panel5.Controls.Add(this.labelDateOfBirth);
-            this.panel5.Location = new System.Drawing.Point(133, 347);
+            this.panel5.Location = new System.Drawing.Point(27, 347);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(314, 74);
             this.panel5.TabIndex = 7;
@@ -178,7 +181,7 @@
             // 
             // buttonUpdatePatient
             // 
-            this.buttonUpdatePatient.Location = new System.Drawing.Point(183, 445);
+            this.buttonUpdatePatient.Location = new System.Drawing.Point(104, 437);
             this.buttonUpdatePatient.Name = "buttonUpdatePatient";
             this.buttonUpdatePatient.Size = new System.Drawing.Size(146, 52);
             this.buttonUpdatePatient.TabIndex = 8;
@@ -190,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 519);
+            this.ClientSize = new System.Drawing.Size(363, 501);
             this.Controls.Add(this.buttonUpdatePatient);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -198,6 +201,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "PM_EditPatientForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.PM_EditPatientForm_Load);
             this.panel1.ResumeLayout(false);
@@ -217,7 +221,6 @@
         #endregion
 
         private Panel panel1;
-        private TextBox textBoxPatientID;
         private Label labelID;
         private Panel panel2;
         private TextBox textBoxPatientName;
@@ -232,5 +235,6 @@
         private DateTimePicker dateTimePickerPatientDOB;
         private Label labelDateOfBirth;
         private Button buttonUpdatePatient;
+        private Label labelPatientID;
     }
 }
