@@ -22,7 +22,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         private void buttonUpdatePatient_Click(object sender, EventArgs e)
         {
             TextBox[] textBox = { textBoxPatientName, textBoxPatientAddress, textBoxPatientPhone };
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 3; i++)
             {
                 if (textBox[i].Text == "")
                 {
@@ -51,8 +51,8 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         }
         private void PM_EditPatientForm_Load(object sender, EventArgs e)
         {
-            PM_ShowPatientListForm showPatientListForm = new PM_ShowPatientListForm();
-            showPatientListForm.Load_Data();
+            PM_Functions showPatientList = new PM_Functions();
+            showPatientList.Load_Data();
         }
 
         private void labelPatientID_Click(object sender, EventArgs e)

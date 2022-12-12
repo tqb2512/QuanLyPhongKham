@@ -54,5 +54,10 @@ namespace QuanLyPhongKham.Function.PatientManagement
             cmd.ExecuteNonQuery();
             connection.Close();
         }
+
+        public void Load_Data()
+        {
+
+        }
     }
 }
