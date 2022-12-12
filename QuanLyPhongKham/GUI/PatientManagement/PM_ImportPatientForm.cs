@@ -71,7 +71,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             string patientPhone = textBoxPatientPhone.Text;
             string patientBirthday = dateTimePickerPatientDOB.Value.ToString("yyyy-MM-dd");
 
-            PM_ImportPatientFunction importPatient = new PM_ImportPatientFunction();
+            PM_Functions importPatient = new PM_Functions();
             importPatient.ImportPatient(patientID, patientName, patientAddress, patientPhone, patientBirthday);
             MessageBox.Show("Thêm bệnh nhân thành công!");
 

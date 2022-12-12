@@ -36,7 +36,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             string patientPhone = textBoxPatientPhone.Text;
             string patientDOB = dateTimePickerPatientDOB.Value.ToString("yyyy-MM-dd");
 
-            PM_EditPatientFunction editPatient = new PM_EditPatientFunction();
+            PM_Functions editPatient = new PM_Functions();
             editPatient.EditPatient(patientID, patientName, patientAddress, patientPhone, patientDOB);
             MessageBox.Show("Bạn muốn thay đổi thông tin bệnh nhân ?");
             MessageBox.Show("Cập nhật thông tin bệnh nhân thành công!");
