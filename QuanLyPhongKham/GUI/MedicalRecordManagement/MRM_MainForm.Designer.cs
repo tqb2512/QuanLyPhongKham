@@ -38,16 +38,18 @@
             this.medicalRecordDataGrid.AllowUserToDeleteRows = false;
             this.medicalRecordDataGrid.AllowUserToResizeColumns = false;
             this.medicalRecordDataGrid.AllowUserToResizeRows = false;
+            this.medicalRecordDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.medicalRecordDataGrid.ColumnHeadersHeight = 40;
-            this.medicalRecordDataGrid.Location = new System.Drawing.Point(12, 172);
+            this.medicalRecordDataGrid.Location = new System.Drawing.Point(12, 12);
             this.medicalRecordDataGrid.Name = "medicalRecordDataGrid";
             this.medicalRecordDataGrid.ReadOnly = true;
             this.medicalRecordDataGrid.RowHeadersVisible = false;
             this.medicalRecordDataGrid.RowHeadersWidth = 72;
             this.medicalRecordDataGrid.RowTemplate.Height = 37;
-            this.medicalRecordDataGrid.Size = new System.Drawing.Size(1500, 600);
+            this.medicalRecordDataGrid.Size = new System.Drawing.Size(1499, 760);
             this.medicalRecordDataGrid.TabIndex = 0;
-            this.medicalRecordDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.medicalRecordDataGrid_CellDoubleClick);
             // 
             // MRM_MainForm
             // 
@@ -65,6 +67,6 @@
 
         #endregion
 
-        private DataGridView medicalRecordDataGrid;
+        public DataGridView medicalRecordDataGrid;
     }
 }
