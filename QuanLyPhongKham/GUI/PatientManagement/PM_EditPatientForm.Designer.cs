@@ -222,8 +222,6 @@
 
         private Panel panel1;
         private Label labelID;
-        private Panel panel2;
-        private TextBox textBoxPatientName;
         private Label labelName;
         private Panel panel3;
         private TextBox textBoxPatientPhone;
@@ -236,5 +234,7 @@
         private Label labelDateOfBirth;
         private Button buttonUpdatePatient;
         private Label labelPatientID;
+        public Panel panel2;
+        public TextBox textBoxPatientName;
     }
 }

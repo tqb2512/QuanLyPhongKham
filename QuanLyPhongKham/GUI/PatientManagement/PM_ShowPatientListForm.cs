@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using QuanLyPhongKham.GUI.PatientManagement;
 using QuanLyPhongKham.Function.PatientManagement;
 
 namespace QuanLyPhongKham.GUI.PatientManagement
@@ -23,7 +24,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void PM_ShowPatientList_Load(object sender, EventArgs e)
         {
-            
+            SearchPatient("");
         }
 
 
@@ -84,9 +85,6 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
 
         private void PM_ShowPatientListForm_Load(object sender, EventArgs e)
@@ -97,9 +95,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            //textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -116,6 +112,81 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         {
             //string find_patientID = textBox5.Text;
             SqlConnection connection = new SqlConnection(@"Data Source=WIN-30FJQ771AK3;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True");            
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        public void SearchPatient(string searchstring)
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source=WIN-30FJQ771AK3;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True");
+            string query = "SELECT * PATIENT WHERE CONCAT(`PATIENT_ID`, `PATIENT_NAME`, `PATIENT_ADDRESS`, `PATIENT_PHONENUMBER`) like '%" + searchstring + "%'";
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter dataadapter = new SqlDataAdapter(query, connection);
+            DataTable table = new DataTable();
+            dataadapter.Fill(table);
+            dataGridView1.DataSource = table;
+        }
+        private void buttonFindPatient_Click(object sender, EventArgs e)
+        {
+            string SearchValue = textBoxFindingPatient.Text;
+            SearchPatient(SearchValue);
+            //string searchValue = textBoxFindingPatient.Text;
+           // dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            //try
+            //{
+            //    foreach (DataGridViewRow row in dataGridView1.Rows)
+            //    {
+            //        if (row.Cells[2].Value.ToString().Equals(searchValue))
+            //        {
+            //            row.Selected = true;
+            //            break;
+            //        }
+                    //if (row.Cells[1].Value.ToString().Equals(searchValue))
+                    //{
+                    //    row.Selected = true;
+                    //    break;
+                    //}
+                    //if (row.Cells[2].Value.ToString().Equals(searchValue))
+                    //{
+                    //    row.Selected = true;
+                    //    break;
+                    //}
+                    //if (row.Cells[3].Value.ToString().Equals(searchValue))
+                    //{
+                    //    row.Selected = true;
+                    //    break;
+                    //}
+                    //if (row.Cells[4].Value.ToString().Equals(searchValue))
+                    //{
+                    //    row.Selected = true;
+                    //    break;
+                    //}
+            //    }
+            //}
+            //catch (Exception exc)
+            //{
+            //    MessageBox.Show(exc.Message);
+            //}
+        }
+
+        private void textBoxFindingPatient_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            PM_EditPatientForm form = new PM_EditPatientForm();
+            form.textBoxPatientName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            form.ShowDialog();
         }
     }
 }
