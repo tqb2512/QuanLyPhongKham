@@ -108,7 +108,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 31);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Chi tiết";
+            this.button1.Text = "Xóa thông tin";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -117,7 +117,7 @@
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Location = new System.Drawing.Point(8, 167);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(546, 273);
+            this.panel3.Size = new System.Drawing.Size(554, 273);
             this.panel3.TabIndex = 2;
             // 
             // dataGridView1

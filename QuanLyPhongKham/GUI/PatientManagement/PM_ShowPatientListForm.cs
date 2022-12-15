@@ -94,8 +94,8 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            //textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            PM_Functions deletefunc = new PM_Functions();
+            deletefunc.DeletePatient(textBox1.Text);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -184,8 +184,15 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            PM_EditPatientForm form = new PM_EditPatientForm();
-            form.textBoxPatientName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //PM_EditPatientForm form = new PM_EditPatientForm();
+            //form.textBoxPatientName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //form.ShowDialog();
+            PM_DetailsPatientForm form = new PM_DetailsPatientForm();
+            form.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            form.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            form.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            form.textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            form.textBox5.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             form.ShowDialog();
         }
     }
