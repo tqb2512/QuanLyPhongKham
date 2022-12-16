@@ -29,15 +29,20 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             conn.Close();
             dataGridView1.DataSource = dataSet;
             dataGridView1.DataMember = "PATIENT";
+            dataGridView1.ReadOnly = true;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            textBox5.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            PM_DetailsPatientForm form = new PM_DetailsPatientForm();
+            form.textBoxIDPatient.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            form.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            form.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            form.textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            form.textBox5.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            form.Data_Load();
+            form.ShowDialog();
+            
         }
 
         private void PM_PatientForm_Load(object sender, EventArgs e)
@@ -52,11 +57,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            textBox5.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+
         }
     }
 }

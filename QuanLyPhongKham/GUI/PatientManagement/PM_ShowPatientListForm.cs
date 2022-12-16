@@ -61,7 +61,6 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void buttonEditPatient_Click(object sender, EventArgs e)
         {
-
                 string patientID = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 string patientName = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 string patientAddress = dataGridView1.CurrentRow.Cells[2].Value.ToString();
@@ -188,7 +187,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             //form.textBoxPatientName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             //form.ShowDialog();
             PM_DetailsPatientForm form = new PM_DetailsPatientForm();
-            form.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            form.textBoxIDPatient.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             form.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             form.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             form.textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
