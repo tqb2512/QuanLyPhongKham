@@ -47,8 +47,8 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonImportPatient = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonEditPatient = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
@@ -227,24 +227,27 @@
             this.buttonImportPatient.TabIndex = 2;
             this.buttonImportPatient.Text = "Thêm";
             this.buttonImportPatient.UseVisualStyleBackColor = true;
+            this.buttonImportPatient.Click += new System.EventHandler(this.buttonImportPatient_Click);
             // 
-            // button2
+            // buttonEditPatient
             // 
-            this.button2.Location = new System.Drawing.Point(433, 464);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 51);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Thay đổi";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonEditPatient.Location = new System.Drawing.Point(433, 464);
+            this.buttonEditPatient.Name = "buttonEditPatient";
+            this.buttonEditPatient.Size = new System.Drawing.Size(97, 51);
+            this.buttonEditPatient.TabIndex = 3;
+            this.buttonEditPatient.Text = "Thay đổi";
+            this.buttonEditPatient.UseVisualStyleBackColor = true;
+            this.buttonEditPatient.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // buttonDelete
             // 
-            this.button3.Location = new System.Drawing.Point(536, 464);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 51);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Xóa thông tin";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonDelete.Location = new System.Drawing.Point(536, 464);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(115, 51);
+            this.buttonDelete.TabIndex = 4;
+            this.buttonDelete.Text = "Xóa thông tin";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -273,8 +276,8 @@
             this.ClientSize = new System.Drawing.Size(667, 525);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonEditPatient);
             this.Controls.Add(this.buttonImportPatient);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -307,8 +310,8 @@
         private Panel panel1;
         private DataGridView dataGridView1;
         private Button buttonImportPatient;
-        private Button button2;
-        private Button button3;
+        private Button buttonEditPatient;
+        private Button buttonDelete;
         private Button button1;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;

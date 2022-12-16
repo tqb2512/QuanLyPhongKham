@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using QuanLyPhongKham.Function.PatientManagement;
 
 namespace QuanLyPhongKham.GUI.PatientManagement
 {
@@ -57,6 +58,24 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         private void button1_Click(object sender, EventArgs e)
         {
             Data_Load();
+        }
+
+        private void buttonImportPatient_Click(object sender, EventArgs e)
+        {
+            PM_ImportPatientForm importPatientForm = new PM_ImportPatientForm();
+            importPatientForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PM_EditPatientForm editPatientForm = new PM_EditPatientForm();
+            editPatientForm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PM_Functions deleteFunctions = new PM_Functions();
+            deleteFunctions.DeletePatient(textBoxIDPatient.Text);
         }
     }
 }
