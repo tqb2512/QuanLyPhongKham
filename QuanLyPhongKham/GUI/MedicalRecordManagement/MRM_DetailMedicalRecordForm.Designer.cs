@@ -49,7 +49,6 @@
             this.MR_Note_textBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.editButton = new System.Windows.Forms.Button();
             this.exportButton = new System.Windows.Forms.Button();
             this.drug_GroupBox = new System.Windows.Forms.GroupBox();
             this.D_List_GridView = new System.Windows.Forms.DataGridView();
@@ -325,29 +324,19 @@
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.editButton, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.exportButton, 1, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(185, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(350, 68);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(408, 68);
             this.tableLayoutPanel7.TabIndex = 0;
-            // 
-            // editButton
-            // 
-            this.editButton.Location = new System.Drawing.Point(3, 3);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(169, 62);
-            this.editButton.TabIndex = 0;
-            this.editButton.Text = "Chỉnh sửa";
-            this.editButton.UseVisualStyleBackColor = true;
             // 
             // exportButton
             // 
-            this.exportButton.Location = new System.Drawing.Point(178, 3);
+            this.exportButton.Location = new System.Drawing.Point(207, 3);
             this.exportButton.Name = "exportButton";
-            this.exportButton.Size = new System.Drawing.Size(169, 62);
+            this.exportButton.Size = new System.Drawing.Size(198, 62);
             this.exportButton.TabIndex = 1;
             this.exportButton.Text = "Xuất bệnh án";
             this.exportButton.UseVisualStyleBackColor = true;
@@ -463,7 +452,6 @@
         private TextBox MR_Note_textBox;
         private TableLayoutPanel tableLayoutPanel6;
         private TableLayoutPanel tableLayoutPanel7;
-        private Button editButton;
         private Button exportButton;
         public DataGridView D_List_GridView;
         public DataGridView S_List_GridView;

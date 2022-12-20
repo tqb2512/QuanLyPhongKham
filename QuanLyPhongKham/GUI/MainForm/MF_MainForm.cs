@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using QuanLyPhongKham.Classes;
 using QuanLyPhongKham.Function.MainForm;
 using QuanLyPhongKham.GUI.MedicalRecordManagement;
+using QuanLyPhongKham.GUI.CreateMedicalRecord;
 
 namespace QuanLyPhongKham.GUI.MainForm
 {
@@ -32,6 +33,20 @@ namespace QuanLyPhongKham.GUI.MainForm
             medicalRecordTabPage.Controls.Add(medicalRecordPanelForm);
             Main_TabControl.TabPages.Add(medicalRecordTabPage);
             medicalRecordPanelForm.Show();
+        }
+
+        private void createMR_StripMenu_Click(object sender, EventArgs e)
+        {
+            TabPage createMedicalRecordTabPage = new TabPage("Tạo hồ sơ bệnh án");
+            CMR_MainForm createMedicalRecordForm = new CMR_MainForm();
+            createMedicalRecordForm.TopLevel = false;
+            createMedicalRecordForm.AutoScroll = true;
+            createMedicalRecordForm.FormBorderStyle = FormBorderStyle.None;
+            createMedicalRecordForm.Dock = DockStyle.Fill;
+            createMedicalRecordForm.Visible = true;
+            createMedicalRecordTabPage.Controls.Add(createMedicalRecordForm);
+            Main_TabControl.TabPages.Add(createMedicalRecordTabPage);
+            createMedicalRecordForm.Show();
         }
     }
 }
