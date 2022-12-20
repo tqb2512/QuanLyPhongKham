@@ -92,6 +92,7 @@
             this.createMR_StripMenu.Name = "createMR_StripMenu";
             this.createMR_StripMenu.Size = new System.Drawing.Size(137, 34);
             this.createMR_StripMenu.Text = "Khám bệnh";
+            this.createMR_StripMenu.Click += new System.EventHandler(this.createMR_StripMenu_Click);
             // 
             // Main_TabControl
             // 
