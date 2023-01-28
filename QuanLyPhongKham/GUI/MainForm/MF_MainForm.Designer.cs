@@ -65,26 +65,26 @@
             // MedicalRecord_MenuItem
             // 
             this.MedicalRecord_MenuItem.Name = "MedicalRecord_MenuItem";
-            this.MedicalRecord_MenuItem.Size = new System.Drawing.Size(315, 40);
+            this.MedicalRecord_MenuItem.Size = new System.Drawing.Size(231, 40);
             this.MedicalRecord_MenuItem.Text = "Bệnh án";
             this.MedicalRecord_MenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
             // 
             // Patient_MenuItem
             // 
             this.Patient_MenuItem.Name = "Patient_MenuItem";
-            this.Patient_MenuItem.Size = new System.Drawing.Size(315, 40);
+            this.Patient_MenuItem.Size = new System.Drawing.Size(231, 40);
             this.Patient_MenuItem.Text = "Bệnh nhân";
             // 
             // Drug_MenuItem
             // 
             this.Drug_MenuItem.Name = "Drug_MenuItem";
-            this.Drug_MenuItem.Size = new System.Drawing.Size(315, 40);
+            this.Drug_MenuItem.Size = new System.Drawing.Size(231, 40);
             this.Drug_MenuItem.Text = "Thuốc";
             // 
             // Service_MenuItem
             // 
             this.Service_MenuItem.Name = "Service_MenuItem";
-            this.Service_MenuItem.Size = new System.Drawing.Size(315, 40);
+            this.Service_MenuItem.Size = new System.Drawing.Size(231, 40);
             this.Service_MenuItem.Text = "Dịch vụ";
             // 
             // createMR_StripMenu
@@ -114,6 +114,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MF_MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MF_MainForm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

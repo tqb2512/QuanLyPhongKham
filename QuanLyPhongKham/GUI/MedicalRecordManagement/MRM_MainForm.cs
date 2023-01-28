@@ -28,9 +28,8 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
 
         private void dataLoad()
         {
-            string connectionString = "Data Source=DESKTOP-UFNGE5T;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True";
             string query = "SELECT MEDICALRECORD_ID, DATE, PATIENT.PATIENT_NAME, EMPLOYEE.EMPLOYEE_NAME, DIAGNOSIS, NOTE FROM MEDICALRECORD INNER JOIN EXAMINE ON MEDICALRECORD.EXAMINE_ID = EXAMINE.EXAMINE_ID INNER JOIN PATIENT ON EXAMINE.PATIENT_ID = PATIENT.PATIENT_ID INNER JOIN EMPLOYEE ON EXAMINE.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID";
-            DataTable table = MRM_Functions.getSqlData(connectionString, query);
+            DataTable table = MRM_Functions.getSqlData(query);
             medicalRecordDataGrid.DataSource = table;
             medicalRecordDataGrid.Columns["MEDICALRECORD_ID"].HeaderText = "ID bệnh án";
             medicalRecordDataGrid.Columns["DATE"].HeaderText = "Ngày khám";

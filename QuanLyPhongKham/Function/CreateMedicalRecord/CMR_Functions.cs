@@ -10,7 +10,8 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
 {
     internal class CMR_Functions
     {
-        public static int sqlQueryExcute(string connectionString, string query)
+        static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sql"].ConnectionString;
+        public static int sqlQueryExcute(string query)
         {
             try
             {
@@ -27,7 +28,7 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
             }
             return -1;
         }
-        public static DataTable getSqlData(string connectionString, string query)
+        public static DataTable getSqlData(string query)
         {
             try
             {
