@@ -11,6 +11,8 @@ using QuanLyPhongKham.Classes;
 using QuanLyPhongKham.Function.MainForm;
 using QuanLyPhongKham.GUI.MedicalRecordManagement;
 using QuanLyPhongKham.GUI.CreateMedicalRecord;
+using QuanLyPhongKham.GUI.PatientManagement;
+using QuanLyPhongKham.GUI.ServiceManagement;
 
 namespace QuanLyPhongKham.GUI.MainForm
 {
@@ -47,6 +49,20 @@ namespace QuanLyPhongKham.GUI.MainForm
             createMedicalRecordTabPage.Controls.Add(createMedicalRecordForm);
             Main_TabControl.TabPages.Add(createMedicalRecordTabPage);
             createMedicalRecordForm.Show();
+        }
+
+        private void Service_MenuItem_Click(object sender, EventArgs e)
+        {
+            TabPage serviceManagementTabPage = new TabPage("Quản lý dịch vụ");
+            SM_PanelForm serviceManagementPanelForm = new SM_PanelForm();
+            serviceManagementPanelForm.TopLevel = false;
+            serviceManagementPanelForm.AutoScroll = true;
+            serviceManagementPanelForm.FormBorderStyle = FormBorderStyle.None;
+            serviceManagementPanelForm.Dock = DockStyle.Fill;
+            serviceManagementPanelForm.Visible = true;
+            serviceManagementTabPage.Controls.Add(serviceManagementPanelForm);
+            Main_TabControl.TabPages.Add(serviceManagementTabPage);
+            serviceManagementPanelForm.Show();
         }
     }
 }
