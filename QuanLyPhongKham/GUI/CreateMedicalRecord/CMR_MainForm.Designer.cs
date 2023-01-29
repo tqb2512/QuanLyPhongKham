@@ -78,6 +78,7 @@
             this.MainLayout_TableLayoutPanel.Controls.Add(this.Prescription_GroupBox, 0, 1);
             this.MainLayout_TableLayoutPanel.Controls.Add(this.Service_GroupBox, 1, 1);
             this.MainLayout_TableLayoutPanel.Controls.Add(this.Patient_GroupBox, 0, 0);
+            this.MainLayout_TableLayoutPanel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MainLayout_TableLayoutPanel.Location = new System.Drawing.Point(12, 12);
             this.MainLayout_TableLayoutPanel.Name = "MainLayout_TableLayoutPanel";
             this.MainLayout_TableLayoutPanel.RowCount = 2;
@@ -92,6 +93,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Prescription_GroupBox.Controls.Add(this.Prescription_TableLayoutPanel);
+            this.Prescription_GroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Prescription_GroupBox.Location = new System.Drawing.Point(3, 428);
             this.Prescription_GroupBox.Name = "Prescription_GroupBox";
             this.Prescription_GroupBox.Size = new System.Drawing.Size(656, 420);
@@ -162,6 +164,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Service_GroupBox.Controls.Add(this.tableLayoutPanel2);
+            this.Service_GroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Service_GroupBox.Location = new System.Drawing.Point(665, 428);
             this.Service_GroupBox.Name = "Service_GroupBox";
             this.Service_GroupBox.Size = new System.Drawing.Size(656, 420);
@@ -232,6 +235,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Patient_GroupBox.Controls.Add(this.Patient_TableLayoutPanel);
+            this.Patient_GroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Patient_GroupBox.Location = new System.Drawing.Point(3, 3);
             this.Patient_GroupBox.Name = "Patient_GroupBox";
             this.Patient_GroupBox.Size = new System.Drawing.Size(656, 419);
@@ -272,7 +276,7 @@
             this.P_DateOfBirth_Label.AutoSize = true;
             this.P_DateOfBirth_Label.Location = new System.Drawing.Point(3, 300);
             this.P_DateOfBirth_Label.Name = "P_DateOfBirth_Label";
-            this.P_DateOfBirth_Label.Size = new System.Drawing.Size(106, 30);
+            this.P_DateOfBirth_Label.Size = new System.Drawing.Size(108, 30);
             this.P_DateOfBirth_Label.TabIndex = 3;
             this.P_DateOfBirth_Label.Text = "Ngày sinh";
             // 
@@ -289,7 +293,7 @@
             this.P_PhoneNumber_Label.AutoSize = true;
             this.P_PhoneNumber_Label.Location = new System.Drawing.Point(3, 225);
             this.P_PhoneNumber_Label.Name = "P_PhoneNumber_Label";
-            this.P_PhoneNumber_Label.Size = new System.Drawing.Size(135, 30);
+            this.P_PhoneNumber_Label.Size = new System.Drawing.Size(139, 30);
             this.P_PhoneNumber_Label.TabIndex = 2;
             this.P_PhoneNumber_Label.Text = "Số điện thoại";
             // 
@@ -325,7 +329,7 @@
             this.P_Name_Label.AutoSize = true;
             this.P_Name_Label.Location = new System.Drawing.Point(3, 75);
             this.P_Name_Label.Name = "P_Name_Label";
-            this.P_Name_Label.Size = new System.Drawing.Size(103, 30);
+            this.P_Name_Label.Size = new System.Drawing.Size(106, 30);
             this.P_Name_Label.TabIndex = 0;
             this.P_Name_Label.Text = "Họ và tên";
             // 
@@ -376,6 +380,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1348, 875);
             this.Controls.Add(this.MainLayout_TableLayoutPanel);
             this.Name = "CMR_MainForm";

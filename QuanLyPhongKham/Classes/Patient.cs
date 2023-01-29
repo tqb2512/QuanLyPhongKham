@@ -10,6 +10,7 @@ namespace QuanLyPhongKham.Classes
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public string Sex { get; set; }
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
         public DateTime DateOfBirth { get; set; }
@@ -17,10 +18,11 @@ namespace QuanLyPhongKham.Classes
         {
             
         }
-        public Patient(int id, string name, string address, string phoneNumber, DateTime dateOfBirth)
+        public Patient(int id, string name, string sex, string address, string phoneNumber, DateTime dateOfBirth)
         {
             ID = id;
             Name = name;
+            Sex = sex;
             Address = address;
             PhoneNumber = phoneNumber;
             DateOfBirth = dateOfBirth;

@@ -28,111 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.Management_StripMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.MedicalRecord_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Patient_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Drug_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Service_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createMR_StripMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.Main_TabControl = new System.Windows.Forms.TabControl();
-            this.menuStrip1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MF_MainForm));
+            this.MF_ToolStrip = new Krypton.Toolkit.KryptonToolStrip();
+            this.MF_Management_StripButton = new System.Windows.Forms.ToolStripDropDownButton();
+            this.bệnhÁnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bệnhNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dịchVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MF_CreateMR_StripButton = new System.Windows.Forms.ToolStripButton();
+            this.Main_TabControl = new Krypton.Docking.KryptonDockableNavigator();
+            this.MF_ToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Main_TabControl)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // MF_ToolStrip
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Management_StripMenu,
-            this.createMR_StripMenu});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1576, 38);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MF_ToolStrip.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MF_ToolStrip.ImageScalingSize = new System.Drawing.Size(28, 28);
+            this.MF_ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MF_Management_StripButton,
+            this.MF_CreateMR_StripButton});
+            this.MF_ToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.MF_ToolStrip.Name = "MF_ToolStrip";
+            this.MF_ToolStrip.Size = new System.Drawing.Size(1280, 40);
+            this.MF_ToolStrip.TabIndex = 2;
+            this.MF_ToolStrip.Text = "kryptonToolStrip1";
             // 
-            // Management_StripMenu
+            // MF_Management_StripButton
             // 
-            this.Management_StripMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MedicalRecord_MenuItem,
-            this.Patient_MenuItem,
-            this.Drug_MenuItem,
-            this.Service_MenuItem});
-            this.Management_StripMenu.Name = "Management_StripMenu";
-            this.Management_StripMenu.Size = new System.Drawing.Size(103, 34);
-            this.Management_StripMenu.Text = "Quản lý";
+            this.MF_Management_StripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.MF_Management_StripButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bệnhÁnToolStripMenuItem,
+            this.bệnhNhânToolStripMenuItem,
+            this.thuốcToolStripMenuItem,
+            this.dịchVụToolStripMenuItem});
+            this.MF_Management_StripButton.Image = ((System.Drawing.Image)(resources.GetObject("MF_Management_StripButton.Image")));
+            this.MF_Management_StripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MF_Management_StripButton.Name = "MF_Management_StripButton";
+            this.MF_Management_StripButton.Size = new System.Drawing.Size(106, 34);
+            this.MF_Management_StripButton.Text = "Quản lý";
             // 
-            // MedicalRecord_MenuItem
+            // bệnhÁnToolStripMenuItem
             // 
-            this.MedicalRecord_MenuItem.Name = "MedicalRecord_MenuItem";
-            this.MedicalRecord_MenuItem.Size = new System.Drawing.Size(315, 40);
-            this.MedicalRecord_MenuItem.Text = "Bệnh án";
-            this.MedicalRecord_MenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
+            this.bệnhÁnToolStripMenuItem.Name = "bệnhÁnToolStripMenuItem";
+            this.bệnhÁnToolStripMenuItem.Size = new System.Drawing.Size(231, 40);
+            this.bệnhÁnToolStripMenuItem.Text = "Bệnh án";
+            this.bệnhÁnToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
             // 
-            // Patient_MenuItem
+            // bệnhNhânToolStripMenuItem
             // 
-            this.Patient_MenuItem.Name = "Patient_MenuItem";
-            this.Patient_MenuItem.Size = new System.Drawing.Size(315, 40);
-            this.Patient_MenuItem.Text = "Bệnh nhân";
+            this.bệnhNhânToolStripMenuItem.Name = "bệnhNhânToolStripMenuItem";
+            this.bệnhNhânToolStripMenuItem.Size = new System.Drawing.Size(231, 40);
+            this.bệnhNhânToolStripMenuItem.Text = "Bệnh nhân";
             // 
-            // Drug_MenuItem
+            // thuốcToolStripMenuItem
             // 
-            this.Drug_MenuItem.Name = "Drug_MenuItem";
-            this.Drug_MenuItem.Size = new System.Drawing.Size(315, 40);
-            this.Drug_MenuItem.Text = "Thuốc";
+            this.thuốcToolStripMenuItem.Name = "thuốcToolStripMenuItem";
+            this.thuốcToolStripMenuItem.Size = new System.Drawing.Size(231, 40);
+            this.thuốcToolStripMenuItem.Text = "Thuốc";
             // 
-            // Service_MenuItem
+            // dịchVụToolStripMenuItem
             // 
-            this.Service_MenuItem.Name = "Service_MenuItem";
-            this.Service_MenuItem.Size = new System.Drawing.Size(315, 40);
-            this.Service_MenuItem.Text = "Dịch vụ";
-            this.Service_MenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
+            this.dịchVụToolStripMenuItem.Name = "dịchVụToolStripMenuItem";
+            this.dịchVụToolStripMenuItem.Size = new System.Drawing.Size(231, 40);
+            this.dịchVụToolStripMenuItem.Text = "Dịch vụ";
+            this.dịchVụToolStripMenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
             // 
-            // createMR_StripMenu
+            // MF_CreateMR_StripButton
             // 
-            this.createMR_StripMenu.Name = "createMR_StripMenu";
-            this.createMR_StripMenu.Size = new System.Drawing.Size(137, 34);
-            this.createMR_StripMenu.Text = "Khám bệnh";
-            this.createMR_StripMenu.Click += new System.EventHandler(this.createMR_StripMenu_Click);
+            this.MF_CreateMR_StripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.MF_CreateMR_StripButton.Image = ((System.Drawing.Image)(resources.GetObject("MF_CreateMR_StripButton.Image")));
+            this.MF_CreateMR_StripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MF_CreateMR_StripButton.Name = "MF_CreateMR_StripButton";
+            this.MF_CreateMR_StripButton.Size = new System.Drawing.Size(123, 34);
+            this.MF_CreateMR_StripButton.Text = "Khám bệnh";
+            this.MF_CreateMR_StripButton.Click += new System.EventHandler(this.createMR_StripMenu_Click);
             // 
             // Main_TabControl
             // 
             this.Main_TabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Main_TabControl.Location = new System.Drawing.Point(12, 41);
+            this.Main_TabControl.Location = new System.Drawing.Point(0, 43);
             this.Main_TabControl.Name = "Main_TabControl";
-            this.Main_TabControl.SelectedIndex = 0;
-            this.Main_TabControl.Size = new System.Drawing.Size(1552, 883);
+            this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
+            this.Main_TabControl.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
+            this.Main_TabControl.Size = new System.Drawing.Size(1280, 751);
             this.Main_TabControl.TabIndex = 1;
+            this.Main_TabControl.Text = "kryptonDockableNavigator1";
             // 
             // MF_MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1576, 936);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1280, 795);
             this.Controls.Add(this.Main_TabControl);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.MF_ToolStrip);
             this.Name = "MF_MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MF_MainForm";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MF_ToolStrip.ResumeLayout(false);
+            this.MF_ToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Main_TabControl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem Management_StripMenu;
-        private ToolStripMenuItem MedicalRecord_MenuItem;
-        private ToolStripMenuItem Patient_MenuItem;
-        private ToolStripMenuItem Drug_MenuItem;
-        private ToolStripMenuItem Service_MenuItem;
-        private TabControl Main_TabControl;
-        private ToolStripMenuItem createMR_StripMenu;
+        private Krypton.Toolkit.KryptonToolStrip MF_ToolStrip;
+        private ToolStripDropDownButton MF_Management_StripButton;
+        private ToolStripMenuItem bệnhÁnToolStripMenuItem;
+        private ToolStripMenuItem bệnhNhânToolStripMenuItem;
+        private ToolStripMenuItem thuốcToolStripMenuItem;
+        private ToolStripMenuItem dịchVụToolStripMenuItem;
+        private ToolStripButton MF_CreateMR_StripButton;
+        private Krypton.Docking.KryptonDockableNavigator Main_TabControl;
     }
 }

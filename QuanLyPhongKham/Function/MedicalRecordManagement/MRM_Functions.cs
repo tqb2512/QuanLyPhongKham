@@ -56,7 +56,7 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
             try
             {
                 SqlConnection connection = new SqlConnection(connectionString);
-                string query = "SELECT MEDICALRECORD_ID, DATE, PATIENT.PATIENT_ID, PATIENT.PATIENT_NAME, EMPLOYEE.EMPLOYEE_ID, EMPLOYEE.EMPLOYEE_NAME, DIAGNOSIS, NOTE FROM MEDICALRECORD INNER JOIN EXAMINE ON MEDICALRECORD.EXAMINE_ID = EXAMINE.EXAMINE_ID INNER JOIN PATIENT ON EXAMINE.PATIENT_ID = PATIENT.PATIENT_ID INNER JOIN EMPLOYEE ON EXAMINE.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID WHERE MEDICALRECORD_ID = '" + medicalRecordId + "'";
+                string query = "SELECT MEDICALRECORD_ID, DATE, PATIENT_TEMP, PATIENT_WEIGHT, PATIENT.PATIENT_ID, PATIENT.PATIENT_NAME, PATIENT.PATIENT_SEX, EMPLOYEE.EMPLOYEE_ID, EMPLOYEE.EMPLOYEE_NAME, DIAGNOSIS, NOTE FROM MEDICALRECORD INNER JOIN EXAMINE ON MEDICALRECORD.EXAMINE_ID = EXAMINE.EXAMINE_ID INNER JOIN PATIENT ON EXAMINE.PATIENT_ID = PATIENT.PATIENT_ID INNER JOIN EMPLOYEE ON EXAMINE.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID WHERE MEDICALRECORD_ID = '" + medicalRecordId + "'";
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
@@ -64,14 +64,17 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
                 {
                     medicalRecord.ID = reader.GetInt32(0);
                     medicalRecord.Date = reader.GetDateTime(1);
+                    medicalRecord.Patient_Temp = float.Parse(reader.GetDouble(2).ToString());
+                    medicalRecord.Patient_Weight = float.Parse(reader.GetDouble(3).ToString());
                     medicalRecord.Patient = new Patient();
-                    medicalRecord.Patient.ID = reader.GetInt32(2);
-                    medicalRecord.Patient.Name = reader.GetString(3);
+                    medicalRecord.Patient.ID = reader.GetInt32(4);
+                    medicalRecord.Patient.Name = reader.GetString(5);
+                    medicalRecord.Patient.Sex = reader.GetString(6);
                     medicalRecord.Employee = new Employee();
-                    medicalRecord.Employee.ID = reader.GetInt32(4);
-                    medicalRecord.Employee.Name = reader.GetString(5);
-                    medicalRecord.Diagnosis = reader.GetString(6);
-                    medicalRecord.Note = reader.GetString(7);
+                    medicalRecord.Employee.ID = reader.GetInt32(7);
+                    medicalRecord.Employee.Name = reader.GetString(8);
+                    medicalRecord.Diagnosis = reader.GetString(9);
+                    medicalRecord.Note = reader.GetString(10);
                 }
                 connection.Close();
                 query = "SELECT DRUG.DRUG_ID, DRUG_NAME, DRUG_UNIT, QUANTITY, DRUG_MANUFACTURER, DRUG_DESCRIPTION, DRUG_PRICE FROM DRUG INNER JOIN PRESCRIPTION ON DRUG.DRUG_ID = PRESCRIPTION.DRUG_ID WHERE MEDICALRECORD_ID = '" + medicalRecordId + "'";

@@ -71,6 +71,72 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
             medicalRecordDataGrid.Columns["EMPLOYEE_NAME"].Width = (int)(medicalRecordDataGrid.Width * employeeColumnWidth);
             medicalRecordDataGrid.Columns["DIAGNOSIS"].Width = (int)(medicalRecordDataGrid.Width * diagnosisColumnWidth);
             medicalRecordDataGrid.Columns["NOTE"].Width = (int)(medicalRecordDataGrid.Width * noteColumnWidth);
+            search_TableLayout.ColumnStyles[0].Width = (int)(medicalRecordDataGrid.Width * idColumnWidth);
+            search_TableLayout.ColumnStyles[1].Width = (int)(medicalRecordDataGrid.Width * dateColumnWidth);
+            search_TableLayout.ColumnStyles[2].Width = (int)(medicalRecordDataGrid.Width * patientNameColumnWidth);
+            search_TableLayout.ColumnStyles[3].Width = (int)(medicalRecordDataGrid.Width * employeeColumnWidth);
+            search_TableLayout.ColumnStyles[4].Width = (int)(medicalRecordDataGrid.Width * diagnosisColumnWidth);
+            search_TableLayout.ColumnStyles[5].Width = (int)(medicalRecordDataGrid.Width * noteColumnWidth);
+        }
+
+        private string getCurrentTextBoxName()
+        {
+            string currentTextBoxName = "";
+            foreach (Control control in search_TableLayout.Controls)
+            {
+                if (control is TextBox)
+                {
+                    if (control.Text != "")
+                    {
+                        currentTextBoxName = control.Name;
+                    }
+                }
+            }
+            return currentTextBoxName;
+        }
+
+        private void Search_textBox_TextChanged(object sender, EventArgs e)
+        {
+            string filter = "";
+            foreach (Control control in search_TableLayout.Controls)
+            {
+                if (control is TextBox)
+                {
+                    if (control.Text != "")
+                    {
+                        switch (control.Name)
+                        {
+                            case "idSearch_textBox":
+                                filter += "CONVERT(MEDICALRECORD_ID, System.String) LIKE '%" + control.Text + "%' AND ";
+                                break;
+                            case "dateSearch_textBox":
+                                filter += "CONVERT(DATE, System.String) LIKE '%" + control.Text + "%' AND ";
+                                break;
+                            case "pNameSearch_textBox":
+                                filter += "CONVERT(PATIENT_NAME, System.String) LIKE '%" + control.Text + "%' AND ";
+                                break;
+                            case "eNameSearch_textBox":
+                                filter += "CONVERT(EMPLOYEE_NAME, System.String) LIKE '%" + control.Text + "%' AND ";
+                                break;
+                            case "diagnosisSearch_textBox":
+                                filter += "CONVERT(DIAGNOSIS, System.String) LIKE '%" + control.Text + "%' AND ";
+                                break;
+                            case "noteSearch_textBox":
+                                filter += "CONVERT(NOTE, System.String) LIKE '%" + control.Text + "%' AND ";
+                                break;
+                        }
+                    }
+                }
+            }
+            if (filter != "")
+            {
+                filter = filter.Substring(0, filter.Length - 4);
+                (medicalRecordDataGrid.DataSource as DataTable).DefaultView.RowFilter = filter;
+            }
+            else
+            {
+                (medicalRecordDataGrid.DataSource as DataTable).DefaultView.RowFilter = null;
+            }
         }
     }
 }

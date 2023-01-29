@@ -22,10 +22,24 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
 
         public MRM_DetailMedicalRecordForm(int medicalRecordID)
         {
+            
             InitializeComponent();
             medicalRecord.ID = medicalRecordID;
             dataLoad();
+            this.SizeChanged += new EventHandler(MRM_DetailMedicalRecordForm_SizeChanged);
         }
+
+        float D_ID_Width = 0.1f;
+        float D_Name_Width = 0.3f;
+        float D_Quantity_Width = 0.1f;
+        float D_Unit_Width = 0.2f;
+        float D_Price_Width = 0.3f;
+
+        float S_ID_Width = 0.1f;
+        float S_Name_Width = 0.3f;
+        float S_Quantity_Width = 0.1f;
+        float S_Unit_Width = 0.2f;
+        float S_Price_Width = 0.3f;
 
         public void dataLoad()
         {
@@ -36,36 +50,50 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
             P_Name_textBox.Text = medicalRecord.Patient.Name;
             E_ID_textBox.Text = medicalRecord.Employee.ID.ToString();
             E_Name_textBox.Text = medicalRecord.Employee.Name;
+            MR_PateintTemp_textBox.Text = medicalRecord.Patient_Temp.ToString() + " °C";
+            MR_PatientWeight_textBox.Text = medicalRecord.Patient_Weight.ToString() + " kg";
             MR_Diagnosis_textBox.Text = medicalRecord.Diagnosis;
             MR_Note_textBox.Text = medicalRecord.Note;
             D_List_GridView.DataSource = medicalRecord.Drugs;
             S_List_GridView.DataSource = medicalRecord.Services;
-            D_List_GridView.Columns[0].HeaderText = "ID thuốc";
-            D_List_GridView.Columns[1].HeaderText = "Tên thuốc";
-            D_List_GridView.Columns[2].HeaderText = "Đơn vị";
-            D_List_GridView.Columns[3].HeaderText = "Số lượng";
-            D_List_GridView.Columns[4].Visible = false;
-            D_List_GridView.Columns[5].Visible = false;
-            D_List_GridView.Columns[6].HeaderText = "Đơn giá";
-            D_List_GridView.Columns[6].DefaultCellStyle.Format = "N0";
-            D_List_GridView.Columns[0].Width = 100;
-            D_List_GridView.Columns[1].Width = 282;
-            D_List_GridView.Columns[2].Width = 100;
-            D_List_GridView.Columns[3].Width = 100;
-            D_List_GridView.Columns[6].Width = 150;
-            S_List_GridView.Columns[0].HeaderText = "ID dịch vụ";
-            S_List_GridView.Columns[1].HeaderText = "Tên dịch vụ";
-            S_List_GridView.Columns[2].HeaderText = "Đơn giá";
-            S_List_GridView.Columns[3].HeaderText = "Đơn vị";
-            S_List_GridView.Columns[4].HeaderText = "Số lượng";
-            S_List_GridView.Columns[2].DefaultCellStyle.Format = "N0";
-            S_List_GridView.Columns[0].Width = 120;
-            S_List_GridView.Columns[1].Width = 262;
-            S_List_GridView.Columns[2].Width = 150;
-            S_List_GridView.Columns[3].Width = 100;
-            S_List_GridView.Columns[4].Width = 100;
-            
-
+            D_List_GridView.Columns["ID"].HeaderText = "ID";
+            D_List_GridView.Columns["Name"].HeaderText = "Tên thuốc";
+            D_List_GridView.Columns["Quantity"].HeaderText = "SL";
+            D_List_GridView.Columns["Unit"].HeaderText = "Đơn vị";
+            D_List_GridView.Columns["Price"].HeaderText = "Giá";
+            D_List_GridView.Columns["ID"].Width = (int)(D_List_GridView.Width * D_ID_Width) - 2;
+            D_List_GridView.Columns["Name"].Width = (int)(D_List_GridView.Width * D_Name_Width);
+            D_List_GridView.Columns["Quantity"].Width = (int)(D_List_GridView.Width * D_Quantity_Width);
+            D_List_GridView.Columns["Unit"].Width = (int)(D_List_GridView.Width * D_Unit_Width);
+            D_List_GridView.Columns["Price"].Width = (int)(D_List_GridView.Width * D_Price_Width);
+            D_List_GridView.Columns["Manufacturer"].Visible = false;
+            D_List_GridView.Columns["Description"].Visible = false;
+            D_List_GridView.Columns["Price"].DefaultCellStyle.Format = "N0";
+            S_List_GridView.Columns["ID"].HeaderText = "ID";
+            S_List_GridView.Columns["Name"].HeaderText = "Tên dịch vụ";
+            S_List_GridView.Columns["Quantity"].HeaderText = "SL";
+            S_List_GridView.Columns["Unit"].HeaderText = "Đơn vị";
+            S_List_GridView.Columns["Price"].HeaderText = "Giá";
+            S_List_GridView.Columns["ID"].Width = (int)(S_List_GridView.Width * S_ID_Width) - 2;
+            S_List_GridView.Columns["Name"].Width = (int)(S_List_GridView.Width * S_Name_Width);
+            S_List_GridView.Columns["Quantity"].Width = (int)(S_List_GridView.Width * S_Quantity_Width);
+            S_List_GridView.Columns["Unit"].Width = (int)(S_List_GridView.Width * S_Unit_Width);
+            S_List_GridView.Columns["Price"].Width = (int)(S_List_GridView.Width * S_Price_Width);
+            S_List_GridView.Columns["Price"].DefaultCellStyle.Format = "N0";
+            S_List_GridView.Columns["Price"].DisplayIndex = 4;
+        }
+        private void MRM_DetailMedicalRecordForm_SizeChanged(object sender, EventArgs e)
+        {
+            D_List_GridView.Columns["ID"].Width = (int)(D_List_GridView.Width * D_ID_Width) - 2;
+            D_List_GridView.Columns["Name"].Width = (int)(D_List_GridView.Width * D_Name_Width);
+            D_List_GridView.Columns["Quantity"].Width = (int)(D_List_GridView.Width * D_Quantity_Width);
+            D_List_GridView.Columns["Unit"].Width = (int)(D_List_GridView.Width * D_Unit_Width);
+            D_List_GridView.Columns["Price"].Width = (int)(D_List_GridView.Width * D_Price_Width);
+            S_List_GridView.Columns["ID"].Width = (int)(S_List_GridView.Width * S_ID_Width) - 2;
+            S_List_GridView.Columns["Name"].Width = (int)(S_List_GridView.Width * S_Name_Width);
+            S_List_GridView.Columns["Quantity"].Width = (int)(S_List_GridView.Width * S_Quantity_Width);
+            S_List_GridView.Columns["Unit"].Width = (int)(S_List_GridView.Width * S_Unit_Width);
+            S_List_GridView.Columns["Price"].Width = (int)(S_List_GridView.Width * S_Price_Width);
         }
     }
 }

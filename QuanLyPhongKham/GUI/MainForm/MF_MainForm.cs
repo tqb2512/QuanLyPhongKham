@@ -23,46 +23,66 @@ namespace QuanLyPhongKham.GUI.MainForm
             InitializeComponent();
         }
 
+        private void addToTabControl(Form form, string tabName)
+        {
+            Krypton.Navigator.KryptonPage tabPage = new Krypton.Navigator.KryptonPage();
+            tabPage.Text = tabName;
+            form.TopLevel = false;
+            form.AutoScroll = true;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            form.Visible = true;
+            tabPage.Controls.Add(form);
+            Main_TabControl.Pages.Add(tabPage);
+            form.Show();
+        }
+
         private void MedicalRecord_MenuItem_Click(object sender, EventArgs e)
         {
-            TabPage medicalRecordTabPage = new TabPage("Quản lý hồ sơ bệnh án");
-            MRM_PanelForm medicalRecordPanelForm = new MRM_PanelForm();
-            medicalRecordPanelForm.TopLevel = false;
-            medicalRecordPanelForm.AutoScroll = true;
-            medicalRecordPanelForm.FormBorderStyle = FormBorderStyle.None;
-            medicalRecordPanelForm.Dock = DockStyle.Fill;
-            medicalRecordPanelForm.Visible = true;
-            medicalRecordTabPage.Controls.Add(medicalRecordPanelForm);
-            Main_TabControl.TabPages.Add(medicalRecordTabPage);
-            medicalRecordPanelForm.Show();
+            //TabPage medicalRecordTabPage = new TabPage("Quản lý hồ sơ bệnh án");
+            //MRM_PanelForm medicalRecordPanelForm = new MRM_PanelForm();
+            //medicalRecordPanelForm.TopLevel = false;
+            //medicalRecordPanelForm.AutoScroll = true;
+            //medicalRecordPanelForm.FormBorderStyle = FormBorderStyle.None;
+            //medicalRecordPanelForm.Dock = DockStyle.Fill;
+            //medicalRecordPanelForm.Visible = true;
+            //medicalRecordTabPage.Controls.Add(medicalRecordPanelForm);
+            //Main_TabControl.TabPages.Add(medicalRecordTabPage);
+            //medicalRecordPanelForm.Show();
+
+            addToTabControl(new MRM_PanelForm(), "Quản lý hồ sơ bệnh án");
         }
 
         private void createMR_StripMenu_Click(object sender, EventArgs e)
         {
-            TabPage createMedicalRecordTabPage = new TabPage("Tạo hồ sơ bệnh án");
-            CMR_MainForm createMedicalRecordForm = new CMR_MainForm();
-            createMedicalRecordForm.TopLevel = false;
-            createMedicalRecordForm.AutoScroll = true;
-            createMedicalRecordForm.FormBorderStyle = FormBorderStyle.None;
-            createMedicalRecordForm.Dock = DockStyle.Fill;
-            createMedicalRecordForm.Visible = true;
-            createMedicalRecordTabPage.Controls.Add(createMedicalRecordForm);
-            Main_TabControl.TabPages.Add(createMedicalRecordTabPage);
-            createMedicalRecordForm.Show();
+            //TabPage createMedicalRecordTabPage = new TabPage("Tạo hồ sơ bệnh án");
+            //CMR_MainForm createMedicalRecordForm = new CMR_MainForm();
+            //createMedicalRecordForm.TopLevel = false;
+            //createMedicalRecordForm.AutoScroll = true;
+            //createMedicalRecordForm.FormBorderStyle = FormBorderStyle.None;
+            //createMedicalRecordForm.Dock = DockStyle.Fill;
+            //createMedicalRecordForm.Visible = true;
+            //createMedicalRecordTabPage.Controls.Add(createMedicalRecordForm);
+            //Main_TabControl.TabPages.Add(createMedicalRecordTabPage);
+            //createMedicalRecordForm.Show();
+
+            addToTabControl(new CMR_MainForm(), "Tạo hồ sơ bệnh án");
         }
 
         private void Service_MenuItem_Click(object sender, EventArgs e)
         {
-            TabPage serviceManagementTabPage = new TabPage("Quản lý dịch vụ");
-            SM_PanelForm serviceManagementPanelForm = new SM_PanelForm();
-            serviceManagementPanelForm.TopLevel = false;
-            serviceManagementPanelForm.AutoScroll = true;
-            serviceManagementPanelForm.FormBorderStyle = FormBorderStyle.None;
-            serviceManagementPanelForm.Dock = DockStyle.Fill;
-            serviceManagementPanelForm.Visible = true;
-            serviceManagementTabPage.Controls.Add(serviceManagementPanelForm);
-            Main_TabControl.TabPages.Add(serviceManagementTabPage);
-            serviceManagementPanelForm.Show();
+            //TabPage serviceTabPage = new TabPage("Quản lý dịch vụ");
+            //SM_MainForm serviceForm = new SM_MainForm();
+            //serviceForm.TopLevel = false;
+            //serviceForm.AutoScroll = true;
+            //serviceForm.FormBorderStyle = FormBorderStyle.None;
+            //serviceForm.Dock = DockStyle.Fill;
+            //serviceForm.Visible = true;
+            //serviceTabPage.Controls.Add(serviceForm);
+            //Main_TabControl.TabPages.Add(serviceTabPage);
+            //serviceForm.Show();
+
+            addToTabControl(new SM_MainForm(), "Quản lý dịch vụ");
         }
     }
 }
