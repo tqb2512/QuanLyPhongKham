@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyPhongKham.Function.CreateMedicalRecord
+namespace QuanLyPhongKham.Function.ServiceManagement
 {
-    internal class CMR_Functions
+    internal class SM_Functions
     {
         static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sql"].ConnectionString;
         public static int sqlQueryExcute(string query)

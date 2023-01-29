@@ -29,8 +29,7 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
 
         public void dataLoad()
         {
-            string connectionString = "Data Source=DESKTOP-UFNGE5T;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True";
-            medicalRecord = MRM_Functions.getDetailMedicalRecord(connectionString ,medicalRecord.ID);
+            medicalRecord = MRM_Functions.getDetailMedicalRecord(medicalRecord.ID);
             MR_ID_textBox.Text = medicalRecord.ID.ToString();
             MR_Date_textBox.Text = medicalRecord.Date.ToString();
             P_ID_textBox.Text = medicalRecord.Patient.ID.ToString();

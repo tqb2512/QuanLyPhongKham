@@ -12,7 +12,8 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
 {
     internal class MRM_Functions
     {
-        public static int sqlQueryExcute(string connectionString, string query)
+        static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sql"].ConnectionString;
+        public static int sqlQueryExcute(string query)
         {
             try
             {
@@ -29,7 +30,7 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
             }
             return -1;
         }
-        public static DataTable getSqlData(string connectionString, string query)
+        public static DataTable getSqlData(string query)
         {
             try
             {
@@ -49,7 +50,7 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
             return null;
         }
 
-        public static MedicalRecord getDetailMedicalRecord(string connectionString, int medicalRecordId)
+        public static MedicalRecord getDetailMedicalRecord(int medicalRecordId)
         {
             MedicalRecord medicalRecord = new MedicalRecord();
             try

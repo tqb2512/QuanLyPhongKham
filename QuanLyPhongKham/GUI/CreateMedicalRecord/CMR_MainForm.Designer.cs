@@ -69,6 +69,9 @@
             // 
             // MainLayout_TableLayoutPanel
             // 
+            this.MainLayout_TableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MainLayout_TableLayoutPanel.ColumnCount = 2;
             this.MainLayout_TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.MainLayout_TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -85,6 +88,9 @@
             // 
             // Prescription_GroupBox
             // 
+            this.Prescription_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Prescription_GroupBox.Controls.Add(this.Prescription_TableLayoutPanel);
             this.Prescription_GroupBox.Location = new System.Drawing.Point(3, 428);
             this.Prescription_GroupBox.Name = "Prescription_GroupBox";
@@ -95,6 +101,9 @@
             // 
             // Prescription_TableLayoutPanel
             // 
+            this.Prescription_TableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Prescription_TableLayoutPanel.ColumnCount = 1;
             this.Prescription_TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.Prescription_TableLayoutPanel.Controls.Add(this.Prescription_DataGridView, 0, 1);
@@ -122,6 +131,9 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -136,6 +148,7 @@
             // 
             // D_AddDrugToList_Button
             // 
+            this.D_AddDrugToList_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.D_AddDrugToList_Button.Location = new System.Drawing.Point(465, 3);
             this.D_AddDrugToList_Button.Name = "D_AddDrugToList_Button";
             this.D_AddDrugToList_Button.Size = new System.Drawing.Size(170, 38);
@@ -145,6 +158,9 @@
             // 
             // Service_GroupBox
             // 
+            this.Service_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Service_GroupBox.Controls.Add(this.tableLayoutPanel2);
             this.Service_GroupBox.Location = new System.Drawing.Point(665, 428);
             this.Service_GroupBox.Name = "Service_GroupBox";
@@ -155,6 +171,9 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.ServiceBill_DataGridView, 0, 1);
@@ -182,6 +201,9 @@
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -196,6 +218,7 @@
             // 
             // S_AddServiceToList_Button
             // 
+            this.S_AddServiceToList_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.S_AddServiceToList_Button.Location = new System.Drawing.Point(465, 3);
             this.S_AddServiceToList_Button.Name = "S_AddServiceToList_Button";
             this.S_AddServiceToList_Button.Size = new System.Drawing.Size(170, 38);
@@ -205,6 +228,9 @@
             // 
             // Patient_GroupBox
             // 
+            this.Patient_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Patient_GroupBox.Controls.Add(this.Patient_TableLayoutPanel);
             this.Patient_GroupBox.Location = new System.Drawing.Point(3, 3);
             this.Patient_GroupBox.Name = "Patient_GroupBox";
@@ -215,6 +241,9 @@
             // 
             // Patient_TableLayoutPanel
             // 
+            this.Patient_TableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Patient_TableLayoutPanel.ColumnCount = 2;
             this.Patient_TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.31056F));
             this.Patient_TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.68944F));

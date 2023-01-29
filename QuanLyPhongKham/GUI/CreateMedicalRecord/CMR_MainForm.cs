@@ -29,10 +29,13 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
                 selectPatientForm.ShowDialog();
                 patient = selectPatientForm.patient;
             }
-            P_Name_TextBox.Text = patient.Name;
-            P_PhoneNumber_TextBox.Text = patient.PhoneNumber;
-            P_Address_TextBox.Text = patient.Address;
-            P_DateOfBirth_DateTimePicker.Value = patient.DateOfBirth;
+            if (patient != null)
+            {
+                P_Name_TextBox.Text = patient.Name;
+                P_PhoneNumber_TextBox.Text = patient.PhoneNumber;
+                P_Address_TextBox.Text = patient.Address;
+                P_DateOfBirth_DateTimePicker.Value = patient.DateOfBirth;
+            }
         }
 
         private void AddPantient_Button_Click(object sender, EventArgs e)

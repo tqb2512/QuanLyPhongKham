@@ -23,18 +23,17 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
 
         private void CMR_SelectPatientForm_Load(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-UFNGE5T;Initial Catalog=QUANLYPHONGKHAM;Integrated Security=True";
-            Pateint_DataGridView.DataSource = CMR_Functions.getSqlData(connectionString, "SELECT * FROM PATIENT");
+            Pateint_DataGridView.DataSource = CMR_Functions.getSqlData("SELECT * FROM PATIENT");
         }
 
         private void Confirm_Button_Click(object sender, EventArgs e)
         {
             Patient patient = new Patient();
-            patient.ID = Int32.Parse(Pateint_DataGridView.SelectedRows[0].Cells[0].Value.ToString());
-            patient.Name = Pateint_DataGridView.SelectedRows[0].Cells[1].Value.ToString();
-            patient.Address = Pateint_DataGridView.SelectedRows[0].Cells[2].Value.ToString();
-            patient.PhoneNumber = Pateint_DataGridView.SelectedRows[0].Cells[3].Value.ToString();
-            patient.DateOfBirth = DateTime.Parse(Pateint_DataGridView.SelectedRows[0].Cells[4].Value.ToString());
+            patient.ID = Int32.Parse(Pateint_DataGridView.CurrentRow.Cells[0].Value.ToString());
+            patient.Name = Pateint_DataGridView.CurrentRow.Cells[1].Value.ToString();
+            patient.PhoneNumber = Pateint_DataGridView.CurrentRow.Cells[3].Value.ToString();
+            patient.Address = Pateint_DataGridView.CurrentRow.Cells[2].Value.ToString();
+            patient.DateOfBirth = Convert.ToDateTime(Pateint_DataGridView.CurrentRow.Cells[4].Value.ToString());
             this.patient = patient;
             this.Close();
         }

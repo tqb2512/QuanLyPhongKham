@@ -86,6 +86,7 @@
             this.Service_MenuItem.Name = "Service_MenuItem";
             this.Service_MenuItem.Size = new System.Drawing.Size(315, 40);
             this.Service_MenuItem.Text = "Dịch vụ";
+            this.Service_MenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
             // 
             // createMR_StripMenu
             // 
@@ -114,6 +115,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MF_MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MF_MainForm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

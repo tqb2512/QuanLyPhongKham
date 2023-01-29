@@ -42,6 +42,7 @@
             this.Pateint_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Pateint_DataGridView.Location = new System.Drawing.Point(3, 3);
             this.Pateint_DataGridView.Name = "Pateint_DataGridView";
+            this.Pateint_DataGridView.RowHeadersVisible = false;
             this.Pateint_DataGridView.RowHeadersWidth = 72;
             this.Pateint_DataGridView.RowTemplate.Height = 37;
             this.Pateint_DataGridView.Size = new System.Drawing.Size(993, 576);
