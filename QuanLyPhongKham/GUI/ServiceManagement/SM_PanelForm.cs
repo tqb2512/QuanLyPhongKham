@@ -77,7 +77,7 @@ namespace QuanLyPhongKham.GUI.ServiceManagement
                 case "edit":
                     service.ID = sm_DetailServiceForm.serviceID;
                     service.Name = sm_DetailServiceForm.S_name_textBox.Text;
-                    service.Price = Convert.ToInt32(sm_DetailServiceForm.S_price_textBox.Text);
+                    service.Price = Convert.ToDecimal(sm_DetailServiceForm.S_price_textBox.Text);
                     service.Unit = sm_DetailServiceForm.S_unit_textBox.Text;
                     service.Description = sm_DetailServiceForm.S_description_richTextBox.Text;
                     if (SM_Functions.updateService(service))
@@ -102,7 +102,7 @@ namespace QuanLyPhongKham.GUI.ServiceManagement
                 case "add":
                     service.ID = sm_DetailServiceForm.serviceID;
                     service.Name = sm_DetailServiceForm.S_name_textBox.Text;
-                    service.Price = Convert.ToInt32(sm_DetailServiceForm.S_price_textBox.Text);
+                    service.Price = Convert.ToDecimal(sm_DetailServiceForm.S_price_textBox.Text);
                     service.Unit = sm_DetailServiceForm.S_unit_textBox.Text;
                     service.Description = sm_DetailServiceForm.S_description_richTextBox.Text;
                     if (SM_Functions.addService(service))

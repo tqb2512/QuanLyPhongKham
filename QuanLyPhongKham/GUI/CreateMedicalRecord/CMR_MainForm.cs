@@ -30,6 +30,8 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
 
         int currentPatientID;
         int currentEmployeeID;
+        List<Drug> Drugs;
+        List<Service> Services;
         int currentMedicalRecordID = CMR_Functions.getMaxMedicalRecordID() + 1;
         
         float D_ID_Width = 0.1f;
@@ -79,6 +81,43 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
         private void confirm_Button_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void D_AddDrugToList_Button_Click(object sender, EventArgs e)
+        {
+            using (CMR_SelectDrugsForm selectDrugsForm = new CMR_SelectDrugsForm(drugs))
+            {
+                selectDrugsForm.ShowDialog();
+                drugs = selectDrugsForm.drugs;
+            }
+            if (drugs != null)
+            {
+                Drugs = drugs;
+                Drugs_DataGridView.DataSource = Drugs;
+                Drugs_DataGridView.Columns["ID"].Width = (int)(Drugs_DataGridView.Width * D_ID_Width);
+                Drugs_DataGridView.Columns["Name"].Width = (int)(Drugs_DataGridView.Width * D_Name_Width);
+                Drugs_DataGridView.Columns["Price"].Width = (int)(Drugs_DataGridView.Width * D_Price_Width);
+                Drugs_DataGridView.Columns["Unit"].Width = (int)(Drugs_DataGridView.Width * D_Unit_Width);
+                Drugs_DataGridView.Columns["Quantity"].Width = (int)(Drugs_DataGridView.Width * D_Quantity_Width);
+                Drugs_DataGridView.Columns["Price"].DefaultCellStyle.Format = "N0";
+                Drugs_DataGridView.Columns["ID"].HeaderText = "ID";
+                Drugs_DataGridView.Columns["Name"].HeaderText = "Tên thuốc";
+                Drugs_DataGridView.Columns["Price"].HeaderText = "Đơn giá";
+                Drugs_DataGridView.Columns["Unit"].HeaderText = "Đơn vị";
+                Drugs_DataGridView.Columns["Quantity"].HeaderText = "SL";
+                Drugs_DataGridView.Columns["Manufacturer"].Visible = false;
+                Drugs_DataGridView.Columns["Description"].Visible = false;
+                this.SizeChanged += new System.EventHandler(this.CMR_MainForm_SizeChanged);
+            }
+        }
+
+        private void CMR_MainForm_SizeChanged(object sender, EventArgs e)
+        {
+            Drugs_DataGridView.Columns["ID"].Width = (int)(Drugs_DataGridView.Width * D_ID_Width);
+            Drugs_DataGridView.Columns["Name"].Width = (int)(Drugs_DataGridView.Width * D_Name_Width);
+            Drugs_DataGridView.Columns["Price"].Width = (int)(Drugs_DataGridView.Width * D_Price_Width);
+            Drugs_DataGridView.Columns["Unit"].Width = (int)(Drugs_DataGridView.Width * D_Unit_Width);
+            Drugs_DataGridView.Columns["Quantity"].Width = (int)(Drugs_DataGridView.Width * D_Quantity_Width);
         }
     }
 }
