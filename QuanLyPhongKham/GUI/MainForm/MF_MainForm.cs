@@ -82,7 +82,7 @@ namespace QuanLyPhongKham.GUI.MainForm
             //Main_TabControl.TabPages.Add(serviceTabPage);
             //serviceForm.Show();
 
-            addToTabControl(new SM_MainForm(), "Quản lý dịch vụ");
+            addToTabControl(new SM_PanelForm(), "Quản lý dịch vụ");
         }
     }
 }

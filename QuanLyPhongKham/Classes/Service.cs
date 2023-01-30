@@ -13,17 +13,19 @@ namespace QuanLyPhongKham.Classes
         public decimal Price { get; set; }
         public string Unit { get; set; }
         public int Quantity { get; set; }
+        public string Description { get; set; }
         public Service()
         {
 
         }
-        public Service(int id, string name, string unit, decimal price, int quantity)
+        public Service(int id, string name, string unit, decimal price, int quantity, string description)
         {
             ID = id;
             Name = name;
             Unit = unit;
             Price = price;
             Quantity = quantity;
+            Description = description;
         }
     }
 }

@@ -39,7 +39,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(5, 450);
+            this.splitter1.Size = new System.Drawing.Size(5, 436);
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
@@ -50,8 +50,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.mainPanel.Location = new System.Drawing.Point(5, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(795, 450);
-            this.mainPanel.SplitterDistance = 398;
+            this.mainPanel.Size = new System.Drawing.Size(771, 436);
+            this.mainPanel.SplitterDistance = 385;
             this.mainPanel.TabIndex = 1;
             // 
             // MRM_PanelForm
@@ -59,7 +59,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(776, 436);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.splitter1);
             this.Name = "MRM_PanelForm";

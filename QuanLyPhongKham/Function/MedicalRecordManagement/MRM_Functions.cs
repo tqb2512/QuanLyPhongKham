@@ -95,7 +95,7 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
                 List<Service> services = new List<Service>();
                 while (reader.Read())
                 {
-                    services.Add(new Service(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetDecimal(3), reader.GetInt32(4)));
+                    services.Add(new Service(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetDecimal(3), reader.GetInt32(4), ""));
                 }
                 medicalRecord.Services = services;
                 connection.Close();

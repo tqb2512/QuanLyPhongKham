@@ -79,22 +79,6 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
             search_TableLayout.ColumnStyles[5].Width = (int)(medicalRecordDataGrid.Width * noteColumnWidth);
         }
 
-        private string getCurrentTextBoxName()
-        {
-            string currentTextBoxName = "";
-            foreach (Control control in search_TableLayout.Controls)
-            {
-                if (control is TextBox)
-                {
-                    if (control.Text != "")
-                    {
-                        currentTextBoxName = control.Name;
-                    }
-                }
-            }
-            return currentTextBoxName;
-        }
-
         private void Search_textBox_TextChanged(object sender, EventArgs e)
         {
             string filter = "";

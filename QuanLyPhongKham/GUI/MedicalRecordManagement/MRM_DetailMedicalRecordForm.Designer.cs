@@ -92,7 +92,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1203, 883);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(952, 912);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -131,7 +131,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49938F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50187F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50187F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(595, 395);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(470, 410);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // MR_ID_Label
@@ -146,16 +146,16 @@
             // MR_Date_Label
             // 
             this.MR_Date_Label.AutoSize = true;
-            this.MR_Date_Label.Location = new System.Drawing.Point(3, 49);
+            this.MR_Date_Label.Location = new System.Drawing.Point(3, 51);
             this.MR_Date_Label.Name = "MR_Date_Label";
-            this.MR_Date_Label.Size = new System.Drawing.Size(162, 49);
+            this.MR_Date_Label.Size = new System.Drawing.Size(108, 51);
             this.MR_Date_Label.TabIndex = 1;
             this.MR_Date_Label.Text = "Ngày tạo bệnh án";
             // 
             // E_ID_Label
             // 
             this.E_ID_Label.AutoSize = true;
-            this.E_ID_Label.Location = new System.Drawing.Point(3, 98);
+            this.E_ID_Label.Location = new System.Drawing.Point(3, 102);
             this.E_ID_Label.Name = "E_ID_Label";
             this.E_ID_Label.Size = new System.Drawing.Size(134, 30);
             this.E_ID_Label.TabIndex = 2;
@@ -164,27 +164,27 @@
             // E_Name_Label
             // 
             this.E_Name_Label.AutoSize = true;
-            this.E_Name_Label.Location = new System.Drawing.Point(3, 147);
+            this.E_Name_Label.Location = new System.Drawing.Point(3, 153);
             this.E_Name_Label.Name = "E_Name_Label";
-            this.E_Name_Label.Size = new System.Drawing.Size(146, 30);
+            this.E_Name_Label.Size = new System.Drawing.Size(114, 51);
             this.E_Name_Label.TabIndex = 3;
             this.E_Name_Label.Text = "Tên người tạo";
             // 
             // P_ID_Label
             // 
             this.P_ID_Label.AutoSize = true;
-            this.P_ID_Label.Location = new System.Drawing.Point(3, 196);
+            this.P_ID_Label.Location = new System.Drawing.Point(3, 204);
             this.P_ID_Label.Name = "P_ID_Label";
-            this.P_ID_Label.Size = new System.Drawing.Size(141, 30);
+            this.P_ID_Label.Size = new System.Drawing.Size(94, 51);
             this.P_ID_Label.TabIndex = 4;
             this.P_ID_Label.Text = "ID bệnh nhân";
             // 
             // P_Name_Label
             // 
             this.P_Name_Label.AutoSize = true;
-            this.P_Name_Label.Location = new System.Drawing.Point(3, 245);
+            this.P_Name_Label.Location = new System.Drawing.Point(3, 255);
             this.P_Name_Label.Name = "P_Name_Label";
-            this.P_Name_Label.Size = new System.Drawing.Size(153, 30);
+            this.P_Name_Label.Size = new System.Drawing.Size(106, 51);
             this.P_Name_Label.TabIndex = 5;
             this.P_Name_Label.Text = "Tên bệnh nhân";
             // 
@@ -192,66 +192,66 @@
             // 
             this.MR_ID_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.MR_ID_textBox.Enabled = false;
-            this.MR_ID_textBox.Location = new System.Drawing.Point(181, 3);
+            this.MR_ID_textBox.Location = new System.Drawing.Point(144, 3);
             this.MR_ID_textBox.Name = "MR_ID_textBox";
             this.MR_ID_textBox.ReadOnly = true;
-            this.MR_ID_textBox.Size = new System.Drawing.Size(411, 35);
+            this.MR_ID_textBox.Size = new System.Drawing.Size(323, 35);
             this.MR_ID_textBox.TabIndex = 6;
             // 
             // MR_Date_textBox
             // 
             this.MR_Date_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.MR_Date_textBox.Enabled = false;
-            this.MR_Date_textBox.Location = new System.Drawing.Point(181, 52);
+            this.MR_Date_textBox.Location = new System.Drawing.Point(144, 54);
             this.MR_Date_textBox.Name = "MR_Date_textBox";
             this.MR_Date_textBox.ReadOnly = true;
-            this.MR_Date_textBox.Size = new System.Drawing.Size(411, 35);
+            this.MR_Date_textBox.Size = new System.Drawing.Size(323, 35);
             this.MR_Date_textBox.TabIndex = 7;
             // 
             // E_ID_textBox
             // 
             this.E_ID_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.E_ID_textBox.Enabled = false;
-            this.E_ID_textBox.Location = new System.Drawing.Point(181, 101);
+            this.E_ID_textBox.Location = new System.Drawing.Point(144, 105);
             this.E_ID_textBox.Name = "E_ID_textBox";
             this.E_ID_textBox.ReadOnly = true;
-            this.E_ID_textBox.Size = new System.Drawing.Size(411, 35);
+            this.E_ID_textBox.Size = new System.Drawing.Size(323, 35);
             this.E_ID_textBox.TabIndex = 8;
             // 
             // E_Name_textBox
             // 
             this.E_Name_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.E_Name_textBox.Enabled = false;
-            this.E_Name_textBox.Location = new System.Drawing.Point(181, 150);
+            this.E_Name_textBox.Location = new System.Drawing.Point(144, 156);
             this.E_Name_textBox.Name = "E_Name_textBox";
             this.E_Name_textBox.ReadOnly = true;
-            this.E_Name_textBox.Size = new System.Drawing.Size(411, 35);
+            this.E_Name_textBox.Size = new System.Drawing.Size(323, 35);
             this.E_Name_textBox.TabIndex = 9;
             // 
             // P_ID_textBox
             // 
             this.P_ID_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.P_ID_textBox.Enabled = false;
-            this.P_ID_textBox.Location = new System.Drawing.Point(181, 199);
+            this.P_ID_textBox.Location = new System.Drawing.Point(144, 207);
             this.P_ID_textBox.Name = "P_ID_textBox";
             this.P_ID_textBox.ReadOnly = true;
-            this.P_ID_textBox.Size = new System.Drawing.Size(411, 35);
+            this.P_ID_textBox.Size = new System.Drawing.Size(323, 35);
             this.P_ID_textBox.TabIndex = 10;
             // 
             // P_Name_textBox
             // 
             this.P_Name_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.P_Name_textBox.Enabled = false;
-            this.P_Name_textBox.Location = new System.Drawing.Point(181, 248);
+            this.P_Name_textBox.Location = new System.Drawing.Point(144, 258);
             this.P_Name_textBox.Name = "P_Name_textBox";
             this.P_Name_textBox.ReadOnly = true;
-            this.P_Name_textBox.Size = new System.Drawing.Size(411, 35);
+            this.P_Name_textBox.Size = new System.Drawing.Size(323, 35);
             this.P_Name_textBox.TabIndex = 11;
             // 
             // MR_PatientTemp_Label
             // 
             this.MR_PatientTemp_Label.AutoSize = true;
-            this.MR_PatientTemp_Label.Location = new System.Drawing.Point(3, 294);
+            this.MR_PatientTemp_Label.Location = new System.Drawing.Point(3, 306);
             this.MR_PatientTemp_Label.Name = "MR_PatientTemp_Label";
             this.MR_PatientTemp_Label.Size = new System.Drawing.Size(97, 30);
             this.MR_PatientTemp_Label.TabIndex = 12;
@@ -260,7 +260,7 @@
             // MR_PatientWeight_Label
             // 
             this.MR_PatientWeight_Label.AutoSize = true;
-            this.MR_PatientWeight_Label.Location = new System.Drawing.Point(3, 343);
+            this.MR_PatientWeight_Label.Location = new System.Drawing.Point(3, 357);
             this.MR_PatientWeight_Label.Name = "MR_PatientWeight_Label";
             this.MR_PatientWeight_Label.Size = new System.Drawing.Size(103, 30);
             this.MR_PatientWeight_Label.TabIndex = 13;
@@ -269,19 +269,19 @@
             // MR_PateintTemp_textBox
             // 
             this.MR_PateintTemp_textBox.Enabled = false;
-            this.MR_PateintTemp_textBox.Location = new System.Drawing.Point(181, 297);
+            this.MR_PateintTemp_textBox.Location = new System.Drawing.Point(144, 309);
             this.MR_PateintTemp_textBox.Name = "MR_PateintTemp_textBox";
             this.MR_PateintTemp_textBox.ReadOnly = true;
-            this.MR_PateintTemp_textBox.Size = new System.Drawing.Size(411, 35);
+            this.MR_PateintTemp_textBox.Size = new System.Drawing.Size(323, 35);
             this.MR_PateintTemp_textBox.TabIndex = 14;
             // 
             // MR_PatientWeight_textBox
             // 
             this.MR_PatientWeight_textBox.Enabled = false;
-            this.MR_PatientWeight_textBox.Location = new System.Drawing.Point(181, 346);
+            this.MR_PatientWeight_textBox.Location = new System.Drawing.Point(144, 360);
             this.MR_PatientWeight_textBox.Name = "MR_PatientWeight_textBox";
             this.MR_PatientWeight_textBox.ReadOnly = true;
-            this.MR_PatientWeight_textBox.Size = new System.Drawing.Size(411, 35);
+            this.MR_PatientWeight_textBox.Size = new System.Drawing.Size(323, 35);
             this.MR_PatientWeight_textBox.TabIndex = 15;
             // 
             // tableLayoutPanel3
@@ -293,12 +293,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.16329F));
             this.tableLayoutPanel3.Controls.Add(this.diagnosis_GroupBox, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.Note_GroupBox, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(604, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(479, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(596, 395);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(470, 410);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // diagnosis_GroupBox
@@ -309,7 +309,7 @@
             this.diagnosis_GroupBox.Controls.Add(this.MR_Diagnosis_textBox);
             this.diagnosis_GroupBox.Location = new System.Drawing.Point(3, 3);
             this.diagnosis_GroupBox.Name = "diagnosis_GroupBox";
-            this.diagnosis_GroupBox.Size = new System.Drawing.Size(590, 191);
+            this.diagnosis_GroupBox.Size = new System.Drawing.Size(464, 199);
             this.diagnosis_GroupBox.TabIndex = 4;
             this.diagnosis_GroupBox.TabStop = false;
             this.diagnosis_GroupBox.Text = "Chuẩn đoán";
@@ -325,7 +325,7 @@
             this.MR_Diagnosis_textBox.Multiline = true;
             this.MR_Diagnosis_textBox.Name = "MR_Diagnosis_textBox";
             this.MR_Diagnosis_textBox.ReadOnly = true;
-            this.MR_Diagnosis_textBox.Size = new System.Drawing.Size(578, 151);
+            this.MR_Diagnosis_textBox.Size = new System.Drawing.Size(452, 159);
             this.MR_Diagnosis_textBox.TabIndex = 2;
             // 
             // Note_GroupBox
@@ -334,9 +334,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Note_GroupBox.Controls.Add(this.MR_Note_textBox);
-            this.Note_GroupBox.Location = new System.Drawing.Point(3, 200);
+            this.Note_GroupBox.Location = new System.Drawing.Point(3, 208);
             this.Note_GroupBox.Name = "Note_GroupBox";
-            this.Note_GroupBox.Size = new System.Drawing.Size(590, 192);
+            this.Note_GroupBox.Size = new System.Drawing.Size(464, 199);
             this.Note_GroupBox.TabIndex = 5;
             this.Note_GroupBox.TabStop = false;
             this.Note_GroupBox.Text = "Ghi chú";
@@ -352,7 +352,7 @@
             this.MR_Note_textBox.Multiline = true;
             this.MR_Note_textBox.Name = "MR_Note_textBox";
             this.MR_Note_textBox.ReadOnly = true;
-            this.MR_Note_textBox.Size = new System.Drawing.Size(578, 152);
+            this.MR_Note_textBox.Size = new System.Drawing.Size(452, 159);
             this.MR_Note_textBox.TabIndex = 3;
             // 
             // tableLayoutPanel6
@@ -364,11 +364,11 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.60429F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.39571F));
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 1, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(604, 805);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(479, 835);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(596, 75);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(470, 74);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // tableLayoutPanel7
@@ -378,18 +378,18 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.Controls.Add(this.exportButton, 1, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(185, 4);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(146, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(408, 68);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(321, 68);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
             // exportButton
             // 
-            this.exportButton.Location = new System.Drawing.Point(207, 3);
+            this.exportButton.Location = new System.Drawing.Point(163, 3);
             this.exportButton.Name = "exportButton";
-            this.exportButton.Size = new System.Drawing.Size(198, 62);
+            this.exportButton.Size = new System.Drawing.Size(155, 62);
             this.exportButton.TabIndex = 1;
             this.exportButton.Text = "Xuất bệnh án";
             this.exportButton.UseVisualStyleBackColor = true;
@@ -400,9 +400,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.drug_GroupBox.Controls.Add(this.D_List_GridView);
-            this.drug_GroupBox.Location = new System.Drawing.Point(3, 404);
+            this.drug_GroupBox.Location = new System.Drawing.Point(3, 419);
             this.drug_GroupBox.Name = "drug_GroupBox";
-            this.drug_GroupBox.Size = new System.Drawing.Size(595, 395);
+            this.drug_GroupBox.Size = new System.Drawing.Size(470, 410);
             this.drug_GroupBox.TabIndex = 5;
             this.drug_GroupBox.TabStop = false;
             this.drug_GroupBox.Text = "Toa thuốc";
@@ -423,7 +423,7 @@
             this.D_List_GridView.RowHeadersVisible = false;
             this.D_List_GridView.RowHeadersWidth = 72;
             this.D_List_GridView.RowTemplate.Height = 37;
-            this.D_List_GridView.Size = new System.Drawing.Size(589, 355);
+            this.D_List_GridView.Size = new System.Drawing.Size(464, 370);
             this.D_List_GridView.TabIndex = 0;
             // 
             // serviceBill_GroupBox
@@ -432,9 +432,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.serviceBill_GroupBox.Controls.Add(this.S_List_GridView);
-            this.serviceBill_GroupBox.Location = new System.Drawing.Point(604, 404);
+            this.serviceBill_GroupBox.Location = new System.Drawing.Point(479, 419);
             this.serviceBill_GroupBox.Name = "serviceBill_GroupBox";
-            this.serviceBill_GroupBox.Size = new System.Drawing.Size(596, 395);
+            this.serviceBill_GroupBox.Size = new System.Drawing.Size(470, 410);
             this.serviceBill_GroupBox.TabIndex = 6;
             this.serviceBill_GroupBox.TabStop = false;
             this.serviceBill_GroupBox.Text = "Dịch vụ";
@@ -455,7 +455,7 @@
             this.S_List_GridView.RowHeadersVisible = false;
             this.S_List_GridView.RowHeadersWidth = 72;
             this.S_List_GridView.RowTemplate.Height = 37;
-            this.S_List_GridView.Size = new System.Drawing.Size(593, 355);
+            this.S_List_GridView.Size = new System.Drawing.Size(467, 370);
             this.S_List_GridView.TabIndex = 0;
             // 
             // MRM_DetailMedicalRecordForm
@@ -463,7 +463,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1227, 907);
+            this.ClientSize = new System.Drawing.Size(976, 936);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "MRM_DetailMedicalRecordForm";
             this.Text = "MRM_DetailMedicalRecordForm";
