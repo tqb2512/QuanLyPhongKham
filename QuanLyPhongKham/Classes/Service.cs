@@ -8,15 +8,24 @@ namespace QuanLyPhongKham.Classes
 {
     internal class Service
     {
+        public int ID { get; set; }
         public string Name { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
         public string Unit { get; set; }
-        public Service(string name, int price, string unit)
+        public int Quantity { get; set; }
+        public string Description { get; set; }
+        public Service()
         {
-            Name = name;
-            Price = price;
-            Unit = unit;
-        }
 
+        }
+        public Service(int id, string name, string unit, decimal price, int quantity, string description)
+        {
+            ID = id;
+            Name = name;
+            Unit = unit;
+            Price = price;
+            Quantity = quantity;
+            Description = description;
+        }
     }
 }

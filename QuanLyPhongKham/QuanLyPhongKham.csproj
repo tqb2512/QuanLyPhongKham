@@ -8,4 +8,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Krypton.Docking" Version="70.22.11.312" />
+    <PackageReference Include="Krypton.Navigator" Version="70.22.11.312" />
+    <PackageReference Include="Krypton.Toolkit" Version="70.22.11.312" />
+    <PackageReference Include="Krypton.Toolkit.Suite.Extended.Common" Version="70.23.1.5" />
+    <PackageReference Include="Krypton.Toolkit.Suite.Extended.Navigator" Version="70.23.1.5" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
 </Project>

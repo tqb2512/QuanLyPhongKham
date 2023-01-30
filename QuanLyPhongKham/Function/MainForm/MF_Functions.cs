@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using QuanLyPhongKham.Classes;
+using System.Data.SqlClient;
+
+namespace QuanLyPhongKham.Function.MainForm
+{
+    internal class MF_Functions
+    {
+        static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sql"].ConnectionString;
+        public void resizeAllTabPages(Size size)
+        {
+            FormCollection fc = Application.OpenForms;
+            foreach (Form form in fc)
+            {
+                if (form.Name != "MF_MainForm")
+                {
+                    form.Size = size;
+                }
+            }
+        }
+
+        public static Employee getUserInfo(int userId)
+        {
+            Employee employee = new Employee();
+            SqlConnection connection = new SqlConnection(connectionString);
+            string query = "SELECT EMPLOYEE_NAME, EMPLOYEE_POSITION FROM EMPLOYEE WHERE EMPLOYEE_ID = " + userId;
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                employee.Name = reader.GetString(0);
+                employee.Position = reader.GetString(1);
+            }
+            employee.ID = userId;
+            connection.Close();
+            return employee;
+        }
+    }
+}
