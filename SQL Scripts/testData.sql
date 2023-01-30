@@ -29,8 +29,9 @@ INSERT INTO SERVICE VALUES (2, 'Xet nghiem', 'Lan', 100000, '')
 INSERT INTO SERVICE VALUES (3, 'Chup X-quang', 'Lan', 200000, '')
 INSERT INTO SERVICE VALUES (4, 'Chup CT scan', 'Lan', 500000, '')
 
-INSERT INTO EMPLOYEE VALUES (1, 'Tran Van A', 'Bac Si')
-INSERT INTO EMPLOYEE VALUES (2, 'Tran Van B', 'Bac Si')
+INSERT INTO EMPLOYEE VALUES (0, 'Admin', 'Admin', 'admin', 'admin')
+INSERT INTO EMPLOYEE VALUES (1, 'Tran Van A', 'Bac Si', 'tranvana', 'test')
+INSERT INTO EMPLOYEE VALUES (2, 'Tran Van B', 'Bac Si', 'tranvanb', 'thu')
 
 INSERT INTO EXAMINE VALUES (1, 1, 1)
 INSERT INTO EXAMINE VALUES (2, 1, 2)

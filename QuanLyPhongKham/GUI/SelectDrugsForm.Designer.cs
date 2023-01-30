@@ -1,6 +1,6 @@
-﻿namespace QuanLyPhongKham.GUI.MedicalRecordManagement
+﻿namespace QuanLyPhongKham.GUI
 {
-    partial class MRM_AddMedicalRecordForm
+    partial class SelectDrugsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MRM_AddMedicalRecordForm";
+            this.Text = "SelectDrugsForm";
         }
 
         #endregion

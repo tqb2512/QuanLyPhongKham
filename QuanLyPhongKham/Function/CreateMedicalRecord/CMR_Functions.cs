@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QuanLyPhongKham.Classes;
 
 namespace QuanLyPhongKham.Function.CreateMedicalRecord
 {
@@ -46,6 +47,59 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
                 MessageBox.Show(ex.Message);
             }
             return null;
+        }
+
+        public static int getMaxPatientID()
+        {
+            try
+            {
+                int max = 0;
+                string query = "SELECT MAX(PATIENT_ID) AS MAX FROM PATIENT";
+                SqlConnection connection = new SqlConnection(connectionString);
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    max = reader.GetInt32(0);
+                }
+                connection.Close();
+                return max;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return -1;
+        }
+
+        public static int getMaxMedicalRecordID()
+        {
+            try
+            {
+                int max = 0;
+                string query = "SELECT MAX(MEDICALRECORD_ID) AS MAX FROM MEDICALRECORD";
+                SqlConnection connection = new SqlConnection(connectionString);
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    max = reader.GetInt32(0);
+                }
+                connection.Close();
+                return max;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return -1;
+        }
+
+        public static bool addMedicalRecord(MedicalRecord medicalRecord)
+        {
+            return false;
         }
     }
 }

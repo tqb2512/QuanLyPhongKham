@@ -18,11 +18,18 @@ namespace QuanLyPhongKham.GUI.MainForm
 {
     public partial class MF_MainForm : Form
     {
+        Employee currentUser;
         public MF_MainForm()
         {
             InitializeComponent();
         }
 
+        public MF_MainForm(int currentUserID)
+        {
+            InitializeComponent();
+            this.currentUser = MF_Functions.getUserInfo(currentUserID);
+            E_Name_Label.Text = "Xin chào " + this.currentUser.Name + "!";
+        }
         private void addToTabControl(Form form, string tabName)
         {
             Krypton.Navigator.KryptonPage tabPage = new Krypton.Navigator.KryptonPage();
@@ -39,50 +46,22 @@ namespace QuanLyPhongKham.GUI.MainForm
 
         private void MedicalRecord_MenuItem_Click(object sender, EventArgs e)
         {
-            //TabPage medicalRecordTabPage = new TabPage("Quản lý hồ sơ bệnh án");
-            //MRM_PanelForm medicalRecordPanelForm = new MRM_PanelForm();
-            //medicalRecordPanelForm.TopLevel = false;
-            //medicalRecordPanelForm.AutoScroll = true;
-            //medicalRecordPanelForm.FormBorderStyle = FormBorderStyle.None;
-            //medicalRecordPanelForm.Dock = DockStyle.Fill;
-            //medicalRecordPanelForm.Visible = true;
-            //medicalRecordTabPage.Controls.Add(medicalRecordPanelForm);
-            //Main_TabControl.TabPages.Add(medicalRecordTabPage);
-            //medicalRecordPanelForm.Show();
-
             addToTabControl(new MRM_PanelForm(), "Quản lý hồ sơ bệnh án");
         }
 
         private void createMR_StripMenu_Click(object sender, EventArgs e)
         {
-            //TabPage createMedicalRecordTabPage = new TabPage("Tạo hồ sơ bệnh án");
-            //CMR_MainForm createMedicalRecordForm = new CMR_MainForm();
-            //createMedicalRecordForm.TopLevel = false;
-            //createMedicalRecordForm.AutoScroll = true;
-            //createMedicalRecordForm.FormBorderStyle = FormBorderStyle.None;
-            //createMedicalRecordForm.Dock = DockStyle.Fill;
-            //createMedicalRecordForm.Visible = true;
-            //createMedicalRecordTabPage.Controls.Add(createMedicalRecordForm);
-            //Main_TabControl.TabPages.Add(createMedicalRecordTabPage);
-            //createMedicalRecordForm.Show();
-
-            addToTabControl(new CMR_MainForm(), "Tạo hồ sơ bệnh án");
+            addToTabControl(new CMR_MainForm(currentUser.ID), "Tạo hồ sơ bệnh án");
         }
 
         private void Service_MenuItem_Click(object sender, EventArgs e)
         {
-            //TabPage serviceTabPage = new TabPage("Quản lý dịch vụ");
-            //SM_MainForm serviceForm = new SM_MainForm();
-            //serviceForm.TopLevel = false;
-            //serviceForm.AutoScroll = true;
-            //serviceForm.FormBorderStyle = FormBorderStyle.None;
-            //serviceForm.Dock = DockStyle.Fill;
-            //serviceForm.Visible = true;
-            //serviceTabPage.Controls.Add(serviceForm);
-            //Main_TabControl.TabPages.Add(serviceTabPage);
-            //serviceForm.Show();
-
             addToTabControl(new SM_PanelForm(), "Quản lý dịch vụ");
+        }
+
+        private void MF_MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
