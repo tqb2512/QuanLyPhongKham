@@ -122,5 +122,10 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
                 (medicalRecordDataGrid.DataSource as DataTable).DefaultView.RowFilter = null;
             }
         }
+
+        private void refresh_button_Click(object sender, EventArgs e)
+        {
+            dataLoad();
+        }
     }
 }

@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.diagnosis_GroupBox = new System.Windows.Forms.GroupBox();
+            this.MR_Diagnosis_textBox = new System.Windows.Forms.TextBox();
+            this.Note_GroupBox = new System.Windows.Forms.GroupBox();
+            this.MR_Note_textBox = new System.Windows.Forms.TextBox();
+            this.drug_GroupBox = new System.Windows.Forms.GroupBox();
+            this.D_List_GridView = new Krypton.Toolkit.KryptonDataGridView();
+            this.serviceBill_GroupBox = new System.Windows.Forms.GroupBox();
+            this.S_List_GridView = new Krypton.Toolkit.KryptonDataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.MR_ID_Label = new System.Windows.Forms.Label();
             this.MR_Date_Label = new System.Windows.Forms.Label();
@@ -46,29 +55,18 @@
             this.MR_PatientWeight_Label = new System.Windows.Forms.Label();
             this.MR_PateintTemp_textBox = new System.Windows.Forms.TextBox();
             this.MR_PatientWeight_textBox = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.diagnosis_GroupBox = new System.Windows.Forms.GroupBox();
-            this.MR_Diagnosis_textBox = new System.Windows.Forms.TextBox();
-            this.Note_GroupBox = new System.Windows.Forms.GroupBox();
-            this.MR_Note_textBox = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.exportButton = new System.Windows.Forms.Button();
-            this.drug_GroupBox = new System.Windows.Forms.GroupBox();
-            this.D_List_GridView = new Krypton.Toolkit.KryptonDataGridView();
-            this.serviceBill_GroupBox = new System.Windows.Forms.GroupBox();
-            this.S_List_GridView = new Krypton.Toolkit.KryptonDataGridView();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.diagnosis_GroupBox.SuspendLayout();
             this.Note_GroupBox.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
             this.drug_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.D_List_GridView)).BeginInit();
             this.serviceBill_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.S_List_GridView)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -80,11 +78,11 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.drug_GroupBox, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.serviceBill_GroupBox, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 2);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -94,6 +92,141 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(952, 912);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.16329F));
+            this.tableLayoutPanel3.Controls.Add(this.diagnosis_GroupBox, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.Note_GroupBox, 0, 1);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(479, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(470, 410);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // diagnosis_GroupBox
+            // 
+            this.diagnosis_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.diagnosis_GroupBox.Controls.Add(this.MR_Diagnosis_textBox);
+            this.diagnosis_GroupBox.Location = new System.Drawing.Point(3, 3);
+            this.diagnosis_GroupBox.Name = "diagnosis_GroupBox";
+            this.diagnosis_GroupBox.Size = new System.Drawing.Size(464, 199);
+            this.diagnosis_GroupBox.TabIndex = 4;
+            this.diagnosis_GroupBox.TabStop = false;
+            this.diagnosis_GroupBox.Text = "Chuẩn đoán";
+            // 
+            // MR_Diagnosis_textBox
+            // 
+            this.MR_Diagnosis_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MR_Diagnosis_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.MR_Diagnosis_textBox.Enabled = false;
+            this.MR_Diagnosis_textBox.Location = new System.Drawing.Point(6, 34);
+            this.MR_Diagnosis_textBox.Multiline = true;
+            this.MR_Diagnosis_textBox.Name = "MR_Diagnosis_textBox";
+            this.MR_Diagnosis_textBox.ReadOnly = true;
+            this.MR_Diagnosis_textBox.Size = new System.Drawing.Size(452, 159);
+            this.MR_Diagnosis_textBox.TabIndex = 2;
+            // 
+            // Note_GroupBox
+            // 
+            this.Note_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Note_GroupBox.Controls.Add(this.MR_Note_textBox);
+            this.Note_GroupBox.Location = new System.Drawing.Point(3, 208);
+            this.Note_GroupBox.Name = "Note_GroupBox";
+            this.Note_GroupBox.Size = new System.Drawing.Size(464, 199);
+            this.Note_GroupBox.TabIndex = 5;
+            this.Note_GroupBox.TabStop = false;
+            this.Note_GroupBox.Text = "Ghi chú";
+            // 
+            // MR_Note_textBox
+            // 
+            this.MR_Note_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MR_Note_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.MR_Note_textBox.Enabled = false;
+            this.MR_Note_textBox.Location = new System.Drawing.Point(6, 34);
+            this.MR_Note_textBox.Multiline = true;
+            this.MR_Note_textBox.Name = "MR_Note_textBox";
+            this.MR_Note_textBox.ReadOnly = true;
+            this.MR_Note_textBox.Size = new System.Drawing.Size(452, 159);
+            this.MR_Note_textBox.TabIndex = 3;
+            // 
+            // drug_GroupBox
+            // 
+            this.drug_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.drug_GroupBox.Controls.Add(this.D_List_GridView);
+            this.drug_GroupBox.Location = new System.Drawing.Point(3, 419);
+            this.drug_GroupBox.Name = "drug_GroupBox";
+            this.drug_GroupBox.Size = new System.Drawing.Size(470, 410);
+            this.drug_GroupBox.TabIndex = 5;
+            this.drug_GroupBox.TabStop = false;
+            this.drug_GroupBox.Text = "Toa thuốc";
+            // 
+            // D_List_GridView
+            // 
+            this.D_List_GridView.AllowUserToAddRows = false;
+            this.D_List_GridView.AllowUserToDeleteRows = false;
+            this.D_List_GridView.AllowUserToResizeColumns = false;
+            this.D_List_GridView.AllowUserToResizeRows = false;
+            this.D_List_GridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.D_List_GridView.ColumnHeadersHeight = 70;
+            this.D_List_GridView.Location = new System.Drawing.Point(3, 34);
+            this.D_List_GridView.Name = "D_List_GridView";
+            this.D_List_GridView.ReadOnly = true;
+            this.D_List_GridView.RowHeadersVisible = false;
+            this.D_List_GridView.RowHeadersWidth = 72;
+            this.D_List_GridView.RowTemplate.Height = 37;
+            this.D_List_GridView.Size = new System.Drawing.Size(464, 370);
+            this.D_List_GridView.TabIndex = 0;
+            // 
+            // serviceBill_GroupBox
+            // 
+            this.serviceBill_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.serviceBill_GroupBox.Controls.Add(this.S_List_GridView);
+            this.serviceBill_GroupBox.Location = new System.Drawing.Point(479, 419);
+            this.serviceBill_GroupBox.Name = "serviceBill_GroupBox";
+            this.serviceBill_GroupBox.Size = new System.Drawing.Size(470, 410);
+            this.serviceBill_GroupBox.TabIndex = 6;
+            this.serviceBill_GroupBox.TabStop = false;
+            this.serviceBill_GroupBox.Text = "Dịch vụ";
+            // 
+            // S_List_GridView
+            // 
+            this.S_List_GridView.AllowUserToAddRows = false;
+            this.S_List_GridView.AllowUserToDeleteRows = false;
+            this.S_List_GridView.AllowUserToResizeColumns = false;
+            this.S_List_GridView.AllowUserToResizeRows = false;
+            this.S_List_GridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.S_List_GridView.ColumnHeadersHeight = 70;
+            this.S_List_GridView.Location = new System.Drawing.Point(0, 34);
+            this.S_List_GridView.Name = "S_List_GridView";
+            this.S_List_GridView.ReadOnly = true;
+            this.S_List_GridView.RowHeadersVisible = false;
+            this.S_List_GridView.RowHeadersWidth = 72;
+            this.S_List_GridView.RowTemplate.Height = 37;
+            this.S_List_GridView.Size = new System.Drawing.Size(467, 370);
+            this.S_List_GridView.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
@@ -284,179 +417,31 @@
             this.MR_PatientWeight_textBox.Size = new System.Drawing.Size(323, 35);
             this.MR_PatientWeight_textBox.TabIndex = 15;
             // 
-            // tableLayoutPanel3
+            // tableLayoutPanel4
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.16329F));
-            this.tableLayoutPanel3.Controls.Add(this.diagnosis_GroupBox, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.Note_GroupBox, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(479, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(470, 410);
-            this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // diagnosis_GroupBox
-            // 
-            this.diagnosis_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.diagnosis_GroupBox.Controls.Add(this.MR_Diagnosis_textBox);
-            this.diagnosis_GroupBox.Location = new System.Drawing.Point(3, 3);
-            this.diagnosis_GroupBox.Name = "diagnosis_GroupBox";
-            this.diagnosis_GroupBox.Size = new System.Drawing.Size(464, 199);
-            this.diagnosis_GroupBox.TabIndex = 4;
-            this.diagnosis_GroupBox.TabStop = false;
-            this.diagnosis_GroupBox.Text = "Chuẩn đoán";
-            // 
-            // MR_Diagnosis_textBox
-            // 
-            this.MR_Diagnosis_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MR_Diagnosis_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.MR_Diagnosis_textBox.Enabled = false;
-            this.MR_Diagnosis_textBox.Location = new System.Drawing.Point(6, 34);
-            this.MR_Diagnosis_textBox.Multiline = true;
-            this.MR_Diagnosis_textBox.Name = "MR_Diagnosis_textBox";
-            this.MR_Diagnosis_textBox.ReadOnly = true;
-            this.MR_Diagnosis_textBox.Size = new System.Drawing.Size(452, 159);
-            this.MR_Diagnosis_textBox.TabIndex = 2;
-            // 
-            // Note_GroupBox
-            // 
-            this.Note_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Note_GroupBox.Controls.Add(this.MR_Note_textBox);
-            this.Note_GroupBox.Location = new System.Drawing.Point(3, 208);
-            this.Note_GroupBox.Name = "Note_GroupBox";
-            this.Note_GroupBox.Size = new System.Drawing.Size(464, 199);
-            this.Note_GroupBox.TabIndex = 5;
-            this.Note_GroupBox.TabStop = false;
-            this.Note_GroupBox.Text = "Ghi chú";
-            // 
-            // MR_Note_textBox
-            // 
-            this.MR_Note_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MR_Note_textBox.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.MR_Note_textBox.Enabled = false;
-            this.MR_Note_textBox.Location = new System.Drawing.Point(6, 34);
-            this.MR_Note_textBox.Multiline = true;
-            this.MR_Note_textBox.Name = "MR_Note_textBox";
-            this.MR_Note_textBox.ReadOnly = true;
-            this.MR_Note_textBox.Size = new System.Drawing.Size(452, 159);
-            this.MR_Note_textBox.TabIndex = 3;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.60429F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.39571F));
-            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 1, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(479, 835);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 1;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(470, 74);
-            this.tableLayoutPanel6.TabIndex = 4;
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.exportButton, 1, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(146, 3);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(321, 68);
-            this.tableLayoutPanel7.TabIndex = 0;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.exportButton, 1, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(479, 835);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(470, 74);
+            this.tableLayoutPanel4.TabIndex = 7;
             // 
             // exportButton
             // 
-            this.exportButton.Location = new System.Drawing.Point(163, 3);
+            this.exportButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exportButton.Location = new System.Drawing.Point(283, 3);
             this.exportButton.Name = "exportButton";
-            this.exportButton.Size = new System.Drawing.Size(155, 62);
+            this.exportButton.Size = new System.Drawing.Size(184, 68);
             this.exportButton.TabIndex = 1;
             this.exportButton.Text = "Xuất bệnh án";
             this.exportButton.UseVisualStyleBackColor = true;
-            // 
-            // drug_GroupBox
-            // 
-            this.drug_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.drug_GroupBox.Controls.Add(this.D_List_GridView);
-            this.drug_GroupBox.Location = new System.Drawing.Point(3, 419);
-            this.drug_GroupBox.Name = "drug_GroupBox";
-            this.drug_GroupBox.Size = new System.Drawing.Size(470, 410);
-            this.drug_GroupBox.TabIndex = 5;
-            this.drug_GroupBox.TabStop = false;
-            this.drug_GroupBox.Text = "Toa thuốc";
-            // 
-            // D_List_GridView
-            // 
-            this.D_List_GridView.AllowUserToAddRows = false;
-            this.D_List_GridView.AllowUserToDeleteRows = false;
-            this.D_List_GridView.AllowUserToResizeColumns = false;
-            this.D_List_GridView.AllowUserToResizeRows = false;
-            this.D_List_GridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.D_List_GridView.ColumnHeadersHeight = 70;
-            this.D_List_GridView.Location = new System.Drawing.Point(3, 34);
-            this.D_List_GridView.Name = "D_List_GridView";
-            this.D_List_GridView.ReadOnly = true;
-            this.D_List_GridView.RowHeadersVisible = false;
-            this.D_List_GridView.RowHeadersWidth = 72;
-            this.D_List_GridView.RowTemplate.Height = 37;
-            this.D_List_GridView.Size = new System.Drawing.Size(464, 370);
-            this.D_List_GridView.TabIndex = 0;
-            // 
-            // serviceBill_GroupBox
-            // 
-            this.serviceBill_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.serviceBill_GroupBox.Controls.Add(this.S_List_GridView);
-            this.serviceBill_GroupBox.Location = new System.Drawing.Point(479, 419);
-            this.serviceBill_GroupBox.Name = "serviceBill_GroupBox";
-            this.serviceBill_GroupBox.Size = new System.Drawing.Size(470, 410);
-            this.serviceBill_GroupBox.TabIndex = 6;
-            this.serviceBill_GroupBox.TabStop = false;
-            this.serviceBill_GroupBox.Text = "Dịch vụ";
-            // 
-            // S_List_GridView
-            // 
-            this.S_List_GridView.AllowUserToAddRows = false;
-            this.S_List_GridView.AllowUserToDeleteRows = false;
-            this.S_List_GridView.AllowUserToResizeColumns = false;
-            this.S_List_GridView.AllowUserToResizeRows = false;
-            this.S_List_GridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.S_List_GridView.ColumnHeadersHeight = 70;
-            this.S_List_GridView.Location = new System.Drawing.Point(0, 34);
-            this.S_List_GridView.Name = "S_List_GridView";
-            this.S_List_GridView.ReadOnly = true;
-            this.S_List_GridView.RowHeadersVisible = false;
-            this.S_List_GridView.RowHeadersWidth = 72;
-            this.S_List_GridView.RowTemplate.Height = 37;
-            this.S_List_GridView.Size = new System.Drawing.Size(467, 370);
-            this.S_List_GridView.TabIndex = 0;
             // 
             // MRM_DetailMedicalRecordForm
             // 
@@ -468,19 +453,18 @@
             this.Name = "MRM_DetailMedicalRecordForm";
             this.Text = "MRM_DetailMedicalRecordForm";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.diagnosis_GroupBox.ResumeLayout(false);
             this.diagnosis_GroupBox.PerformLayout();
             this.Note_GroupBox.ResumeLayout(false);
             this.Note_GroupBox.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
             this.drug_GroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.D_List_GridView)).EndInit();
             this.serviceBill_GroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.S_List_GridView)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -504,8 +488,6 @@
         private TableLayoutPanel tableLayoutPanel3;
         private TextBox MR_Diagnosis_textBox;
         private TextBox MR_Note_textBox;
-        private TableLayoutPanel tableLayoutPanel6;
-        private TableLayoutPanel tableLayoutPanel7;
         private Button exportButton;
         private GroupBox drug_GroupBox;
         private GroupBox serviceBill_GroupBox;
@@ -517,5 +499,6 @@
         private Label MR_PatientWeight_Label;
         private TextBox MR_PateintTemp_textBox;
         private TextBox MR_PatientWeight_textBox;
+        private TableLayoutPanel tableLayoutPanel4;
     }
 }

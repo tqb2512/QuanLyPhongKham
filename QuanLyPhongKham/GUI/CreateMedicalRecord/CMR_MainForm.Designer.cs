@@ -38,7 +38,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.S_AddServiceToList_Button = new System.Windows.Forms.Button();
-            this.ServiceBill_DataGridView = new Krypton.Toolkit.KryptonDataGridView();
+            this.Services_DataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.Patient_GroupBox = new System.Windows.Forms.GroupBox();
             this.Patient_TableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.P_DateOfBirth_Label = new System.Windows.Forms.Label();
@@ -79,7 +79,7 @@
             this.Service_GroupBox.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ServiceBill_DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Services_DataGridView)).BeginInit();
             this.Patient_GroupBox.SuspendLayout();
             this.Patient_TableLayoutPanel.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -216,7 +216,7 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.ServiceBill_DataGridView, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.Services_DataGridView, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 35);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
@@ -251,21 +251,25 @@
             this.S_AddServiceToList_Button.TabIndex = 0;
             this.S_AddServiceToList_Button.Text = "Thêm dịch vụ";
             this.S_AddServiceToList_Button.UseVisualStyleBackColor = true;
+            this.S_AddServiceToList_Button.Click += new System.EventHandler(this.S_AddServiceToList_Button_Click);
             // 
-            // ServiceBill_DataGridView
+            // Services_DataGridView
             // 
-            this.ServiceBill_DataGridView.AllowUserToAddRows = false;
-            this.ServiceBill_DataGridView.AllowUserToDeleteRows = false;
-            this.ServiceBill_DataGridView.AllowUserToResizeColumns = false;
-            this.ServiceBill_DataGridView.AllowUserToResizeRows = false;
-            this.ServiceBill_DataGridView.ColumnHeadersHeight = 70;
-            this.ServiceBill_DataGridView.Location = new System.Drawing.Point(3, 63);
-            this.ServiceBill_DataGridView.Name = "ServiceBill_DataGridView";
-            this.ServiceBill_DataGridView.RowHeadersVisible = false;
-            this.ServiceBill_DataGridView.RowHeadersWidth = 72;
-            this.ServiceBill_DataGridView.RowTemplate.Height = 37;
-            this.ServiceBill_DataGridView.Size = new System.Drawing.Size(692, 296);
-            this.ServiceBill_DataGridView.TabIndex = 3;
+            this.Services_DataGridView.AllowUserToAddRows = false;
+            this.Services_DataGridView.AllowUserToDeleteRows = false;
+            this.Services_DataGridView.AllowUserToResizeColumns = false;
+            this.Services_DataGridView.AllowUserToResizeRows = false;
+            this.Services_DataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Services_DataGridView.ColumnHeadersHeight = 70;
+            this.Services_DataGridView.Location = new System.Drawing.Point(3, 63);
+            this.Services_DataGridView.Name = "Services_DataGridView";
+            this.Services_DataGridView.RowHeadersVisible = false;
+            this.Services_DataGridView.RowHeadersWidth = 72;
+            this.Services_DataGridView.RowTemplate.Height = 37;
+            this.Services_DataGridView.Size = new System.Drawing.Size(700, 312);
+            this.Services_DataGridView.TabIndex = 3;
             // 
             // Patient_GroupBox
             // 
@@ -574,7 +578,9 @@
             this.P_DateOfBirth_DateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.P_DateOfBirth_DateTimePicker.CustomFormat = "   dd MMMM yyyy";
             this.P_DateOfBirth_DateTimePicker.Enabled = false;
+            this.P_DateOfBirth_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.P_DateOfBirth_DateTimePicker.Location = new System.Drawing.Point(3, 3);
             this.P_DateOfBirth_DateTimePicker.Name = "P_DateOfBirth_DateTimePicker";
             this.P_DateOfBirth_DateTimePicker.Size = new System.Drawing.Size(518, 35);
@@ -647,6 +653,9 @@
             // 
             // tableLayoutPanel10
             // 
+            this.tableLayoutPanel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel10.ColumnCount = 2;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -655,15 +664,15 @@
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(711, 55);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(719, 55);
             this.tableLayoutPanel10.TabIndex = 5;
             // 
             // confirm_Button
             // 
             this.confirm_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.confirm_Button.Location = new System.Drawing.Point(524, 3);
+            this.confirm_Button.Location = new System.Drawing.Point(532, 3);
             this.confirm_Button.Name = "confirm_Button";
-            this.confirm_Button.Size = new System.Drawing.Size(184, 48);
+            this.confirm_Button.Size = new System.Drawing.Size(184, 49);
             this.confirm_Button.TabIndex = 4;
             this.confirm_Button.Text = "Xác nhận";
             this.confirm_Button.UseVisualStyleBackColor = true;
@@ -687,7 +696,7 @@
             this.Service_GroupBox.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ServiceBill_DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Services_DataGridView)).EndInit();
             this.Patient_GroupBox.ResumeLayout(false);
             this.Patient_TableLayoutPanel.ResumeLayout(false);
             this.Patient_TableLayoutPanel.PerformLayout();
@@ -749,10 +758,10 @@
         private TextBox P_Sex_TextBox;
         private TableLayoutPanel tableLayoutPanel8;
         private TableLayoutPanel tableLayoutPanel9;
-        private TableLayoutPanel tableLayoutPanel10;
         private Button confirm_Button;
         private Krypton.Toolkit.KryptonDataGridView Drugs_DataGridView;
-        private Krypton.Toolkit.KryptonDataGridView ServiceBill_DataGridView;
+        private Krypton.Toolkit.KryptonDataGridView Services_DataGridView;
         private TableLayoutPanel tableLayoutPanel11;
+        private TableLayoutPanel tableLayoutPanel10;
     }
 }

@@ -80,6 +80,7 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
             S_List_GridView.Columns["Unit"].Width = (int)(S_List_GridView.Width * S_Unit_Width);
             S_List_GridView.Columns["Price"].Width = (int)(S_List_GridView.Width * S_Price_Width);
             S_List_GridView.Columns["Price"].DefaultCellStyle.Format = "N0";
+            S_List_GridView.Columns["Description"].Visible = false;
             S_List_GridView.Columns["Price"].DisplayIndex = 4;
         }
         private void MRM_DetailMedicalRecordForm_SizeChanged(object sender, EventArgs e)
