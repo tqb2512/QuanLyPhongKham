@@ -36,10 +36,10 @@
             this.dateofbirthSearch_textBox = new System.Windows.Forms.TextBox();
             this.addressSearch_textBox = new System.Windows.Forms.TextBox();
             this.genderSearch_textBox = new System.Windows.Forms.TextBox();
-            this.nameSearch_textBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.add_button = new Krypton.Toolkit.KryptonButton();
+            this.nameSearch_textBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patientDataGridView)).BeginInit();
             this.search_TableLayout.SuspendLayout();
@@ -63,7 +63,7 @@
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(511, 257);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
@@ -84,7 +84,7 @@
             this.patientDataGridView.RowHeadersVisible = false;
             this.patientDataGridView.RowHeadersWidth = 72;
             this.patientDataGridView.RowTemplate.Height = 37;
-            this.patientDataGridView.Size = new System.Drawing.Size(507, 178);
+            this.patientDataGridView.Size = new System.Drawing.Size(507, 165);
             this.patientDataGridView.TabIndex = 0;
             this.patientDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellContentClick);
             this.patientDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellDoubleClick);
@@ -106,7 +106,6 @@
             this.search_TableLayout.Controls.Add(this.dateofbirthSearch_textBox, 3, 0);
             this.search_TableLayout.Controls.Add(this.addressSearch_textBox, 2, 0);
             this.search_TableLayout.Controls.Add(this.genderSearch_textBox, 2, 0);
-            this.search_TableLayout.Controls.Add(this.nameSearch_textBox, 1, 0);
             this.search_TableLayout.Location = new System.Drawing.Point(2, 2);
             this.search_TableLayout.Margin = new System.Windows.Forms.Padding(2);
             this.search_TableLayout.Name = "search_TableLayout";
@@ -156,10 +155,10 @@
             this.addressSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addressSearch_textBox.Location = new System.Drawing.Point(257, 2);
+            this.addressSearch_textBox.Location = new System.Drawing.Point(172, 2);
             this.addressSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressSearch_textBox.Name = "addressSearch_textBox";
-            this.addressSearch_textBox.Size = new System.Drawing.Size(80, 23);
+            this.addressSearch_textBox.Size = new System.Drawing.Size(81, 23);
             this.addressSearch_textBox.TabIndex = 5;
             this.addressSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -168,24 +167,12 @@
             this.genderSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.genderSearch_textBox.Location = new System.Drawing.Point(172, 2);
+            this.genderSearch_textBox.Location = new System.Drawing.Point(257, 2);
             this.genderSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.genderSearch_textBox.Name = "genderSearch_textBox";
-            this.genderSearch_textBox.Size = new System.Drawing.Size(81, 23);
+            this.genderSearch_textBox.Size = new System.Drawing.Size(80, 23);
             this.genderSearch_textBox.TabIndex = 6;
             this.genderSearch_textBox.TextChanged += new System.EventHandler(this.Search);
-            // 
-            // nameSearch_textBox
-            // 
-            this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameSearch_textBox.Location = new System.Drawing.Point(89, 2);
-            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
-            this.nameSearch_textBox.Name = "nameSearch_textBox";
-            this.nameSearch_textBox.Size = new System.Drawing.Size(79, 23);
-            this.nameSearch_textBox.TabIndex = 1;
-            this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // tableLayoutPanel2
             // 
@@ -196,12 +183,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 219);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 206);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(507, 36);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(507, 49);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -211,23 +198,36 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.add_button, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(291, 2);
+            this.tableLayoutPanel3.Controls.Add(this.nameSearch_textBox, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(257, 2);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(214, 32);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(248, 45);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // add_button
             // 
             this.add_button.CornerRoundingRadius = -1F;
-            this.add_button.Location = new System.Drawing.Point(109, 2);
+            this.add_button.Location = new System.Drawing.Point(126, 2);
             this.add_button.Margin = new System.Windows.Forms.Padding(2);
             this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(103, 28);
-            this.add_button.TabIndex = 0;
+            this.add_button.Size = new System.Drawing.Size(120, 41);
+            this.add_button.TabIndex = 7;
             this.add_button.Values.Text = "Thêm";
+            // 
+            // nameSearch_textBox
+            // 
+            this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameSearch_textBox.Location = new System.Drawing.Point(2, 2);
+            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.nameSearch_textBox.Name = "nameSearch_textBox";
+            this.nameSearch_textBox.Size = new System.Drawing.Size(120, 23);
+            this.nameSearch_textBox.TabIndex = 1;
+            this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // PM_MainForm
             // 
@@ -246,6 +246,7 @@
             this.search_TableLayout.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -255,7 +256,6 @@
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel3;
-        public Krypton.Toolkit.KryptonButton add_button;
         public Krypton.Toolkit.KryptonDataGridView patientDataGridView;
         private TableLayoutPanel search_TableLayout;
         private TextBox genderSearch_textBox;
@@ -264,5 +264,6 @@
         private TextBox nameSearch_textBox;
         private TextBox phonenumberSearch_textBox;
         private TextBox dateofbirthSearch_textBox;
+        public Krypton.Toolkit.KryptonButton add_button;
     }
 }
