@@ -48,6 +48,7 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.edit_button = new Krypton.Toolkit.KryptonButton();
             this.delete_button = new Krypton.Toolkit.KryptonButton();
+            this.save_button = new Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
@@ -272,10 +273,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.27027F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.64865F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.save_button, 1, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 489);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -293,11 +295,11 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.edit_button, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.delete_button, 1, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(619, 3);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(696, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(303, 110);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(226, 110);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // edit_button
@@ -305,19 +307,29 @@
             this.edit_button.CornerRoundingRadius = -1F;
             this.edit_button.Location = new System.Drawing.Point(3, 3);
             this.edit_button.Name = "edit_button";
-            this.edit_button.Size = new System.Drawing.Size(132, 60);
+            this.edit_button.Size = new System.Drawing.Size(107, 60);
             this.edit_button.TabIndex = 1;
             this.edit_button.Values.Text = "Chỉnh sửa";
             // 
             // delete_button
             // 
             this.delete_button.CornerRoundingRadius = -1F;
-            this.delete_button.Location = new System.Drawing.Point(154, 3);
+            this.delete_button.Location = new System.Drawing.Point(116, 3);
             this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(132, 60);
+            this.delete_button.Size = new System.Drawing.Size(107, 60);
             this.delete_button.TabIndex = 0;
             this.delete_button.Values.Text = "Xóa";
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
+            // 
+            // save_button
+            // 
+            this.save_button.CornerRoundingRadius = -1F;
+            this.save_button.Location = new System.Drawing.Point(579, 3);
+            this.save_button.Name = "save_button";
+            this.save_button.Size = new System.Drawing.Size(111, 60);
+            this.save_button.TabIndex = 2;
+            this.save_button.Values.Text = "Lưu";
+            this.save_button.Click += new System.EventHandler(this.save_button_Click);
             // 
             // tableLayoutPanel7
             // 
@@ -398,5 +410,6 @@
         private TableLayoutPanel tableLayoutPanel7;
         public Krypton.Toolkit.KryptonButton kryptonButton1;
         public Krypton.Toolkit.KryptonButton kryptonButton2;
+        public Krypton.Toolkit.KryptonButton save_button;
     }
 }

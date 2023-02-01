@@ -59,5 +59,15 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             patientDataGridView.Columns["PATIENT_PHONENUMBER"].Width = (int)(patientDataGridView.Width * phoneColumnWidth);
             patientDataGridView.Columns["PATIENT_DATEOFBIRTH"].Width = (int)(patientDataGridView.Width * dobColumnWidth);
         }
+
+        private void patientDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void patientDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

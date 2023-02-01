@@ -130,5 +130,29 @@ namespace QuanLyPhongKham.Function.PatientManagement
             }
             return false;
         }
+
+        public static int getMaxID()
+        {
+            try
+            {
+                int max = 0;
+                string query = "SELECT MAX(SERVICE_ID) AS MAX FROM SERVICE";
+                SqlConnection connection = new SqlConnection(connectionString);
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    max = reader.GetInt32(0);
+                }
+                connection.Close();
+                return max;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return -1;
+        }
     }
 }

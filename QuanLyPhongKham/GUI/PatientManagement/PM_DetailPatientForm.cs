@@ -70,5 +70,10 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                 MessageBox.Show("Xóa thất bại");
             }
         }
+
+        private void save_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

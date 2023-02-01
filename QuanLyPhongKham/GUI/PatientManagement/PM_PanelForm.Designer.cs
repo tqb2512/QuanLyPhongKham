@@ -1,6 +1,6 @@
-﻿namespace QuanLyPhongKham.GUI.ServiceManagement
+﻿namespace QuanLyPhongKham.GUI.PatientManagement
 {
-    partial class SM_PanelForm
+    partial class PM_PanelForm
     {
         /// <summary>
         /// Required designer variable.
@@ -40,21 +40,21 @@
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(503, 299);
-            this.mainPanel.SplitterDistance = 248;
-            this.mainPanel.TabIndex = 0;
+            this.mainPanel.Size = new System.Drawing.Size(454, 220);
+            this.mainPanel.SplitterDistance = 223;
+            this.mainPanel.TabIndex = 1;
+            this.mainPanel.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.mainPanel_SplitterMoved);
             // 
-            // SM_PanelForm
+            // PM_PanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(503, 299);
+            this.ClientSize = new System.Drawing.Size(454, 220);
             this.Controls.Add(this.mainPanel);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "SM_PanelForm";
-            this.Text = "SM_PanelForm";
-            this.Load += new System.EventHandler(this.SM_PanelForm_Load);
+            this.Name = "PM_PanelForm";
+            this.Text = "PM_PanelForm";
+            this.Load += new System.EventHandler(this.PM_PanelForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel.Panel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel.Panel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel)).EndInit();
