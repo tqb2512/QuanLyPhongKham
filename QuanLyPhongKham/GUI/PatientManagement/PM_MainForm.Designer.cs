@@ -102,6 +102,7 @@
             this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.23529F));
             this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
             this.search_TableLayout.Controls.Add(this.idSearch_textBox, 0, 0);
+            this.search_TableLayout.Controls.Add(this.nameSearch_textBox, 1, 0);
             this.search_TableLayout.Controls.Add(this.phonenumberSearch_textBox, 2, 0);
             this.search_TableLayout.Controls.Add(this.dateofbirthSearch_textBox, 3, 0);
             this.search_TableLayout.Controls.Add(this.addressSearch_textBox, 2, 0);
@@ -198,7 +199,6 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.add_button, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.nameSearch_textBox, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(257, 2);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -222,10 +222,10 @@
             this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameSearch_textBox.Location = new System.Drawing.Point(2, 2);
+            this.nameSearch_textBox.Location = new System.Drawing.Point(89, 2);
             this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameSearch_textBox.Name = "nameSearch_textBox";
-            this.nameSearch_textBox.Size = new System.Drawing.Size(120, 23);
+            this.nameSearch_textBox.Size = new System.Drawing.Size(79, 23);
             this.nameSearch_textBox.TabIndex = 1;
             this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -246,7 +246,6 @@
             this.search_TableLayout.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

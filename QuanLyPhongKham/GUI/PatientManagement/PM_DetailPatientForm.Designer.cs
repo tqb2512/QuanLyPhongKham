@@ -34,7 +34,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.PatientID = new System.Windows.Forms.Label();
-            this.edit_button = new Krypton.Toolkit.KryptonButton();
+            this.P_dateofbirth_textBox = new System.Windows.Forms.TextBox();
             this.labelPatientName = new System.Windows.Forms.Label();
             this.labelPatientGender = new System.Windows.Forms.Label();
             this.labelPatientAddress = new System.Windows.Forms.Label();
@@ -43,12 +43,12 @@
             this.P_sex_textBox = new System.Windows.Forms.TextBox();
             this.P_address_textBox = new System.Windows.Forms.TextBox();
             this.P_phonenumber_textBox = new System.Windows.Forms.TextBox();
-            this.delete_button = new Krypton.Toolkit.KryptonButton();
+            this.labelPatientBirthday = new System.Windows.Forms.Label();
+            this.labelPatientPhoneNumber = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelPatientBirthday = new System.Windows.Forms.Label();
-            this.P_dateofbirth_textBox = new System.Windows.Forms.TextBox();
-            this.labelPatientPhoneNumber = new System.Windows.Forms.Label();
+            this.edit_button = new Krypton.Toolkit.KryptonButton();
+            this.delete_button = new Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -104,7 +104,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.31615F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.68385F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(925, 582);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(925, 565);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -137,7 +137,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.4713F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(919, 507);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(919, 492);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // PatientID
@@ -149,19 +149,21 @@
             this.PatientID.TabIndex = 0;
             this.PatientID.Text = "ID bệnh nhân";
             // 
-            // edit_button
+            // P_dateofbirth_textBox
             // 
-            this.edit_button.CornerRoundingRadius = -1F;
-            this.edit_button.Location = new System.Drawing.Point(722, 3);
-            this.edit_button.Name = "edit_button";
-            this.edit_button.Size = new System.Drawing.Size(92, 50);
-            this.edit_button.TabIndex = 1;
-            this.edit_button.Values.Text = "Chỉnh sửa";
+            this.P_dateofbirth_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.P_dateofbirth_textBox.Enabled = false;
+            this.P_dateofbirth_textBox.Location = new System.Drawing.Point(232, 322);
+            this.P_dateofbirth_textBox.Name = "P_dateofbirth_textBox";
+            this.P_dateofbirth_textBox.Size = new System.Drawing.Size(684, 23);
+            this.P_dateofbirth_textBox.TabIndex = 9;
             // 
             // labelPatientName
             // 
             this.labelPatientName.AutoSize = true;
-            this.labelPatientName.Location = new System.Drawing.Point(3, 83);
+            this.labelPatientName.Location = new System.Drawing.Point(3, 79);
             this.labelPatientName.Name = "labelPatientName";
             this.labelPatientName.Size = new System.Drawing.Size(88, 15);
             this.labelPatientName.TabIndex = 1;
@@ -170,7 +172,7 @@
             // labelPatientGender
             // 
             this.labelPatientGender.AutoSize = true;
-            this.labelPatientGender.Location = new System.Drawing.Point(3, 167);
+            this.labelPatientGender.Location = new System.Drawing.Point(3, 159);
             this.labelPatientGender.Name = "labelPatientGender";
             this.labelPatientGender.Size = new System.Drawing.Size(55, 15);
             this.labelPatientGender.TabIndex = 2;
@@ -180,7 +182,7 @@
             // 
             this.labelPatientAddress.AutoSize = true;
             this.labelPatientAddress.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.labelPatientAddress.Location = new System.Drawing.Point(3, 253);
+            this.labelPatientAddress.Location = new System.Drawing.Point(3, 241);
             this.labelPatientAddress.Name = "labelPatientAddress";
             this.labelPatientAddress.Size = new System.Drawing.Size(44, 15);
             this.labelPatientAddress.TabIndex = 3;
@@ -203,7 +205,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_name_textBox.Enabled = false;
-            this.P_name_textBox.Location = new System.Drawing.Point(232, 86);
+            this.P_name_textBox.Location = new System.Drawing.Point(232, 82);
             this.P_name_textBox.Name = "P_name_textBox";
             this.P_name_textBox.Size = new System.Drawing.Size(684, 23);
             this.P_name_textBox.TabIndex = 5;
@@ -214,7 +216,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_sex_textBox.Enabled = false;
-            this.P_sex_textBox.Location = new System.Drawing.Point(232, 170);
+            this.P_sex_textBox.Location = new System.Drawing.Point(232, 162);
             this.P_sex_textBox.Name = "P_sex_textBox";
             this.P_sex_textBox.Size = new System.Drawing.Size(684, 23);
             this.P_sex_textBox.TabIndex = 6;
@@ -225,7 +227,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_address_textBox.Enabled = false;
-            this.P_address_textBox.Location = new System.Drawing.Point(232, 256);
+            this.P_address_textBox.Location = new System.Drawing.Point(232, 244);
             this.P_address_textBox.Name = "P_address_textBox";
             this.P_address_textBox.Size = new System.Drawing.Size(684, 23);
             this.P_address_textBox.TabIndex = 7;
@@ -236,20 +238,28 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_phonenumber_textBox.Enabled = false;
-            this.P_phonenumber_textBox.Location = new System.Drawing.Point(232, 426);
+            this.P_phonenumber_textBox.Location = new System.Drawing.Point(232, 410);
             this.P_phonenumber_textBox.Name = "P_phonenumber_textBox";
             this.P_phonenumber_textBox.Size = new System.Drawing.Size(684, 23);
             this.P_phonenumber_textBox.TabIndex = 8;
             // 
-            // delete_button
+            // labelPatientBirthday
             // 
-            this.delete_button.CornerRoundingRadius = -1F;
-            this.delete_button.Location = new System.Drawing.Point(820, 3);
-            this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(90, 50);
-            this.delete_button.TabIndex = 0;
-            this.delete_button.Values.Text = "Xóa";
-            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
+            this.labelPatientBirthday.AutoSize = true;
+            this.labelPatientBirthday.Location = new System.Drawing.Point(3, 407);
+            this.labelPatientBirthday.Name = "labelPatientBirthday";
+            this.labelPatientBirthday.Size = new System.Drawing.Size(60, 15);
+            this.labelPatientBirthday.TabIndex = 2;
+            this.labelPatientBirthday.Text = "Ngày sinh";
+            // 
+            // labelPatientPhoneNumber
+            // 
+            this.labelPatientPhoneNumber.AutoSize = true;
+            this.labelPatientPhoneNumber.Location = new System.Drawing.Point(3, 319);
+            this.labelPatientPhoneNumber.Name = "labelPatientPhoneNumber";
+            this.labelPatientPhoneNumber.Size = new System.Drawing.Size(80, 15);
+            this.labelPatientPhoneNumber.TabIndex = 0;
+            this.labelPatientPhoneNumber.Text = "Số điện thoại";
             // 
             // tableLayoutPanel4
             // 
@@ -260,12 +270,12 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.25245F));
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
             this.tableLayoutPanel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 516);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 501);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(919, 63);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(919, 61);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // tableLayoutPanel5
@@ -284,37 +294,27 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(913, 57);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(913, 55);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
-            // labelPatientBirthday
+            // edit_button
             // 
-            this.labelPatientBirthday.AutoSize = true;
-            this.labelPatientBirthday.Location = new System.Drawing.Point(3, 423);
-            this.labelPatientBirthday.Name = "labelPatientBirthday";
-            this.labelPatientBirthday.Size = new System.Drawing.Size(60, 15);
-            this.labelPatientBirthday.TabIndex = 2;
-            this.labelPatientBirthday.Text = "Ngày sinh";
+            this.edit_button.CornerRoundingRadius = -1F;
+            this.edit_button.Location = new System.Drawing.Point(722, 3);
+            this.edit_button.Name = "edit_button";
+            this.edit_button.Size = new System.Drawing.Size(92, 49);
+            this.edit_button.TabIndex = 1;
+            this.edit_button.Values.Text = "Chỉnh sửa";
             // 
-            // P_dateofbirth_textBox
+            // delete_button
             // 
-            this.P_dateofbirth_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_dateofbirth_textBox.Enabled = false;
-            this.P_dateofbirth_textBox.Location = new System.Drawing.Point(232, 338);
-            this.P_dateofbirth_textBox.Name = "P_dateofbirth_textBox";
-            this.P_dateofbirth_textBox.Size = new System.Drawing.Size(684, 23);
-            this.P_dateofbirth_textBox.TabIndex = 9;
-            // 
-            // labelPatientPhoneNumber
-            // 
-            this.labelPatientPhoneNumber.AutoSize = true;
-            this.labelPatientPhoneNumber.Location = new System.Drawing.Point(3, 335);
-            this.labelPatientPhoneNumber.Name = "labelPatientPhoneNumber";
-            this.labelPatientPhoneNumber.Size = new System.Drawing.Size(80, 15);
-            this.labelPatientPhoneNumber.TabIndex = 0;
-            this.labelPatientPhoneNumber.Text = "Số điện thoại";
+            this.delete_button.CornerRoundingRadius = -1F;
+            this.delete_button.Location = new System.Drawing.Point(820, 3);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(90, 49);
+            this.delete_button.TabIndex = 0;
+            this.delete_button.Values.Text = "Xóa";
+            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -331,14 +331,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(931, 596);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(931, 579);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // PM_DetailPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 607);
+            this.ClientSize = new System.Drawing.Size(936, 590);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "PM_DetailPatientForm";
             this.Text = "PM_DetailPatientForm";
