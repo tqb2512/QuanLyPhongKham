@@ -68,9 +68,9 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(966, 610);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(977, 734);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -87,7 +87,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(960, 524);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(971, 656);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -114,7 +114,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(954, 256);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(965, 322);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // S_ID_label
@@ -129,7 +129,7 @@
             // S_name_label
             // 
             this.S_name_label.AutoSize = true;
-            this.S_name_label.Location = new System.Drawing.Point(3, 64);
+            this.S_name_label.Location = new System.Drawing.Point(3, 80);
             this.S_name_label.Name = "S_name_label";
             this.S_name_label.Size = new System.Drawing.Size(70, 15);
             this.S_name_label.TabIndex = 1;
@@ -138,7 +138,7 @@
             // S_price_label
             // 
             this.S_price_label.AutoSize = true;
-            this.S_price_label.Location = new System.Drawing.Point(3, 128);
+            this.S_price_label.Location = new System.Drawing.Point(3, 160);
             this.S_price_label.Name = "S_price_label";
             this.S_price_label.Size = new System.Drawing.Size(25, 15);
             this.S_price_label.TabIndex = 2;
@@ -147,7 +147,7 @@
             // S_unit_label
             // 
             this.S_unit_label.AutoSize = true;
-            this.S_unit_label.Location = new System.Drawing.Point(3, 192);
+            this.S_unit_label.Location = new System.Drawing.Point(3, 240);
             this.S_unit_label.Name = "S_unit_label";
             this.S_unit_label.Size = new System.Drawing.Size(69, 15);
             this.S_unit_label.TabIndex = 3;
@@ -159,9 +159,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.S_ID_textBox.Enabled = false;
-            this.S_ID_textBox.Location = new System.Drawing.Point(241, 3);
+            this.S_ID_textBox.Location = new System.Drawing.Point(244, 3);
             this.S_ID_textBox.Name = "S_ID_textBox";
-            this.S_ID_textBox.Size = new System.Drawing.Size(710, 23);
+            this.S_ID_textBox.Size = new System.Drawing.Size(718, 23);
             this.S_ID_textBox.TabIndex = 4;
             // 
             // S_name_textBox
@@ -170,9 +170,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.S_name_textBox.Enabled = false;
-            this.S_name_textBox.Location = new System.Drawing.Point(241, 67);
+            this.S_name_textBox.Location = new System.Drawing.Point(244, 83);
             this.S_name_textBox.Name = "S_name_textBox";
-            this.S_name_textBox.Size = new System.Drawing.Size(710, 23);
+            this.S_name_textBox.Size = new System.Drawing.Size(718, 23);
             this.S_name_textBox.TabIndex = 5;
             // 
             // S_price_textBox
@@ -181,9 +181,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.S_price_textBox.Enabled = false;
-            this.S_price_textBox.Location = new System.Drawing.Point(241, 131);
+            this.S_price_textBox.Location = new System.Drawing.Point(244, 163);
             this.S_price_textBox.Name = "S_price_textBox";
-            this.S_price_textBox.Size = new System.Drawing.Size(710, 23);
+            this.S_price_textBox.Size = new System.Drawing.Size(718, 23);
             this.S_price_textBox.TabIndex = 6;
             // 
             // S_unit_textBox
@@ -192,9 +192,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.S_unit_textBox.Enabled = false;
-            this.S_unit_textBox.Location = new System.Drawing.Point(241, 195);
+            this.S_unit_textBox.Location = new System.Drawing.Point(244, 243);
             this.S_unit_textBox.Name = "S_unit_textBox";
-            this.S_unit_textBox.Size = new System.Drawing.Size(710, 23);
+            this.S_unit_textBox.Size = new System.Drawing.Size(718, 23);
             this.S_unit_textBox.TabIndex = 7;
             // 
             // tableLayoutPanel4
@@ -208,11 +208,11 @@
             this.tableLayoutPanel4.Controls.Add(this.S_description_label, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.S_description_richTextBox, 1, 0);
             this.tableLayoutPanel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 265);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 331);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(954, 256);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(965, 322);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // S_description_label
@@ -229,9 +229,9 @@
             this.S_description_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.S_description_richTextBox.Enabled = false;
-            this.S_description_richTextBox.Location = new System.Drawing.Point(241, 3);
+            this.S_description_richTextBox.Location = new System.Drawing.Point(244, 3);
             this.S_description_richTextBox.Name = "S_description_richTextBox";
-            this.S_description_richTextBox.Size = new System.Drawing.Size(710, 250);
+            this.S_description_richTextBox.Size = new System.Drawing.Size(718, 214);
             this.S_description_richTextBox.TabIndex = 1;
             this.S_description_richTextBox.Text = "";
             // 
@@ -245,11 +245,11 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 2, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 533);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 665);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(960, 74);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(971, 66);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // tableLayoutPanel6
@@ -260,11 +260,11 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.delete_button, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.edit_button, 1, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(648, 4);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(659, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(309, 67);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(309, 60);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // delete_button
@@ -272,7 +272,7 @@
             this.delete_button.CornerRoundingRadius = -1F;
             this.delete_button.Location = new System.Drawing.Point(3, 3);
             this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(148, 60);
+            this.delete_button.Size = new System.Drawing.Size(148, 54);
             this.delete_button.TabIndex = 0;
             this.delete_button.Values.Text = "Xóa";
             // 
@@ -281,7 +281,7 @@
             this.edit_button.CornerRoundingRadius = -1F;
             this.edit_button.Location = new System.Drawing.Point(157, 3);
             this.edit_button.Name = "edit_button";
-            this.edit_button.Size = new System.Drawing.Size(148, 60);
+            this.edit_button.Size = new System.Drawing.Size(148, 54);
             this.edit_button.TabIndex = 1;
             this.edit_button.Values.Text = "Chỉnh sửa";
             // 

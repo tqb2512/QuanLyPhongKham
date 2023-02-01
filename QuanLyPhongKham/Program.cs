@@ -11,7 +11,7 @@ namespace QuanLyPhongKham
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new GUI.PatientManagement.PM_PanelForm());
+            Application.Run(new GUI.MainForm.MF_MainForm());
             //Application.Run(new GUI.ServiceManagement.SM_DetailServiceForm());
         }
     }

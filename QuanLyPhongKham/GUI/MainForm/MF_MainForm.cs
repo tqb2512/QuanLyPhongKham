@@ -59,9 +59,16 @@ namespace QuanLyPhongKham.GUI.MainForm
             addToTabControl(new SM_PanelForm(), "Quản lý dịch vụ");
         }
 
+
+        
         private void MF_MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void bệnhNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addToTabControl(new PM_PanelForm(), "Quản lý bệnh nhân");
         }
     }
 }
