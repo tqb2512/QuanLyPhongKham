@@ -122,7 +122,7 @@
             this.S_ID_label.AutoSize = true;
             this.S_ID_label.Location = new System.Drawing.Point(3, 0);
             this.S_ID_label.Name = "S_ID_label";
-            this.S_ID_label.Size = new System.Drawing.Size(115, 30);
+            this.S_ID_label.Size = new System.Drawing.Size(65, 15);
             this.S_ID_label.TabIndex = 0;
             this.S_ID_label.Text = "ID Dịch vụ";
             // 
@@ -131,7 +131,7 @@
             this.S_name_label.AutoSize = true;
             this.S_name_label.Location = new System.Drawing.Point(3, 101);
             this.S_name_label.Name = "S_name_label";
-            this.S_name_label.Size = new System.Drawing.Size(125, 30);
+            this.S_name_label.Size = new System.Drawing.Size(70, 15);
             this.S_name_label.TabIndex = 1;
             this.S_name_label.Text = "Tên dịch vụ";
             // 
@@ -140,7 +140,7 @@
             this.S_price_label.AutoSize = true;
             this.S_price_label.Location = new System.Drawing.Point(3, 202);
             this.S_price_label.Name = "S_price_label";
-            this.S_price_label.Size = new System.Drawing.Size(45, 30);
+            this.S_price_label.Size = new System.Drawing.Size(25, 15);
             this.S_price_label.TabIndex = 2;
             this.S_price_label.Text = "Giá";
             // 
@@ -149,7 +149,7 @@
             this.S_unit_label.AutoSize = true;
             this.S_unit_label.Location = new System.Drawing.Point(3, 303);
             this.S_unit_label.Name = "S_unit_label";
-            this.S_unit_label.Size = new System.Drawing.Size(123, 30);
+            this.S_unit_label.Size = new System.Drawing.Size(69, 15);
             this.S_unit_label.TabIndex = 3;
             this.S_unit_label.Text = "Đơn vị tính";
             // 
@@ -161,7 +161,7 @@
             this.S_ID_textBox.Enabled = false;
             this.S_ID_textBox.Location = new System.Drawing.Point(238, 3);
             this.S_ID_textBox.Name = "S_ID_textBox";
-            this.S_ID_textBox.Size = new System.Drawing.Size(699, 35);
+            this.S_ID_textBox.Size = new System.Drawing.Size(699, 23);
             this.S_ID_textBox.TabIndex = 4;
             // 
             // S_name_textBox
@@ -172,7 +172,7 @@
             this.S_name_textBox.Enabled = false;
             this.S_name_textBox.Location = new System.Drawing.Point(238, 104);
             this.S_name_textBox.Name = "S_name_textBox";
-            this.S_name_textBox.Size = new System.Drawing.Size(699, 35);
+            this.S_name_textBox.Size = new System.Drawing.Size(699, 23);
             this.S_name_textBox.TabIndex = 5;
             // 
             // S_price_textBox
@@ -183,7 +183,7 @@
             this.S_price_textBox.Enabled = false;
             this.S_price_textBox.Location = new System.Drawing.Point(238, 205);
             this.S_price_textBox.Name = "S_price_textBox";
-            this.S_price_textBox.Size = new System.Drawing.Size(699, 35);
+            this.S_price_textBox.Size = new System.Drawing.Size(699, 23);
             this.S_price_textBox.TabIndex = 6;
             // 
             // S_unit_textBox
@@ -194,7 +194,7 @@
             this.S_unit_textBox.Enabled = false;
             this.S_unit_textBox.Location = new System.Drawing.Point(238, 306);
             this.S_unit_textBox.Name = "S_unit_textBox";
-            this.S_unit_textBox.Size = new System.Drawing.Size(699, 35);
+            this.S_unit_textBox.Size = new System.Drawing.Size(699, 23);
             this.S_unit_textBox.TabIndex = 7;
             // 
             // tableLayoutPanel4
@@ -220,7 +220,7 @@
             this.S_description_label.AutoSize = true;
             this.S_description_label.Location = new System.Drawing.Point(3, 0);
             this.S_description_label.Name = "S_description_label";
-            this.S_description_label.Size = new System.Drawing.Size(71, 30);
+            this.S_description_label.Size = new System.Drawing.Size(39, 15);
             this.S_description_label.TabIndex = 0;
             this.S_description_label.Text = "Mô tả";
             // 
@@ -287,10 +287,10 @@
             // 
             // SM_DetailServiceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(976, 936);
+            this.ClientSize = new System.Drawing.Size(976, 749);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Name = "SM_DetailServiceForm";

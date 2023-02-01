@@ -56,7 +56,7 @@ namespace QuanLyPhongKham.Function.PatientManagement
             try
             {
                 SqlConnection connection = new SqlConnection(connectionString);
-                string query = "SELECT Patient_ID, Patient_NAME, Patient_PRICE, Patient_UNIT, Patient_DESCRIPTION FROM Patient WHERE Patient_ID = '" + PatientID + "'";
+                string query = "SELECT Patient_ID, Patient_NAME, Patient_SEX, Patient_ADDRESS, Patient_PHONENUMBER, PATIENT_DATEOFBIRTH FROM Patient WHERE Patient_ID = '" + PatientID + "'";
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
