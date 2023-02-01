@@ -63,7 +63,7 @@
             this.servicesDataGridView.RowHeadersVisible = false;
             this.servicesDataGridView.RowHeadersWidth = 72;
             this.servicesDataGridView.RowTemplate.Height = 37;
-            this.servicesDataGridView.Size = new System.Drawing.Size(435, 140);
+            this.servicesDataGridView.Size = new System.Drawing.Size(439, 140);
             this.servicesDataGridView.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -83,7 +83,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(439, 206);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(443, 206);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // search_TableLayout
@@ -107,7 +107,7 @@
             this.search_TableLayout.Name = "search_TableLayout";
             this.search_TableLayout.RowCount = 1;
             this.search_TableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.search_TableLayout.Size = new System.Drawing.Size(435, 18);
+            this.search_TableLayout.Size = new System.Drawing.Size(439, 18);
             this.search_TableLayout.TabIndex = 1;
             // 
             // idSearch_textBox
@@ -166,7 +166,7 @@
             this.descriptionSearch_textBox.Location = new System.Drawing.Point(350, 2);
             this.descriptionSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.descriptionSearch_textBox.Name = "descriptionSearch_textBox";
-            this.descriptionSearch_textBox.Size = new System.Drawing.Size(83, 23);
+            this.descriptionSearch_textBox.Size = new System.Drawing.Size(87, 23);
             this.descriptionSearch_textBox.TabIndex = 4;
             this.descriptionSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -184,7 +184,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(435, 36);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(439, 36);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -194,7 +194,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.add_button, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(219, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(223, 2);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
