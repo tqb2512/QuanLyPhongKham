@@ -74,6 +74,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.servicesDataGridView.ColumnHeadersHeight = 70;
+            this.servicesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.servicesDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.servicesDataGridView.Location = new System.Drawing.Point(3, 46);
             this.servicesDataGridView.Name = "servicesDataGridView";
             this.servicesDataGridView.RowHeadersVisible = false;

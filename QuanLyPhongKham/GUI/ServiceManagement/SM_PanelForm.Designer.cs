@@ -40,7 +40,7 @@
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(776, 436);
-            this.mainPanel.SplitterDistance = 388;
+            this.mainPanel.SplitterDistance = 385;
             this.mainPanel.TabIndex = 0;
             // 
             // SM_PanelForm

@@ -65,7 +65,5 @@ namespace QuanLyPhongKham.GUI.ServiceManagement
                 MessageBox.Show("Xóa thất bại");
             }
         }
-
-
     }
 }

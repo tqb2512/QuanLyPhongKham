@@ -1,6 +1,6 @@
-﻿namespace QuanLyPhongKham.GUI.MedicalRecordManagement
+﻿namespace QuanLyPhongKham.GUI.EmployeeManagement
 {
-    partial class MRM_PanelForm
+    partial class EM_PanelForm
     {
         /// <summary>
         /// Required designer variable.
@@ -36,23 +36,24 @@
             // 
             // mainPanel
             // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(776, 436);
             this.mainPanel.SplitterDistance = 385;
             this.mainPanel.TabIndex = 0;
             // 
-            // MRM_PanelForm
+            // EM_PanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(776, 436);
             this.Controls.Add(this.mainPanel);
-            this.Name = "MRM_PanelForm";
-            this.Text = "MRM_PanelForm";
-            this.Load += new System.EventHandler(this.MRM_PanelForm_Load);
+            this.Name = "EM_PanelForm";
+            this.Text = "EM_PanelForm";
+            this.Load += new System.EventHandler(this.EM_PanelForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel.Panel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel.Panel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel)).EndInit();

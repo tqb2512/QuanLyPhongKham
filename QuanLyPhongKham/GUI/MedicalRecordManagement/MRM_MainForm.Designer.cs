@@ -55,11 +55,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.medicalRecordDataGrid.ColumnHeadersHeight = 70;
+            this.medicalRecordDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.medicalRecordDataGrid.Location = new System.Drawing.Point(3, 46);
             this.medicalRecordDataGrid.Name = "medicalRecordDataGrid";
             this.medicalRecordDataGrid.ReadOnly = true;
             this.medicalRecordDataGrid.RowHeadersVisible = false;
             this.medicalRecordDataGrid.RowHeadersWidth = 72;
+            this.medicalRecordDataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.medicalRecordDataGrid.RowTemplate.Height = 37;
             this.medicalRecordDataGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.medicalRecordDataGrid.Size = new System.Drawing.Size(946, 783);
@@ -209,6 +211,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(976, 936);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Name = "MRM_MainForm";
             this.Text = "MRM_MainForm";
             this.Load += new System.EventHandler(this.MRM_MainForm_Load);

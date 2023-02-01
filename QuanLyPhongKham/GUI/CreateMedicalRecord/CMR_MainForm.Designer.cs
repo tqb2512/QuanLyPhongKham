@@ -55,8 +55,8 @@
             this.MR_pTemp_Label = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.P_PhoneNumber_TextBox = new System.Windows.Forms.TextBox();
+            this.P_Sex_ComboBox = new Krypton.Toolkit.KryptonComboBox();
             this.P_Sex_Label = new System.Windows.Forms.Label();
-            this.P_Sex_TextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.P_Address_TextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -70,7 +70,6 @@
             this.MR_note_richTextBox = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.confirm_Button = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.MainLayout_TableLayoutPanel.SuspendLayout();
             this.Prescription_GroupBox.SuspendLayout();
             this.Prescription_TableLayoutPanel.SuspendLayout();
@@ -85,6 +84,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.P_Sex_ComboBox)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
@@ -127,7 +127,7 @@
             this.Prescription_GroupBox.Location = new System.Drawing.Point(3, 428);
             this.Prescription_GroupBox.Name = "Prescription_GroupBox";
             this.Prescription_GroupBox.Size = new System.Drawing.Size(719, 419);
-            this.Prescription_GroupBox.TabIndex = 1;
+            this.Prescription_GroupBox.TabIndex = 2;
             this.Prescription_GroupBox.TabStop = false;
             this.Prescription_GroupBox.Text = "Toa thuốc";
             // 
@@ -163,7 +163,7 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(700, 54);
-            this.tableLayoutPanel1.TabIndex = 2;
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // D_AddDrugToList_Button
             // 
@@ -188,6 +188,7 @@
             this.Drugs_DataGridView.ColumnHeadersHeight = 70;
             this.Drugs_DataGridView.Location = new System.Drawing.Point(3, 63);
             this.Drugs_DataGridView.Name = "Drugs_DataGridView";
+            this.Drugs_DataGridView.ReadOnly = true;
             this.Drugs_DataGridView.RowHeadersVisible = false;
             this.Drugs_DataGridView.RowHeadersWidth = 72;
             this.Drugs_DataGridView.RowTemplate.Height = 37;
@@ -204,7 +205,7 @@
             this.Service_GroupBox.Location = new System.Drawing.Point(728, 428);
             this.Service_GroupBox.Name = "Service_GroupBox";
             this.Service_GroupBox.Size = new System.Drawing.Size(719, 419);
-            this.Service_GroupBox.TabIndex = 2;
+            this.Service_GroupBox.TabIndex = 3;
             this.Service_GroupBox.TabStop = false;
             this.Service_GroupBox.Text = "Dịch vụ";
             // 
@@ -240,7 +241,7 @@
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(700, 54);
-            this.tableLayoutPanel3.TabIndex = 2;
+            this.tableLayoutPanel3.TabIndex = 0;
             // 
             // S_AddServiceToList_Button
             // 
@@ -265,6 +266,7 @@
             this.Services_DataGridView.ColumnHeadersHeight = 70;
             this.Services_DataGridView.Location = new System.Drawing.Point(3, 63);
             this.Services_DataGridView.Name = "Services_DataGridView";
+            this.Services_DataGridView.ReadOnly = true;
             this.Services_DataGridView.RowHeadersVisible = false;
             this.Services_DataGridView.RowHeadersWidth = 72;
             this.Services_DataGridView.RowTemplate.Height = 37;
@@ -367,7 +369,7 @@
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(524, 56);
-            this.tableLayoutPanel4.TabIndex = 9;
+            this.tableLayoutPanel4.TabIndex = 1;
             // 
             // SelectPatient_Button
             // 
@@ -376,7 +378,7 @@
             this.SelectPatient_Button.Location = new System.Drawing.Point(3, 3);
             this.SelectPatient_Button.Name = "SelectPatient_Button";
             this.SelectPatient_Button.Size = new System.Drawing.Size(256, 48);
-            this.SelectPatient_Button.TabIndex = 8;
+            this.SelectPatient_Button.TabIndex = 0;
             this.SelectPatient_Button.Text = "Chọn bệnh nhân";
             this.SelectPatient_Button.UseVisualStyleBackColor = true;
             this.SelectPatient_Button.Click += new System.EventHandler(this.SelectPatient_Button_Click);
@@ -388,7 +390,7 @@
             this.AddPantient_Button.Location = new System.Drawing.Point(265, 3);
             this.AddPantient_Button.Name = "AddPantient_Button";
             this.AddPantient_Button.Size = new System.Drawing.Size(256, 48);
-            this.AddPantient_Button.TabIndex = 9;
+            this.AddPantient_Button.TabIndex = 1;
             this.AddPantient_Button.Text = "Thêm bệnh nhân";
             this.AddPantient_Button.UseVisualStyleBackColor = true;
             this.AddPantient_Button.Click += new System.EventHandler(this.AddPantient_Button_Click);
@@ -410,7 +412,7 @@
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(524, 62);
-            this.tableLayoutPanel5.TabIndex = 10;
+            this.tableLayoutPanel5.TabIndex = 8;
             // 
             // MR_pTemp_TextBox
             // 
@@ -421,6 +423,7 @@
             this.MR_pTemp_TextBox.Name = "MR_pTemp_TextBox";
             this.MR_pTemp_TextBox.Size = new System.Drawing.Size(168, 35);
             this.MR_pTemp_TextBox.TabIndex = 0;
+            this.MR_pTemp_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MR_pTemp_TextBox_KeyDown);
             // 
             // MR_pWeight_TextBox
             // 
@@ -430,7 +433,8 @@
             this.MR_pWeight_TextBox.Location = new System.Drawing.Point(351, 3);
             this.MR_pWeight_TextBox.Name = "MR_pWeight_TextBox";
             this.MR_pWeight_TextBox.Size = new System.Drawing.Size(170, 35);
-            this.MR_pWeight_TextBox.TabIndex = 1;
+            this.MR_pWeight_TextBox.TabIndex = 0;
+            this.MR_pWeight_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MR_pWeight_TextBox_KeyDown);
             // 
             // MR_pWeight_label
             // 
@@ -461,14 +465,14 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33555F));
             this.tableLayoutPanel7.Controls.Add(this.P_PhoneNumber_TextBox, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.P_Sex_ComboBox, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.P_Sex_Label, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.P_Sex_TextBox, 2, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(179, 189);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(524, 56);
-            this.tableLayoutPanel7.TabIndex = 12;
+            this.tableLayoutPanel7.TabIndex = 5;
             // 
             // P_PhoneNumber_TextBox
             // 
@@ -480,7 +484,25 @@
             this.P_PhoneNumber_TextBox.Name = "P_PhoneNumber_TextBox";
             this.P_PhoneNumber_TextBox.ReadOnly = true;
             this.P_PhoneNumber_TextBox.Size = new System.Drawing.Size(168, 35);
-            this.P_PhoneNumber_TextBox.TabIndex = 6;
+            this.P_PhoneNumber_TextBox.TabIndex = 0;
+            this.P_PhoneNumber_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_PhoneNumber_TextBox_KeyDown);
+            // 
+            // P_Sex_ComboBox
+            // 
+            this.P_Sex_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.P_Sex_ComboBox.CornerRoundingRadius = -1F;
+            this.P_Sex_ComboBox.DropDownWidth = 170;
+            this.P_Sex_ComboBox.IntegralHeight = false;
+            this.P_Sex_ComboBox.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.P_Sex_ComboBox.Location = new System.Drawing.Point(351, 3);
+            this.P_Sex_ComboBox.Name = "P_Sex_ComboBox";
+            this.P_Sex_ComboBox.Size = new System.Drawing.Size(170, 33);
+            this.P_Sex_ComboBox.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.P_Sex_ComboBox.TabIndex = 0;
+            this.P_Sex_ComboBox.Text = "Nam";
             // 
             // P_Sex_Label
             // 
@@ -489,20 +511,8 @@
             this.P_Sex_Label.Location = new System.Drawing.Point(251, 0);
             this.P_Sex_Label.Name = "P_Sex_Label";
             this.P_Sex_Label.Size = new System.Drawing.Size(94, 30);
-            this.P_Sex_Label.TabIndex = 7;
+            this.P_Sex_Label.TabIndex = 1;
             this.P_Sex_Label.Text = "Giới tính";
-            // 
-            // P_Sex_TextBox
-            // 
-            this.P_Sex_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_Sex_TextBox.Enabled = false;
-            this.P_Sex_TextBox.Location = new System.Drawing.Point(351, 3);
-            this.P_Sex_TextBox.Name = "P_Sex_TextBox";
-            this.P_Sex_TextBox.ReadOnly = true;
-            this.P_Sex_TextBox.Size = new System.Drawing.Size(170, 35);
-            this.P_Sex_TextBox.TabIndex = 8;
             // 
             // tableLayoutPanel8
             // 
@@ -517,7 +527,7 @@
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(524, 56);
-            this.tableLayoutPanel8.TabIndex = 13;
+            this.tableLayoutPanel8.TabIndex = 3;
             // 
             // P_Address_TextBox
             // 
@@ -529,7 +539,7 @@
             this.P_Address_TextBox.Name = "P_Address_TextBox";
             this.P_Address_TextBox.ReadOnly = true;
             this.P_Address_TextBox.Size = new System.Drawing.Size(518, 35);
-            this.P_Address_TextBox.TabIndex = 5;
+            this.P_Address_TextBox.TabIndex = 0;
             // 
             // tableLayoutPanel9
             // 
@@ -544,7 +554,7 @@
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(524, 56);
-            this.tableLayoutPanel9.TabIndex = 14;
+            this.tableLayoutPanel9.TabIndex = 2;
             // 
             // P_Name_TextBox
             // 
@@ -556,7 +566,7 @@
             this.P_Name_TextBox.Name = "P_Name_TextBox";
             this.P_Name_TextBox.ReadOnly = true;
             this.P_Name_TextBox.Size = new System.Drawing.Size(518, 35);
-            this.P_Name_TextBox.TabIndex = 4;
+            this.P_Name_TextBox.TabIndex = 0;
             // 
             // tableLayoutPanel11
             // 
@@ -571,7 +581,7 @@
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.Size = new System.Drawing.Size(524, 56);
-            this.tableLayoutPanel11.TabIndex = 15;
+            this.tableLayoutPanel11.TabIndex = 6;
             // 
             // P_DateOfBirth_DateTimePicker
             // 
@@ -584,7 +594,7 @@
             this.P_DateOfBirth_DateTimePicker.Location = new System.Drawing.Point(3, 3);
             this.P_DateOfBirth_DateTimePicker.Name = "P_DateOfBirth_DateTimePicker";
             this.P_DateOfBirth_DateTimePicker.Size = new System.Drawing.Size(518, 35);
-            this.P_DateOfBirth_DateTimePicker.TabIndex = 7;
+            this.P_DateOfBirth_DateTimePicker.TabIndex = 0;
             // 
             // tableLayoutPanel6
             // 
@@ -601,7 +611,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(719, 419);
-            this.tableLayoutPanel6.TabIndex = 3;
+            this.tableLayoutPanel6.TabIndex = 1;
             // 
             // MR_diagnosis_groupBox
             // 
@@ -672,8 +682,8 @@
             this.confirm_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.confirm_Button.Location = new System.Drawing.Point(532, 3);
             this.confirm_Button.Name = "confirm_Button";
-            this.confirm_Button.Size = new System.Drawing.Size(184, 49);
-            this.confirm_Button.TabIndex = 4;
+            this.confirm_Button.Size = new System.Drawing.Size(184, 48);
+            this.confirm_Button.TabIndex = 0;
             this.confirm_Button.Text = "Xác nhận";
             this.confirm_Button.UseVisualStyleBackColor = true;
             this.confirm_Button.Click += new System.EventHandler(this.confirm_Button_Click);
@@ -705,6 +715,7 @@
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.P_Sex_ComboBox)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
@@ -723,7 +734,6 @@
         private TableLayoutPanel MainLayout_TableLayoutPanel;
         private GroupBox Patient_GroupBox;
         private TableLayoutPanel Patient_TableLayoutPanel;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label P_Name_Label;
         private Label P_Address_Label;
         private Label P_PhoneNumber_Label;
@@ -755,7 +765,6 @@
         private RichTextBox MR_note_richTextBox;
         private TableLayoutPanel tableLayoutPanel7;
         private Label P_Sex_Label;
-        private TextBox P_Sex_TextBox;
         private TableLayoutPanel tableLayoutPanel8;
         private TableLayoutPanel tableLayoutPanel9;
         private Button confirm_Button;
@@ -763,5 +772,6 @@
         private Krypton.Toolkit.KryptonDataGridView Services_DataGridView;
         private TableLayoutPanel tableLayoutPanel11;
         private TableLayoutPanel tableLayoutPanel10;
+        private Krypton.Toolkit.KryptonComboBox P_Sex_ComboBox;
     }
 }
