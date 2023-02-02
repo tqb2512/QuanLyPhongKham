@@ -31,7 +31,6 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.PatientID = new System.Windows.Forms.Label();
             this.P_dateofbirth_textBox = new System.Windows.Forms.TextBox();
@@ -45,17 +44,12 @@
             this.P_phonenumber_textBox = new System.Windows.Forms.TextBox();
             this.labelPatientBirthday = new System.Windows.Forms.Label();
             this.labelPatientPhoneNumber = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.edit_button = new Krypton.Toolkit.KryptonButton();
             this.delete_button = new Krypton.Toolkit.KryptonButton();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel7
@@ -90,31 +84,14 @@
             this.kryptonButton2.TabIndex = 1;
             this.kryptonButton2.Values.Text = "Chỉnh sửa";
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.31615F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.68385F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(925, 565);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel3.Controls.Add(this.PatientID, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.P_dateofbirth_textBox, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.labelPatientName, 0, 1);
@@ -127,18 +104,20 @@
             this.tableLayoutPanel3.Controls.Add(this.P_phonenumber_textBox, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.labelPatientBirthday, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.labelPatientPhoneNumber, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 1, 6);
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(9, 12);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 6;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.77341F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.07553F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.67976F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.4713F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(919, 492);
-            this.tableLayoutPanel3.TabIndex = 0;
+            this.tableLayoutPanel3.RowCount = 7;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(991, 567);
+            this.tableLayoutPanel3.TabIndex = 1;
             // 
             // PatientID
             // 
@@ -155,15 +134,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_dateofbirth_textBox.Enabled = false;
-            this.P_dateofbirth_textBox.Location = new System.Drawing.Point(232, 322);
+            this.P_dateofbirth_textBox.Location = new System.Drawing.Point(201, 343);
             this.P_dateofbirth_textBox.Name = "P_dateofbirth_textBox";
-            this.P_dateofbirth_textBox.Size = new System.Drawing.Size(684, 23);
+            this.P_dateofbirth_textBox.Size = new System.Drawing.Size(787, 23);
             this.P_dateofbirth_textBox.TabIndex = 9;
             // 
             // labelPatientName
             // 
             this.labelPatientName.AutoSize = true;
-            this.labelPatientName.Location = new System.Drawing.Point(3, 79);
+            this.labelPatientName.Location = new System.Drawing.Point(3, 85);
             this.labelPatientName.Name = "labelPatientName";
             this.labelPatientName.Size = new System.Drawing.Size(88, 15);
             this.labelPatientName.TabIndex = 1;
@@ -172,7 +151,7 @@
             // labelPatientGender
             // 
             this.labelPatientGender.AutoSize = true;
-            this.labelPatientGender.Location = new System.Drawing.Point(3, 159);
+            this.labelPatientGender.Location = new System.Drawing.Point(3, 170);
             this.labelPatientGender.Name = "labelPatientGender";
             this.labelPatientGender.Size = new System.Drawing.Size(55, 15);
             this.labelPatientGender.TabIndex = 2;
@@ -182,7 +161,7 @@
             // 
             this.labelPatientAddress.AutoSize = true;
             this.labelPatientAddress.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.labelPatientAddress.Location = new System.Drawing.Point(3, 241);
+            this.labelPatientAddress.Location = new System.Drawing.Point(3, 255);
             this.labelPatientAddress.Name = "labelPatientAddress";
             this.labelPatientAddress.Size = new System.Drawing.Size(44, 15);
             this.labelPatientAddress.TabIndex = 3;
@@ -194,9 +173,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_ID_textBox.Enabled = false;
-            this.P_ID_textBox.Location = new System.Drawing.Point(232, 3);
+            this.P_ID_textBox.Location = new System.Drawing.Point(201, 3);
             this.P_ID_textBox.Name = "P_ID_textBox";
-            this.P_ID_textBox.Size = new System.Drawing.Size(684, 23);
+            this.P_ID_textBox.Size = new System.Drawing.Size(787, 23);
             this.P_ID_textBox.TabIndex = 4;
             // 
             // P_name_textBox
@@ -205,9 +184,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_name_textBox.Enabled = false;
-            this.P_name_textBox.Location = new System.Drawing.Point(232, 82);
+            this.P_name_textBox.Location = new System.Drawing.Point(201, 88);
             this.P_name_textBox.Name = "P_name_textBox";
-            this.P_name_textBox.Size = new System.Drawing.Size(684, 23);
+            this.P_name_textBox.Size = new System.Drawing.Size(787, 23);
             this.P_name_textBox.TabIndex = 5;
             // 
             // P_sex_textBox
@@ -216,9 +195,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_sex_textBox.Enabled = false;
-            this.P_sex_textBox.Location = new System.Drawing.Point(232, 162);
+            this.P_sex_textBox.Location = new System.Drawing.Point(201, 173);
             this.P_sex_textBox.Name = "P_sex_textBox";
-            this.P_sex_textBox.Size = new System.Drawing.Size(684, 23);
+            this.P_sex_textBox.Size = new System.Drawing.Size(787, 23);
             this.P_sex_textBox.TabIndex = 6;
             // 
             // P_address_textBox
@@ -227,9 +206,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_address_textBox.Enabled = false;
-            this.P_address_textBox.Location = new System.Drawing.Point(232, 244);
+            this.P_address_textBox.Location = new System.Drawing.Point(201, 258);
             this.P_address_textBox.Name = "P_address_textBox";
-            this.P_address_textBox.Size = new System.Drawing.Size(684, 23);
+            this.P_address_textBox.Size = new System.Drawing.Size(787, 23);
             this.P_address_textBox.TabIndex = 7;
             // 
             // P_phonenumber_textBox
@@ -238,15 +217,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_phonenumber_textBox.Enabled = false;
-            this.P_phonenumber_textBox.Location = new System.Drawing.Point(232, 410);
+            this.P_phonenumber_textBox.Location = new System.Drawing.Point(201, 428);
             this.P_phonenumber_textBox.Name = "P_phonenumber_textBox";
-            this.P_phonenumber_textBox.Size = new System.Drawing.Size(684, 23);
+            this.P_phonenumber_textBox.Size = new System.Drawing.Size(787, 23);
             this.P_phonenumber_textBox.TabIndex = 8;
             // 
             // labelPatientBirthday
             // 
             this.labelPatientBirthday.AutoSize = true;
-            this.labelPatientBirthday.Location = new System.Drawing.Point(3, 407);
+            this.labelPatientBirthday.Location = new System.Drawing.Point(3, 425);
             this.labelPatientBirthday.Name = "labelPatientBirthday";
             this.labelPatientBirthday.Size = new System.Drawing.Size(60, 15);
             this.labelPatientBirthday.TabIndex = 2;
@@ -255,28 +234,11 @@
             // labelPatientPhoneNumber
             // 
             this.labelPatientPhoneNumber.AutoSize = true;
-            this.labelPatientPhoneNumber.Location = new System.Drawing.Point(3, 319);
+            this.labelPatientPhoneNumber.Location = new System.Drawing.Point(3, 340);
             this.labelPatientPhoneNumber.Name = "labelPatientPhoneNumber";
             this.labelPatientPhoneNumber.Size = new System.Drawing.Size(80, 15);
             this.labelPatientPhoneNumber.TabIndex = 0;
             this.labelPatientPhoneNumber.Text = "Số điện thoại";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.25245F));
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
-            this.tableLayoutPanel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 501);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(919, 61);
-            this.tableLayoutPanel4.TabIndex = 1;
             // 
             // tableLayoutPanel5
             // 
@@ -284,72 +246,51 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel5.ColumnCount = 4;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.41354F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.58647F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel5.Controls.Add(this.edit_button, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.delete_button, 3, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(201, 513);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(913, 55);
-            this.tableLayoutPanel5.TabIndex = 1;
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(787, 51);
+            this.tableLayoutPanel5.TabIndex = 11;
             // 
             // edit_button
             // 
             this.edit_button.CornerRoundingRadius = -1F;
-            this.edit_button.Location = new System.Drawing.Point(722, 3);
+            this.edit_button.Location = new System.Drawing.Point(599, 3);
             this.edit_button.Name = "edit_button";
-            this.edit_button.Size = new System.Drawing.Size(92, 49);
+            this.edit_button.Size = new System.Drawing.Size(89, 45);
             this.edit_button.TabIndex = 1;
             this.edit_button.Values.Text = "Chỉnh sửa";
+            this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
             // 
             // delete_button
             // 
             this.delete_button.CornerRoundingRadius = -1F;
-            this.delete_button.Location = new System.Drawing.Point(820, 3);
+            this.delete_button.Location = new System.Drawing.Point(694, 3);
             this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(90, 49);
+            this.delete_button.Size = new System.Drawing.Size(90, 45);
             this.delete_button.TabIndex = 0;
             this.delete_button.Values.Text = "Xóa";
-            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(931, 579);
-            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // PM_DetailPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 590);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1008, 590);
+            this.Controls.Add(this.tableLayoutPanel3);
             this.Name = "PM_DetailPatientForm";
             this.Text = "PM_DetailPatientForm";
             this.Load += new System.EventHandler(this.PM_DetailPatientForm_Load);
             this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -358,9 +299,9 @@
         private TableLayoutPanel tableLayoutPanel7;
         public Krypton.Toolkit.KryptonButton kryptonButton1;
         public Krypton.Toolkit.KryptonButton kryptonButton2;
-        private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel3;
         private Label PatientID;
+        public TextBox P_dateofbirth_textBox;
         private Label labelPatientName;
         private Label labelPatientGender;
         private Label labelPatientAddress;
@@ -368,12 +309,9 @@
         public TextBox P_name_textBox;
         public TextBox P_sex_textBox;
         public TextBox P_address_textBox;
-        private TableLayoutPanel tableLayoutPanel1;
-        public TextBox P_dateofbirth_textBox;
-        private Label labelPatientBirthday;
         public TextBox P_phonenumber_textBox;
+        private Label labelPatientBirthday;
         private Label labelPatientPhoneNumber;
-        private TableLayoutPanel tableLayoutPanel4;
         private TableLayoutPanel tableLayoutPanel5;
         public Krypton.Toolkit.KryptonButton edit_button;
         public Krypton.Toolkit.KryptonButton delete_button;

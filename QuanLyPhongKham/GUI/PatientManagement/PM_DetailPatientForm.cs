@@ -75,5 +75,10 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         {
 
         }
+
+        private void edit_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

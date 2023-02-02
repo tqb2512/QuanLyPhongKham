@@ -32,6 +32,7 @@
             this.patientDataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.search_TableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.idSearch_textBox = new System.Windows.Forms.TextBox();
+            this.nameSearch_textBox = new System.Windows.Forms.TextBox();
             this.phonenumberSearch_textBox = new System.Windows.Forms.TextBox();
             this.dateofbirthSearch_textBox = new System.Windows.Forms.TextBox();
             this.addressSearch_textBox = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.add_button = new Krypton.Toolkit.KryptonButton();
-            this.nameSearch_textBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.patientDataGridView)).BeginInit();
             this.search_TableLayout.SuspendLayout();
@@ -95,12 +95,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.search_TableLayout.ColumnCount = 6;
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.47059F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.52941F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.76471F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.23529F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.search_TableLayout.Controls.Add(this.idSearch_textBox, 0, 0);
             this.search_TableLayout.Controls.Add(this.nameSearch_textBox, 1, 0);
             this.search_TableLayout.Controls.Add(this.phonenumberSearch_textBox, 2, 0);
@@ -123,19 +123,31 @@
             this.idSearch_textBox.Location = new System.Drawing.Point(2, 2);
             this.idSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.idSearch_textBox.Name = "idSearch_textBox";
-            this.idSearch_textBox.Size = new System.Drawing.Size(83, 23);
+            this.idSearch_textBox.Size = new System.Drawing.Size(80, 23);
             this.idSearch_textBox.TabIndex = 0;
             this.idSearch_textBox.TextChanged += new System.EventHandler(this.Search);
+            // 
+            // nameSearch_textBox
+            // 
+            this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameSearch_textBox.Location = new System.Drawing.Point(86, 2);
+            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.nameSearch_textBox.Name = "nameSearch_textBox";
+            this.nameSearch_textBox.Size = new System.Drawing.Size(80, 23);
+            this.nameSearch_textBox.TabIndex = 1;
+            this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // phonenumberSearch_textBox
             // 
             this.phonenumberSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.phonenumberSearch_textBox.Location = new System.Drawing.Point(341, 2);
+            this.phonenumberSearch_textBox.Location = new System.Drawing.Point(338, 2);
             this.phonenumberSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.phonenumberSearch_textBox.Name = "phonenumberSearch_textBox";
-            this.phonenumberSearch_textBox.Size = new System.Drawing.Size(82, 23);
+            this.phonenumberSearch_textBox.Size = new System.Drawing.Size(80, 23);
             this.phonenumberSearch_textBox.TabIndex = 2;
             this.phonenumberSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -144,10 +156,10 @@
             this.dateofbirthSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateofbirthSearch_textBox.Location = new System.Drawing.Point(427, 2);
+            this.dateofbirthSearch_textBox.Location = new System.Drawing.Point(422, 2);
             this.dateofbirthSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.dateofbirthSearch_textBox.Name = "dateofbirthSearch_textBox";
-            this.dateofbirthSearch_textBox.Size = new System.Drawing.Size(78, 23);
+            this.dateofbirthSearch_textBox.Size = new System.Drawing.Size(83, 23);
             this.dateofbirthSearch_textBox.TabIndex = 3;
             this.dateofbirthSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -156,10 +168,10 @@
             this.addressSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addressSearch_textBox.Location = new System.Drawing.Point(172, 2);
+            this.addressSearch_textBox.Location = new System.Drawing.Point(170, 2);
             this.addressSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressSearch_textBox.Name = "addressSearch_textBox";
-            this.addressSearch_textBox.Size = new System.Drawing.Size(81, 23);
+            this.addressSearch_textBox.Size = new System.Drawing.Size(80, 23);
             this.addressSearch_textBox.TabIndex = 5;
             this.addressSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -168,7 +180,7 @@
             this.genderSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.genderSearch_textBox.Location = new System.Drawing.Point(257, 2);
+            this.genderSearch_textBox.Location = new System.Drawing.Point(254, 2);
             this.genderSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.genderSearch_textBox.Name = "genderSearch_textBox";
             this.genderSearch_textBox.Size = new System.Drawing.Size(80, 23);
@@ -216,18 +228,6 @@
             this.add_button.Size = new System.Drawing.Size(120, 41);
             this.add_button.TabIndex = 7;
             this.add_button.Values.Text = "Thêm";
-            // 
-            // nameSearch_textBox
-            // 
-            this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameSearch_textBox.Location = new System.Drawing.Point(89, 2);
-            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
-            this.nameSearch_textBox.Name = "nameSearch_textBox";
-            this.nameSearch_textBox.Size = new System.Drawing.Size(79, 23);
-            this.nameSearch_textBox.TabIndex = 1;
-            this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // PM_MainForm
             // 
