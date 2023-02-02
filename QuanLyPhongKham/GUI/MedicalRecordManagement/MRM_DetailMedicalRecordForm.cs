@@ -96,5 +96,28 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
             S_List_GridView.Columns["Unit"].Width = (int)(S_List_GridView.Width * S_Unit_Width);
             S_List_GridView.Columns["Price"].Width = (int)(S_List_GridView.Width * S_Price_Width);
         }
+
+        private void delete_button_Click(object sender, EventArgs e)
+        {
+            if (MRM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "REMOVE_MEDICALRECORD"))
+            {
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa hồ sơ khám bệnh này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    if (MRM_Functions.deleteMedicalRecord(medicalRecord.ID))
+                    {
+                        MessageBox.Show("Xóa hồ sơ khám bệnh thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa hồ sơ khám bệnh thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền xóa hồ sơ khám bệnh!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

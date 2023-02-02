@@ -70,6 +70,16 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
             return false;
         }
 
+        public static bool deleteMedicalRecord(int medicalRecordId)
+        {
+            string query = "DELETE FROM MEDICALRECORD WHERE MEDICALRECORD_ID = " + medicalRecordId;
+            if (sqlQueryExcute(query) > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public static MedicalRecord getDetailMedicalRecord(int medicalRecordId)
         {
             MedicalRecord medicalRecord = new MedicalRecord();

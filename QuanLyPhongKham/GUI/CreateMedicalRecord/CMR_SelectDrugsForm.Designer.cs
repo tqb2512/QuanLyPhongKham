@@ -147,10 +147,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Drugs_DataGridView.ColumnHeadersHeight = 70;
+            this.Drugs_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Drugs_DataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Drugs_DataGridView.Location = new System.Drawing.Point(3, 46);
             this.Drugs_DataGridView.Name = "Drugs_DataGridView";
             this.Drugs_DataGridView.RowHeadersVisible = false;
             this.Drugs_DataGridView.RowHeadersWidth = 72;
+            this.Drugs_DataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Drugs_DataGridView.RowTemplate.Height = 37;
             this.Drugs_DataGridView.Size = new System.Drawing.Size(946, 583);
             this.Drugs_DataGridView.TabIndex = 1;

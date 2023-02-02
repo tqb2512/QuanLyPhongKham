@@ -115,7 +115,7 @@ namespace QuanLyPhongKham.Function.ServiceManagement
         {
             try
             {
-                string query = "INSERT INTO SERVICE VALUES ('" + service.ID + "', '" + service.Name + "', '" +service.Unit + "', CONVERT(MONEY, " + service.Price + "), '" + service.Description + "')";
+                string query = "INSERT INTO SERVICE VALUES ('" + service.ID + "', N'" + service.Name + "', N'" +service.Unit + "', CONVERT(MONEY, " + service.Price + "), N'" + service.Description + "')";
                 if (sqlQueryExcute(query) > 0)
                 {
                     return true;

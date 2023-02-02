@@ -28,31 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.mainPanel = new Krypton.Toolkit.KryptonSplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel.Panel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainPanel.Panel2)).BeginInit();
             this.SuspendLayout();
             // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(5, 436);
-            this.splitter1.TabIndex = 0;
-            this.splitter1.TabStop = false;
-            // 
             // mainPanel
             // 
-            this.mainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainPanel.Location = new System.Drawing.Point(5, 0);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(771, 436);
+            this.mainPanel.Size = new System.Drawing.Size(776, 436);
             this.mainPanel.SplitterDistance = 385;
-            this.mainPanel.TabIndex = 1;
+            this.mainPanel.TabIndex = 0;
             // 
             // MRM_PanelForm
             // 
@@ -61,7 +50,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(776, 436);
             this.Controls.Add(this.mainPanel);
-            this.Controls.Add(this.splitter1);
             this.Name = "MRM_PanelForm";
             this.Text = "MRM_PanelForm";
             this.Load += new System.EventHandler(this.MRM_PanelForm_Load);
@@ -74,7 +62,6 @@
 
         #endregion
 
-        private Splitter splitter1;
         private Krypton.Toolkit.KryptonSplitContainer mainPanel;
     }
 }

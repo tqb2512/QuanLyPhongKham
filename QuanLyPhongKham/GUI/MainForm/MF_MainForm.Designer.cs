@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MF_MainForm));
             this.MF_ToolStrip = new Krypton.Toolkit.KryptonToolStrip();
             this.MF_Management_StripButton = new System.Windows.Forms.ToolStripDropDownButton();
-            this.bệnhÁnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bệnhNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dịchVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MR_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.P_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.D_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.S_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.E_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MF_CreateMR_StripButton = new System.Windows.Forms.ToolStripButton();
             this.Main_TabControl = new Krypton.Docking.KryptonDockableNavigator();
             this.kryptonStatusStrip1 = new Krypton.Toolkit.KryptonStatusStrip();
@@ -61,10 +62,11 @@
             // 
             this.MF_Management_StripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.MF_Management_StripButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bệnhÁnToolStripMenuItem,
-            this.bệnhNhânToolStripMenuItem,
-            this.thuốcToolStripMenuItem,
-            this.dịchVụToolStripMenuItem});
+            this.MR_ToolStripMenuItem,
+            this.P_ToolStripMenuItem,
+            this.D_ToolStripMenuItem,
+            this.S_ToolStripMenuItem,
+            this.E_MenuItem});
             this.MF_Management_StripButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MF_Management_StripButton.Image = ((System.Drawing.Image)(resources.GetObject("MF_Management_StripButton.Image")));
             this.MF_Management_StripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -72,36 +74,62 @@
             this.MF_Management_StripButton.Size = new System.Drawing.Size(71, 23);
             this.MF_Management_StripButton.Text = "Quản lý";
             // 
-            // bệnhÁnToolStripMenuItem
+            // MR_ToolStripMenuItem
             // 
+            this.MR_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MR_ToolStripMenuItem.Name = "MR_ToolStripMenuItem";
+            this.MR_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.MR_ToolStripMenuItem.Text = "Bệnh án";
+            this.MR_ToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
             this.bệnhÁnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bệnhÁnToolStripMenuItem.Name = "bệnhÁnToolStripMenuItem";
             this.bệnhÁnToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.bệnhÁnToolStripMenuItem.Text = "Bệnh án";
             this.bệnhÁnToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
             // 
-            // bệnhNhânToolStripMenuItem
+            // P_ToolStripMenuItem
             // 
+            this.P_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.P_ToolStripMenuItem.Name = "P_ToolStripMenuItem";
+            this.P_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.P_ToolStripMenuItem.Text = "Bệnh nhân";
+            // 
+            // D_ToolStripMenuItem
+            // 
+            this.D_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.D_ToolStripMenuItem.Name = "D_ToolStripMenuItem";
+            this.D_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.D_ToolStripMenuItem.Text = "Thuốc";
             this.bệnhNhânToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bệnhNhânToolStripMenuItem.Name = "bệnhNhânToolStripMenuItem";
             this.bệnhNhânToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.bệnhNhânToolStripMenuItem.Text = "Bệnh nhân";
             this.bệnhNhânToolStripMenuItem.Click += new System.EventHandler(this.bệnhNhânToolStripMenuItem_Click);
             // 
-            // thuốcToolStripMenuItem
+            // S_ToolStripMenuItem
             // 
             this.thuốcToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.thuốcToolStripMenuItem.Name = "thuốcToolStripMenuItem";
             this.thuốcToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.thuốcToolStripMenuItem.Text = "Thuốc";
+            this.S_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.S_ToolStripMenuItem.Name = "S_ToolStripMenuItem";
+            this.S_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.S_ToolStripMenuItem.Text = "Dịch vụ";
+            this.S_ToolStripMenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
             // 
-            // dịchVụToolStripMenuItem
+            // E_MenuItem
             // 
             this.dịchVụToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dịchVụToolStripMenuItem.Name = "dịchVụToolStripMenuItem";
             this.dịchVụToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.dịchVụToolStripMenuItem.Text = "Dịch vụ";
             this.dịchVụToolStripMenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
+            this.E_MenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.E_MenuItem.Name = "E_MenuItem";
+            this.E_MenuItem.Size = new System.Drawing.Size(315, 40);
+            this.E_MenuItem.Text = "Nhân Viên";
+            this.E_MenuItem.Click += new System.EventHandler(this.E_MenuItem_Click_1);
             // 
             // MF_CreateMR_StripButton
             // 
@@ -190,13 +218,14 @@
         #endregion
         private Krypton.Toolkit.KryptonToolStrip MF_ToolStrip;
         private ToolStripDropDownButton MF_Management_StripButton;
-        private ToolStripMenuItem bệnhÁnToolStripMenuItem;
-        private ToolStripMenuItem bệnhNhânToolStripMenuItem;
-        private ToolStripMenuItem thuốcToolStripMenuItem;
-        private ToolStripMenuItem dịchVụToolStripMenuItem;
+        private ToolStripMenuItem MR_ToolStripMenuItem;
+        private ToolStripMenuItem P_ToolStripMenuItem;
+        private ToolStripMenuItem D_ToolStripMenuItem;
+        private ToolStripMenuItem S_ToolStripMenuItem;
         private ToolStripButton MF_CreateMR_StripButton;
         private Krypton.Docking.KryptonDockableNavigator Main_TabControl;
         private Krypton.Toolkit.KryptonStatusStrip kryptonStatusStrip1;
         private ToolStripStatusLabel E_Name_Label;
+        private ToolStripMenuItem E_MenuItem;
     }
 }

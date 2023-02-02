@@ -25,6 +25,7 @@ namespace QuanLyPhongKham.GUI.LoginForm
             int userId = LF_Functions.checkLogin(userName_textBox.Text, password_textBox.Text);
             if (userId != -1)
             {
+                System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = userId.ToString();
                 this.Hide();
                 MF_MainForm mainForm = new MF_MainForm(userId);
                 mainForm.Show();

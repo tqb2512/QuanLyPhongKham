@@ -13,6 +13,7 @@ using QuanLyPhongKham.GUI.MedicalRecordManagement;
 using QuanLyPhongKham.GUI.CreateMedicalRecord;
 using QuanLyPhongKham.GUI.PatientManagement;
 using QuanLyPhongKham.GUI.ServiceManagement;
+using QuanLyPhongKham.GUI.EmployeeManagement;
 
 namespace QuanLyPhongKham.GUI.MainForm
 {
@@ -63,12 +64,20 @@ namespace QuanLyPhongKham.GUI.MainForm
         
         private void MF_MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
+            System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = "-1";
             Application.Exit();
         }
 
-        private void bệnhNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        private void E_MenuItem_Click_1(object sender, EventArgs e)
         {
-            addToTabControl(new PM_PanelForm(), "Quản lý bệnh nhân");
+            if (MF_Functions.checkPermission(currentUser.ID, "VIEW_EMPLOYEE"))
+            {
+                addToTabControl(new EM_PanelForm(), "Quản lý nhân viên");
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -79,12 +79,12 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
                 string query = "INSERT INTO PATIENT VALUES (@id, @name, @sex, @address, @phoneNumber, @dateOfBirth)";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@id", patient.ID);
-                command.Parameters.AddWithValue("@name", patient.Name);
-                command.Parameters.AddWithValue("@sex", patient.Sex);
-                command.Parameters.AddWithValue("@address", patient.Address);
-                command.Parameters.AddWithValue("@phoneNumber", patient.PhoneNumber);
-                command.Parameters.AddWithValue("@dateOfBirth", patient.DateOfBirth);
+                command.Parameters.AddWithValue("@id",patient.ID);
+                command.Parameters.Add("@name", SqlDbType.NVarChar, 100).Value = patient.Name;
+                command.Parameters.Add("@sex", SqlDbType.NVarChar, 100).Value = patient.Sex;
+                command.Parameters.Add("@address", SqlDbType.NVarChar, 100).Value = patient.Address;
+                command.Parameters.Add("@phoneNumber", SqlDbType.NVarChar, 100).Value = patient.PhoneNumber;
+                command.Parameters.Add("@dateOfBirth", SqlDbType.NVarChar, 100).Value = patient.DateOfBirth;
                 connection.Open();
                 int result = command.ExecuteNonQuery();
                 connection.Close();
@@ -188,6 +188,26 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
             return false;
         }
 
+        public static bool checkPermission(int ID, string permission)
+        {
+            
+            string query = "SELECT " + permission + " FROM PERMISSION WHERE EMPLOYEE_ID = " + ID;
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (Convert.ToBoolean(reader.GetByte(0)) == true)
+                {
+                    connection.Close();
+                    return true;
+                }
+            }
+            connection.Close();
+            return false;
+        }
+        
         public static bool createMedicalRecord(MedicalRecord medicalRecord)
         {
             try
@@ -203,8 +223,8 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
                 command.Parameters.AddWithValue("@date", medicalRecord.Date);
                 command.Parameters.AddWithValue("@pTemp", medicalRecord.Patient_Temp);
                 command.Parameters.AddWithValue("@pWeight", medicalRecord.Patient_Weight);
-                command.Parameters.AddWithValue("@diagnosis", medicalRecord.Diagnosis);
-                command.Parameters.AddWithValue("@note", medicalRecord.Note);
+                command.Parameters.Add("@diagnosis", SqlDbType.NVarChar, 1000).Value = medicalRecord.Diagnosis;
+                command.Parameters.Add("@note", SqlDbType.NVarChar, 1000).Value = medicalRecord.Note;
                 connection.Open();
                 int result = command.ExecuteNonQuery();
                 connection.Close();
