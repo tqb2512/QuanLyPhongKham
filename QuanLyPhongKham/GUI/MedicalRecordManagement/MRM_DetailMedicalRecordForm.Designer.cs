@@ -697,7 +697,6 @@
         private TableLayoutPanel tableLayoutPanel4;
         private GroupBox MR_detail;
         private TableLayoutPanel tableLayoutPanel5;
-        private Krypton.Toolkit.KryptonButton delete_button;
         private TableLayoutPanel tableLayoutPanel7;
         private TableLayoutPanel tableLayoutPanel6;
         private TextBox MR_Total_TextBox;
@@ -706,5 +705,6 @@
         private TextBox MR_PaymentStatus_TextBox;
         private Label MR_PaymentStatus_Label;
         public Krypton.Toolkit.KryptonButton MR_PaymentMake_Button;
+        public Krypton.Toolkit.KryptonButton delete_button;
     }
 }

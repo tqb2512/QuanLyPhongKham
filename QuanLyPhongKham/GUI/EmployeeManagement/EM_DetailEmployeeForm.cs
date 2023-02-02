@@ -114,19 +114,39 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                 } 
                 else
                 {
-                    string sql = "INSERT INTO PERMISSION (EMPLOYEE_ID, CREATE_MEDICALRECORD, REMOVE_MEDICALRECORD, MAKEPAYMENT_MEDICALRECORD, EDIT_EMPLOYEE, EDIT_PATIENT, EDIT_DRUG, EDIT_SERVICE) VALUES ("
+                    string sql = "INSERT INTO EMPLOYEE VALUES (" + E_ID_textBox.Text + ", N'" + E_Name_textBox.Text + "', N'" + E_Position_textBox.Text + "', '" + E_UserName_textBox.Text + "', '" + E_Password_textBox.Text + "')";
+                    EM_Functions.sqlQueryExcute(sql);
+                    sql = "INSERT INTO PERMISSION (EMPLOYEE_ID, CREATE_MEDICALRECORD, REMOVE_MEDICALRECORD, MAKEPAYMENT_MEDICALRECORD, EDIT_EMPLOYEE, EDIT_PATIENT, EDIT_DRUG, EDIT_SERVICE) VALUES ("
                         + E_ID_textBox.Text + ", " + Convert.ToInt32(CreateMedicalRecord.Checked)
-                        + ", " + Convert.ToInt32(RemoveMedicalRecord.Checked) 
+                        + ", " + Convert.ToInt32(RemoveMedicalRecord.Checked)
                         + ", " + Convert.ToInt32(MakePayment.Checked)
-                        + ", " + Convert.ToInt32(EditEmployee.Checked) 
+                        + ", " + Convert.ToInt32(EditEmployee.Checked)
                         + ", " + Convert.ToInt32(EditPatient.Checked)
                         + ", " + Convert.ToInt32(EditDrug.Checked)
                         + ", " + Convert.ToInt32(EditService.Checked) + ")";
                     EM_Functions.sqlQueryExcute(sql);
-                    sql = "INSERT INTO EMPLOYEE VALUES (" + E_ID_textBox.Text + ", N'" + E_Name_textBox.Text + "', N'" + E_Position_textBox.Text + "', '" + E_UserName_textBox.Text + "', '" + E_Password_textBox.Text + "')";
-                    EM_Functions.sqlQueryExcute(sql);
                 }
                 editButton.Text = "Chỉnh sửa";
+            }
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (EM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT") == true)
+            {
+                string sql = "DELETE FROM EMPLOYEE WHERE EMPLOYEE_ID = " + E_ID_textBox.Text;
+                if (EM_Functions.sqlQueryExcute(sql) > 0)
+                {
+                    MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Xóa nhân viên thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền để xóa nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

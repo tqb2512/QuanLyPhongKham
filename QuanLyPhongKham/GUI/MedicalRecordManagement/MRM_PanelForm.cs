@@ -46,11 +46,12 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
                 mrm_DetailMedicalRecordForm.Dock = DockStyle.Fill;
                 mrm_DetailMedicalRecordForm.Visible = true;
                 mrm_DetailMedicalRecordForm.Show();
-                mrm_DetailMedicalRecordForm.MR_PaymentMake_Button.Click += new EventHandler(MR_PaymentMake_Button_Click);
+                mrm_DetailMedicalRecordForm.MR_PaymentMake_Button.Click += new EventHandler(refreshOn_Click);
+                mrm_DetailMedicalRecordForm.delete_button.Click += new EventHandler(refreshOn_Click);
             }
         }
         
-        private void MR_PaymentMake_Button_Click(object sender, EventArgs e)
+        private void refreshOn_Click(object sender, EventArgs e)
         {
             mrm_MainForm.dataLoad();
         }

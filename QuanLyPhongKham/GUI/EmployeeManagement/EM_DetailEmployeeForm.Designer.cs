@@ -381,6 +381,7 @@
             this.deleteButton.Size = new System.Drawing.Size(184, 68);
             this.deleteButton.TabIndex = 1;
             this.deleteButton.Values.Text = "Xóa";
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // EM_DetailEmployeeForm
             // 

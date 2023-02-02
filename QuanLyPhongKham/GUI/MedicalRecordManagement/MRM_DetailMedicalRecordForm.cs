@@ -142,16 +142,16 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
 
         private void MR_PaymentMake_Button_Click(object sender, EventArgs e)
         {
-            if (MRM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "MAKE_PAYMENT"))
+            if (MRM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "MAKEPAYMENT_MEDICALRECORD"))
             {
                 MessageBox.Show("Bệnh nhân " + medicalRecord.Patient.Name + " đã thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MRM_Functions.sqlQueryExcute("UPDATE MEDICALRECORD SET PAYMENT_STATUS = 1 WHERE MEDICALRECORD_ID = " + medicalRecord.ID);
+                dataLoad();
             }
             else
             {
-                MessageBox.Show("Bạn không có thực hiện thanh toán!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bạn không thể thực hiện thanh toán!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            MRM_Functions.sqlQueryExcute("UPDATE MEDICALRECORD SET PAYMENT_STATUS = 1 WHERE MEDICALRECORD_ID = " + medicalRecord.ID);
-            dataLoad();
         }
     }
 }

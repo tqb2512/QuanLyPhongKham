@@ -153,7 +153,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
 
             if (CMR_Functions.createMedicalRecord(medicalRecord) == true)
             {
-                MessageBox.Show("Tạo bệnh án thành công");
+                MessageBox.Show("Tạo bệnh án thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 patientInfoLock(true);
                 fillPatientInfoTextBox();
                 MR_diagnosis_richTextBox.Text = "";
@@ -168,7 +168,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             }
             else
             {
-                MessageBox.Show("Tạo bệnh án thất bại");
+                MessageBox.Show("Tạo bệnh án thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
