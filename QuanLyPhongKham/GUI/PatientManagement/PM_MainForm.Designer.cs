@@ -62,8 +62,8 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(511, 257);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
@@ -84,7 +84,7 @@
             this.patientDataGridView.RowHeadersVisible = false;
             this.patientDataGridView.RowHeadersWidth = 72;
             this.patientDataGridView.RowTemplate.Height = 37;
-            this.patientDataGridView.Size = new System.Drawing.Size(507, 165);
+            this.patientDataGridView.Size = new System.Drawing.Size(507, 173);
             this.patientDataGridView.TabIndex = 0;
             this.patientDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellContentClick);
             this.patientDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellDoubleClick);
@@ -196,12 +196,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 206);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 214);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(507, 49);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(507, 41);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -216,7 +216,7 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(248, 45);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(248, 37);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // add_button
@@ -225,7 +225,7 @@
             this.add_button.Location = new System.Drawing.Point(126, 2);
             this.add_button.Margin = new System.Windows.Forms.Padding(2);
             this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(120, 41);
+            this.add_button.Size = new System.Drawing.Size(120, 33);
             this.add_button.TabIndex = 7;
             this.add_button.Values.Text = "Thêm";
             // 
