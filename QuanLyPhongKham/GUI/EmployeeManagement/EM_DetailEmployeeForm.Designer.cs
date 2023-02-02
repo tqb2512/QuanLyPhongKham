@@ -89,7 +89,7 @@
             this.permission.Location = new System.Drawing.Point(3, 419);
             this.permission.Name = "permission";
             this.permission.Size = new System.Drawing.Size(946, 410);
-            this.permission.TabIndex = 1;
+            this.permission.TabIndex = 2;
             this.permission.TabStop = false;
             this.permission.Text = "Quyền";
             // 
@@ -140,7 +140,7 @@
             this.MakePayment.Name = "MakePayment";
             this.MakePayment.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.MakePayment.Size = new System.Drawing.Size(239, 29);
-            this.MakePayment.TabIndex = 7;
+            this.MakePayment.TabIndex = 1;
             this.MakePayment.Values.Text = "Thực hiện thanh toán";
             // 
             // RemoveMedicalRecord
@@ -151,7 +151,7 @@
             this.RemoveMedicalRecord.Name = "RemoveMedicalRecord";
             this.RemoveMedicalRecord.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.RemoveMedicalRecord.Size = new System.Drawing.Size(153, 29);
-            this.RemoveMedicalRecord.TabIndex = 5;
+            this.RemoveMedicalRecord.TabIndex = 2;
             this.RemoveMedicalRecord.Values.Text = "Xóa bệnh án";
             // 
             // EditService
@@ -162,7 +162,7 @@
             this.EditService.Name = "EditService";
             this.EditService.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.EditService.Size = new System.Drawing.Size(307, 29);
-            this.EditService.TabIndex = 4;
+            this.EditService.TabIndex = 5;
             this.EditService.Values.Text = "Chỉnh sửa danh sách dịch vụ";
             // 
             // EditDrug
@@ -173,7 +173,7 @@
             this.EditDrug.Name = "EditDrug";
             this.EditDrug.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.EditDrug.Size = new System.Drawing.Size(293, 29);
-            this.EditDrug.TabIndex = 3;
+            this.EditDrug.TabIndex = 4;
             this.EditDrug.Values.Text = "Chỉnh sửa danh sách thuốc";
             // 
             // EditPatient
@@ -184,7 +184,7 @@
             this.EditPatient.Name = "EditPatient";
             this.EditPatient.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.EditPatient.Size = new System.Drawing.Size(336, 29);
-            this.EditPatient.TabIndex = 2;
+            this.EditPatient.TabIndex = 3;
             this.EditPatient.Values.Text = " Chỉnh sửa thông tin bệnh nhân";
             // 
             // EditEmployee
@@ -207,7 +207,7 @@
             this.userInfo.Location = new System.Drawing.Point(3, 3);
             this.userInfo.Name = "userInfo";
             this.userInfo.Size = new System.Drawing.Size(946, 410);
-            this.userInfo.TabIndex = 2;
+            this.userInfo.TabIndex = 1;
             this.userInfo.TabStop = false;
             this.userInfo.Text = "Thông tin nhân viên";
             // 

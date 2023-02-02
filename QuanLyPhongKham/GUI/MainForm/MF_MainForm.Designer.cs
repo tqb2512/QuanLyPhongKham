@@ -56,7 +56,7 @@
             this.signOutButton});
             this.MF_ToolStrip.Location = new System.Drawing.Point(0, 0);
             this.MF_ToolStrip.Name = "MF_ToolStrip";
-            this.MF_ToolStrip.Size = new System.Drawing.Size(1776, 42);
+            this.MF_ToolStrip.Size = new System.Drawing.Size(1976, 42);
             this.MF_ToolStrip.TabIndex = 2;
             this.MF_ToolStrip.Text = "kryptonToolStrip1";
             // 
@@ -129,10 +129,11 @@
             // 
             this.signOutButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.signOutButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.signOutButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.signOutButton.Image = ((System.Drawing.Image)(resources.GetObject("signOutButton.Image")));
             this.signOutButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.signOutButton.Name = "signOutButton";
-            this.signOutButton.Size = new System.Drawing.Size(113, 36);
+            this.signOutButton.Size = new System.Drawing.Size(131, 36);
             this.signOutButton.Text = "Đăng xuất";
             this.signOutButton.Click += new System.EventHandler(this.signOutButton_Click);
             // 
@@ -158,7 +159,7 @@
             this.Main_TabControl.Name = "Main_TabControl";
             this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.Main_TabControl.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.Main_TabControl.Size = new System.Drawing.Size(1776, 849);
+            this.Main_TabControl.Size = new System.Drawing.Size(1976, 1049);
             this.Main_TabControl.TabIndex = 1;
             this.Main_TabControl.Text = "kryptonDockableNavigator1";
             // 
@@ -168,11 +169,11 @@
             this.kryptonStatusStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.kryptonStatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.E_Name_Label});
-            this.kryptonStatusStrip1.Location = new System.Drawing.Point(0, 895);
+            this.kryptonStatusStrip1.Location = new System.Drawing.Point(0, 1095);
             this.kryptonStatusStrip1.Name = "kryptonStatusStrip1";
             this.kryptonStatusStrip1.ProgressBars = null;
             this.kryptonStatusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.kryptonStatusStrip1.Size = new System.Drawing.Size(1776, 41);
+            this.kryptonStatusStrip1.Size = new System.Drawing.Size(1976, 41);
             this.kryptonStatusStrip1.TabIndex = 3;
             this.kryptonStatusStrip1.Text = "kryptonStatusStrip1";
             // 
@@ -188,7 +189,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1776, 936);
+            this.ClientSize = new System.Drawing.Size(1976, 1136);
             this.Controls.Add(this.kryptonStatusStrip1);
             this.Controls.Add(this.Main_TabControl);
             this.Controls.Add(this.MF_ToolStrip);

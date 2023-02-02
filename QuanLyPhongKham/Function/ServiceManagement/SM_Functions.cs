@@ -98,7 +98,7 @@ namespace QuanLyPhongKham.Function.ServiceManagement
         {
             try
             {
-                string query = "UPDATE SERVICE SET SERVICE_NAME = '" + service.Name + "', SERVICE_PRICE = '" + service.Price + "', SERVICE_UNIT = '" + service.Unit + "', SERVICE_DESCRIPTION = '" + service.Description + "' WHERE SERVICE_ID = '" + service.ID + "'";
+                string query = "UPDATE SERVICE SET SERVICE_NAME = N'" + service.Name + "', SERVICE_PRICE = '" + service.Price + "', SERVICE_UNIT = N'" + service.Unit + "', SERVICE_DESCRIPTION = N'" + service.Description + "' WHERE SERVICE_ID = '" + service.ID + "'";
                 if (sqlQueryExcute(query) > 0)
                 {
                     return true;
@@ -150,6 +150,25 @@ namespace QuanLyPhongKham.Function.ServiceManagement
                 MessageBox.Show(ex.Message);
             }
             return -1;
+        }
+        public static bool checkPermission(int ID, string permission)
+        {
+
+            string query = "SELECT " + permission + " FROM PERMISSION WHERE EMPLOYEE_ID = " + ID;
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (Convert.ToBoolean(reader.GetByte(0)) == true)
+                {
+                    connection.Close();
+                    return true;
+                }
+            }
+            connection.Close();
+            return false;
         }
     }
 }

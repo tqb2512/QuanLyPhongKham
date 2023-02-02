@@ -57,7 +57,7 @@ namespace QuanLyPhongKham.GUI.MainForm
 
         private void Service_MenuItem_Click(object sender, EventArgs e)
         {
-            addToTabControl(new SM_PanelForm(), "Quản lý dịch vụ");
+            addToTabControl(new SM_MainForm(), "Quản lý dịch vụ");
         }
 
         private void MF_MainForm_FormClosed(object sender, FormClosedEventArgs e)
