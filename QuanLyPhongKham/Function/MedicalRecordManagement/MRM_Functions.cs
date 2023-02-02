@@ -50,6 +50,26 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
             return null;
         }
 
+        public static bool checkPermission(int ID, string permission)
+        {
+
+            string query = "SELECT " + permission + " FROM PERMISSION WHERE EMPLOYEE_ID = " + ID;
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (Convert.ToBoolean(reader.GetByte(0)) == true)
+                {
+                    connection.Close();
+                    return true;
+                }
+            }
+            connection.Close();
+            return false;
+        }
+
         public static MedicalRecord getDetailMedicalRecord(int medicalRecordId)
         {
             MedicalRecord medicalRecord = new MedicalRecord();
