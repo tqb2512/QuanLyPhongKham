@@ -50,6 +50,25 @@ namespace QuanLyPhongKham.Function.PatientManagement
             return null;
         }
 
+        public static bool checkPermission(int ID, string permission)
+        {
+            string query = "SELECT " + permission + " FROM PATIENT WHERE PATIENT_ID = " + ID;
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (Convert.ToBoolean(reader.GetByte(0)) == true)
+                {
+                    connection.Close();
+                    return true;
+                }
+            }
+            connection.Close();
+            return false;
+        }
+
         public static Patient getDetailPatient(int PatientID)
         {
             Patient patient = new Patient();

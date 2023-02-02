@@ -56,115 +56,139 @@ namespace QuanLyPhongKham.GUI.PatientManagement
 
         private void edit_button_Click(object sender, EventArgs e)
         {
-            Patient patient = new Patient();
-            string formState = pm_DetailPatientForm.formState;
-            switch (formState)
+            //check permission
+            if (PM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT"))
             {
-                case "view":
-                    pm_DetailPatientForm.formState = "edit";
-                    pm_DetailPatientForm.edit_button.Text = "Lưu";
-                    pm_DetailPatientForm.P_name_textBox.ReadOnly = false;
-                    
-                    pm_DetailPatientForm.P_address_textBox.ReadOnly = false;
-                    pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = false;
-                    //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = false;
-                    pm_DetailPatientForm.P_name_textBox.Enabled = true;
-                    pm_DetailPatientForm.P_sex_ComboBox.Enabled = true;
-                    pm_DetailPatientForm.P_address_textBox.Enabled = true;
-                    pm_DetailPatientForm.P_phonenumber_textBox.Enabled = true;
-                    pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = true;
-                    break;
-                case "edit":
-                    patient.ID = pm_DetailPatientForm.patient_ID;
-                    patient.Name = pm_DetailPatientForm.P_name_textBox.Text;
-                    patient.Sex = pm_DetailPatientForm.P_sex_ComboBox.Text;
-                    patient.Address = pm_DetailPatientForm.P_address_textBox.Text;
-                    patient.PhoneNumber = pm_DetailPatientForm.P_phonenumber_textBox.Text;
-                    patient.DateOfBirth = Convert.ToDateTime(pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Text);
-                    if (PM_Functions.updatePatient(patient))
-                    {
-                        MessageBox.Show("Cập nhật thành công");
-                        pm_DetailPatientForm.formState = "view";
-                        pm_DetailPatientForm.edit_button.Text = "Sửa";
-                        pm_DetailPatientForm.P_name_textBox.ReadOnly = true;
-                        //pm_DetailPatientForm.P_sex_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_address_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = true;
-                        //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_name_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_sex_ComboBox.Enabled = false;
-                        pm_DetailPatientForm.P_address_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_phonenumber_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = false;                    
-                    }
-                    else 
-                    {
-                        MessageBox.Show("Cập nhật thất bại");
-                    }
-                    break;
-                case "add":
-                    patient.ID = pm_DetailPatientForm.patient_ID;
-                    patient.Name = pm_DetailPatientForm.P_name_textBox.Text;
-                    patient.Sex = pm_DetailPatientForm.P_sex_ComboBox.Text;
-                    patient.Address = pm_DetailPatientForm.P_address_textBox.Text;
-                    patient.PhoneNumber = pm_DetailPatientForm.P_phonenumber_textBox.Text;
-                    patient.DateOfBirth = Convert.ToDateTime(pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Text);
-                    if (PM_Functions.addPatient(patient))
-                    {
-                        MessageBox.Show("Thêm thành công");
-                        pm_DetailPatientForm.formState = "view";
-                        pm_DetailPatientForm.edit_button.Text = "Sửa";
-                        pm_DetailPatientForm.P_name_textBox.ReadOnly = true;
-                        //pm_DetailPatientForm.P_sex_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_address_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = true;
-                        //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_name_textBox.Enabled = false;
+                Patient patient = new Patient();
+                string formState = pm_DetailPatientForm.formState;
+                switch (formState)
+                {
+                    case "view":
+                        pm_DetailPatientForm.formState = "edit";
+                        pm_DetailPatientForm.edit_button.Text = "Lưu";
+                        pm_DetailPatientForm.P_name_textBox.ReadOnly = false;
+                        
+                        pm_DetailPatientForm.P_address_textBox.ReadOnly = false;
+                        pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = false;
+                        //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = false;
+                        pm_DetailPatientForm.P_name_textBox.Enabled = true;
                         pm_DetailPatientForm.P_sex_ComboBox.Enabled = true;
-                        pm_DetailPatientForm.P_address_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_phonenumber_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = false;     
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm thất bại");
-                    }
-                    break;
+                        pm_DetailPatientForm.P_address_textBox.Enabled = true;
+                        pm_DetailPatientForm.P_phonenumber_textBox.Enabled = true;
+                        pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = true;
+                        break;
+                    case "edit":
+                        patient.ID = pm_DetailPatientForm.patient_ID;
+                        patient.Name = pm_DetailPatientForm.P_name_textBox.Text;
+                        patient.Sex = pm_DetailPatientForm.P_sex_ComboBox.Text;
+                        patient.Address = pm_DetailPatientForm.P_address_textBox.Text;
+                        patient.PhoneNumber = pm_DetailPatientForm.P_phonenumber_textBox.Text;
+                        patient.DateOfBirth = Convert.ToDateTime(pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Text);
+                        if (PM_Functions.updatePatient(patient))
+                        {
+                            MessageBox.Show("Cập nhật thành công");
+                            pm_DetailPatientForm.formState = "view";
+                            pm_DetailPatientForm.edit_button.Text = "Sửa";
+                            pm_DetailPatientForm.P_name_textBox.ReadOnly = true;
+                            //pm_DetailPatientForm.P_sex_textBox.ReadOnly = true;
+                            pm_DetailPatientForm.P_address_textBox.ReadOnly = true;
+                            pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = true;
+                            //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = true;
+                            pm_DetailPatientForm.P_name_textBox.Enabled = false;
+                            pm_DetailPatientForm.P_sex_ComboBox.Enabled = false;
+                            pm_DetailPatientForm.P_address_textBox.Enabled = false;
+                            pm_DetailPatientForm.P_phonenumber_textBox.Enabled = false;
+                            pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = false;                    
+                        }
+                        else 
+                        {
+                            MessageBox.Show("Cập nhật thất bại");
+                        }
+                        break;
+                    case "add":
+                        patient.ID = pm_DetailPatientForm.patient_ID;
+                        patient.Name = pm_DetailPatientForm.P_name_textBox.Text;
+                        patient.Sex = pm_DetailPatientForm.P_sex_ComboBox.Text;
+                        patient.Address = pm_DetailPatientForm.P_address_textBox.Text;
+                        patient.PhoneNumber = pm_DetailPatientForm.P_phonenumber_textBox.Text;
+                        patient.DateOfBirth = Convert.ToDateTime(pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Text);
+                        if (PM_Functions.addPatient(patient))
+                        {
+                            MessageBox.Show("Thêm thành công");
+                            pm_DetailPatientForm.formState = "view";
+                            pm_DetailPatientForm.edit_button.Text = "Sửa";
+                            pm_DetailPatientForm.P_name_textBox.ReadOnly = true;
+                            //pm_DetailPatientForm.P_sex_textBox.ReadOnly = true;
+                            pm_DetailPatientForm.P_address_textBox.ReadOnly = true;
+                            pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = true;
+                            //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = true;
+                            pm_DetailPatientForm.P_name_textBox.Enabled = false;
+                            pm_DetailPatientForm.P_sex_ComboBox.Enabled = true;
+                            pm_DetailPatientForm.P_address_textBox.Enabled = false;
+                            pm_DetailPatientForm.P_phonenumber_textBox.Enabled = false;
+                            pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = false;     
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thêm thất bại");
+                        }
+                        break;
+                }
+                pm_MainForm.dataLoad();
             }
-            pm_MainForm.dataLoad();
+            else
+            {
+                MessageBox.Show("Bạn không có quyền thay đổi thông tin bệnh nhân!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void add_button_Click(object sender, EventArgs e)
         {
-            mainPanel.Panel2.Controls.Clear();
-            int currentMaxID = PM_Functions.getMaxID();
-            pm_DetailPatientForm = new PM_DetailPatientForm(currentMaxID + 1, "add");
-            pm_DetailPatientForm.TopLevel = false;
-            pm_DetailPatientForm.AutoScroll = true;
-            pm_DetailPatientForm.FormBorderStyle = FormBorderStyle.None;
-            pm_DetailPatientForm.Dock = DockStyle.Fill;
-            mainPanel.Panel2.Controls.Add(pm_DetailPatientForm);
-            pm_DetailPatientForm.Visible = true;
-            pm_DetailPatientForm.Show();
-            pm_DetailPatientForm.edit_button.Click += new EventHandler(edit_button_Click);
-            pm_DetailPatientForm.delete_button.Click += new EventHandler(delete_button_Click);
+            if (PM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT"))
+            {
+                mainPanel.Panel2.Controls.Clear();
+                int currentMaxID = PM_Functions.getMaxID();
+                pm_DetailPatientForm = new PM_DetailPatientForm(currentMaxID + 1, "add");
+                pm_DetailPatientForm.TopLevel = false;
+                pm_DetailPatientForm.AutoScroll = true;
+                pm_DetailPatientForm.FormBorderStyle = FormBorderStyle.None;
+                pm_DetailPatientForm.Dock = DockStyle.Fill;
+                mainPanel.Panel2.Controls.Add(pm_DetailPatientForm);
+                pm_DetailPatientForm.Visible = true;
+                pm_DetailPatientForm.Show();
+                pm_DetailPatientForm.edit_button.Click += new EventHandler(edit_button_Click);
+                pm_DetailPatientForm.delete_button.Click += new EventHandler(delete_button_Click);
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền thay đổi thông tin bệnh nhân!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void delete_button_Click(object sender, EventArgs e)
         {
-            if (pm_DetailPatientForm.formState != "add")
+            //check permission
+            if (PM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDITPATIENT"))
             {
-                if (PM_Functions.deletePatient(pm_DetailPatientForm.patient_ID))
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa bệnh nhân này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Xóa thành công");
-                    pm_DetailPatientForm.Close();
+                    if (PM_Functions.deletePatient(pm_DetailPatientForm.patient_ID))
+                    {
+                        MessageBox.Show("Xóa thành công");
+                        pm_DetailPatientForm.Close();
+                        pm_MainForm.dataLoad();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thất bại");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Xóa thất bại");
-                }
-                pm_MainForm.dataLoad();
             }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền xóa bệnh nhân này");
+            }
+        
         }
 
         private void mainPanel_SplitterMoved(object sender, SplitterEventArgs e)

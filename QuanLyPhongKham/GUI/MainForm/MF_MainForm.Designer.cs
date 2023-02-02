@@ -78,56 +78,38 @@
             // 
             this.MR_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MR_ToolStripMenuItem.Name = "MR_ToolStripMenuItem";
-            this.MR_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.MR_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.MR_ToolStripMenuItem.Text = "Bệnh án";
             this.MR_ToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
-            this.bệnhÁnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bệnhÁnToolStripMenuItem.Name = "bệnhÁnToolStripMenuItem";
-            this.bệnhÁnToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.bệnhÁnToolStripMenuItem.Text = "Bệnh án";
-            this.bệnhÁnToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
             // 
             // P_ToolStripMenuItem
             // 
             this.P_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.P_ToolStripMenuItem.Name = "P_ToolStripMenuItem";
-            this.P_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.P_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.P_ToolStripMenuItem.Text = "Bệnh nhân";
+            this.P_ToolStripMenuItem.Click += new System.EventHandler(this.Patient_MenuItem_Click);
             // 
             // D_ToolStripMenuItem
             // 
             this.D_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.D_ToolStripMenuItem.Name = "D_ToolStripMenuItem";
-            this.D_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.D_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.D_ToolStripMenuItem.Text = "Thuốc";
-            this.bệnhNhânToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bệnhNhânToolStripMenuItem.Name = "bệnhNhânToolStripMenuItem";
-            this.bệnhNhânToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.bệnhNhânToolStripMenuItem.Text = "Bệnh nhân";
-            this.bệnhNhânToolStripMenuItem.Click += new System.EventHandler(this.bệnhNhânToolStripMenuItem_Click);
             // 
             // S_ToolStripMenuItem
             // 
-            this.thuốcToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.thuốcToolStripMenuItem.Name = "thuốcToolStripMenuItem";
-            this.thuốcToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.thuốcToolStripMenuItem.Text = "Thuốc";
             this.S_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.S_ToolStripMenuItem.Name = "S_ToolStripMenuItem";
-            this.S_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
+            this.S_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.S_ToolStripMenuItem.Text = "Dịch vụ";
             this.S_ToolStripMenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
             // 
             // E_MenuItem
             // 
-            this.dịchVụToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dịchVụToolStripMenuItem.Name = "dịchVụToolStripMenuItem";
-            this.dịchVụToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.dịchVụToolStripMenuItem.Text = "Dịch vụ";
-            this.dịchVụToolStripMenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
             this.E_MenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.E_MenuItem.Name = "E_MenuItem";
-            this.E_MenuItem.Size = new System.Drawing.Size(315, 40);
+            this.E_MenuItem.Size = new System.Drawing.Size(144, 24);
             this.E_MenuItem.Text = "Nhân Viên";
             this.E_MenuItem.Click += new System.EventHandler(this.E_MenuItem_Click_1);
             // 
@@ -161,7 +143,7 @@
             this.Main_TabControl.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.RoundedOutsizeMedium;
             this.Main_TabControl.Bar.TabStyle = Krypton.Toolkit.TabStyle.HighProfile;
             this.Main_TabControl.Location = new System.Drawing.Point(0, 22);
-            this.Main_TabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Main_TabControl.Margin = new System.Windows.Forms.Padding(2);
             this.Main_TabControl.Name = "Main_TabControl";
             this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.Main_TabControl.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
@@ -200,11 +182,12 @@
             this.Controls.Add(this.kryptonStatusStrip1);
             this.Controls.Add(this.Main_TabControl);
             this.Controls.Add(this.MF_ToolStrip);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MF_MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MF_MainForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MF_MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MF_MainForm_Load);
             this.MF_ToolStrip.ResumeLayout(false);
             this.MF_ToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Main_TabControl)).EndInit();

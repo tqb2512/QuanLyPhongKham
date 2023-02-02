@@ -79,5 +79,16 @@ namespace QuanLyPhongKham.GUI.MainForm
                 MessageBox.Show("Bạn không có quyền truy cập chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Patient_MenuItem_Click(object sender, EventArgs e)
+        {
+            addToTabControl(new PM_PanelForm(), "Quản lý bệnh nhân");
+
+        }
+
+        private void MF_MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
