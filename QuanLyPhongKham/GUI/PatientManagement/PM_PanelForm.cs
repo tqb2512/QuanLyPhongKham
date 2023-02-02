@@ -168,7 +168,7 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         private void delete_button_Click(object sender, EventArgs e)
         {
             //check permission
-            if (PM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDITPATIENT"))
+            if (PM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT"))
             {
                 if (MessageBox.Show("Bạn có chắc chắn muốn xóa bệnh nhân này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
