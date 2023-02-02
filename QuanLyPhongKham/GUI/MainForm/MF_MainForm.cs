@@ -72,7 +72,6 @@ namespace QuanLyPhongKham.GUI.MainForm
 
         private void signOutButton_Click(object sender, EventArgs e)
         {
-            System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = "-1";
             this.DialogResult = DialogResult.OK;
         }
 

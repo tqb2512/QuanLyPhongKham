@@ -27,7 +27,7 @@ namespace QuanLyPhongKham.GUI.LoginForm
             {
                 System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = userId.ToString();
                 this.Hide();
-                MF_MainForm form = new MF_MainForm();
+                MF_MainForm form = new MF_MainForm(userId);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     this.Show();
