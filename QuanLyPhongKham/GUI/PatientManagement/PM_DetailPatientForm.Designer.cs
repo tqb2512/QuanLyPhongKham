@@ -32,24 +32,21 @@
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.delete_button = new Krypton.Toolkit.KryptonButton();
             this.PatientID = new System.Windows.Forms.Label();
-            this.P_dateofbirth_textBox = new System.Windows.Forms.TextBox();
             this.labelPatientName = new System.Windows.Forms.Label();
             this.labelPatientGender = new System.Windows.Forms.Label();
-            this.labelPatientAddress = new System.Windows.Forms.Label();
             this.P_ID_textBox = new System.Windows.Forms.TextBox();
             this.P_name_textBox = new System.Windows.Forms.TextBox();
-            this.P_sex_textBox = new System.Windows.Forms.TextBox();
             this.P_address_textBox = new System.Windows.Forms.TextBox();
-            this.P_phonenumber_textBox = new System.Windows.Forms.TextBox();
-            this.labelPatientBirthday = new System.Windows.Forms.Label();
-            this.labelPatientPhoneNumber = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.P_sex_ComboBox = new System.Windows.Forms.ComboBox();
+            this.labelPatientBirthday = new System.Windows.Forms.Label();
+            this.P_phonenumber_textBox = new System.Windows.Forms.TextBox();
             this.edit_button = new Krypton.Toolkit.KryptonButton();
-            this.delete_button = new Krypton.Toolkit.KryptonButton();
+            this.P_dateofbirth_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel7
@@ -92,19 +89,19 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel3.Controls.Add(this.delete_button, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.PatientID, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.P_dateofbirth_textBox, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.labelPatientName, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.labelPatientGender, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.labelPatientAddress, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.P_ID_textBox, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.P_name_textBox, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.P_sex_textBox, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.P_address_textBox, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.P_phonenumber_textBox, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.labelPatientBirthday, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.labelPatientPhoneNumber, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.P_sex_ComboBox, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.labelPatientBirthday, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.P_phonenumber_textBox, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.edit_button, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.P_dateofbirth_dateTimePicker, 1, 5);
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(9, 12);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -119,6 +116,15 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(991, 567);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
+            // delete_button
+            // 
+            this.delete_button.CornerRoundingRadius = -1F;
+            this.delete_button.Location = new System.Drawing.Point(3, 343);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(90, 45);
+            this.delete_button.TabIndex = 0;
+            this.delete_button.Values.Text = "Xóa";
+            // 
             // PatientID
             // 
             this.PatientID.AutoSize = true;
@@ -127,17 +133,6 @@
             this.PatientID.Size = new System.Drawing.Size(81, 15);
             this.PatientID.TabIndex = 0;
             this.PatientID.Text = "ID bệnh nhân";
-            // 
-            // P_dateofbirth_textBox
-            // 
-            this.P_dateofbirth_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_dateofbirth_textBox.Enabled = false;
-            this.P_dateofbirth_textBox.Location = new System.Drawing.Point(201, 343);
-            this.P_dateofbirth_textBox.Name = "P_dateofbirth_textBox";
-            this.P_dateofbirth_textBox.Size = new System.Drawing.Size(787, 23);
-            this.P_dateofbirth_textBox.TabIndex = 9;
             // 
             // labelPatientName
             // 
@@ -156,16 +151,6 @@
             this.labelPatientGender.Size = new System.Drawing.Size(55, 15);
             this.labelPatientGender.TabIndex = 2;
             this.labelPatientGender.Text = "Giới tính";
-            // 
-            // labelPatientAddress
-            // 
-            this.labelPatientAddress.AutoSize = true;
-            this.labelPatientAddress.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.labelPatientAddress.Location = new System.Drawing.Point(3, 255);
-            this.labelPatientAddress.Name = "labelPatientAddress";
-            this.labelPatientAddress.Size = new System.Drawing.Size(44, 15);
-            this.labelPatientAddress.TabIndex = 3;
-            this.labelPatientAddress.Text = "Địa chỉ";
             // 
             // P_ID_textBox
             // 
@@ -189,17 +174,6 @@
             this.P_name_textBox.Size = new System.Drawing.Size(787, 23);
             this.P_name_textBox.TabIndex = 5;
             // 
-            // P_sex_textBox
-            // 
-            this.P_sex_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_sex_textBox.Enabled = false;
-            this.P_sex_textBox.Location = new System.Drawing.Point(201, 173);
-            this.P_sex_textBox.Name = "P_sex_textBox";
-            this.P_sex_textBox.Size = new System.Drawing.Size(787, 23);
-            this.P_sex_textBox.TabIndex = 6;
-            // 
             // P_address_textBox
             // 
             this.P_address_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -211,35 +185,6 @@
             this.P_address_textBox.Size = new System.Drawing.Size(787, 23);
             this.P_address_textBox.TabIndex = 7;
             // 
-            // P_phonenumber_textBox
-            // 
-            this.P_phonenumber_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_phonenumber_textBox.Enabled = false;
-            this.P_phonenumber_textBox.Location = new System.Drawing.Point(201, 428);
-            this.P_phonenumber_textBox.Name = "P_phonenumber_textBox";
-            this.P_phonenumber_textBox.Size = new System.Drawing.Size(787, 23);
-            this.P_phonenumber_textBox.TabIndex = 8;
-            // 
-            // labelPatientBirthday
-            // 
-            this.labelPatientBirthday.AutoSize = true;
-            this.labelPatientBirthday.Location = new System.Drawing.Point(3, 425);
-            this.labelPatientBirthday.Name = "labelPatientBirthday";
-            this.labelPatientBirthday.Size = new System.Drawing.Size(60, 15);
-            this.labelPatientBirthday.TabIndex = 2;
-            this.labelPatientBirthday.Text = "Ngày sinh";
-            // 
-            // labelPatientPhoneNumber
-            // 
-            this.labelPatientPhoneNumber.AutoSize = true;
-            this.labelPatientPhoneNumber.Location = new System.Drawing.Point(3, 340);
-            this.labelPatientPhoneNumber.Name = "labelPatientPhoneNumber";
-            this.labelPatientPhoneNumber.Size = new System.Drawing.Size(80, 15);
-            this.labelPatientPhoneNumber.TabIndex = 0;
-            this.labelPatientPhoneNumber.Text = "Số điện thoại";
-            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -250,8 +195,6 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.tableLayoutPanel5.Controls.Add(this.edit_button, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.delete_button, 3, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(201, 513);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -259,24 +202,55 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(787, 51);
             this.tableLayoutPanel5.TabIndex = 11;
             // 
+            // P_sex_ComboBox
+            // 
+            this.P_sex_ComboBox.BackColor = System.Drawing.SystemColors.Control;
+            this.P_sex_ComboBox.FormattingEnabled = true;
+            this.P_sex_ComboBox.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.P_sex_ComboBox.Location = new System.Drawing.Point(201, 173);
+            this.P_sex_ComboBox.Name = "P_sex_ComboBox";
+            this.P_sex_ComboBox.Size = new System.Drawing.Size(71, 23);
+            this.P_sex_ComboBox.TabIndex = 12;
+            // 
+            // labelPatientBirthday
+            // 
+            this.labelPatientBirthday.AutoSize = true;
+            this.labelPatientBirthday.Location = new System.Drawing.Point(3, 425);
+            this.labelPatientBirthday.Name = "labelPatientBirthday";
+            this.labelPatientBirthday.Size = new System.Drawing.Size(60, 15);
+            this.labelPatientBirthday.TabIndex = 2;
+            this.labelPatientBirthday.Text = "Ngày sinh";
+            // 
+            // P_phonenumber_textBox
+            // 
+            this.P_phonenumber_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.P_phonenumber_textBox.Enabled = false;
+            this.P_phonenumber_textBox.Location = new System.Drawing.Point(201, 343);
+            this.P_phonenumber_textBox.Name = "P_phonenumber_textBox";
+            this.P_phonenumber_textBox.Size = new System.Drawing.Size(787, 23);
+            this.P_phonenumber_textBox.TabIndex = 8;
+            // 
             // edit_button
             // 
             this.edit_button.CornerRoundingRadius = -1F;
-            this.edit_button.Location = new System.Drawing.Point(599, 3);
+            this.edit_button.Location = new System.Drawing.Point(3, 258);
             this.edit_button.Name = "edit_button";
             this.edit_button.Size = new System.Drawing.Size(89, 45);
             this.edit_button.TabIndex = 1;
             this.edit_button.Values.Text = "Chỉnh sửa";
             this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
             // 
-            // delete_button
+            // P_dateofbirth_dateTimePicker
             // 
-            this.delete_button.CornerRoundingRadius = -1F;
-            this.delete_button.Location = new System.Drawing.Point(694, 3);
-            this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(90, 45);
-            this.delete_button.TabIndex = 0;
-            this.delete_button.Values.Text = "Xóa";
+            this.P_dateofbirth_dateTimePicker.CustomFormat = "MM/dd/yyyy";
+            this.P_dateofbirth_dateTimePicker.Location = new System.Drawing.Point(201, 428);
+            this.P_dateofbirth_dateTimePicker.Name = "P_dateofbirth_dateTimePicker";
+            this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(270, 23);
+            this.P_dateofbirth_dateTimePicker.TabIndex = 13;
             // 
             // PM_DetailPatientForm
             // 
@@ -290,7 +264,6 @@
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -301,19 +274,17 @@
         public Krypton.Toolkit.KryptonButton kryptonButton2;
         private TableLayoutPanel tableLayoutPanel3;
         private Label PatientID;
-        public TextBox P_dateofbirth_textBox;
         private Label labelPatientName;
         private Label labelPatientGender;
-        private Label labelPatientAddress;
         public TextBox P_ID_textBox;
         public TextBox P_name_textBox;
-        public TextBox P_sex_textBox;
         public TextBox P_address_textBox;
         public TextBox P_phonenumber_textBox;
         private Label labelPatientBirthday;
-        private Label labelPatientPhoneNumber;
         private TableLayoutPanel tableLayoutPanel5;
         public Krypton.Toolkit.KryptonButton edit_button;
         public Krypton.Toolkit.KryptonButton delete_button;
+        public ComboBox P_sex_ComboBox;
+        public DateTimePicker P_dateofbirth_dateTimePicker;
     }
 }

@@ -41,11 +41,11 @@
             this.S_unit_textBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.S_description_label = new System.Windows.Forms.Label();
-            this.S_description_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.delete_button = new Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.delete_button = new Krypton.Toolkit.KryptonButton();
             this.edit_button = new Krypton.Toolkit.KryptonButton();
+            this.S_description_richTextBox = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -224,16 +224,14 @@
             this.S_description_label.TabIndex = 0;
             this.S_description_label.Text = "Mô tả";
             // 
-            // S_description_richTextBox
+            // delete_button
             // 
-            this.S_description_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.S_description_richTextBox.Enabled = false;
-            this.S_description_richTextBox.Location = new System.Drawing.Point(244, 3);
-            this.S_description_richTextBox.Name = "S_description_richTextBox";
-            this.S_description_richTextBox.Size = new System.Drawing.Size(718, 214);
-            this.S_description_richTextBox.TabIndex = 1;
-            this.S_description_richTextBox.Text = "";
+            this.delete_button.CornerRoundingRadius = -1F;
+            this.delete_button.Location = new System.Drawing.Point(3, 3);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.Size = new System.Drawing.Size(148, 54);
+            this.delete_button.TabIndex = 0;
+            this.delete_button.Values.Text = "Xóa";
             // 
             // tableLayoutPanel5
             // 
@@ -258,23 +256,14 @@
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.delete_button, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.edit_button, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.delete_button, 0, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(659, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(309, 60);
             this.tableLayoutPanel6.TabIndex = 0;
-            // 
-            // delete_button
-            // 
-            this.delete_button.CornerRoundingRadius = -1F;
-            this.delete_button.Location = new System.Drawing.Point(3, 3);
-            this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(148, 54);
-            this.delete_button.TabIndex = 0;
-            this.delete_button.Values.Text = "Xóa";
             // 
             // edit_button
             // 
@@ -284,6 +273,17 @@
             this.edit_button.Size = new System.Drawing.Size(148, 54);
             this.edit_button.TabIndex = 1;
             this.edit_button.Values.Text = "Chỉnh sửa";
+            // 
+            // S_description_richTextBox
+            // 
+            this.S_description_richTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.S_description_richTextBox.Enabled = false;
+            this.S_description_richTextBox.Location = new System.Drawing.Point(244, 3);
+            this.S_description_richTextBox.Name = "S_description_richTextBox";
+            this.S_description_richTextBox.Size = new System.Drawing.Size(718, 316);
+            this.S_description_richTextBox.TabIndex = 1;
+            this.S_description_richTextBox.Text = "";
             // 
             // SM_DetailServiceForm
             // 

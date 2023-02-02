@@ -37,23 +37,23 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                 Patient patient = new Patient();
                 patient = PM_Functions.getDetailPatient(patient_ID);
                 P_name_textBox.Text = patient.Name;
-                P_sex_textBox.Text = patient.Sex;
+                P_sex_ComboBox.Text = patient.Sex;
                 P_address_textBox.Text = patient.Address;
                 P_phonenumber_textBox.Text = patient.PhoneNumber;
-                P_dateofbirth_textBox.Text = patient.DateOfBirth.ToString("dd/MM/yyyy");
+                P_dateofbirth_dateTimePicker.Text = patient.DateOfBirth.ToString("MM/dd/yyyy");
             }      
             else
             {
                 P_name_textBox.ReadOnly = false;
-                P_sex_textBox.ReadOnly = false;
+                //P_sex_textBox.ReadOnly = false;
                 P_address_textBox.ReadOnly = false;
                 P_phonenumber_textBox.ReadOnly = false;
-                P_dateofbirth_textBox.ReadOnly = false;
+                //P_dateofbirth_textBox.ReadOnly = false;
                 P_name_textBox.Enabled = true;
-                P_sex_textBox.Enabled = true;
+                //P_sex_textBox.Enabled = true;
                 P_address_textBox.Enabled = true;
                 P_phonenumber_textBox.Enabled = true;
-                P_dateofbirth_textBox.Enabled = true;
+                P_dateofbirth_dateTimePicker.Enabled = true;
                 edit_button.Text = "Thêm";
             }      
         }

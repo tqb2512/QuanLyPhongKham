@@ -64,38 +64,38 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                     pm_DetailPatientForm.formState = "edit";
                     pm_DetailPatientForm.edit_button.Text = "Lưu";
                     pm_DetailPatientForm.P_name_textBox.ReadOnly = false;
-                    pm_DetailPatientForm.P_sex_textBox.ReadOnly = false;
+                    
                     pm_DetailPatientForm.P_address_textBox.ReadOnly = false;
                     pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = false;
-                    pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = false;
+                    //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = false;
                     pm_DetailPatientForm.P_name_textBox.Enabled = true;
-                    pm_DetailPatientForm.P_sex_textBox.Enabled = true;
+                    pm_DetailPatientForm.P_sex_ComboBox.Enabled = true;
                     pm_DetailPatientForm.P_address_textBox.Enabled = true;
                     pm_DetailPatientForm.P_phonenumber_textBox.Enabled = true;
-                    pm_DetailPatientForm.P_dateofbirth_textBox.Enabled = true;
+                    pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = true;
                     break;
                 case "edit":
                     patient.ID = pm_DetailPatientForm.patient_ID;
                     patient.Name = pm_DetailPatientForm.P_name_textBox.Text;
-                    patient.Sex = pm_DetailPatientForm.P_sex_textBox.Text;
+                    patient.Sex = pm_DetailPatientForm.P_sex_ComboBox.Text;
                     patient.Address = pm_DetailPatientForm.P_address_textBox.Text;
                     patient.PhoneNumber = pm_DetailPatientForm.P_phonenumber_textBox.Text;
-                    patient.DateOfBirth = Convert.ToDateTime(pm_DetailPatientForm.P_dateofbirth_textBox.Text);
+                    patient.DateOfBirth = Convert.ToDateTime(pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Text);
                     if (PM_Functions.updatePatient(patient))
                     {
                         MessageBox.Show("Cập nhật thành công");
                         pm_DetailPatientForm.formState = "view";
                         pm_DetailPatientForm.edit_button.Text = "Sửa";
                         pm_DetailPatientForm.P_name_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_sex_textBox.ReadOnly = true;
+                        //pm_DetailPatientForm.P_sex_textBox.ReadOnly = true;
                         pm_DetailPatientForm.P_address_textBox.ReadOnly = true;
                         pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = true;
+                        //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = true;
                         pm_DetailPatientForm.P_name_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_sex_textBox.Enabled = false;
+                        pm_DetailPatientForm.P_sex_ComboBox.Enabled = false;
                         pm_DetailPatientForm.P_address_textBox.Enabled = false;
                         pm_DetailPatientForm.P_phonenumber_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_dateofbirth_textBox.Enabled = false;                    
+                        pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = false;                    
                     }
                     else 
                     {
@@ -105,25 +105,25 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                 case "add":
                     patient.ID = pm_DetailPatientForm.patient_ID;
                     patient.Name = pm_DetailPatientForm.P_name_textBox.Text;
-                    patient.Sex = pm_DetailPatientForm.P_sex_textBox.Text;
+                    patient.Sex = pm_DetailPatientForm.P_sex_ComboBox.Text;
                     patient.Address = pm_DetailPatientForm.P_address_textBox.Text;
                     patient.PhoneNumber = pm_DetailPatientForm.P_phonenumber_textBox.Text;
-                    patient.DateOfBirth = Convert.ToDateTime(pm_DetailPatientForm.P_dateofbirth_textBox.Text);
+                    patient.DateOfBirth = Convert.ToDateTime(pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Text);
                     if (PM_Functions.addPatient(patient))
                     {
                         MessageBox.Show("Thêm thành công");
                         pm_DetailPatientForm.formState = "view";
                         pm_DetailPatientForm.edit_button.Text = "Sửa";
                         pm_DetailPatientForm.P_name_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_sex_textBox.ReadOnly = true;
+                        //pm_DetailPatientForm.P_sex_textBox.ReadOnly = true;
                         pm_DetailPatientForm.P_address_textBox.ReadOnly = true;
                         pm_DetailPatientForm.P_phonenumber_textBox.ReadOnly = true;
-                        pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = true;
+                        //pm_DetailPatientForm.P_dateofbirth_textBox.ReadOnly = true;
                         pm_DetailPatientForm.P_name_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_sex_textBox.Enabled = false;
+                        pm_DetailPatientForm.P_sex_ComboBox.Enabled = true;
                         pm_DetailPatientForm.P_address_textBox.Enabled = false;
                         pm_DetailPatientForm.P_phonenumber_textBox.Enabled = false;
-                        pm_DetailPatientForm.P_dateofbirth_textBox.Enabled = false;     
+                        pm_DetailPatientForm.P_dateofbirth_dateTimePicker.Enabled = false;     
                     }
                     else
                     {
