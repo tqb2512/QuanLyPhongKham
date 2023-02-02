@@ -101,8 +101,8 @@
             this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.search_TableLayout.Controls.Add(this.idSearch_textBox, 0, 0);
             this.search_TableLayout.Controls.Add(this.nameSearch_textBox, 1, 0);
-            this.search_TableLayout.Controls.Add(this.add_button, 0, 0);
             this.search_TableLayout.Controls.Add(this.phonenumberSearch_textBox, 2, 0);
             this.search_TableLayout.Controls.Add(this.dateofbirthSearch_textBox, 3, 0);
             this.search_TableLayout.Controls.Add(this.addressSearch_textBox, 2, 0);
@@ -130,10 +130,10 @@
             // add_button
             // 
             this.add_button.CornerRoundingRadius = -1F;
-            this.add_button.Location = new System.Drawing.Point(2, 2);
+            this.add_button.Location = new System.Drawing.Point(126, 2);
             this.add_button.Margin = new System.Windows.Forms.Padding(2);
             this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(80, 27);
+            this.add_button.Size = new System.Drawing.Size(120, 33);
             this.add_button.TabIndex = 7;
             this.add_button.Values.Text = "Thêm";
             // 
@@ -208,7 +208,7 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.idSearch_textBox, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.add_button, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(257, 2);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -222,10 +222,10 @@
             this.idSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.idSearch_textBox.Location = new System.Drawing.Point(126, 2);
+            this.idSearch_textBox.Location = new System.Drawing.Point(2, 2);
             this.idSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.idSearch_textBox.Name = "idSearch_textBox";
-            this.idSearch_textBox.Size = new System.Drawing.Size(120, 23);
+            this.idSearch_textBox.Size = new System.Drawing.Size(80, 23);
             this.idSearch_textBox.TabIndex = 0;
             this.idSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -247,7 +247,6 @@
             this.search_TableLayout.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

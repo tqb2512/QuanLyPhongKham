@@ -45,8 +45,11 @@
             this.P_phonenumber_textBox = new System.Windows.Forms.TextBox();
             this.edit_button = new Krypton.Toolkit.KryptonButton();
             this.P_dateofbirth_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel7
@@ -89,7 +92,6 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel3.Controls.Add(this.delete_button, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.PatientID, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.labelPatientName, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.labelPatientGender, 0, 2);
@@ -100,8 +102,9 @@
             this.tableLayoutPanel3.Controls.Add(this.P_sex_ComboBox, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.labelPatientBirthday, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.P_phonenumber_textBox, 1, 4);
-            this.tableLayoutPanel3.Controls.Add(this.edit_button, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.P_dateofbirth_dateTimePicker, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label1, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 4);
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(9, 12);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -119,9 +122,9 @@
             // delete_button
             // 
             this.delete_button.CornerRoundingRadius = -1F;
-            this.delete_button.Location = new System.Drawing.Point(3, 343);
+            this.delete_button.Location = new System.Drawing.Point(599, 3);
             this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(90, 45);
+            this.delete_button.Size = new System.Drawing.Size(89, 45);
             this.delete_button.TabIndex = 6;
             this.delete_button.Values.Text = "Xóa";
             // 
@@ -195,6 +198,8 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.tableLayoutPanel5.Controls.Add(this.delete_button, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.edit_button, 3, 0);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(201, 513);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -237,7 +242,7 @@
             // edit_button
             // 
             this.edit_button.CornerRoundingRadius = -1F;
-            this.edit_button.Location = new System.Drawing.Point(3, 258);
+            this.edit_button.Location = new System.Drawing.Point(694, 3);
             this.edit_button.Name = "edit_button";
             this.edit_button.Size = new System.Drawing.Size(89, 45);
             this.edit_button.TabIndex = 5;
@@ -252,6 +257,24 @@
             this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(270, 23);
             this.P_dateofbirth_dateTimePicker.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 255);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 15);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Địa chỉ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 340);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 15);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Điện thoại";
+            // 
             // PM_DetailPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -265,6 +288,7 @@
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -287,5 +311,7 @@
         public Krypton.Toolkit.KryptonButton delete_button;
         public ComboBox P_sex_ComboBox;
         public DateTimePicker P_dateofbirth_dateTimePicker;
+        private Label label1;
+        private Label label2;
     }
 }
