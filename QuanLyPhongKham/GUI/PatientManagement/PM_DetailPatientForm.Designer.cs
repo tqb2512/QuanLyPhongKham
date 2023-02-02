@@ -122,7 +122,7 @@
             this.delete_button.Location = new System.Drawing.Point(3, 343);
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(90, 45);
-            this.delete_button.TabIndex = 0;
+            this.delete_button.TabIndex = 6;
             this.delete_button.Values.Text = "Xóa";
             // 
             // PatientID
@@ -161,7 +161,7 @@
             this.P_ID_textBox.Location = new System.Drawing.Point(201, 3);
             this.P_ID_textBox.Name = "P_ID_textBox";
             this.P_ID_textBox.Size = new System.Drawing.Size(787, 23);
-            this.P_ID_textBox.TabIndex = 4;
+            this.P_ID_textBox.TabIndex = 0;
             // 
             // P_name_textBox
             // 
@@ -172,7 +172,7 @@
             this.P_name_textBox.Location = new System.Drawing.Point(201, 88);
             this.P_name_textBox.Name = "P_name_textBox";
             this.P_name_textBox.Size = new System.Drawing.Size(787, 23);
-            this.P_name_textBox.TabIndex = 5;
+            this.P_name_textBox.TabIndex = 1;
             // 
             // P_address_textBox
             // 
@@ -183,7 +183,7 @@
             this.P_address_textBox.Location = new System.Drawing.Point(201, 258);
             this.P_address_textBox.Name = "P_address_textBox";
             this.P_address_textBox.Size = new System.Drawing.Size(787, 23);
-            this.P_address_textBox.TabIndex = 7;
+            this.P_address_textBox.TabIndex = 3;
             // 
             // tableLayoutPanel5
             // 
@@ -212,7 +212,7 @@
             this.P_sex_ComboBox.Location = new System.Drawing.Point(201, 173);
             this.P_sex_ComboBox.Name = "P_sex_ComboBox";
             this.P_sex_ComboBox.Size = new System.Drawing.Size(71, 23);
-            this.P_sex_ComboBox.TabIndex = 12;
+            this.P_sex_ComboBox.TabIndex = 2;
             // 
             // labelPatientBirthday
             // 
@@ -240,7 +240,7 @@
             this.edit_button.Location = new System.Drawing.Point(3, 258);
             this.edit_button.Name = "edit_button";
             this.edit_button.Size = new System.Drawing.Size(89, 45);
-            this.edit_button.TabIndex = 1;
+            this.edit_button.TabIndex = 5;
             this.edit_button.Values.Text = "Chỉnh sửa";
             this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
             // 
@@ -250,12 +250,13 @@
             this.P_dateofbirth_dateTimePicker.Location = new System.Drawing.Point(201, 428);
             this.P_dateofbirth_dateTimePicker.Name = "P_dateofbirth_dateTimePicker";
             this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(270, 23);
-            this.P_dateofbirth_dateTimePicker.TabIndex = 13;
+            this.P_dateofbirth_dateTimePicker.TabIndex = 4;
             // 
             // PM_DetailPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1008, 590);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Name = "PM_DetailPatientForm";

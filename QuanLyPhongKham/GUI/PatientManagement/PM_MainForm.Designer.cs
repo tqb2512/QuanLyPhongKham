@@ -146,7 +146,7 @@
             this.phonenumberSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.phonenumberSearch_textBox.Name = "phonenumberSearch_textBox";
             this.phonenumberSearch_textBox.Size = new System.Drawing.Size(80, 23);
-            this.phonenumberSearch_textBox.TabIndex = 2;
+            this.phonenumberSearch_textBox.TabIndex = 4;
             this.phonenumberSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // dateofbirthSearch_textBox
@@ -158,7 +158,7 @@
             this.dateofbirthSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.dateofbirthSearch_textBox.Name = "dateofbirthSearch_textBox";
             this.dateofbirthSearch_textBox.Size = new System.Drawing.Size(83, 23);
-            this.dateofbirthSearch_textBox.TabIndex = 3;
+            this.dateofbirthSearch_textBox.TabIndex = 5;
             this.dateofbirthSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // addressSearch_textBox
@@ -170,7 +170,7 @@
             this.addressSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressSearch_textBox.Name = "addressSearch_textBox";
             this.addressSearch_textBox.Size = new System.Drawing.Size(80, 23);
-            this.addressSearch_textBox.TabIndex = 5;
+            this.addressSearch_textBox.TabIndex = 2;
             this.addressSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // genderSearch_textBox
@@ -182,7 +182,7 @@
             this.genderSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.genderSearch_textBox.Name = "genderSearch_textBox";
             this.genderSearch_textBox.Size = new System.Drawing.Size(80, 23);
-            this.genderSearch_textBox.TabIndex = 6;
+            this.genderSearch_textBox.TabIndex = 3;
             this.genderSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // tableLayoutPanel2
@@ -233,6 +233,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(515, 261);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
