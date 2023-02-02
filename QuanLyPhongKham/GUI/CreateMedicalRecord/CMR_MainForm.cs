@@ -119,7 +119,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
         {
             if (CMR_Functions.checkPermission(currentEmployeeID, "CREATE_MEDICALRECORD") == false)
             {
-                MessageBox.Show("Bạn không có quyền tạo bệnh án");
+                MessageBox.Show("Bạn không có quyền tạo bệnh án", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -127,7 +127,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
 
             if (P_Name_TextBox.Text == "")
             {
-                MessageBox.Show("Vui lòng thông tin bệnh nhân");
+                MessageBox.Show("Vui lòng thông tin bệnh nhân", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
