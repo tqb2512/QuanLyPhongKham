@@ -1,1 +1,2 @@
 # QuanLyPhongKham
+I. Chức năng
