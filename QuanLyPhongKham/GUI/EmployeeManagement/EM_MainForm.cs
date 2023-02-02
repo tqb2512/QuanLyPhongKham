@@ -25,7 +25,21 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
 
         private void EM_MainForm_Load(object sender, EventArgs e)
         {
+            dataLoad();
+            this.SizeChanged += new System.EventHandler(this.EM_MainForm_SizeChanged);
+        }
+        public void dataLoad()
+        {
             Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE");
+            if (EM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT") == false)
+            {
+                Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE WHERE EMPLOYEE_ID = " + System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString());
+                add_button.Enabled = false;
+            }
+            else
+            {
+                Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE");
+            }
             Employee_DataGridView.Columns["EMPLOYEE_ID"].HeaderText = "ID";
             Employee_DataGridView.Columns["EMPLOYEE_NAME"].HeaderText = "Tên nhân viên";
             Employee_DataGridView.Columns["EMPLOYEE_POSITION"].HeaderText = "Chức vụ";
@@ -39,12 +53,11 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
             Search_TableLayout.ColumnStyles[1].Width = (int)(Search_TableLayout.Width * nameColumnWidth);
             Search_TableLayout.ColumnStyles[2].Width = (int)(Search_TableLayout.Width * positionColumnWidth);
             Search_TableLayout.ColumnStyles[3].Width = (int)(Search_TableLayout.Width * userNameColumnWidth);
-            this.SizeChanged += new System.EventHandler(this.EM_MainForm_SizeChanged);
         }
 
         private void refresh_button_Click(object sender, EventArgs e)
         {
-            Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE");
+            dataLoad();
         }
 
         private void EM_MainForm_SizeChanged(object sender, EventArgs e)

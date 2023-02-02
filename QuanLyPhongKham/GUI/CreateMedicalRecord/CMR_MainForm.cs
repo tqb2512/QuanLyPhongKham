@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyPhongKham.Function.CreateMedicalRecord;
 using QuanLyPhongKham.Classes;
+using static Microsoft.WindowsAPICodePack.Shell.PropertySystem.SystemProperties.System;
+using System.Text.RegularExpressions;
 
 namespace QuanLyPhongKham.GUI.CreateMedicalRecord
 {
@@ -196,6 +198,16 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
                 Drugs_DataGridView.Columns["Manufacturer"].Visible = false;
                 Drugs_DataGridView.Columns["Description"].Visible = false;
                 this.SizeChanged += new System.EventHandler(this.CMR_MainForm_SizeChanged);
+                total_textBox.Text = "0";
+                foreach (DataGridViewRow row in Services_DataGridView.Rows)
+                {
+                    total_textBox.Text = (decimal.Parse(total_textBox.Text) + decimal.Parse(row.Cells["Price"].Value.ToString()) * decimal.Parse(row.Cells["Quantity"].Value.ToString())).ToString();
+                }
+                foreach (DataGridViewRow row in Drugs_DataGridView.Rows)
+                {
+                    total_textBox.Text = (decimal.Parse(total_textBox.Text) + decimal.Parse(row.Cells["Price"].Value.ToString()) * decimal.Parse(row.Cells["Quantity"].Value.ToString())).ToString();
+                }
+                total_textBox.Text = string.Format("{0:#,##}", decimal.Parse(total_textBox.Text));
             }
         }
 
@@ -224,6 +236,16 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
                 Services_DataGridView.Columns["Price"].DisplayIndex = 3;
                 Services_DataGridView.Columns["Description"].Visible = false;
                 this.SizeChanged += new System.EventHandler(this.CMR_MainForm_SizeChanged);
+                total_textBox.Text = "0";
+                foreach (DataGridViewRow row in Services_DataGridView.Rows)
+                {
+                    total_textBox.Text = (decimal.Parse(total_textBox.Text) + decimal.Parse(row.Cells["Price"].Value.ToString()) * decimal.Parse(row.Cells["Quantity"].Value.ToString())).ToString();
+                }
+                foreach (DataGridViewRow row in Drugs_DataGridView.Rows)
+                {
+                    total_textBox.Text = (decimal.Parse(total_textBox.Text) + decimal.Parse(row.Cells["Price"].Value.ToString()) * decimal.Parse(row.Cells["Quantity"].Value.ToString())).ToString();
+                }
+                total_textBox.Text = string.Format("{0:#,##}", decimal.Parse(total_textBox.Text));
             }
         }
 
@@ -255,7 +277,12 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
                 e.SuppressKeyPress = true;
             }
         }
-  
+
+        private void P_Sex_ComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+        }
+
         private void CMR_MainForm_SizeChanged(object sender, EventArgs e)
         {
             if (drugs != null)
@@ -274,6 +301,11 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
                 Services_DataGridView.Columns["Unit"].Width = (int)(Services_DataGridView.Width * S_Unit_Width);
                 Services_DataGridView.Columns["Quantity"].Width = (int)(Services_DataGridView.Width * S_Quantity_Width);
             }
+        }
+
+        private void CMR_MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

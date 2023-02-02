@@ -63,19 +63,21 @@ namespace QuanLyPhongKham.GUI.MainForm
         private void MF_MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = "-1";
-            Application.Exit();
         }
 
         private void E_MenuItem_Click_1(object sender, EventArgs e)
         {
-            if (MF_Functions.checkPermission(currentUser.ID, "VIEW_EMPLOYEE"))
-            {
-                addToTabControl(new EM_PanelForm(), "Quản lý nhân viên");
-            }
-            else
-            {
-                MessageBox.Show("Bạn không có quyền truy cập chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            addToTabControl(new EM_PanelForm(), "Quản lý nhân viên");
+        }
+
+        private void signOutButton_Click(object sender, EventArgs e)
+        {
+            System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = "-1";
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void MF_MainForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }

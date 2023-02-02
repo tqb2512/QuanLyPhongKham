@@ -32,12 +32,12 @@
             this.permission = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.CreateMedicalRecord = new Krypton.Toolkit.KryptonCheckBox();
-            this.ViewEmployee = new Krypton.Toolkit.KryptonCheckBox();
-            this.EditPatient = new Krypton.Toolkit.KryptonCheckBox();
-            this.EditDrug = new Krypton.Toolkit.KryptonCheckBox();
-            this.EditService = new Krypton.Toolkit.KryptonCheckBox();
-            this.EditEmployee = new Krypton.Toolkit.KryptonCheckBox();
+            this.MakePayment = new Krypton.Toolkit.KryptonCheckBox();
             this.RemoveMedicalRecord = new Krypton.Toolkit.KryptonCheckBox();
+            this.EditService = new Krypton.Toolkit.KryptonCheckBox();
+            this.EditDrug = new Krypton.Toolkit.KryptonCheckBox();
+            this.EditPatient = new Krypton.Toolkit.KryptonCheckBox();
+            this.EditEmployee = new Krypton.Toolkit.KryptonCheckBox();
             this.userInfo = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.E_ID_Label = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             this.E_Password_textBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.editButton = new Krypton.Toolkit.KryptonButton();
-            this.delete_Button = new Krypton.Toolkit.KryptonButton();
+            this.deleteButton = new Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.permission.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -102,22 +102,22 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutPanel3.Controls.Add(this.CreateMedicalRecord, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.ViewEmployee, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.EditPatient, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.EditDrug, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.EditService, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.MakePayment, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.RemoveMedicalRecord, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.EditService, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.EditDrug, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.EditPatient, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.EditEmployee, 1, 6);
-            this.tableLayoutPanel3.Controls.Add(this.RemoveMedicalRecord, 1, 5);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 34);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 7;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49953F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(940, 370);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
@@ -132,49 +132,60 @@
             this.CreateMedicalRecord.TabIndex = 0;
             this.CreateMedicalRecord.Values.Text = "Tạo bệnh án";
             // 
-            // ViewEmployee
+            // MakePayment
             // 
-            this.ViewEmployee.Enabled = false;
-            this.ViewEmployee.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.ViewEmployee.Location = new System.Drawing.Point(238, 55);
-            this.ViewEmployee.Name = "ViewEmployee";
-            this.ViewEmployee.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.ViewEmployee.Size = new System.Drawing.Size(279, 29);
-            this.ViewEmployee.TabIndex = 1;
-            this.ViewEmployee.Values.Text = "Xem danh sách nhân viên";
+            this.MakePayment.Enabled = false;
+            this.MakePayment.LabelStyle = Krypton.Toolkit.LabelStyle.BoldControl;
+            this.MakePayment.Location = new System.Drawing.Point(238, 55);
+            this.MakePayment.Name = "MakePayment";
+            this.MakePayment.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.MakePayment.Size = new System.Drawing.Size(239, 29);
+            this.MakePayment.TabIndex = 7;
+            this.MakePayment.Values.Text = "Thực hiện thanh toán";
             // 
-            // EditPatient
+            // RemoveMedicalRecord
             // 
-            this.EditPatient.Enabled = false;
-            this.EditPatient.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.EditPatient.Location = new System.Drawing.Point(238, 107);
-            this.EditPatient.Name = "EditPatient";
-            this.EditPatient.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.EditPatient.Size = new System.Drawing.Size(335, 29);
-            this.EditPatient.TabIndex = 2;
-            this.EditPatient.Values.Text = " Chỉnh sủa thông tin bệnh nhân";
-            // 
-            // EditDrug
-            // 
-            this.EditDrug.Enabled = false;
-            this.EditDrug.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.EditDrug.Location = new System.Drawing.Point(238, 159);
-            this.EditDrug.Name = "EditDrug";
-            this.EditDrug.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.EditDrug.Size = new System.Drawing.Size(291, 29);
-            this.EditDrug.TabIndex = 3;
-            this.EditDrug.Values.Text = "Chỉnh sủa danh sách thuốc";
+            this.RemoveMedicalRecord.Enabled = false;
+            this.RemoveMedicalRecord.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
+            this.RemoveMedicalRecord.Location = new System.Drawing.Point(238, 107);
+            this.RemoveMedicalRecord.Name = "RemoveMedicalRecord";
+            this.RemoveMedicalRecord.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.RemoveMedicalRecord.Size = new System.Drawing.Size(153, 29);
+            this.RemoveMedicalRecord.TabIndex = 5;
+            this.RemoveMedicalRecord.Values.Text = "Xóa bệnh án";
             // 
             // EditService
             // 
             this.EditService.Enabled = false;
             this.EditService.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.EditService.Location = new System.Drawing.Point(238, 211);
+            this.EditService.Location = new System.Drawing.Point(238, 263);
             this.EditService.Name = "EditService";
             this.EditService.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.EditService.Size = new System.Drawing.Size(306, 29);
+            this.EditService.Size = new System.Drawing.Size(307, 29);
             this.EditService.TabIndex = 4;
-            this.EditService.Values.Text = "Chỉnh sủa danh sách dịch vụ";
+            this.EditService.Values.Text = "Chỉnh sửa danh sách dịch vụ";
+            // 
+            // EditDrug
+            // 
+            this.EditDrug.Enabled = false;
+            this.EditDrug.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
+            this.EditDrug.Location = new System.Drawing.Point(238, 211);
+            this.EditDrug.Name = "EditDrug";
+            this.EditDrug.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.EditDrug.Size = new System.Drawing.Size(293, 29);
+            this.EditDrug.TabIndex = 3;
+            this.EditDrug.Values.Text = "Chỉnh sửa danh sách thuốc";
+            // 
+            // EditPatient
+            // 
+            this.EditPatient.Enabled = false;
+            this.EditPatient.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
+            this.EditPatient.Location = new System.Drawing.Point(238, 159);
+            this.EditPatient.Name = "EditPatient";
+            this.EditPatient.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.EditPatient.Size = new System.Drawing.Size(336, 29);
+            this.EditPatient.TabIndex = 2;
+            this.EditPatient.Values.Text = " Chỉnh sửa thông tin bệnh nhân";
             // 
             // EditEmployee
             // 
@@ -183,20 +194,9 @@
             this.EditEmployee.Location = new System.Drawing.Point(238, 315);
             this.EditEmployee.Name = "EditEmployee";
             this.EditEmployee.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.EditEmployee.Size = new System.Drawing.Size(228, 29);
+            this.EditEmployee.Size = new System.Drawing.Size(229, 29);
             this.EditEmployee.TabIndex = 6;
-            this.EditEmployee.Values.Text = "Chỉnh sủa nhân viên";
-            // 
-            // RemoveMedicalRecord
-            // 
-            this.RemoveMedicalRecord.Enabled = false;
-            this.RemoveMedicalRecord.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.RemoveMedicalRecord.Location = new System.Drawing.Point(238, 263);
-            this.RemoveMedicalRecord.Name = "RemoveMedicalRecord";
-            this.RemoveMedicalRecord.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.RemoveMedicalRecord.Size = new System.Drawing.Size(153, 29);
-            this.RemoveMedicalRecord.TabIndex = 5;
-            this.RemoveMedicalRecord.Values.Text = "Xóa bệnh án";
+            this.EditEmployee.Values.Text = "Chỉnh sửa nhân viên";
             // 
             // userInfo
             // 
@@ -354,7 +354,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel4.Controls.Add(this.editButton, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.delete_Button, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.deleteButton, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 835);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -373,14 +373,14 @@
             this.editButton.Values.Text = "Chỉnh sửa";
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
-            // delete_Button
+            // deleteButton
             // 
-            this.delete_Button.CornerRoundingRadius = -1F;
-            this.delete_Button.Location = new System.Drawing.Point(569, 3);
-            this.delete_Button.Name = "delete_Button";
-            this.delete_Button.Size = new System.Drawing.Size(184, 68);
-            this.delete_Button.TabIndex = 1;
-            this.delete_Button.Values.Text = "Xóa";
+            this.deleteButton.CornerRoundingRadius = -1F;
+            this.deleteButton.Location = new System.Drawing.Point(569, 3);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(184, 68);
+            this.deleteButton.TabIndex = 1;
+            this.deleteButton.Values.Text = "Xóa";
             // 
             // EM_DetailEmployeeForm
             // 
@@ -422,7 +422,6 @@
         private GroupBox permission;
         private TableLayoutPanel tableLayoutPanel3;
         private Krypton.Toolkit.KryptonCheckBox CreateMedicalRecord;
-        private Krypton.Toolkit.KryptonCheckBox ViewEmployee;
         private Krypton.Toolkit.KryptonCheckBox EditPatient;
         private Krypton.Toolkit.KryptonCheckBox EditDrug;
         private Krypton.Toolkit.KryptonCheckBox EditService;
@@ -430,7 +429,8 @@
         private Krypton.Toolkit.KryptonCheckBox RemoveMedicalRecord;
         private GroupBox userInfo;
         private TableLayoutPanel tableLayoutPanel4;
-        private Krypton.Toolkit.KryptonButton delete_Button;
         public Krypton.Toolkit.KryptonButton editButton;
+        private Krypton.Toolkit.KryptonCheckBox MakePayment;
+        public Krypton.Toolkit.KryptonButton deleteButton;
     }
 }

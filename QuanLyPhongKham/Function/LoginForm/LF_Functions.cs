@@ -12,26 +12,34 @@ namespace QuanLyPhongKham.Function.LoginForm
         static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sql"].ConnectionString;
         public static int checkLogin(string username, string password)
         {
-            int userId;
-            SqlConnection connection = new SqlConnection(connectionString);
-            string query = "SELECT COUNT(*) FROM EMPLOYEE WHERE USERNAME = '" + username + "' AND PASSWORD = '" + password + "'";
-            SqlCommand command = new SqlCommand(query, connection);
-            connection.Open();
-            int result = (int)command.ExecuteScalar();
-            connection.Close();
-            if (result == 1)
+            try
             {
-                query = "SELECT EMPLOYEE_ID FROM EMPLOYEE WHERE USERNAME = '" + username + "'";
-                command = new SqlCommand(query, connection);
+                int userId;
+                SqlConnection connection = new SqlConnection(connectionString);
+                string query = "SELECT COUNT(*) FROM EMPLOYEE WHERE USERNAME = '" + username + "' AND PASSWORD = '" + password + "'";
+                SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
-                userId = (int)command.ExecuteScalar();
+                int result = (int)command.ExecuteScalar();
                 connection.Close();
-                return userId;
+                if (result == 1)
+                {
+                    query = "SELECT EMPLOYEE_ID FROM EMPLOYEE WHERE USERNAME = '" + username + "'";
+                    command = new SqlCommand(query, connection);
+                    connection.Open();
+                    userId = (int)command.ExecuteScalar();
+                    connection.Close();
+                    return userId;
+                }
+                else
+                {
+                    return -1;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return -1;
+                System.Windows.Forms.MessageBox.Show(ex.Message);
             }
+            return -1;
         }
     }
 }

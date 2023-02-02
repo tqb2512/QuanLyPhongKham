@@ -215,7 +215,7 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
                 if (existPatient(medicalRecord.Patient) == false)
                     insertPatient(medicalRecord.Patient);
                 insertExamine(medicalRecord.Patient, medicalRecord.Employee);
-                string query = "INSERT INTO MEDICALRECORD VALUES (@id, @eID, @date, @pTemp, @pWeight, @diagnosis, @note)";
+                string query = "INSERT INTO MEDICALRECORD VALUES (@id, @eID, @date, @pTemp, @pWeight, @diagnosis, @note, @pStatus)";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@id", medicalRecord.ID);
@@ -225,6 +225,7 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
                 command.Parameters.AddWithValue("@pWeight", medicalRecord.Patient_Weight);
                 command.Parameters.Add("@diagnosis", SqlDbType.NVarChar, 1000).Value = medicalRecord.Diagnosis;
                 command.Parameters.Add("@note", SqlDbType.NVarChar, 1000).Value = medicalRecord.Note;
+                command.Parameters.AddWithValue("@pStatus", 0);
                 connection.Open();
                 int result = command.ExecuteNonQuery();
                 connection.Close();
