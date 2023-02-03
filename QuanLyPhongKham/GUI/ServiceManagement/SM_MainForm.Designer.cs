@@ -388,7 +388,7 @@
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel11, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel10, 0, 1);
             this.tableLayoutPanel6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(6, 34);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 34);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
