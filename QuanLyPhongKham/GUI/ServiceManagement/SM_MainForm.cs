@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyPhongKham.Function.ServiceManagement;
+using QuanLyPhongKham.Classes;
+using QuanLyPhongKham.Function;
 
 namespace QuanLyPhongKham.GUI.ServiceManagement
 {
@@ -17,18 +18,14 @@ namespace QuanLyPhongKham.GUI.ServiceManagement
         {
             InitializeComponent();
         }
+
+        Service currentService = new Service();
+
         float idColumnWidth = 0.1f;
         float nameColumnWidth = 0.2f;
         float unitColumnWidth = 0.2f;
         float priceColumnWidth = 0.2f;
         float descriptionColumnWidth = 0.3f;
-
-        private void SM_MainForm_Load(object sender, EventArgs e)
-        {
-            dataLoad();
-            this.SizeChanged += new System.EventHandler(this.SM_MainForm_SizeChanged);
-        }
-
         public void dataLoad()
         {
             DataTable data = SM_Functions.getSqlData("SELECT * FROM SERVICE");
@@ -78,7 +75,7 @@ namespace QuanLyPhongKham.GUI.ServiceManagement
                         {
                             case "idSearch_textBox":
                                 filter += "CONVERT(SERVICE_ID, System.String) LIKE '%" + control.Text + "%' AND ";
-                                    break;
+                                break;
                             case "nameSearch_textBox":
                                 filter += "CONVERT(SERVICE_NAME, System.String) LIKE '%" + control.Text + "%' AND ";
                                 break;
@@ -103,6 +100,172 @@ namespace QuanLyPhongKham.GUI.ServiceManagement
             else
             {
                 (servicesDataGridView.DataSource as DataTable).DefaultView.RowFilter = null;
+            }
+        }
+
+        private void SM_TestForm_Load(object sender, EventArgs e)
+        {
+            dataLoad();
+            this.SizeChanged += new System.EventHandler(this.SM_MainForm_SizeChanged);
+        }
+
+        private void servicesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                edit_button.Text = "Sửa";
+                currentService = SM_Functions.getDetailService(Convert.ToInt32(servicesDataGridView.Rows[e.RowIndex].Cells["SERVICE_ID"].Value.ToString()));
+                S_ID_textBox.Text = currentService.ID.ToString();
+                S_name_textBox.Text = currentService.Name;
+                S_price_textBox.Text = currentService.Price.ToString("N0");
+                S_description_richTextBox.Text = currentService.Description;
+                S_unit_textBox.Text = currentService.Unit;
+                S_name_textBox.ReadOnly = true;
+                S_price_textBox.ReadOnly = true;
+                S_unit_textBox.ReadOnly = true;
+                S_description_richTextBox.ReadOnly = true;
+                S_name_textBox.Enabled = false;
+                S_price_textBox.Enabled = false;
+                S_description_richTextBox.Enabled = false;
+                S_unit_textBox.Enabled = false;
+            }
+        }
+
+        private void add_button_Click(object sender, EventArgs e)
+        {
+            if (SM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_SERVICE") == true)
+            {
+                S_ID_textBox.Text = Convert.ToString(SM_Functions.getMaxID() + 1);
+                S_name_textBox.Text = "";
+                S_price_textBox.Text = "";
+                S_description_richTextBox.Text = "";
+                S_unit_textBox.Text = "";
+                S_name_textBox.ReadOnly = false;
+                S_price_textBox.ReadOnly = false;
+                S_description_richTextBox.ReadOnly = false;
+                S_unit_textBox.ReadOnly = false;
+                S_name_textBox.Enabled = true;
+                S_price_textBox.Enabled = true;
+                S_description_richTextBox.Enabled = true;
+                S_unit_textBox.Enabled = true;
+                edit_button.Text = "Thêm";
+                //
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền thực hiện chức năng này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void edit_button_Click(object sender, EventArgs e)
+        {
+            if (SM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_SERVICE") == true)
+            {
+                if (S_ID_textBox.Text != "")
+                    currentService.ID = Convert.ToInt32(S_ID_textBox.Text);
+                currentService.Name = S_name_textBox.Text;
+                if (S_price_textBox.Text != "")
+                    currentService.Price = Convert.ToDecimal(S_price_textBox.Text);
+                currentService.Unit = S_unit_textBox.Text;
+                currentService.Description = S_description_richTextBox.Text;
+                if (edit_button.Text == "Thêm")
+                {
+                    if (SM_Functions.addService(currentService))
+                    {
+                        MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        edit_button.Text = "Sửa";
+                        S_name_textBox.ReadOnly = true;
+                        S_price_textBox.ReadOnly = true;
+                        S_unit_textBox.ReadOnly = true;
+                        S_description_richTextBox.ReadOnly = true;
+                        S_name_textBox.Enabled = false;
+                        S_price_textBox.Enabled = false;
+                        S_description_richTextBox.Enabled = false;
+                        S_unit_textBox.Enabled = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else if (edit_button.Text == "Lưu")
+                {
+                    if (SM_Functions.updateService(currentService))
+                    {
+                        MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        edit_button.Text = "Sửa";
+                        S_name_textBox.ReadOnly = true;
+                        S_price_textBox.ReadOnly = true;
+                        S_unit_textBox.ReadOnly = true;
+                        S_description_richTextBox.ReadOnly = true;
+                        S_name_textBox.Enabled = false;
+                        S_price_textBox.Enabled = false;
+                        S_description_richTextBox.Enabled = false;
+                        S_unit_textBox.Enabled = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cập nhật thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else if (S_ID_textBox.Text != "")
+                {
+                    edit_button.Text = "Lưu";
+                    S_name_textBox.ReadOnly = false;
+                    S_price_textBox.ReadOnly = false;
+                    S_unit_textBox.ReadOnly = false;
+                    S_description_richTextBox.ReadOnly = false;
+                    S_name_textBox.Enabled = true;
+                    S_price_textBox.Enabled = true;
+                    S_description_richTextBox.Enabled = true;
+                    S_unit_textBox.Enabled = true;
+                }
+                dataLoad();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền thực hiện chức năng này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void delete_button_Click(object sender, EventArgs e)
+        {
+            if (SM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_SERVICE") == true)
+            {
+                if (S_ID_textBox.Text != "" || S_ID_textBox.Text != Convert.ToString(SM_Functions.getMaxID()))
+                {
+                    if (SM_Functions.deleteService(Convert.ToInt32(S_ID_textBox.Text)) == true)
+                    {
+                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        S_ID_textBox.Text = "";
+                        S_name_textBox.Text = "";
+                        S_price_textBox.Text = "";
+                        S_description_richTextBox.Text = "";
+                        S_unit_textBox.Text = "";
+                        dataLoad();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền thực hiện chức năng này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void refresh_button_Click(object sender, EventArgs e)
+        {
+            dataLoad();
+        }
+
+        private void S_price_textBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!(Char.IsNumber((char)e.KeyCode) || e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete || e.KeyCode == Keys.Enter))
+            {
+                e.SuppressKeyPress = true;
             }
         }
     }

@@ -37,13 +37,11 @@
             this.quantitySearch_textBox = new System.Windows.Forms.TextBox();
             this.Drugs_DataGridView = new Krypton.Toolkit.KryptonDataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.confirm_button = new Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.search_tableLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Drugs_DataGridView)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -149,14 +147,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Drugs_DataGridView.ColumnHeadersHeight = 70;
+            this.Drugs_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Drugs_DataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Drugs_DataGridView.Location = new System.Drawing.Point(3, 46);
             this.Drugs_DataGridView.Name = "Drugs_DataGridView";
             this.Drugs_DataGridView.RowHeadersVisible = false;
             this.Drugs_DataGridView.RowHeadersWidth = 72;
+            this.Drugs_DataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Drugs_DataGridView.RowTemplate.Height = 37;
+            this.Drugs_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.Drugs_DataGridView.Size = new System.Drawing.Size(946, 583);
             this.Drugs_DataGridView.TabIndex = 1;
             this.Drugs_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Drugs_DataGridView_CellClick);
+            this.Drugs_DataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.Drugs_DataGridView_EditingControlShowing);
+            this.Drugs_DataGridView.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Drugs_DataGridView_KeyPress);
             // 
             // tableLayoutPanel2
             // 
@@ -166,7 +170,7 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.confirm_button, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 635);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -174,27 +178,13 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(946, 74);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.confirm_button, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(564, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(379, 68);
-            this.tableLayoutPanel3.TabIndex = 0;
-            // 
             // confirm_button
             // 
             this.confirm_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.confirm_button.CornerRoundingRadius = -1F;
-            this.confirm_button.Location = new System.Drawing.Point(192, 3);
+            this.confirm_button.Location = new System.Drawing.Point(759, 3);
             this.confirm_button.Name = "confirm_button";
-            this.confirm_button.Size = new System.Drawing.Size(184, 62);
+            this.confirm_button.Size = new System.Drawing.Size(184, 68);
             this.confirm_button.TabIndex = 0;
             this.confirm_button.Values.Text = "Xác Nhận";
             this.confirm_button.Click += new System.EventHandler(this.confirm_button_Click);
@@ -215,7 +205,6 @@
             this.search_tableLayout.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Drugs_DataGridView)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -231,7 +220,6 @@
         private TextBox quantitySearch_textBox;
         private Krypton.Toolkit.KryptonDataGridView Drugs_DataGridView;
         private TableLayoutPanel tableLayoutPanel2;
-        private TableLayoutPanel tableLayoutPanel3;
         private Krypton.Toolkit.KryptonButton confirm_button;
     }
 }

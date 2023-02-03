@@ -67,8 +67,8 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.97382F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.02618F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.68288F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.31712F));
             this.tableLayoutPanel2.Controls.Add(this.Confirm_Button, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 635);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -79,10 +79,11 @@
             // 
             // Confirm_Button
             // 
+            this.Confirm_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Confirm_Button.CornerRoundingRadius = -1F;
-            this.Confirm_Button.Location = new System.Drawing.Point(778, 3);
+            this.Confirm_Button.Location = new System.Drawing.Point(759, 3);
             this.Confirm_Button.Name = "Confirm_Button";
-            this.Confirm_Button.Size = new System.Drawing.Size(158, 68);
+            this.Confirm_Button.Size = new System.Drawing.Size(184, 68);
             this.Confirm_Button.TabIndex = 1;
             this.Confirm_Button.Values.Text = "Xác nhận";
             this.Confirm_Button.Click += new System.EventHandler(this.Confirm_Button_Click);
@@ -97,6 +98,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Patient_DataGridView.ColumnHeadersHeight = 70;
+            this.Patient_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Patient_DataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Patient_DataGridView.Location = new System.Drawing.Point(3, 46);
             this.Patient_DataGridView.Name = "Patient_DataGridView";
             this.Patient_DataGridView.RowHeadersVisible = false;

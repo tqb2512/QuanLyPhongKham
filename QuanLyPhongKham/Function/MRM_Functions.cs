@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using QuanLyPhongKham.GUI.MedicalRecordManagement;
 
-namespace QuanLyPhongKham.Function.MedicalRecordManagement
+namespace QuanLyPhongKham.Function
 {
     internal class MRM_Functions
     {
@@ -50,13 +50,42 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
             return null;
         }
 
+        public static bool checkPermission(int ID, string permission)
+        {
+            string query = "SELECT " + permission + " FROM PERMISSION WHERE EMPLOYEE_ID = " + ID;
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (Convert.ToBoolean(reader.GetByte(0)) == true)
+                {
+                    connection.Close();
+                    return true;
+                }
+            }
+            connection.Close();
+            return false;
+        }
+
+        public static bool deleteMedicalRecord(int medicalRecordId)
+        {
+            string query = "DELETE FROM MEDICALRECORD WHERE MEDICALRECORD_ID = " + medicalRecordId;
+            if (sqlQueryExcute(query) > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public static MedicalRecord getDetailMedicalRecord(int medicalRecordId)
         {
             MedicalRecord medicalRecord = new MedicalRecord();
             try
             {
                 SqlConnection connection = new SqlConnection(connectionString);
-                string query = "SELECT MEDICALRECORD_ID, DATE, PATIENT_TEMP, PATIENT_WEIGHT, PATIENT.PATIENT_ID, PATIENT.PATIENT_NAME, PATIENT.PATIENT_SEX, EMPLOYEE.EMPLOYEE_ID, EMPLOYEE.EMPLOYEE_NAME, DIAGNOSIS, NOTE FROM MEDICALRECORD INNER JOIN EXAMINE ON MEDICALRECORD.EXAMINE_ID = EXAMINE.EXAMINE_ID INNER JOIN PATIENT ON EXAMINE.PATIENT_ID = PATIENT.PATIENT_ID INNER JOIN EMPLOYEE ON EXAMINE.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID WHERE MEDICALRECORD_ID = '" + medicalRecordId + "'";
+                string query = "SELECT MEDICALRECORD_ID, DATE, PATIENT_TEMP, PATIENT_WEIGHT, PATIENT.PATIENT_ID, PATIENT.PATIENT_NAME, PATIENT.PATIENT_SEX, EMPLOYEE.EMPLOYEE_ID, EMPLOYEE.EMPLOYEE_NAME, DIAGNOSIS, NOTE, PAYMENT_STATUS FROM MEDICALRECORD INNER JOIN EXAMINE ON MEDICALRECORD.EXAMINE_ID = EXAMINE.EXAMINE_ID INNER JOIN PATIENT ON EXAMINE.PATIENT_ID = PATIENT.PATIENT_ID INNER JOIN EMPLOYEE ON EXAMINE.EMPLOYEE_ID = EMPLOYEE.EMPLOYEE_ID WHERE MEDICALRECORD_ID = '" + medicalRecordId + "'";
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
@@ -75,6 +104,7 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
                     medicalRecord.Employee.Name = reader.GetString(8);
                     medicalRecord.Diagnosis = reader.GetString(9);
                     medicalRecord.Note = reader.GetString(10);
+                    medicalRecord.Payment_Status = Convert.ToBoolean(reader.GetByte(11));
                 }
                 connection.Close();
                 query = "SELECT DRUG.DRUG_ID, DRUG_NAME, DRUG_UNIT, QUANTITY, DRUG_MANUFACTURER, DRUG_DESCRIPTION, DRUG_PRICE FROM DRUG INNER JOIN PRESCRIPTION ON DRUG.DRUG_ID = PRESCRIPTION.DRUG_ID WHERE MEDICALRECORD_ID = '" + medicalRecordId + "'";
@@ -107,7 +137,7 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
             }
             return null;
         }
-       
-        
+
+
     }
 }

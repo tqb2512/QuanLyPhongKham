@@ -5,11 +5,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using QuanLyPhongKham.Classes;
 
-namespace QuanLyPhongKham.Function.CreateMedicalRecord
+namespace QuanLyPhongKham.Function
 {
-    internal class CMR_Functions
+    internal class EM_Functions
     {
         static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sql"].ConnectionString;
         public static int sqlQueryExcute(string query)
@@ -48,13 +47,11 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
             }
             return null;
         }
-
-        public static int getMaxPatientID()
+        public static int getMaxID(string query)
         {
             try
             {
                 int max = 0;
-                string query = "SELECT MAX(PATIENT_ID) AS MAX FROM PATIENT";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
@@ -73,32 +70,23 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
             return -1;
         }
 
-        public static int getMaxMedicalRecordID()
+        public static bool checkPermission(int ID, string permission)
         {
-            try
-            {
-                int max = 0;
-                string query = "SELECT MAX(MEDICALRECORD_ID) AS MAX FROM MEDICALRECORD";
-                SqlConnection connection = new SqlConnection(connectionString);
-                SqlCommand command = new SqlCommand(query, connection);
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    max = reader.GetInt32(0);
-                }
-                connection.Close();
-                return max;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            return -1;
-        }
 
-        public static bool addMedicalRecord(MedicalRecord medicalRecord)
-        {
+            string query = "SELECT " + permission + " FROM PERMISSION WHERE EMPLOYEE_ID = " + ID;
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (Convert.ToBoolean(reader.GetByte(0)) == true)
+                {
+                    connection.Close();
+                    return true;
+                }
+            }
+            connection.Close();
             return false;
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using QuanLyPhongKham.Classes;
 using System.Data.SqlClient;
 
-namespace QuanLyPhongKham.Function.MainForm
+namespace QuanLyPhongKham.Function
 {
     internal class MF_Functions
     {
@@ -39,6 +39,26 @@ namespace QuanLyPhongKham.Function.MainForm
             employee.ID = userId;
             connection.Close();
             return employee;
+        }
+
+        public static bool checkPermission(int ID, string permission)
+        {
+
+            string query = "SELECT " + permission + " FROM PERMISSION WHERE EMPLOYEE_ID = " + ID;
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (Convert.ToBoolean(reader.GetByte(0)) == true)
+                {
+                    connection.Close();
+                    return true;
+                }
+            }
+            connection.Close();
+            return false;
         }
     }
 }

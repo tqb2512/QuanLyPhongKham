@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyPhongKham.Classes;
-using QuanLyPhongKham.Function.CreateMedicalRecord;
+using QuanLyPhongKham.Function;
 
 namespace QuanLyPhongKham.GUI.CreateMedicalRecord
 {
@@ -78,7 +78,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             drugs = new List<Drug>();
             foreach (DataGridViewRow row in Drugs_DataGridView.Rows)
             {
-                if (row.Cells[4].Value != "" && row.Cells[4].Value != "0" && row.Cells[4].Value != System.DBNull.Value)
+                if (row.Cells[4].Value != System.DBNull.Value && String.IsNullOrEmpty(row.Cells[4].Value.ToString()) == false && Convert.ToInt32(row.Cells[4].Value) * 1 != 0)
                 {
                     Drug drug = new Drug();
                     drug.ID = (int)row.Cells[0].Value;
@@ -111,6 +111,25 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             if (e.ColumnIndex == 4)
             {
                 Drugs_DataGridView.BeginEdit(true);
+            }
+        }
+
+        private void Drugs_DataGridView_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            DataGridViewTextBoxEditingControl tb = e.Control as DataGridViewTextBoxEditingControl;
+            if (tb != null)
+            {
+                tb.KeyPress += new KeyPressEventHandler(Drugs_DataGridView_KeyPress);
+            }
+            e.Control.KeyPress += new KeyPressEventHandler(Drugs_DataGridView_KeyPress);
+
+        }
+
+        private void Drugs_DataGridView_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsNumber((char)e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter))
+            {
+                e.Handled = true;
             }
         }
     }
