@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyPhongKham.Classes;
-using QuanLyPhongKham.Function.MainForm;
 using QuanLyPhongKham.GUI.MedicalRecordManagement;
 using QuanLyPhongKham.GUI.CreateMedicalRecord;
 using QuanLyPhongKham.GUI.PatientManagement;
 using QuanLyPhongKham.GUI.ServiceManagement;
 using QuanLyPhongKham.GUI.EmployeeManagement;
+using QuanLyPhongKham.Function;
 
 namespace QuanLyPhongKham.GUI.MainForm
 {

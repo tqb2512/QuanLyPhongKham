@@ -1,5 +1,4 @@
 ﻿using QuanLyPhongKham.Classes;
-using QuanLyPhongKham.Function.MedicalRecordManagement;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

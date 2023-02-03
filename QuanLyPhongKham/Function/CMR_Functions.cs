@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using QuanLyPhongKham.Classes;
 
-namespace QuanLyPhongKham.Function.CreateMedicalRecord
+namespace QuanLyPhongKham.Function
 {
     internal class CMR_Functions
     {
@@ -71,7 +71,7 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
             }
             return -1;
         }
-        
+
         public static bool insertPatient(Patient patient)
         {
             try
@@ -79,7 +79,7 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
                 string query = "INSERT INTO PATIENT VALUES (@id, @name, @sex, @address, @phoneNumber, @dateOfBirth)";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@id",patient.ID);
+                command.Parameters.AddWithValue("@id", patient.ID);
                 command.Parameters.Add("@name", SqlDbType.NVarChar, 100).Value = patient.Name;
                 command.Parameters.Add("@sex", SqlDbType.NVarChar, 100).Value = patient.Sex;
                 command.Parameters.Add("@address", SqlDbType.NVarChar, 100).Value = patient.Address;
@@ -124,7 +124,7 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
             }
             return false;
         }
-        
+
         public static bool insertToPrescription(int ID, Drug drug)
         {
             try
@@ -190,7 +190,7 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
 
         public static bool checkPermission(int ID, string permission)
         {
-            
+
             string query = "SELECT " + permission + " FROM PERMISSION WHERE EMPLOYEE_ID = " + ID;
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand command = new SqlCommand(query, connection);
@@ -207,7 +207,7 @@ namespace QuanLyPhongKham.Function.CreateMedicalRecord
             connection.Close();
             return false;
         }
-        
+
         public static bool createMedicalRecord(MedicalRecord medicalRecord)
         {
             try

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using QuanLyPhongKham.GUI.MainForm;
-using QuanLyPhongKham.Function.LoginForm;
+using QuanLyPhongKham.Function;
 
 namespace QuanLyPhongKham.GUI.LoginForm
 {
@@ -22,25 +22,25 @@ namespace QuanLyPhongKham.GUI.LoginForm
 
         private void confirm_button_Click(object sender, EventArgs e)
         {
-                int userId = LF_Functions.checkLogin(userName_textBox.Text, password_textBox.Text);
-                if (userId != -1)
+            int userId = LF_Functions.checkLogin(userName_textBox.Text, password_textBox.Text);
+            if (userId != -1)
+            {
+                System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = userId.ToString();
+                this.Hide();
+                MF_MainForm form = new MF_MainForm(userId);
+                if (form.ShowDialog() == DialogResult.OK)
                 {
-                    System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = userId.ToString();
-                    this.Hide();
-                    MF_MainForm form = new MF_MainForm(userId);
-                    if (form.ShowDialog() == DialogResult.OK)
-                    {
-                        this.Show();
-                    }
-                    else
-                    {
-                        this.Close();
-                    }
+                    this.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }          
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void password_textBox_KeyDown(object sender, KeyEventArgs e)

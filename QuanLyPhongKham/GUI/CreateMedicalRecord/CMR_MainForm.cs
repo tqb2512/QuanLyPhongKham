@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyPhongKham.Function.CreateMedicalRecord;
 using QuanLyPhongKham.Classes;
 using static Microsoft.WindowsAPICodePack.Shell.PropertySystem.SystemProperties.System;
 using System.Text.RegularExpressions;
+using QuanLyPhongKham.Function;
 
 namespace QuanLyPhongKham.GUI.CreateMedicalRecord
 {

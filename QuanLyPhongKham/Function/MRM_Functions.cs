@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using QuanLyPhongKham.GUI.MedicalRecordManagement;
 
-namespace QuanLyPhongKham.Function.MedicalRecordManagement
+namespace QuanLyPhongKham.Function
 {
     internal class MRM_Functions
     {
@@ -137,7 +137,7 @@ namespace QuanLyPhongKham.Function.MedicalRecordManagement
             }
             return null;
         }
-       
-        
+
+
     }
 }

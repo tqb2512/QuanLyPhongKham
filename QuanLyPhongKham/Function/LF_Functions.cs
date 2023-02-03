@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace QuanLyPhongKham.Function.LoginForm
+namespace QuanLyPhongKham.Function
 {
     internal class LF_Functions
     {
@@ -37,7 +37,7 @@ namespace QuanLyPhongKham.Function.LoginForm
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
             return -1;
         }

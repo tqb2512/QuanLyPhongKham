@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLyPhongKham.Function.EmployeeManagement
+namespace QuanLyPhongKham.Function
 {
     internal class EM_Functions
     {

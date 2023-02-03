@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using QuanLyPhongKham.Classes;
 using System.Data.SqlClient;
 
-namespace QuanLyPhongKham.Function.MainForm
+namespace QuanLyPhongKham.Function
 {
     internal class MF_Functions
     {

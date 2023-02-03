@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyPhongKham.Classes;
-using QuanLyPhongKham.Function.EmployeeManagement;
+using QuanLyPhongKham.Function;
 
 namespace QuanLyPhongKham.GUI.EmployeeManagement
 {

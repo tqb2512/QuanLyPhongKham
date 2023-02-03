@@ -421,6 +421,7 @@
             this.idSearch_textBox.Name = "idSearch_textBox";
             this.idSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.idSearch_textBox.TabIndex = 0;
+            this.idSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // nameSearch_textBox
             // 
@@ -432,6 +433,7 @@
             this.nameSearch_textBox.Name = "nameSearch_textBox";
             this.nameSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.nameSearch_textBox.TabIndex = 1;
+            this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // phonenumberSearch_textBox
             // 
@@ -443,6 +445,7 @@
             this.phonenumberSearch_textBox.Name = "phonenumberSearch_textBox";
             this.phonenumberSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.phonenumberSearch_textBox.TabIndex = 4;
+            this.phonenumberSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // dateofbirthSearch_textBox
             // 
@@ -454,6 +457,7 @@
             this.dateofbirthSearch_textBox.Name = "dateofbirthSearch_textBox";
             this.dateofbirthSearch_textBox.Size = new System.Drawing.Size(235, 35);
             this.dateofbirthSearch_textBox.TabIndex = 5;
+            this.dateofbirthSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // addressSearch_textBox
             // 
@@ -465,6 +469,7 @@
             this.addressSearch_textBox.Name = "addressSearch_textBox";
             this.addressSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.addressSearch_textBox.TabIndex = 2;
+            this.addressSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // genderSearch_textBox
             // 
@@ -476,6 +481,7 @@
             this.genderSearch_textBox.Name = "genderSearch_textBox";
             this.genderSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.genderSearch_textBox.TabIndex = 3;
+            this.genderSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
             // tableLayoutPanel6
             // 
