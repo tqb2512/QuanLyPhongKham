@@ -80,10 +80,12 @@
             this.servicesDataGridView.Name = "servicesDataGridView";
             this.servicesDataGridView.RowHeadersVisible = false;
             this.servicesDataGridView.RowHeadersWidth = 72;
+            this.servicesDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.servicesDataGridView.RowTemplate.Height = 37;
             this.servicesDataGridView.Size = new System.Drawing.Size(946, 583);
             this.servicesDataGridView.TabIndex = 0;
             this.servicesDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.servicesDataGridView_CellClick);
+            this.servicesDataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.servicesDataGridView_EditingControlShowing);
             // 
             // search_TableLayout
             // 

@@ -65,6 +65,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             servicesDataGridView.Columns["SERVICE_UNIT"].HeaderText = "Đơn vị";
             servicesDataGridView.Columns["SERVICE_PRICE"].HeaderText = "Giá";
             servicesDataGridView.Columns["SERVICE_DESCRIPTION"].HeaderText = "Mô tả";
+            servicesDataGridView.Columns["Quantity"].HeaderText = "SL";
             servicesDataGridView.Columns["SERVICE_ID"].Width = (int)(servicesDataGridView.Width * idColumnWidth);
             servicesDataGridView.Columns["SERVICE_NAME"].Width = (int)(servicesDataGridView.Width * nameColumnWidth);
             servicesDataGridView.Columns["SERVICE_UNIT"].Width = (int)(servicesDataGridView.Width * unitColumnWidth);
@@ -146,7 +147,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             services = new List<Service>();
             foreach (DataGridViewRow row in servicesDataGridView.Rows)
             {
-                if (row.Cells["Quantity"].Value != null && row.Cells["Quantity"].Value.ToString() != "" && row.Cells["Quantity"].Value != System.DBNull.Value && row.Cells["Quantity"].Value != "0")
+                if (row.Cells["Quantity"].Value != System.DBNull.Value && row.Cells["Quantity"].Value != "" && Convert.ToInt32(row.Cells["Quantity"].Value) * 1 != 0)
                 {
                     Service service = new Service();
                     service.ID = Convert.ToInt32(row.Cells["SERVICE_ID"].Value.ToString());
@@ -166,6 +167,24 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             if (e.ColumnIndex == 5)
             {
                 servicesDataGridView.BeginEdit(true);
+            }
+        }
+        private void servicesDataGridView_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            DataGridViewTextBoxEditingControl tb = e.Control as DataGridViewTextBoxEditingControl;
+            if (tb != null)
+            {
+                tb.KeyPress += new KeyPressEventHandler(servicesDataGridView_KeyPress);
+            }
+            e.Control.KeyPress += new KeyPressEventHandler(servicesDataGridView_KeyPress);
+
+        }
+
+        private void servicesDataGridView_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsNumber((char)e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter))
+            {
+                e.Handled = true;
             }
         }
     }

@@ -70,6 +70,8 @@
             this.MR_note_richTextBox = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.confirm_Button = new System.Windows.Forms.Button();
+            this.total_Label = new System.Windows.Forms.Label();
+            this.total_textBox = new System.Windows.Forms.TextBox();
             this.MainLayout_TableLayoutPanel.SuspendLayout();
             this.Prescription_GroupBox.SuspendLayout();
             this.Prescription_TableLayoutPanel.SuspendLayout();
@@ -186,6 +188,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Drugs_DataGridView.ColumnHeadersHeight = 70;
+            this.Drugs_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Drugs_DataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Drugs_DataGridView.Location = new System.Drawing.Point(3, 63);
             this.Drugs_DataGridView.Name = "Drugs_DataGridView";
             this.Drugs_DataGridView.ReadOnly = true;
@@ -264,6 +268,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Services_DataGridView.ColumnHeadersHeight = 70;
+            this.Services_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Services_DataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Services_DataGridView.Location = new System.Drawing.Point(3, 63);
             this.Services_DataGridView.Name = "Services_DataGridView";
             this.Services_DataGridView.ReadOnly = true;
@@ -493,6 +499,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_Sex_ComboBox.CornerRoundingRadius = -1F;
             this.P_Sex_ComboBox.DropDownWidth = 170;
+            this.P_Sex_ComboBox.Enabled = false;
             this.P_Sex_ComboBox.IntegralHeight = false;
             this.P_Sex_ComboBox.Items.AddRange(new object[] {
             "Nam",
@@ -503,6 +510,7 @@
             this.P_Sex_ComboBox.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.P_Sex_ComboBox.TabIndex = 0;
             this.P_Sex_ComboBox.Text = "Nam";
+            this.P_Sex_ComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_Sex_ComboBox_KeyDown);
             // 
             // P_Sex_Label
             // 
@@ -666,14 +674,17 @@
             this.tableLayoutPanel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Controls.Add(this.confirm_Button, 1, 0);
+            this.tableLayoutPanel10.ColumnCount = 3;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.90598F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.09402F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel10.Controls.Add(this.confirm_Button, 2, 0);
+            this.tableLayoutPanel10.Controls.Add(this.total_Label, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.total_textBox, 1, 0);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(728, 853);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(719, 55);
             this.tableLayoutPanel10.TabIndex = 5;
             // 
@@ -688,6 +699,32 @@
             this.confirm_Button.UseVisualStyleBackColor = true;
             this.confirm_Button.Click += new System.EventHandler(this.confirm_Button_Click);
             // 
+            // total_Label
+            // 
+            this.total_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.total_Label.AutoSize = true;
+            this.total_Label.Location = new System.Drawing.Point(3, 0);
+            this.total_Label.Name = "total_Label";
+            this.total_Label.Size = new System.Drawing.Size(148, 55);
+            this.total_Label.TabIndex = 1;
+            this.total_Label.Text = "Thành tiền";
+            this.total_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // total_textBox
+            // 
+            this.total_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.total_textBox.Enabled = false;
+            this.total_textBox.Location = new System.Drawing.Point(157, 10);
+            this.total_textBox.Multiline = true;
+            this.total_textBox.Name = "total_textBox";
+            this.total_textBox.ReadOnly = true;
+            this.total_textBox.Size = new System.Drawing.Size(308, 35);
+            this.total_textBox.TabIndex = 2;
+            this.total_textBox.Text = "0";
+            this.total_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // CMR_MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
@@ -698,6 +735,7 @@
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Name = "CMR_MainForm";
             this.Text = "CMR_MainForm";
+            this.Load += new System.EventHandler(this.CMR_MainForm_Load);
             this.MainLayout_TableLayoutPanel.ResumeLayout(false);
             this.Prescription_GroupBox.ResumeLayout(false);
             this.Prescription_TableLayoutPanel.ResumeLayout(false);
@@ -725,6 +763,7 @@
             this.MR_diagnosis_groupBox.ResumeLayout(false);
             this.MR_note_groupBox.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -773,5 +812,7 @@
         private TableLayoutPanel tableLayoutPanel11;
         private TableLayoutPanel tableLayoutPanel10;
         private Krypton.Toolkit.KryptonComboBox P_Sex_ComboBox;
+        private Label total_Label;
+        private TextBox total_textBox;
     }
 }

@@ -48,6 +48,8 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                 em_DetailEmployeeForm.Dock = DockStyle.Fill;
                 em_DetailEmployeeForm.Visible = true;
                 em_DetailEmployeeForm.Show();
+                em_DetailEmployeeForm.editButton.Click += new EventHandler(refreshOn_Click);
+                em_DetailEmployeeForm.deleteButton.Click += new EventHandler(refreshOn_Click);
             }
         }
 
@@ -62,6 +64,13 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
             em_DetailEmployeeForm.Dock = DockStyle.Fill;
             em_DetailEmployeeForm.Visible = true;
             em_DetailEmployeeForm.Show();
+            em_DetailEmployeeForm.editButton.Click += new EventHandler(refreshOn_Click);
+            em_DetailEmployeeForm.deleteButton.Click += new EventHandler(refreshOn_Click);
+        }
+
+        private void refreshOn_Click(object sender, EventArgs e)
+        {
+            em_MainForm.dataLoad();
         }
     }
 }

@@ -22,17 +22,34 @@ namespace QuanLyPhongKham.GUI.LoginForm
 
         private void confirm_button_Click(object sender, EventArgs e)
         {
-            int userId = LF_Functions.checkLogin(userName_textBox.Text, password_textBox.Text);
-            if (userId != -1)
+                int userId = LF_Functions.checkLogin(userName_textBox.Text, password_textBox.Text);
+                if (userId != -1)
+                {
+                    System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = userId.ToString();
+                    this.Hide();
+                    MF_MainForm form = new MF_MainForm(userId);
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        this.Show();
+                    }
+                    else
+                    {
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }          
+        }
+
+        private void password_textBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
             {
-                System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = userId.ToString();
-                this.Hide();
-                MF_MainForm mainForm = new MF_MainForm(userId);
-                mainForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+                confirm_button.PerformClick();
             }
         }
     }

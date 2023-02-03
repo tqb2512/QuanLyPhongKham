@@ -54,8 +54,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Employee_DataGridView.ColumnHeadersHeight = 70;
+            this.Employee_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.Employee_DataGridView.Location = new System.Drawing.Point(3, 46);
             this.Employee_DataGridView.Name = "Employee_DataGridView";
+            this.Employee_DataGridView.ReadOnly = true;
             this.Employee_DataGridView.RowHeadersVisible = false;
             this.Employee_DataGridView.RowHeadersWidth = 72;
             this.Employee_DataGridView.RowTemplate.Height = 37;

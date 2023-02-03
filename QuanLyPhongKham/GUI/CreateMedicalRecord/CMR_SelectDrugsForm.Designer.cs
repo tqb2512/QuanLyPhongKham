@@ -155,9 +155,12 @@
             this.Drugs_DataGridView.RowHeadersWidth = 72;
             this.Drugs_DataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Drugs_DataGridView.RowTemplate.Height = 37;
+            this.Drugs_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.Drugs_DataGridView.Size = new System.Drawing.Size(946, 583);
             this.Drugs_DataGridView.TabIndex = 1;
             this.Drugs_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Drugs_DataGridView_CellClick);
+            this.Drugs_DataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.Drugs_DataGridView_EditingControlShowing);
+            this.Drugs_DataGridView.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Drugs_DataGridView_KeyPress);
             // 
             // tableLayoutPanel2
             // 

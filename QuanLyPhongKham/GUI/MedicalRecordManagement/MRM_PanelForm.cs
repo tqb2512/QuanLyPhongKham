@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyPhongKham.Classes;
+using QuanLyPhongKham.Function.MedicalRecordManagement;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +16,7 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
     {
         public MRM_PanelForm()
         {
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
             InitializeComponent();
         }
         MRM_MainForm mrm_MainForm = new MRM_MainForm();
@@ -43,7 +46,14 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
                 mrm_DetailMedicalRecordForm.Dock = DockStyle.Fill;
                 mrm_DetailMedicalRecordForm.Visible = true;
                 mrm_DetailMedicalRecordForm.Show();
+                mrm_DetailMedicalRecordForm.MR_PaymentMake_Button.Click += new EventHandler(refreshOn_Click);
+                mrm_DetailMedicalRecordForm.delete_button.Click += new EventHandler(refreshOn_Click);
             }
+        }
+        
+        private void refreshOn_Click(object sender, EventArgs e)
+        {
+            mrm_MainForm.dataLoad();
         }
     }
 }

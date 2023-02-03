@@ -98,6 +98,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Patient_DataGridView.ColumnHeadersHeight = 70;
+            this.Patient_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Patient_DataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.Patient_DataGridView.Location = new System.Drawing.Point(3, 46);
             this.Patient_DataGridView.Name = "Patient_DataGridView";
             this.Patient_DataGridView.RowHeadersVisible = false;

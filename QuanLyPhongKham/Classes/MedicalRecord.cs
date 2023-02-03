@@ -15,6 +15,7 @@ namespace QuanLyPhongKham.Classes
         public float Patient_Weight { get; set; }
         public string Diagnosis { get; set; }
         public string Note { get; set; }
+        public bool Payment_Status { get; set; }
         public Patient Patient;
         public Employee Employee;
         public List<Drug> Drugs;

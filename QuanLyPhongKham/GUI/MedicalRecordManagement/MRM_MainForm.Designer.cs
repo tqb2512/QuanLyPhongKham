@@ -37,6 +37,7 @@
             this.eNameSearch_textBox = new System.Windows.Forms.TextBox();
             this.diagnosisSearch_textBox = new System.Windows.Forms.TextBox();
             this.noteSearch_textBox = new System.Windows.Forms.TextBox();
+            this.paymentStatusSearch_textBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.refresh_button = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.medicalRecordDataGrid)).BeginInit();
@@ -91,19 +92,21 @@
             this.search_TableLayout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.search_TableLayout.ColumnCount = 6;
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.search_TableLayout.ColumnCount = 7;
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
+            this.search_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28816F));
             this.search_TableLayout.Controls.Add(this.idSearch_textBox, 0, 0);
             this.search_TableLayout.Controls.Add(this.dateSearch_textBox, 1, 0);
             this.search_TableLayout.Controls.Add(this.pNameSearch_textBox, 2, 0);
             this.search_TableLayout.Controls.Add(this.eNameSearch_textBox, 3, 0);
             this.search_TableLayout.Controls.Add(this.diagnosisSearch_textBox, 4, 0);
             this.search_TableLayout.Controls.Add(this.noteSearch_textBox, 5, 0);
+            this.search_TableLayout.Controls.Add(this.paymentStatusSearch_textBox, 6, 0);
             this.search_TableLayout.Location = new System.Drawing.Point(3, 3);
             this.search_TableLayout.Name = "search_TableLayout";
             this.search_TableLayout.RowCount = 1;
@@ -118,7 +121,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idSearch_textBox.Location = new System.Drawing.Point(3, 3);
             this.idSearch_textBox.Name = "idSearch_textBox";
-            this.idSearch_textBox.Size = new System.Drawing.Size(151, 35);
+            this.idSearch_textBox.Size = new System.Drawing.Size(129, 35);
             this.idSearch_textBox.TabIndex = 0;
             this.idSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -127,9 +130,9 @@
             this.dateSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateSearch_textBox.Location = new System.Drawing.Point(160, 3);
+            this.dateSearch_textBox.Location = new System.Drawing.Point(138, 3);
             this.dateSearch_textBox.Name = "dateSearch_textBox";
-            this.dateSearch_textBox.Size = new System.Drawing.Size(151, 35);
+            this.dateSearch_textBox.Size = new System.Drawing.Size(129, 35);
             this.dateSearch_textBox.TabIndex = 1;
             this.dateSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -138,9 +141,9 @@
             this.pNameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pNameSearch_textBox.Location = new System.Drawing.Point(317, 3);
+            this.pNameSearch_textBox.Location = new System.Drawing.Point(273, 3);
             this.pNameSearch_textBox.Name = "pNameSearch_textBox";
-            this.pNameSearch_textBox.Size = new System.Drawing.Size(151, 35);
+            this.pNameSearch_textBox.Size = new System.Drawing.Size(129, 35);
             this.pNameSearch_textBox.TabIndex = 2;
             this.pNameSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -149,9 +152,9 @@
             this.eNameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.eNameSearch_textBox.Location = new System.Drawing.Point(474, 3);
+            this.eNameSearch_textBox.Location = new System.Drawing.Point(408, 3);
             this.eNameSearch_textBox.Name = "eNameSearch_textBox";
-            this.eNameSearch_textBox.Size = new System.Drawing.Size(151, 35);
+            this.eNameSearch_textBox.Size = new System.Drawing.Size(129, 35);
             this.eNameSearch_textBox.TabIndex = 3;
             this.eNameSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -160,9 +163,9 @@
             this.diagnosisSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.diagnosisSearch_textBox.Location = new System.Drawing.Point(631, 3);
+            this.diagnosisSearch_textBox.Location = new System.Drawing.Point(543, 3);
             this.diagnosisSearch_textBox.Name = "diagnosisSearch_textBox";
-            this.diagnosisSearch_textBox.Size = new System.Drawing.Size(151, 35);
+            this.diagnosisSearch_textBox.Size = new System.Drawing.Size(129, 35);
             this.diagnosisSearch_textBox.TabIndex = 4;
             this.diagnosisSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -171,11 +174,21 @@
             this.noteSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.noteSearch_textBox.Location = new System.Drawing.Point(788, 3);
+            this.noteSearch_textBox.Location = new System.Drawing.Point(678, 3);
             this.noteSearch_textBox.Name = "noteSearch_textBox";
-            this.noteSearch_textBox.Size = new System.Drawing.Size(155, 35);
+            this.noteSearch_textBox.Size = new System.Drawing.Size(129, 35);
             this.noteSearch_textBox.TabIndex = 5;
             this.noteSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
+            // 
+            // paymentStatusSearch_textBox
+            // 
+            this.paymentStatusSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.paymentStatusSearch_textBox.Location = new System.Drawing.Point(813, 3);
+            this.paymentStatusSearch_textBox.Name = "paymentStatusSearch_textBox";
+            this.paymentStatusSearch_textBox.Size = new System.Drawing.Size(130, 35);
+            this.paymentStatusSearch_textBox.TabIndex = 6;
             // 
             // tableLayoutPanel2
             // 
@@ -237,5 +250,6 @@
         private TextBox noteSearch_textBox;
         private TableLayoutPanel tableLayoutPanel2;
         private Krypton.Toolkit.KryptonButton refresh_button;
+        private TextBox paymentStatusSearch_textBox;
     }
 }
