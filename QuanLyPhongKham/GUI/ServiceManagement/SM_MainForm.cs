@@ -149,6 +149,7 @@ namespace QuanLyPhongKham.GUI.ServiceManagement
                 S_description_richTextBox.Enabled = true;
                 S_unit_textBox.Enabled = true;
                 edit_button.Text = "Thêm";
+                //
             }
             else
             {
