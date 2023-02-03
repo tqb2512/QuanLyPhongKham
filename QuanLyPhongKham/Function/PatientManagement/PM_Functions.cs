@@ -120,7 +120,7 @@ namespace QuanLyPhongKham.Function.PatientManagement
         {
             try
             {
-                string query = "INSERT INTO PATIENT VALUES ('" + patient.ID + "', '" + patient.Name + "', '" +patient.Sex + "', '" + patient.Address + "', '" + patient.PhoneNumber + "', '" + patient.DateOfBirth + "')";
+                string query = "INSERT INTO PATIENT VALUES ('" + patient.ID + "', N'" + patient.Name + "', N'" +patient.Sex + "', N'" + patient.Address + "', '" + patient.PhoneNumber + "', '" + patient.DateOfBirth + "')";
                 if (sqlQueryExcute(query) > 0)
                 {
                     return true;
@@ -137,7 +137,7 @@ namespace QuanLyPhongKham.Function.PatientManagement
         {
             try
             {
-                string query = "UPDATE patient SET patient_NAME = '" + patient.Name + "', patient_SEX = '" + patient.Sex + "', patient_ADDRESS = '" + patient.Address + "', patient_PHONENUMBER = '" + patient.PhoneNumber + "', patient_DATEOFBIRTH = '" + patient.DateOfBirth + "' WHERE patient_ID = '" + patient.ID + "'";
+                string query = "UPDATE patient SET patient_NAME = N'" + patient.Name + "', patient_SEX = N'" + patient.Sex + "', patient_ADDRESS = N'" + patient.Address + "', patient_PHONENUMBER = '" + patient.PhoneNumber + "', patient_DATEOFBIRTH = '" + patient.DateOfBirth + "' WHERE patient_ID = '" + patient.ID + "'";
                 if (sqlQueryExcute(query) > 0)
                 {
                     return true;

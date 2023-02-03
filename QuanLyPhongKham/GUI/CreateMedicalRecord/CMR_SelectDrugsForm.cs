@@ -78,7 +78,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             drugs = new List<Drug>();
             foreach (DataGridViewRow row in Drugs_DataGridView.Rows)
             {
-                if (row.Cells[4].Value != System.DBNull.Value && row.Cells[4].Value != "" && Convert.ToInt32(row.Cells[4].Value) * 1 != 0)
+                if (row.Cells[4].Value != System.DBNull.Value && String.IsNullOrEmpty(row.Cells[4].Value.ToString()) == false && Convert.ToInt32(row.Cells[4].Value) * 1 != 0)
                 {
                     Drug drug = new Drug();
                     drug.ID = (int)row.Cells[0].Value;

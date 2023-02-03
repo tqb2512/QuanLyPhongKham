@@ -596,9 +596,9 @@
             this.P_DateOfBirth_DateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_DateOfBirth_DateTimePicker.CustomFormat = "   dd MMMM yyyy";
+            this.P_DateOfBirth_DateTimePicker.CustomFormat = "";
             this.P_DateOfBirth_DateTimePicker.Enabled = false;
-            this.P_DateOfBirth_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.P_DateOfBirth_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.P_DateOfBirth_DateTimePicker.Location = new System.Drawing.Point(3, 3);
             this.P_DateOfBirth_DateTimePicker.Name = "P_DateOfBirth_DateTimePicker";
             this.P_DateOfBirth_DateTimePicker.Size = new System.Drawing.Size(518, 35);

@@ -137,7 +137,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             medicalRecord.Patient.Name = P_Name_TextBox.Text;
             medicalRecord.Patient.PhoneNumber = P_PhoneNumber_TextBox.Text;
             medicalRecord.Patient.Address = P_Address_TextBox.Text;
-            medicalRecord.Patient.DateOfBirth = P_DateOfBirth_DateTimePicker.Value;
+            medicalRecord.Patient.DateOfBirth = P_DateOfBirth_DateTimePicker.Value.Date;
             medicalRecord.Patient.Sex = P_Sex_ComboBox.Text;
             if (MR_pWeight_TextBox.Text != "")
                 medicalRecord.Patient_Weight = float.Parse(MR_pWeight_TextBox.Text);

@@ -114,6 +114,11 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                 } 
                 else
                 {
+                    if (String.IsNullOrEmpty(E_ID_textBox.Text) || String.IsNullOrEmpty(E_Name_textBox.Text) || String.IsNullOrEmpty(E_Position_textBox.Text) || String.IsNullOrEmpty(E_UserName_textBox.Text) || String.IsNullOrEmpty(E_Password_textBox.Text))
+                    {
+                        MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
                     string sql = "INSERT INTO EMPLOYEE VALUES (" + E_ID_textBox.Text + ", N'" + E_Name_textBox.Text + "', N'" + E_Position_textBox.Text + "', '" + E_UserName_textBox.Text + "', '" + E_Password_textBox.Text + "')";
                     EM_Functions.sqlQueryExcute(sql);
                     sql = "INSERT INTO PERMISSION (EMPLOYEE_ID, CREATE_MEDICALRECORD, REMOVE_MEDICALRECORD, MAKEPAYMENT_MEDICALRECORD, EDIT_EMPLOYEE, EDIT_PATIENT, EDIT_DRUG, EDIT_SERVICE) VALUES ("

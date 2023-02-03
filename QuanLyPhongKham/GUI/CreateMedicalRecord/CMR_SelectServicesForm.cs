@@ -24,10 +24,10 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             this.services = service;
         }
         float idColumnWidth = 0.1f;
-        float nameColumnWidth = 0.2f;
+        float nameColumnWidth = 0.3f;
         float unitColumnWidth = 0.1f;
         float priceColumnWidth = 0.2f;
-        float descriptionColumnWidth = 0.3f;
+        float descriptionColumnWidth = 0.2f;
         float quantityColumnWidth = 0.1f;
         internal List<Service> services;
 

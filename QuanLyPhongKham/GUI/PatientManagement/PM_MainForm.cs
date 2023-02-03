@@ -155,13 +155,20 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                 if (P_ID_textBox.Text != "")
                     currentPatient.ID = Convert.ToInt32(P_ID_textBox.Text);
                 currentPatient.Name = P_name_textBox.Text;
-                if (P_sex_ComboBox.Text != "")
-                    currentPatient.Sex = P_sex_ComboBox.Text;
+                if (String.IsNullOrEmpty(P_sex_ComboBox.Text))
+                    P_sex_ComboBox.SelectedIndex = 1;
+                currentPatient.Sex = P_sex_ComboBox.Text;
                 currentPatient.Address = P_address_textBox.Text;
                 currentPatient.PhoneNumber = P_phonenumber_textBox.Text;
                 currentPatient.DateOfBirth = P_dateofbirth_dateTimePicker.Value;
                 if (edit_button.Text == "Thêm")
                 {
+                    if (String.IsNullOrEmpty(P_ID_textBox.Text) == true ||
+                        String.IsNullOrEmpty(P_name_textBox.Text) == true)
+                    {
+                        MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
                     if (PM_Functions.addPatient(currentPatient))
                     {
                         MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -229,24 +236,25 @@ namespace QuanLyPhongKham.GUI.PatientManagement
         {
             if (PM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_SERVICE") == true)
             {
-                if (P_ID_textBox.Text != "" || P_ID_textBox.Text != Convert.ToString(PM_Functions.getMaxID()))
-                {
-                    if (PM_Functions.deletePatient(Convert.ToInt32(P_ID_textBox.Text)) == true)
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa bệnh nhân này?\n\nViệc xóa bệnh nhân sẽ xóa các bệnh án liên quan", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (P_ID_textBox.Text != "" || P_ID_textBox.Text != Convert.ToString(PM_Functions.getMaxID()))
                     {
-                        MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        P_ID_textBox.Text = "";
-                        P_name_textBox.Text = "";
-                        P_sex_ComboBox.Text = "";
-                        P_address_textBox.Text = "";
-                        P_phonenumber_textBox.Text = "";
-                        P_dateofbirth_dateTimePicker.Value = DateTime.Now;
-                        dataLoad();
+                        if (PM_Functions.deletePatient(Convert.ToInt32(P_ID_textBox.Text)) == true)
+                        {
+                            MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            P_ID_textBox.Text = "";
+                            P_name_textBox.Text = "";
+                            P_sex_ComboBox.Text = "";
+                            P_address_textBox.Text = "";
+                            P_phonenumber_textBox.Text = "";
+                            P_dateofbirth_dateTimePicker.Value = DateTime.Now;
+                            dataLoad();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    else
-                    {
-                        MessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
             }
             else
             {
@@ -280,9 +288,17 @@ namespace QuanLyPhongKham.GUI.PatientManagement
             }
         }
 
-        private void P_sex_ComboBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void P_sex_ComboBox_KeyDown(object sender, KeyEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void P_phonenumber_textBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!(Char.IsNumber((char)e.KeyCode) || e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete || e.KeyCode == Keys.Enter || P_phonenumber_textBox.TextLength >= 11))
+            {
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

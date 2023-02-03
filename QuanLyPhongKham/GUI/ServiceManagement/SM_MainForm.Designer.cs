@@ -66,9 +66,9 @@
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.edit_button = new Krypton.Toolkit.KryptonButton();
             this.delete_button = new Krypton.Toolkit.KryptonButton();
-            this.serviceInfo = new System.Windows.Forms.GroupBox();
             this.serviceList_groupBox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.search_TableLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.servicesDataGridView)).BeginInit();
@@ -81,9 +81,9 @@
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
-            this.serviceInfo.SuspendLayout();
             this.serviceList_groupBox.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -394,7 +394,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1437, 273);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1437, 261);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
             // tableLayoutPanel11
@@ -412,7 +412,7 @@
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(1431, 187);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(1431, 175);
             this.tableLayoutPanel11.TabIndex = 1;
             // 
             // tableLayoutPanel8
@@ -430,7 +430,7 @@
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(710, 181);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(710, 169);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // S_description_label
@@ -442,7 +442,7 @@
             this.S_description_label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.S_description_label.Location = new System.Drawing.Point(3, 0);
             this.S_description_label.Name = "S_description_label";
-            this.S_description_label.Size = new System.Drawing.Size(171, 181);
+            this.S_description_label.Size = new System.Drawing.Size(171, 169);
             this.S_description_label.TabIndex = 0;
             this.S_description_label.Text = "Mô tả";
             this.S_description_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -455,7 +455,7 @@
             this.S_description_richTextBox.Enabled = false;
             this.S_description_richTextBox.Location = new System.Drawing.Point(180, 3);
             this.S_description_richTextBox.Name = "S_description_richTextBox";
-            this.S_description_richTextBox.Size = new System.Drawing.Size(527, 175);
+            this.S_description_richTextBox.Size = new System.Drawing.Size(527, 163);
             this.S_description_richTextBox.TabIndex = 1;
             this.S_description_richTextBox.Text = "";
             // 
@@ -483,7 +483,7 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(709, 181);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(709, 169);
             this.tableLayoutPanel9.TabIndex = 0;
             // 
             // S_ID_label
@@ -493,7 +493,7 @@
             this.S_ID_label.AutoSize = true;
             this.S_ID_label.Location = new System.Drawing.Point(3, 0);
             this.S_ID_label.Name = "S_ID_label";
-            this.S_ID_label.Size = new System.Drawing.Size(111, 45);
+            this.S_ID_label.Size = new System.Drawing.Size(111, 42);
             this.S_ID_label.TabIndex = 0;
             this.S_ID_label.Text = "ID Dịch vụ";
             this.S_ID_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -503,9 +503,9 @@
             this.S_name_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.S_name_label.AutoSize = true;
-            this.S_name_label.Location = new System.Drawing.Point(3, 45);
+            this.S_name_label.Location = new System.Drawing.Point(3, 42);
             this.S_name_label.Name = "S_name_label";
-            this.S_name_label.Size = new System.Drawing.Size(121, 45);
+            this.S_name_label.Size = new System.Drawing.Size(121, 42);
             this.S_name_label.TabIndex = 1;
             this.S_name_label.Text = "Tên dịch vụ";
             this.S_name_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -515,9 +515,9 @@
             this.S_price_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.S_price_label.AutoSize = true;
-            this.S_price_label.Location = new System.Drawing.Point(3, 90);
+            this.S_price_label.Location = new System.Drawing.Point(3, 84);
             this.S_price_label.Name = "S_price_label";
-            this.S_price_label.Size = new System.Drawing.Size(44, 45);
+            this.S_price_label.Size = new System.Drawing.Size(44, 42);
             this.S_price_label.TabIndex = 2;
             this.S_price_label.Text = "Giá";
             this.S_price_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -527,9 +527,9 @@
             this.S_unit_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.S_unit_label.AutoSize = true;
-            this.S_unit_label.Location = new System.Drawing.Point(3, 135);
+            this.S_unit_label.Location = new System.Drawing.Point(3, 126);
             this.S_unit_label.Name = "S_unit_label";
-            this.S_unit_label.Size = new System.Drawing.Size(118, 46);
+            this.S_unit_label.Size = new System.Drawing.Size(118, 43);
             this.S_unit_label.TabIndex = 3;
             this.S_unit_label.Text = "Đơn vị tính";
             this.S_unit_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,7 +538,7 @@
             // 
             this.S_ID_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.S_ID_textBox.Enabled = false;
-            this.S_ID_textBox.Location = new System.Drawing.Point(180, 5);
+            this.S_ID_textBox.Location = new System.Drawing.Point(180, 3);
             this.S_ID_textBox.Name = "S_ID_textBox";
             this.S_ID_textBox.Size = new System.Drawing.Size(526, 35);
             this.S_ID_textBox.TabIndex = 4;
@@ -547,7 +547,7 @@
             // 
             this.S_name_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.S_name_textBox.Enabled = false;
-            this.S_name_textBox.Location = new System.Drawing.Point(180, 50);
+            this.S_name_textBox.Location = new System.Drawing.Point(180, 45);
             this.S_name_textBox.Name = "S_name_textBox";
             this.S_name_textBox.Size = new System.Drawing.Size(526, 35);
             this.S_name_textBox.TabIndex = 5;
@@ -556,7 +556,7 @@
             // 
             this.S_price_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.S_price_textBox.Enabled = false;
-            this.S_price_textBox.Location = new System.Drawing.Point(180, 95);
+            this.S_price_textBox.Location = new System.Drawing.Point(180, 87);
             this.S_price_textBox.Name = "S_price_textBox";
             this.S_price_textBox.Size = new System.Drawing.Size(526, 35);
             this.S_price_textBox.TabIndex = 6;
@@ -566,7 +566,7 @@
             // 
             this.S_unit_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.S_unit_textBox.Enabled = false;
-            this.S_unit_textBox.Location = new System.Drawing.Point(180, 140);
+            this.S_unit_textBox.Location = new System.Drawing.Point(180, 130);
             this.S_unit_textBox.Name = "S_unit_textBox";
             this.S_unit_textBox.Size = new System.Drawing.Size(526, 35);
             this.S_unit_textBox.TabIndex = 7;
@@ -581,7 +581,7 @@
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel10.Controls.Add(this.edit_button, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.delete_button, 1, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 196);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 184);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -610,20 +610,6 @@
             this.delete_button.Values.Text = "Xóa";
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
-            // serviceInfo
-            // 
-            this.serviceInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.serviceInfo.Controls.Add(this.tableLayoutPanel6);
-            this.serviceInfo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.serviceInfo.Location = new System.Drawing.Point(3, 3);
-            this.serviceInfo.Name = "serviceInfo";
-            this.serviceInfo.Size = new System.Drawing.Size(1446, 313);
-            this.serviceInfo.TabIndex = 4;
-            this.serviceInfo.TabStop = false;
-            this.serviceInfo.Text = "Thông tin dịch vụ";
-            // 
             // serviceList_groupBox
             // 
             this.serviceList_groupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -645,8 +631,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Controls.Add(this.serviceInfo, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.serviceList_groupBox, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
@@ -654,6 +640,20 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(1452, 912);
             this.tableLayoutPanel7.TabIndex = 6;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.tableLayoutPanel6);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1446, 313);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin dịch vụ";
             // 
             // SM_MainForm
             // 
@@ -681,9 +681,9 @@
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             this.tableLayoutPanel10.ResumeLayout(false);
-            this.serviceInfo.ResumeLayout(false);
             this.serviceList_groupBox.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -728,8 +728,8 @@
         public Krypton.Toolkit.KryptonButton delete_button;
         private TableLayoutPanel tableLayoutPanel11;
         private Krypton.Toolkit.KryptonButton refresh_button;
-        private GroupBox serviceInfo;
         private GroupBox serviceList_groupBox;
         private TableLayoutPanel tableLayoutPanel7;
+        private GroupBox groupBox1;
     }
 }
