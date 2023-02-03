@@ -12,6 +12,7 @@ namespace QuanLyPhongKham
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new GUI.LoginForm.LF_MainForm());
+            //Application.Run(new GUI.ServiceManagement.SM_DetailServiceForm());
         }
     }
 }
