@@ -13,6 +13,7 @@ using QuanLyPhongKham.GUI.CreateMedicalRecord;
 using QuanLyPhongKham.GUI.PatientManagement;
 using QuanLyPhongKham.GUI.ServiceManagement;
 using QuanLyPhongKham.GUI.EmployeeManagement;
+using QuanLyPhongKham.GUI.DrugManagement;
 using QuanLyPhongKham.Function;
 
 namespace QuanLyPhongKham.GUI.MainForm
@@ -87,6 +88,11 @@ namespace QuanLyPhongKham.GUI.MainForm
         private void MF_MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void D_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addToTabControl(new DM_TestForm2(), "Quản lý thuốc");
         }
     }
 }
