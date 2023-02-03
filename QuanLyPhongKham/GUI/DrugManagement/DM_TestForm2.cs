@@ -37,6 +37,8 @@ namespace QuanLyPhongKham.GUI.DrugManagement
             Drug_DataGridView.Columns["DRUG_UNIT"].HeaderText = "Đơn vị";
             Drug_DataGridView.Columns["DRUG_MANUFACTURER"].HeaderText = "Nơi sản xuất";
             Drug_DataGridView.Columns["DRUG_PRICE"].HeaderText = "Giá";
+            Drug_DataGridView.Columns["DRUG_PRICE"].DefaultCellStyle.Format = "N0";
+
 
             Drug_DataGridView.Columns["DRUG_ID"].Width = (int)(Drug_DataGridView.Width * idColumnWidth);
             Drug_DataGridView.Columns["DRUG_NAME"].Width = (int)(Drug_DataGridView.Width * nameColumnWidth);
@@ -107,7 +109,7 @@ namespace QuanLyPhongKham.GUI.DrugManagement
                 DM_DrugTypeName_ComboBox.Text = currentDrug.TypeName.ToString();
                 DM_DrugUnit_TextBox.Text = currentDrug.Unit.ToString();
                 DM_DrugManufacturer_TextBox.Text = currentDrug.Manufacturer;
-                DM_DrugPrice_TextBox.Text = currentDrug.Price.ToString();
+                DM_DrugPrice_TextBox.Text = currentDrug.Price.ToString("N0");
                 DM_DrugDescription_TextBox.Text = currentDrug.Description.ToString();
 
                 DM_DrugID_TextBox.ReadOnly = true;
@@ -354,6 +356,11 @@ namespace QuanLyPhongKham.GUI.DrugManagement
             {
                 MessageBox.Show("Bạn không có quyền thực hiện chức năng này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void DM_DrugTypeName_ComboBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
         }
     }
 }

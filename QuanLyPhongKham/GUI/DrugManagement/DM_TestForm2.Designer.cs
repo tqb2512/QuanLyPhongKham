@@ -184,39 +184,51 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 20);
+            this.label9.Size = new System.Drawing.Size(74, 27);
             this.label9.TabIndex = 0;
             this.label9.Text = "ID Thuốc:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 27);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 20);
+            this.label10.Size = new System.Drawing.Size(80, 27);
             this.label10.TabIndex = 1;
             this.label10.Text = "Tên thuốc:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(3, 54);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 20);
+            this.label11.Size = new System.Drawing.Size(103, 27);
             this.label11.TabIndex = 2;
             this.label11.Text = "ID Loại thuốc:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(3, 81);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 20);
+            this.label12.Size = new System.Drawing.Size(84, 29);
             this.label12.TabIndex = 3;
             this.label12.Text = "Loại thuốc:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DM_DrugID_TextBox
             // 
@@ -238,6 +250,7 @@
             this.DM_DrugTypeName_ComboBox.Size = new System.Drawing.Size(347, 28);
             this.DM_DrugTypeName_ComboBox.TabIndex = 19;
             this.DM_DrugTypeName_ComboBox.SelectedIndexChanged += new System.EventHandler(this.DM_DrugTypeName_ComboBox_SelectedIndexChanged);
+            this.DM_DrugTypeName_ComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DM_DrugTypeName_ComboBox_KeyDown);
             // 
             // DM_DrugTypeID_TextBox
             // 
@@ -276,39 +289,51 @@
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(3, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 20);
+            this.label13.Size = new System.Drawing.Size(58, 27);
             this.label13.TabIndex = 0;
             this.label13.Text = "Đơn vị:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label14
             // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(3, 27);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 20);
+            this.label14.Size = new System.Drawing.Size(72, 27);
             this.label14.TabIndex = 1;
             this.label14.Text = "Sản xuất:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(3, 54);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 20);
+            this.label15.Size = new System.Drawing.Size(35, 27);
             this.label15.TabIndex = 2;
             this.label15.Text = "Giá:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
             // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(3, 81);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(53, 20);
+            this.label16.Size = new System.Drawing.Size(53, 29);
             this.label16.TabIndex = 3;
             this.label16.Text = "Mô tả:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DM_DrugUnit_TextBox
             // 
