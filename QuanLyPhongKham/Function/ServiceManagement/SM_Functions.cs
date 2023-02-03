@@ -133,7 +133,7 @@ namespace QuanLyPhongKham.Function.ServiceManagement
             try
             {
                 int max = 0;
-                string query = "SELECT MAX(PATIENT_ID) AS MAX FROM PATIENT";
+                string query = "SELECT MAX(SERVICE_ID) AS MAX FROM SERVICE";
                 SqlConnection connection = new SqlConnection(connectionString);
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
