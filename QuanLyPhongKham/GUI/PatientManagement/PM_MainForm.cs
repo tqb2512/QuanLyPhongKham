@@ -131,12 +131,9 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                 P_address_textBox.Text = currentPatient.Address;
                 P_phonenumber_textBox.Text = currentPatient.PhoneNumber;
                 P_dateofbirth_dateTimePicker.Value = currentPatient.DateOfBirth;
-
                 P_name_textBox.ReadOnly = true;
-                
                 P_address_textBox.ReadOnly = true;
                 P_phonenumber_textBox.ReadOnly = true;
-                
                 P_name_textBox.Enabled = false;
                 P_sex_ComboBox.Enabled = false;
                 P_address_textBox.Enabled = false;
@@ -169,10 +166,14 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                     {
                         MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         edit_button.Text = "Sửa";
+                        P_ID_textBox.Text = "";
+                        P_name_textBox.Text = "";
+                        P_sex_ComboBox.Text = "";
+                        P_address_textBox.Text = "";
+                        P_phonenumber_textBox.Text = "";
                         P_name_textBox.ReadOnly = false;
                         P_address_textBox.ReadOnly = false;
                         P_phonenumber_textBox.ReadOnly = false;
-
                         P_name_textBox.Enabled = true;
                         P_sex_ComboBox.Enabled = true;
                         P_address_textBox.Enabled = true;
@@ -193,7 +194,6 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                         P_name_textBox.ReadOnly = true;
                         P_address_textBox.ReadOnly = true;
                         P_phonenumber_textBox.ReadOnly = true;
-
                         P_name_textBox.Enabled = false;
                         P_sex_ComboBox.Enabled = false;
                         P_address_textBox.Enabled = false;
@@ -211,7 +211,6 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                     P_name_textBox.ReadOnly = false;
                     P_address_textBox.ReadOnly = false;
                     P_phonenumber_textBox.ReadOnly = false;
-
                     P_name_textBox.Enabled = true;
                     P_sex_ComboBox.Enabled = true;
                     P_address_textBox.Enabled = true;
@@ -264,12 +263,10 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                 P_sex_ComboBox.Text = "";
                 P_address_textBox.Text = "";
                 P_phonenumber_textBox.Text = "";
-                P_dateofbirth_dateTimePicker.Value = DateTime.Now;
-
+                P_dateofbirth_dateTimePicker.Value = DateTime.Now.Date;
                 P_name_textBox.ReadOnly = false;
                 P_address_textBox.ReadOnly = false;
                 P_phonenumber_textBox.ReadOnly = false;
-
                 P_name_textBox.Enabled = true;
                 P_sex_ComboBox.Enabled = true;
                 P_address_textBox.Enabled = true;

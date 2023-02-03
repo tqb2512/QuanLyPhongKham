@@ -353,6 +353,7 @@
             this.delete_button.Size = new System.Drawing.Size(184, 68);
             this.delete_button.TabIndex = 4;
             this.delete_button.Values.Text = "Xóa";
+            this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // groupBox2
             // 
