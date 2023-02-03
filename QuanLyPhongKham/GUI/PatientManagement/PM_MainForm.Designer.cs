@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongKham.GUI.PatientManagement
 {
-    partial class PM_FinalForm
+    partial class PM_MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -498,13 +498,13 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Điện thoại";
             // 
-            // PM_FinalForm
+            // PM_MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1334, 711);
             this.Controls.Add(this.groupBox1);
-            this.Name = "PM_FinalForm";
+            this.Name = "PM_MainForm";
             this.Text = "PM_FinalForm";
             this.Load += new System.EventHandler(this.PM_FinalForm_Load);
             this.groupBox1.ResumeLayout(false);

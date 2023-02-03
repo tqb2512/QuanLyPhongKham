@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="GUI\ServiceManagement\" />
     <Folder Include="obj\" />
   </ItemGroup>
 

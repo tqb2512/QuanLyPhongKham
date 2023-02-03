@@ -12,9 +12,9 @@ using QuanLyPhongKham.Function.PatientManagement;
 
 namespace QuanLyPhongKham.GUI.PatientManagement
 {
-    public partial class PM_FinalForm : Form
+    public partial class PM_MainForm : Form
     {
-        public PM_FinalForm()
+        public PM_MainForm()
         {
             InitializeComponent();
         }

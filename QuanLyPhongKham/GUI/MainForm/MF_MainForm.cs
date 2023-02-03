@@ -12,7 +12,7 @@ using QuanLyPhongKham.Function.MainForm;
 using QuanLyPhongKham.GUI.MedicalRecordManagement;
 using QuanLyPhongKham.GUI.CreateMedicalRecord;
 using QuanLyPhongKham.GUI.PatientManagement;
-using QuanLyPhongKham.GUI.ServiceManagement;
+//using QuanLyPhongKham.GUI.ServiceManagement;
 using QuanLyPhongKham.GUI.EmployeeManagement;
 
 namespace QuanLyPhongKham.GUI.MainForm
@@ -57,7 +57,7 @@ namespace QuanLyPhongKham.GUI.MainForm
 
         private void Service_MenuItem_Click(object sender, EventArgs e)
         {
-            addToTabControl(new SM_MainForm(), "Quản lý dịch vụ");
+            //addToTabControl(new SM_MainForm(), "Quản lý dịch vụ");
         }
 
 
@@ -80,7 +80,7 @@ namespace QuanLyPhongKham.GUI.MainForm
 
         private void Patient_MenuItem_Click(object sender, EventArgs e)
         {
-            addToTabControl(new PM_FinalForm(), "Quản lý bệnh nhân");
+            addToTabControl(new PM_MainForm(), "Quản lý bệnh nhân");
 
         }
 
