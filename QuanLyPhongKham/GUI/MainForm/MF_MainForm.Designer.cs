@@ -81,7 +81,7 @@
             // 
             this.MR_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MR_ToolStripMenuItem.Name = "MR_ToolStripMenuItem";
-            this.MR_ToolStripMenuItem.Size = new System.Drawing.Size(249, 40);
+            this.MR_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.MR_ToolStripMenuItem.Text = "Bệnh án";
             this.MR_ToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
             // 
@@ -89,7 +89,7 @@
             // 
             this.P_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.P_ToolStripMenuItem.Name = "P_ToolStripMenuItem";
-            this.P_ToolStripMenuItem.Size = new System.Drawing.Size(249, 40);
+            this.P_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.P_ToolStripMenuItem.Text = "Bệnh nhân";
             this.P_ToolStripMenuItem.Click += new System.EventHandler(this.Patient_MenuItem_Click);
             // 
@@ -97,14 +97,14 @@
             // 
             this.D_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.D_ToolStripMenuItem.Name = "D_ToolStripMenuItem";
-            this.D_ToolStripMenuItem.Size = new System.Drawing.Size(249, 40);
+            this.D_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.D_ToolStripMenuItem.Text = "Thuốc";
             // 
             // S_ToolStripMenuItem
             // 
             this.S_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.S_ToolStripMenuItem.Name = "S_ToolStripMenuItem";
-            this.S_ToolStripMenuItem.Size = new System.Drawing.Size(249, 40);
+            this.S_ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.S_ToolStripMenuItem.Text = "Dịch vụ";
             this.S_ToolStripMenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
             // 
@@ -112,7 +112,7 @@
             // 
             this.E_MenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.E_MenuItem.Name = "E_MenuItem";
-            this.E_MenuItem.Size = new System.Drawing.Size(249, 40);
+            this.E_MenuItem.Size = new System.Drawing.Size(315, 40);
             this.E_MenuItem.Text = "Nhân Viên";
             this.E_MenuItem.Click += new System.EventHandler(this.E_MenuItem_Click_1);
             // 
@@ -162,7 +162,7 @@
             this.Main_TabControl.Name = "Main_TabControl";
             this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.Main_TabControl.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.Main_TabControl.Size = new System.Drawing.Size(1976, 847);
+            this.Main_TabControl.Size = new System.Drawing.Size(1976, 1047);
             this.Main_TabControl.TabIndex = 1;
             this.Main_TabControl.Text = "kryptonDockableNavigator1";
             // 
@@ -172,7 +172,7 @@
             this.kryptonStatusStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.kryptonStatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.E_Name_Label});
-            this.kryptonStatusStrip1.Location = new System.Drawing.Point(0, 895);
+            this.kryptonStatusStrip1.Location = new System.Drawing.Point(0, 1095);
             this.kryptonStatusStrip1.Name = "kryptonStatusStrip1";
             this.kryptonStatusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
             this.kryptonStatusStrip1.ProgressBars = null;
@@ -193,7 +193,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1976, 936);
+            this.ClientSize = new System.Drawing.Size(1976, 1136);
             this.Controls.Add(this.kryptonStatusStrip1);
             this.Controls.Add(this.Main_TabControl);
             this.Controls.Add(this.MF_ToolStrip);

@@ -295,7 +295,7 @@
             // P_dateofbirth_dateTimePicker
             // 
             this.P_dateofbirth_dateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_dateofbirth_dateTimePicker.CustomFormat = "MM/dd/yyyy";
+            this.P_dateofbirth_dateTimePicker.CustomFormat = "dd MM yyyy";
             this.P_dateofbirth_dateTimePicker.Location = new System.Drawing.Point(181, 123);
             this.P_dateofbirth_dateTimePicker.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.P_dateofbirth_dateTimePicker.Name = "P_dateofbirth_dateTimePicker";
@@ -315,6 +315,7 @@
             this.P_sex_ComboBox.Name = "P_sex_ComboBox";
             this.P_sex_ComboBox.Size = new System.Drawing.Size(119, 38);
             this.P_sex_ComboBox.TabIndex = 2;
+            this.P_sex_ComboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.P_sex_ComboBox_KeyPress);
             // 
             // tableLayoutPanel5
             // 
