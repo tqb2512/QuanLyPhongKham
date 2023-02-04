@@ -11,7 +11,7 @@ __Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#
 ### 6. Quản lý bệnh nhân (Thêm, sửa, xóa)
 ### 7. Quản lý dịch vụ (Thêm, sửa, xóa,)
 ### 8. Công cụ tìm kiếm và bộ lọc
-### 9. 
+### 9. Thống kê
 ## IV. Cài đặt phần mềm
 ! Chú ý khi tải và sử dụng phần mềm !
 ## V. Người đóng góp
