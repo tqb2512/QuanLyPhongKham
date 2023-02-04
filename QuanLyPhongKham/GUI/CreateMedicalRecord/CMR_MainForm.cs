@@ -197,6 +197,8 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
                 Drugs_DataGridView.Columns["Price"].DisplayIndex = 3;
                 Drugs_DataGridView.Columns["Manufacturer"].Visible = false;
                 Drugs_DataGridView.Columns["Description"].Visible = false;
+                Drugs_DataGridView.Columns["TypeName"].Visible = false;
+                Drugs_DataGridView.Columns["TypeID"].Visible = false;
                 this.SizeChanged += new System.EventHandler(this.CMR_MainForm_SizeChanged);
                 total_textBox.Text = "0";
                 foreach (DataGridViewRow row in Services_DataGridView.Rows)

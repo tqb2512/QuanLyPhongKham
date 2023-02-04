@@ -196,6 +196,7 @@
             this.Drugs_DataGridView.RowHeadersVisible = false;
             this.Drugs_DataGridView.RowHeadersWidth = 72;
             this.Drugs_DataGridView.RowTemplate.Height = 37;
+            this.Drugs_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Drugs_DataGridView.Size = new System.Drawing.Size(700, 312);
             this.Drugs_DataGridView.TabIndex = 3;
             // 
@@ -276,6 +277,7 @@
             this.Services_DataGridView.RowHeadersVisible = false;
             this.Services_DataGridView.RowHeadersWidth = 72;
             this.Services_DataGridView.RowTemplate.Height = 37;
+            this.Services_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Services_DataGridView.Size = new System.Drawing.Size(700, 312);
             this.Services_DataGridView.TabIndex = 3;
             // 

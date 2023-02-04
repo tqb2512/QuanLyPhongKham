@@ -640,7 +640,7 @@
             this.ClientSize = new System.Drawing.Size(976, 936);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "MRM_DetailMedicalRecordForm";
-            this.Text = "MRM_DetailMedicalRecordForm";
+            this.Text = "Chi tiết bệnh án";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();

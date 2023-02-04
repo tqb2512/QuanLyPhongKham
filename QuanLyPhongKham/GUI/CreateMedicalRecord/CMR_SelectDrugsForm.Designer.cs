@@ -155,7 +155,7 @@
             this.Drugs_DataGridView.RowHeadersWidth = 72;
             this.Drugs_DataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Drugs_DataGridView.RowTemplate.Height = 37;
-            this.Drugs_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Drugs_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Drugs_DataGridView.Size = new System.Drawing.Size(946, 583);
             this.Drugs_DataGridView.TabIndex = 1;
             this.Drugs_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Drugs_DataGridView_CellClick);
@@ -197,8 +197,9 @@
             this.ClientSize = new System.Drawing.Size(976, 736);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "CMR_SelectDrugsForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CMR_SelectDrugsForm";
+            this.Text = "Chọn thuốc";
             this.Load += new System.EventHandler(this.CMR_SelectDrugsForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.search_tableLayout.ResumeLayout(false);

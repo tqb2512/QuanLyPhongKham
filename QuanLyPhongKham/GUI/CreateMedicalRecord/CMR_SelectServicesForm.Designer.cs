@@ -213,8 +213,9 @@
             this.ClientSize = new System.Drawing.Size(976, 736);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "CMR_SelectServicesForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CMR_SelectServicesForm";
+            this.Text = "Chọn dịch vụ";
             this.Load += new System.EventHandler(this.CMR_SelectServicesForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.servicesDataGridView)).EndInit();

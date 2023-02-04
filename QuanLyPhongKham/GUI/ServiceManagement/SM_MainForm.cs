@@ -161,6 +161,11 @@ namespace QuanLyPhongKham.GUI.ServiceManagement
         {
             if (SM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_SERVICE") == true)
             {
+                if (String.IsNullOrEmpty(S_name_textBox.Text) || String.IsNullOrEmpty(S_price_textBox.Text) || String.IsNullOrEmpty(S_unit_textBox.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 if (S_ID_textBox.Text != "")
                     currentService.ID = Convert.ToInt32(S_ID_textBox.Text);
                 currentService.Name = S_name_textBox.Text;

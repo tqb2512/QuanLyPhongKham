@@ -472,6 +472,7 @@
             this.Drug_DataGridView.Location = new System.Drawing.Point(4, 48);
             this.Drug_DataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.Drug_DataGridView.Name = "Drug_DataGridView";
+            this.Drug_DataGridView.ReadOnly = true;
             this.Drug_DataGridView.RowHeadersVisible = false;
             this.Drug_DataGridView.RowHeadersWidth = 72;
             this.Drug_DataGridView.RowTemplate.Height = 37;

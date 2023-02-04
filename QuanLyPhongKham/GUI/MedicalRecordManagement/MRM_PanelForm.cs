@@ -28,10 +28,10 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
             mrm_MainForm.Dock = DockStyle.Fill;
             mrm_MainForm.Visible = true;
             mrm_MainForm.Show();
-            mrm_MainForm.medicalRecordDataGrid.CellDoubleClick += new DataGridViewCellEventHandler(medicalRecordDataGrid_CellDoubleClick);
+            mrm_MainForm.medicalRecordDataGrid.CellClick += new DataGridViewCellEventHandler(medicalRecordDataGrid_CellClick);
         }
 
-        private void medicalRecordDataGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void medicalRecordDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {

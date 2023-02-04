@@ -212,6 +212,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "MF_MainForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lý phòng khám";
             this.Load += new System.EventHandler(this.MF_MainForm_Load);
