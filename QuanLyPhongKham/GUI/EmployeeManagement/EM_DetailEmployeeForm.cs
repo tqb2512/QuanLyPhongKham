@@ -92,6 +92,11 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
+                if (EM_Functions.getSqlData("Select * from Employee where USERNAME = '" + E_UserName_textBox.Text + "' and EMPLOYEE_ID <> " + E_ID_textBox.Text).Rows.Count > 0)
+                {
+                    MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
                 E_Name_textBox.ReadOnly = true;
                 E_Position_textBox.ReadOnly = true;
                 E_UserName_textBox.ReadOnly = true;
