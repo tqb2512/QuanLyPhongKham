@@ -213,8 +213,8 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel2.Controls.Add(this.add_button, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.refresh_button, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.add_button, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.refresh_button, 2, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 471);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -226,7 +226,7 @@
             // 
             this.add_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.add_button.CornerRoundingRadius = -1F;
-            this.add_button.Location = new System.Drawing.Point(1244, 3);
+            this.add_button.Location = new System.Drawing.Point(1054, 3);
             this.add_button.Name = "add_button";
             this.add_button.Size = new System.Drawing.Size(184, 68);
             this.add_button.TabIndex = 0;
@@ -237,7 +237,7 @@
             // 
             this.refresh_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.refresh_button.CornerRoundingRadius = -1F;
-            this.refresh_button.Location = new System.Drawing.Point(1054, 3);
+            this.refresh_button.Location = new System.Drawing.Point(1244, 3);
             this.refresh_button.Name = "refresh_button";
             this.refresh_button.Size = new System.Drawing.Size(184, 68);
             this.refresh_button.TabIndex = 1;
