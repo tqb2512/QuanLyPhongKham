@@ -200,8 +200,8 @@
             this.P_address_textBox.Location = new System.Drawing.Point(119, 76);
             this.P_address_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.P_address_textBox.Name = "P_address_textBox";
-            this.P_address_textBox.Size = new System.Drawing.Size(345, 27);
-            this.P_address_textBox.TabIndex = 3;
+            this.P_address_textBox.Size = new System.Drawing.Size(515, 35);
+            this.P_address_textBox.TabIndex = 2;
             // 
             // tableLayoutPanel7
             // 
@@ -270,8 +270,8 @@
             this.P_phonenumber_textBox.Location = new System.Drawing.Point(120, 42);
             this.P_phonenumber_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.P_phonenumber_textBox.Name = "P_phonenumber_textBox";
-            this.P_phonenumber_textBox.Size = new System.Drawing.Size(346, 27);
-            this.P_phonenumber_textBox.TabIndex = 8;
+            this.P_phonenumber_textBox.Size = new System.Drawing.Size(518, 35);
+            this.P_phonenumber_textBox.TabIndex = 1;
             this.P_phonenumber_textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_phonenumber_textBox_KeyDown);
             // 
             // P_dateofbirth_dateTimePicker
@@ -283,8 +283,8 @@
             this.P_dateofbirth_dateTimePicker.Location = new System.Drawing.Point(120, 79);
             this.P_dateofbirth_dateTimePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.P_dateofbirth_dateTimePicker.Name = "P_dateofbirth_dateTimePicker";
-            this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(346, 27);
-            this.P_dateofbirth_dateTimePicker.TabIndex = 4;
+            this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(518, 35);
+            this.P_dateofbirth_dateTimePicker.TabIndex = 2;
             // 
             // P_sex_ComboBox
             // 
@@ -297,8 +297,9 @@
             this.P_sex_ComboBox.Location = new System.Drawing.Point(120, 4);
             this.P_sex_ComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.P_sex_ComboBox.Name = "P_sex_ComboBox";
-            this.P_sex_ComboBox.Size = new System.Drawing.Size(81, 28);
-            this.P_sex_ComboBox.TabIndex = 2;
+            this.P_sex_ComboBox.Size = new System.Drawing.Size(119, 38);
+            this.P_sex_ComboBox.TabIndex = 0;
+
             this.P_sex_ComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_sex_ComboBox_KeyDown);
             // 
             // tableLayoutPanel5
