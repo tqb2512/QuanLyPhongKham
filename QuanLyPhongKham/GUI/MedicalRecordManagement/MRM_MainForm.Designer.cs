@@ -189,6 +189,7 @@
             this.paymentStatusSearch_textBox.Name = "paymentStatusSearch_textBox";
             this.paymentStatusSearch_textBox.Size = new System.Drawing.Size(130, 35);
             this.paymentStatusSearch_textBox.TabIndex = 6;
+            this.paymentStatusSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
             // tableLayoutPanel2
             // 

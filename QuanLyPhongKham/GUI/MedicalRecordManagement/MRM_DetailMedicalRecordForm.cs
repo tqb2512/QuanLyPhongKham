@@ -88,6 +88,8 @@ namespace QuanLyPhongKham.GUI.MedicalRecordManagement
             D_List_GridView.Columns["Price"].Width = (int)(D_List_GridView.Width * D_Price_Width);
             D_List_GridView.Columns["Manufacturer"].Visible = false;
             D_List_GridView.Columns["Description"].Visible = false;
+            D_List_GridView.Columns["TypeID"].Visible = false;
+            D_List_GridView.Columns["TypeName"].Visible = false;
             D_List_GridView.Columns["Price"].DefaultCellStyle.Format = "N0";
             S_List_GridView.Columns["ID"].HeaderText = "ID";
             S_List_GridView.Columns["Name"].HeaderText = "Tên dịch vụ";

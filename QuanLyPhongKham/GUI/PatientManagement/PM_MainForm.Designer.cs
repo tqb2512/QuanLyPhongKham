@@ -125,14 +125,14 @@
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.P_address_textBox, 1, 2);
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(5, 6);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 6);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(699, 163);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(701, 163);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // PatientID
@@ -140,8 +140,8 @@
             this.PatientID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.PatientID.AutoSize = true;
-            this.PatientID.Location = new System.Drawing.Point(5, 0);
-            this.PatientID.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.PatientID.Location = new System.Drawing.Point(4, 0);
+            this.PatientID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PatientID.Name = "PatientID";
             this.PatientID.Size = new System.Drawing.Size(141, 54);
             this.PatientID.TabIndex = 0;
@@ -153,8 +153,8 @@
             this.labelPatientName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelPatientName.AutoSize = true;
-            this.labelPatientName.Location = new System.Drawing.Point(5, 54);
-            this.labelPatientName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelPatientName.Location = new System.Drawing.Point(4, 54);
+            this.labelPatientName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPatientName.Name = "labelPatientName";
             this.labelPatientName.Size = new System.Drawing.Size(153, 54);
             this.labelPatientName.TabIndex = 1;
@@ -166,9 +166,9 @@
             this.P_ID_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_ID_textBox.Enabled = false;
             this.P_ID_textBox.Location = new System.Drawing.Point(179, 9);
-            this.P_ID_textBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.P_ID_textBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_ID_textBox.Name = "P_ID_textBox";
-            this.P_ID_textBox.Size = new System.Drawing.Size(515, 35);
+            this.P_ID_textBox.Size = new System.Drawing.Size(518, 35);
             this.P_ID_textBox.TabIndex = 0;
             // 
             // P_name_textBox
@@ -176,9 +176,9 @@
             this.P_name_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_name_textBox.Enabled = false;
             this.P_name_textBox.Location = new System.Drawing.Point(179, 63);
-            this.P_name_textBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.P_name_textBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_name_textBox.Name = "P_name_textBox";
-            this.P_name_textBox.Size = new System.Drawing.Size(515, 35);
+            this.P_name_textBox.Size = new System.Drawing.Size(518, 35);
             this.P_name_textBox.TabIndex = 1;
             // 
             // label1
@@ -186,8 +186,8 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 108);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(4, 108);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 55);
             this.label1.TabIndex = 13;
@@ -199,10 +199,10 @@
             this.P_address_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_address_textBox.Enabled = false;
             this.P_address_textBox.Location = new System.Drawing.Point(179, 118);
-            this.P_address_textBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.P_address_textBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_address_textBox.Name = "P_address_textBox";
-            this.P_address_textBox.Size = new System.Drawing.Size(515, 35);
-            this.P_address_textBox.TabIndex = 3;
+            this.P_address_textBox.Size = new System.Drawing.Size(518, 35);
+            this.P_address_textBox.TabIndex = 2;
             // 
             // tableLayoutPanel7
             // 
@@ -232,8 +232,8 @@
             this.labelPatientBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelPatientBirthday.AutoSize = true;
-            this.labelPatientBirthday.Location = new System.Drawing.Point(5, 112);
-            this.labelPatientBirthday.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelPatientBirthday.Location = new System.Drawing.Point(4, 112);
+            this.labelPatientBirthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPatientBirthday.Name = "labelPatientBirthday";
             this.labelPatientBirthday.Size = new System.Drawing.Size(108, 57);
             this.labelPatientBirthday.TabIndex = 2;
@@ -245,8 +245,8 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 56);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Location = new System.Drawing.Point(4, 56);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 56);
             this.label2.TabIndex = 14;
@@ -258,8 +258,8 @@
             this.labelPatientGender.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelPatientGender.AutoSize = true;
-            this.labelPatientGender.Location = new System.Drawing.Point(5, 0);
-            this.labelPatientGender.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelPatientGender.Location = new System.Drawing.Point(4, 0);
+            this.labelPatientGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPatientGender.Name = "labelPatientGender";
             this.labelPatientGender.Size = new System.Drawing.Size(94, 56);
             this.labelPatientGender.TabIndex = 2;
@@ -270,11 +270,11 @@
             // 
             this.P_phonenumber_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_phonenumber_textBox.Enabled = false;
-            this.P_phonenumber_textBox.Location = new System.Drawing.Point(181, 66);
-            this.P_phonenumber_textBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.P_phonenumber_textBox.Location = new System.Drawing.Point(180, 66);
+            this.P_phonenumber_textBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_phonenumber_textBox.Name = "P_phonenumber_textBox";
-            this.P_phonenumber_textBox.Size = new System.Drawing.Size(518, 35);
-            this.P_phonenumber_textBox.TabIndex = 8;
+            this.P_phonenumber_textBox.Size = new System.Drawing.Size(520, 35);
+            this.P_phonenumber_textBox.TabIndex = 1;
             this.P_phonenumber_textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_phonenumber_textBox_KeyDown);
             // 
             // P_dateofbirth_dateTimePicker
@@ -283,11 +283,11 @@
             this.P_dateofbirth_dateTimePicker.CustomFormat = "";
             this.P_dateofbirth_dateTimePicker.Enabled = false;
             this.P_dateofbirth_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.P_dateofbirth_dateTimePicker.Location = new System.Drawing.Point(181, 123);
-            this.P_dateofbirth_dateTimePicker.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.P_dateofbirth_dateTimePicker.Location = new System.Drawing.Point(180, 123);
+            this.P_dateofbirth_dateTimePicker.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_dateofbirth_dateTimePicker.Name = "P_dateofbirth_dateTimePicker";
-            this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(518, 35);
-            this.P_dateofbirth_dateTimePicker.TabIndex = 4;
+            this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(520, 35);
+            this.P_dateofbirth_dateTimePicker.TabIndex = 2;
             // 
             // P_sex_ComboBox
             // 
@@ -297,11 +297,11 @@
             this.P_sex_ComboBox.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.P_sex_ComboBox.Location = new System.Drawing.Point(181, 9);
-            this.P_sex_ComboBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.P_sex_ComboBox.Location = new System.Drawing.Point(180, 9);
+            this.P_sex_ComboBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_sex_ComboBox.Name = "P_sex_ComboBox";
-            this.P_sex_ComboBox.Size = new System.Drawing.Size(119, 38);
-            this.P_sex_ComboBox.TabIndex = 2;
+            this.P_sex_ComboBox.Size = new System.Drawing.Size(176, 38);
+            this.P_sex_ComboBox.TabIndex = 0;
             this.P_sex_ComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_sex_ComboBox_KeyDown);
             // 
             // tableLayoutPanel5
@@ -328,7 +328,7 @@
             this.edit_button.Name = "edit_button";
             this.edit_button.Size = new System.Drawing.Size(184, 68);
             this.edit_button.TabIndex = 3;
-            this.edit_button.Values.Text = "Chỉnh sửa";
+            this.edit_button.Values.Text = "Sửa";
             this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
             // 
             // delete_button
@@ -353,13 +353,13 @@
             this.tableLayoutPanel4.Controls.Add(this.search_TableLayout, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 2);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 34);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1437, 547);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1437, 548);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // patientDataGridView
@@ -373,7 +373,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.patientDataGridView.ColumnHeadersHeight = 70;
             this.patientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.patientDataGridView.Location = new System.Drawing.Point(3, 47);
+            this.patientDataGridView.Location = new System.Drawing.Point(3, 48);
             this.patientDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.patientDataGridView.Name = "patientDataGridView";
             this.patientDataGridView.ReadOnly = true;
@@ -408,7 +408,7 @@
             this.search_TableLayout.Name = "search_TableLayout";
             this.search_TableLayout.RowCount = 1;
             this.search_TableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.search_TableLayout.Size = new System.Drawing.Size(1431, 35);
+            this.search_TableLayout.Size = new System.Drawing.Size(1431, 36);
             this.search_TableLayout.TabIndex = 5;
             // 
             // idSearch_textBox
@@ -493,7 +493,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel6.Controls.Add(this.refresh_button, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.add_button, 0, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 470);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 471);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -573,7 +573,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1476, 936);
             this.Controls.Add(this.tableLayoutPanel8);
-            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "PM_MainForm";
             this.Text = "PM_FinalForm";
             this.Load += new System.EventHandler(this.PM_FinalForm_Load);
