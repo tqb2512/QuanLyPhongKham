@@ -443,7 +443,7 @@
             this.S_description_label.Location = new System.Drawing.Point(3, 0);
             this.S_description_label.Name = "S_description_label";
             this.S_description_label.Size = new System.Drawing.Size(171, 169);
-            this.S_description_label.TabIndex = 0;
+            this.S_description_label.TabIndex = 1;
             this.S_description_label.Text = "Mô tả";
             this.S_description_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -456,7 +456,7 @@
             this.S_description_richTextBox.Location = new System.Drawing.Point(180, 3);
             this.S_description_richTextBox.Name = "S_description_richTextBox";
             this.S_description_richTextBox.Size = new System.Drawing.Size(527, 163);
-            this.S_description_richTextBox.TabIndex = 1;
+            this.S_description_richTextBox.TabIndex = 0;
             this.S_description_richTextBox.Text = "";
             // 
             // tableLayoutPanel9
@@ -541,7 +541,7 @@
             this.S_ID_textBox.Location = new System.Drawing.Point(180, 3);
             this.S_ID_textBox.Name = "S_ID_textBox";
             this.S_ID_textBox.Size = new System.Drawing.Size(526, 35);
-            this.S_ID_textBox.TabIndex = 4;
+            this.S_ID_textBox.TabIndex = 0;
             // 
             // S_name_textBox
             // 
@@ -550,7 +550,7 @@
             this.S_name_textBox.Location = new System.Drawing.Point(180, 45);
             this.S_name_textBox.Name = "S_name_textBox";
             this.S_name_textBox.Size = new System.Drawing.Size(526, 35);
-            this.S_name_textBox.TabIndex = 5;
+            this.S_name_textBox.TabIndex = 1;
             // 
             // S_price_textBox
             // 
@@ -559,7 +559,7 @@
             this.S_price_textBox.Location = new System.Drawing.Point(180, 87);
             this.S_price_textBox.Name = "S_price_textBox";
             this.S_price_textBox.Size = new System.Drawing.Size(526, 35);
-            this.S_price_textBox.TabIndex = 6;
+            this.S_price_textBox.TabIndex = 2;
             this.S_price_textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.S_price_textBox_KeyDown);
             // 
             // S_unit_textBox
@@ -569,7 +569,7 @@
             this.S_unit_textBox.Location = new System.Drawing.Point(180, 130);
             this.S_unit_textBox.Name = "S_unit_textBox";
             this.S_unit_textBox.Size = new System.Drawing.Size(526, 35);
-            this.S_unit_textBox.TabIndex = 7;
+            this.S_unit_textBox.TabIndex = 3;
             // 
             // tableLayoutPanel10
             // 
@@ -651,7 +651,7 @@
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1446, 313);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin dịch vụ";
             // 
