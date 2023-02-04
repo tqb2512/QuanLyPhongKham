@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI.DrugManagement
 {
-    public partial class DM_TestForm2 : Form
+    public partial class DM_MainForm : Form
     {
-        public DM_TestForm2()
+        public DM_MainForm()
         {
             InitializeComponent();
         }

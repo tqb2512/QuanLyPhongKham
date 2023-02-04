@@ -416,7 +416,7 @@
             this.MR_Date_Label.Name = "MR_Date_Label";
             this.MR_Date_Label.Size = new System.Drawing.Size(102, 41);
             this.MR_Date_Label.TabIndex = 1;
-            this.MR_Date_Label.Text = "Ngày tạo bệnh án";
+            this.MR_Date_Label.Text = "Ngày tạo";
             this.MR_Date_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // E_ID_Label

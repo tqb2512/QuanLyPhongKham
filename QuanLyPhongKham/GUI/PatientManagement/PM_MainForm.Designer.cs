@@ -85,13 +85,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 23);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 34);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(950, 173);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1425, 261);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -104,12 +103,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel7, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(946, 116);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1419, 175);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -127,14 +125,14 @@
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.P_address_textBox, 1, 2);
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 4);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 6);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(467, 108);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(701, 163);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // PatientID
@@ -142,9 +140,10 @@
             this.PatientID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.PatientID.AutoSize = true;
-            this.PatientID.Location = new System.Drawing.Point(3, 0);
+            this.PatientID.Location = new System.Drawing.Point(4, 0);
+            this.PatientID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PatientID.Name = "PatientID";
-            this.PatientID.Size = new System.Drawing.Size(102, 36);
+            this.PatientID.Size = new System.Drawing.Size(141, 54);
             this.PatientID.TabIndex = 0;
             this.PatientID.Text = "ID bệnh nhân";
             this.PatientID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,9 +153,10 @@
             this.labelPatientName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelPatientName.AutoSize = true;
-            this.labelPatientName.Location = new System.Drawing.Point(3, 36);
+            this.labelPatientName.Location = new System.Drawing.Point(4, 54);
+            this.labelPatientName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPatientName.Name = "labelPatientName";
-            this.labelPatientName.Size = new System.Drawing.Size(76, 36);
+            this.labelPatientName.Size = new System.Drawing.Size(153, 54);
             this.labelPatientName.TabIndex = 1;
             this.labelPatientName.Text = "Tên bệnh nhân";
             this.labelPatientName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -165,20 +165,20 @@
             // 
             this.P_ID_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_ID_textBox.Enabled = false;
-            this.P_ID_textBox.Location = new System.Drawing.Point(119, 4);
-            this.P_ID_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.P_ID_textBox.Location = new System.Drawing.Point(179, 9);
+            this.P_ID_textBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_ID_textBox.Name = "P_ID_textBox";
-            this.P_ID_textBox.Size = new System.Drawing.Size(345, 27);
+            this.P_ID_textBox.Size = new System.Drawing.Size(518, 35);
             this.P_ID_textBox.TabIndex = 0;
             // 
             // P_name_textBox
             // 
             this.P_name_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_name_textBox.Enabled = false;
-            this.P_name_textBox.Location = new System.Drawing.Point(119, 40);
-            this.P_name_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.P_name_textBox.Location = new System.Drawing.Point(179, 63);
+            this.P_name_textBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_name_textBox.Name = "P_name_textBox";
-            this.P_name_textBox.Size = new System.Drawing.Size(345, 27);
+            this.P_name_textBox.Size = new System.Drawing.Size(518, 35);
             this.P_name_textBox.TabIndex = 1;
             // 
             // label1
@@ -186,9 +186,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 72);
+            this.label1.Location = new System.Drawing.Point(4, 108);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 36);
+            this.label1.Size = new System.Drawing.Size(77, 55);
             this.label1.TabIndex = 13;
             this.label1.Text = "Địa chỉ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,10 +198,10 @@
             // 
             this.P_address_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_address_textBox.Enabled = false;
-            this.P_address_textBox.Location = new System.Drawing.Point(119, 76);
-            this.P_address_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.P_address_textBox.Location = new System.Drawing.Point(179, 118);
+            this.P_address_textBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_address_textBox.Name = "P_address_textBox";
-            this.P_address_textBox.Size = new System.Drawing.Size(515, 35);
+            this.P_address_textBox.Size = new System.Drawing.Size(518, 35);
             this.P_address_textBox.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -217,14 +218,13 @@
             this.tableLayoutPanel7.Controls.Add(this.P_phonenumber_textBox, 1, 1);
             this.tableLayoutPanel7.Controls.Add(this.P_dateofbirth_dateTimePicker, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.P_sex_ComboBox, 1, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(475, 2);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(712, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(469, 112);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(704, 169);
             this.tableLayoutPanel7.TabIndex = 3;
             // 
             // labelPatientBirthday
@@ -232,9 +232,10 @@
             this.labelPatientBirthday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelPatientBirthday.AutoSize = true;
-            this.labelPatientBirthday.Location = new System.Drawing.Point(3, 74);
+            this.labelPatientBirthday.Location = new System.Drawing.Point(4, 112);
+            this.labelPatientBirthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPatientBirthday.Name = "labelPatientBirthday";
-            this.labelPatientBirthday.Size = new System.Drawing.Size(78, 38);
+            this.labelPatientBirthday.Size = new System.Drawing.Size(108, 57);
             this.labelPatientBirthday.TabIndex = 2;
             this.labelPatientBirthday.Text = "Ngày sinh";
             this.labelPatientBirthday.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -244,9 +245,10 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 37);
+            this.label2.Location = new System.Drawing.Point(4, 56);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 37);
+            this.label2.Size = new System.Drawing.Size(111, 56);
             this.label2.TabIndex = 14;
             this.label2.Text = "Điện thoại";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,9 +258,10 @@
             this.labelPatientGender.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelPatientGender.AutoSize = true;
-            this.labelPatientGender.Location = new System.Drawing.Point(3, 0);
+            this.labelPatientGender.Location = new System.Drawing.Point(4, 0);
+            this.labelPatientGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPatientGender.Name = "labelPatientGender";
-            this.labelPatientGender.Size = new System.Drawing.Size(67, 37);
+            this.labelPatientGender.Size = new System.Drawing.Size(94, 56);
             this.labelPatientGender.TabIndex = 2;
             this.labelPatientGender.Text = "Giới tính";
             this.labelPatientGender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -267,10 +270,10 @@
             // 
             this.P_phonenumber_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_phonenumber_textBox.Enabled = false;
-            this.P_phonenumber_textBox.Location = new System.Drawing.Point(120, 42);
-            this.P_phonenumber_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.P_phonenumber_textBox.Location = new System.Drawing.Point(180, 66);
+            this.P_phonenumber_textBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_phonenumber_textBox.Name = "P_phonenumber_textBox";
-            this.P_phonenumber_textBox.Size = new System.Drawing.Size(518, 35);
+            this.P_phonenumber_textBox.Size = new System.Drawing.Size(520, 35);
             this.P_phonenumber_textBox.TabIndex = 1;
             this.P_phonenumber_textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_phonenumber_textBox_KeyDown);
             // 
@@ -280,10 +283,10 @@
             this.P_dateofbirth_dateTimePicker.CustomFormat = "";
             this.P_dateofbirth_dateTimePicker.Enabled = false;
             this.P_dateofbirth_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.P_dateofbirth_dateTimePicker.Location = new System.Drawing.Point(120, 79);
-            this.P_dateofbirth_dateTimePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.P_dateofbirth_dateTimePicker.Location = new System.Drawing.Point(180, 123);
+            this.P_dateofbirth_dateTimePicker.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_dateofbirth_dateTimePicker.Name = "P_dateofbirth_dateTimePicker";
-            this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(518, 35);
+            this.P_dateofbirth_dateTimePicker.Size = new System.Drawing.Size(520, 35);
             this.P_dateofbirth_dateTimePicker.TabIndex = 2;
             // 
             // P_sex_ComboBox
@@ -294,12 +297,11 @@
             this.P_sex_ComboBox.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.P_sex_ComboBox.Location = new System.Drawing.Point(120, 4);
-            this.P_sex_ComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.P_sex_ComboBox.Location = new System.Drawing.Point(180, 9);
+            this.P_sex_ComboBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.P_sex_ComboBox.Name = "P_sex_ComboBox";
-            this.P_sex_ComboBox.Size = new System.Drawing.Size(119, 38);
+            this.P_sex_ComboBox.Size = new System.Drawing.Size(176, 38);
             this.P_sex_ComboBox.TabIndex = 0;
-
             this.P_sex_ComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_sex_ComboBox_KeyDown);
             // 
             // tableLayoutPanel5
@@ -309,36 +311,33 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel5.Controls.Add(this.edit_button, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.delete_button, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 122);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 184);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(946, 49);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1419, 74);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // edit_button
             // 
             this.edit_button.CornerRoundingRadius = -1F;
-            this.edit_button.Location = new System.Drawing.Point(821, 2);
-            this.edit_button.Margin = new System.Windows.Forms.Padding(2);
+            this.edit_button.Location = new System.Drawing.Point(1232, 3);
             this.edit_button.Name = "edit_button";
-            this.edit_button.Size = new System.Drawing.Size(123, 45);
+            this.edit_button.Size = new System.Drawing.Size(184, 68);
             this.edit_button.TabIndex = 3;
-            this.edit_button.Values.Text = "Chỉnh sửa";
+            this.edit_button.Values.Text = "Sửa";
             this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
             // 
             // delete_button
             // 
             this.delete_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.delete_button.CornerRoundingRadius = -1F;
-            this.delete_button.Location = new System.Drawing.Point(694, 2);
-            this.delete_button.Margin = new System.Windows.Forms.Padding(2);
+            this.delete_button.Location = new System.Drawing.Point(1042, 3);
             this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(123, 45);
+            this.delete_button.Size = new System.Drawing.Size(184, 68);
             this.delete_button.TabIndex = 4;
             this.delete_button.Values.Text = "Xóa";
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
@@ -353,14 +352,14 @@
             this.tableLayoutPanel4.Controls.Add(this.patientDataGridView, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.search_TableLayout, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 2);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 23);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 34);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(958, 366);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1437, 548);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // patientDataGridView
@@ -374,15 +373,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.patientDataGridView.ColumnHeadersHeight = 70;
             this.patientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.patientDataGridView.Location = new System.Drawing.Point(2, 32);
-            this.patientDataGridView.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.patientDataGridView.Location = new System.Drawing.Point(3, 48);
+            this.patientDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.patientDataGridView.Name = "patientDataGridView";
             this.patientDataGridView.ReadOnly = true;
             this.patientDataGridView.RowHeadersVisible = false;
             this.patientDataGridView.RowHeadersWidth = 72;
             this.patientDataGridView.RowTemplate.Height = 37;
             this.patientDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.patientDataGridView.Size = new System.Drawing.Size(954, 278);
+            this.patientDataGridView.Size = new System.Drawing.Size(1431, 416);
             this.patientDataGridView.TabIndex = 6;
             this.patientDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientDataGridView_CellContentClick);
             // 
@@ -404,12 +403,12 @@
             this.search_TableLayout.Controls.Add(this.dateofbirthSearch_textBox, 3, 0);
             this.search_TableLayout.Controls.Add(this.addressSearch_textBox, 2, 0);
             this.search_TableLayout.Controls.Add(this.genderSearch_textBox, 2, 0);
-            this.search_TableLayout.Location = new System.Drawing.Point(2, 3);
-            this.search_TableLayout.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.search_TableLayout.Location = new System.Drawing.Point(3, 4);
+            this.search_TableLayout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.search_TableLayout.Name = "search_TableLayout";
             this.search_TableLayout.RowCount = 1;
             this.search_TableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.search_TableLayout.Size = new System.Drawing.Size(954, 23);
+            this.search_TableLayout.Size = new System.Drawing.Size(1431, 36);
             this.search_TableLayout.TabIndex = 5;
             // 
             // idSearch_textBox
@@ -417,10 +416,10 @@
             this.idSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.idSearch_textBox.Location = new System.Drawing.Point(2, 3);
-            this.idSearch_textBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.idSearch_textBox.Location = new System.Drawing.Point(3, 4);
+            this.idSearch_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.idSearch_textBox.Name = "idSearch_textBox";
-            this.idSearch_textBox.Size = new System.Drawing.Size(155, 27);
+            this.idSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.idSearch_textBox.TabIndex = 0;
             this.idSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -429,10 +428,10 @@
             this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameSearch_textBox.Location = new System.Drawing.Point(161, 3);
-            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.nameSearch_textBox.Location = new System.Drawing.Point(241, 4);
+            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nameSearch_textBox.Name = "nameSearch_textBox";
-            this.nameSearch_textBox.Size = new System.Drawing.Size(155, 27);
+            this.nameSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.nameSearch_textBox.TabIndex = 1;
             this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -441,10 +440,10 @@
             this.phonenumberSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.phonenumberSearch_textBox.Location = new System.Drawing.Point(638, 3);
-            this.phonenumberSearch_textBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.phonenumberSearch_textBox.Location = new System.Drawing.Point(955, 4);
+            this.phonenumberSearch_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phonenumberSearch_textBox.Name = "phonenumberSearch_textBox";
-            this.phonenumberSearch_textBox.Size = new System.Drawing.Size(155, 27);
+            this.phonenumberSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.phonenumberSearch_textBox.TabIndex = 4;
             this.phonenumberSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -453,10 +452,10 @@
             this.dateofbirthSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateofbirthSearch_textBox.Location = new System.Drawing.Point(797, 3);
-            this.dateofbirthSearch_textBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dateofbirthSearch_textBox.Location = new System.Drawing.Point(1193, 4);
+            this.dateofbirthSearch_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateofbirthSearch_textBox.Name = "dateofbirthSearch_textBox";
-            this.dateofbirthSearch_textBox.Size = new System.Drawing.Size(155, 27);
+            this.dateofbirthSearch_textBox.Size = new System.Drawing.Size(235, 35);
             this.dateofbirthSearch_textBox.TabIndex = 5;
             this.dateofbirthSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -465,10 +464,10 @@
             this.addressSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addressSearch_textBox.Location = new System.Drawing.Point(320, 3);
-            this.addressSearch_textBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.addressSearch_textBox.Location = new System.Drawing.Point(479, 4);
+            this.addressSearch_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addressSearch_textBox.Name = "addressSearch_textBox";
-            this.addressSearch_textBox.Size = new System.Drawing.Size(155, 27);
+            this.addressSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.addressSearch_textBox.TabIndex = 2;
             this.addressSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -477,10 +476,10 @@
             this.genderSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.genderSearch_textBox.Location = new System.Drawing.Point(479, 3);
-            this.genderSearch_textBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.genderSearch_textBox.Location = new System.Drawing.Point(717, 4);
+            this.genderSearch_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.genderSearch_textBox.Name = "genderSearch_textBox";
-            this.genderSearch_textBox.Size = new System.Drawing.Size(155, 27);
+            this.genderSearch_textBox.Size = new System.Drawing.Size(232, 35);
             this.genderSearch_textBox.TabIndex = 3;
             this.genderSearch_textBox.TextChanged += new System.EventHandler(this.Search);
             // 
@@ -491,24 +490,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel6.Controls.Add(this.refresh_button, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.add_button, 0, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 315);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 471);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(954, 49);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1431, 74);
             this.tableLayoutPanel6.TabIndex = 7;
             // 
             // refresh_button
             // 
             this.refresh_button.CornerRoundingRadius = -1F;
-            this.refresh_button.Location = new System.Drawing.Point(829, 2);
-            this.refresh_button.Margin = new System.Windows.Forms.Padding(2);
+            this.refresh_button.Location = new System.Drawing.Point(1244, 3);
             this.refresh_button.Name = "refresh_button";
-            this.refresh_button.Size = new System.Drawing.Size(123, 45);
+            this.refresh_button.Size = new System.Drawing.Size(184, 68);
             this.refresh_button.TabIndex = 8;
             this.refresh_button.Values.Text = "Làm mới";
             this.refresh_button.Click += new System.EventHandler(this.refresh_button_Click);
@@ -517,10 +514,9 @@
             // 
             this.add_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.add_button.CornerRoundingRadius = -1F;
-            this.add_button.Location = new System.Drawing.Point(702, 2);
-            this.add_button.Margin = new System.Windows.Forms.Padding(2);
+            this.add_button.Location = new System.Drawing.Point(1054, 3);
             this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(123, 45);
+            this.add_button.Size = new System.Drawing.Size(184, 68);
             this.add_button.TabIndex = 9;
             this.add_button.Values.Text = "Thêm";
             this.add_button.Click += new System.EventHandler(this.add_button_Click);
@@ -534,13 +530,12 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel8.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.groupBox2, 0, 1);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(8, 8);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(968, 608);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1452, 912);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // groupBox1
@@ -550,11 +545,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(2, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(964, 208);
+            this.groupBox1.Size = new System.Drawing.Size(1446, 313);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin bệnh nhân";
@@ -566,23 +559,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.tableLayoutPanel4);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(2, 214);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(3, 322);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(964, 392);
+            this.groupBox2.Size = new System.Drawing.Size(1446, 587);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách bệnh nhân";
             // 
             // PM_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(984, 624);
+            this.ClientSize = new System.Drawing.Size(1476, 936);
             this.Controls.Add(this.tableLayoutPanel8);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "PM_MainForm";
             this.Text = "PM_FinalForm";
             this.Load += new System.EventHandler(this.PM_FinalForm_Load);

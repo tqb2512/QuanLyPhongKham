@@ -103,7 +103,7 @@ namespace QuanLyPhongKham.GUI.MainForm
         
         private void D_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            addToTabControl(new DM_TestForm2(), "Quản lý thuốc");
+            addToTabControl(new DM_MainForm(), "Quản lý thuốc");
         }
     }
 }

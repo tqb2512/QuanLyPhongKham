@@ -370,7 +370,7 @@
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(184, 68);
             this.editButton.TabIndex = 0;
-            this.editButton.Values.Text = "Chỉnh sửa";
+            this.editButton.Values.Text = "Sửa";
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // deleteButton
