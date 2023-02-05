@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using System.Windows;
 using QuanLyPhongKham.Classes;
 using QuanLyPhongKham.GUI.MedicalRecordManagement;
 using QuanLyPhongKham.GUI.CreateMedicalRecord;
@@ -32,7 +33,7 @@ namespace QuanLyPhongKham.GUI.MainForm
             InitializeComponent();
             this.currentUser = MF_Functions.getUserInfo(currentUserID);
             E_Name_Label.Text = "Xin chào " + this.currentUser.Name + "!";
-            Main_TabControl.Size = new Size(this.Size.Width - 27, this.Size.Height - 155);
+            MF_MainForm_SizeChanged(this, null);
         }
         private void addToTabControl(Form form, string tabName)
         {
@@ -94,7 +95,10 @@ namespace QuanLyPhongKham.GUI.MainForm
 
         private void MF_MainForm_SizeChanged(object sender, EventArgs e)
         {
-            Main_TabControl.Size = new Size(this.Size.Width - 27, this.Size.Height - 155);
+            Size tabControl = new Size(this.Size.Width, this.Size.Height);
+            tabControl.Width -= SystemInformation.VerticalScrollBarWidth - SystemInformation.Border3DSize.Width;
+            tabControl.Height -= StatusStrip.Height + SystemInformation.Border3DSize.Height + SystemInformation.CaptionHeight + SystemInformation.MenuHeight + SystemInformation.ToolWindowCaptionHeight;
+            Main_TabControl.Size = tabControl;
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)

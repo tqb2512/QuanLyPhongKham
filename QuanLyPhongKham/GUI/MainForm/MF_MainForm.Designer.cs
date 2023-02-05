@@ -40,11 +40,11 @@
             this.signOutButton = new System.Windows.Forms.ToolStripButton();
             this.statisticalButton = new System.Windows.Forms.ToolStripButton();
             this.Main_TabControl = new Krypton.Docking.KryptonDockableNavigator();
-            this.kryptonStatusStrip1 = new Krypton.Toolkit.KryptonStatusStrip();
+            this.StatusStrip = new Krypton.Toolkit.KryptonStatusStrip();
             this.E_Name_Label = new System.Windows.Forms.ToolStripStatusLabel();
             this.MF_ToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Main_TabControl)).BeginInit();
-            this.kryptonStatusStrip1.SuspendLayout();
+            this.StatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // MF_ToolStrip
@@ -173,24 +173,24 @@
             this.Main_TabControl.Name = "Main_TabControl";
             this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.Main_TabControl.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.Main_TabControl.Size = new System.Drawing.Size(1922, 660);
+            this.Main_TabControl.Size = new System.Drawing.Size(1676, 580);
             this.Main_TabControl.TabIndex = 1;
             this.Main_TabControl.Text = "kryptonDockableNavigator1";
             // 
-            // kryptonStatusStrip1
+            // StatusStrip
             // 
-            this.kryptonStatusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.kryptonStatusStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
-            this.kryptonStatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StatusStrip.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StatusStrip.ImageScalingSize = new System.Drawing.Size(28, 28);
+            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.E_Name_Label});
-            this.kryptonStatusStrip1.Location = new System.Drawing.Point(0, 1395);
-            this.kryptonStatusStrip1.Name = "kryptonStatusStrip1";
-            this.kryptonStatusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
-            this.kryptonStatusStrip1.ProgressBars = null;
-            this.kryptonStatusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.kryptonStatusStrip1.Size = new System.Drawing.Size(2176, 41);
-            this.kryptonStatusStrip1.TabIndex = 3;
-            this.kryptonStatusStrip1.Text = "kryptonStatusStrip1";
+            this.StatusStrip.Location = new System.Drawing.Point(0, 1395);
+            this.StatusStrip.Name = "StatusStrip";
+            this.StatusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
+            this.StatusStrip.ProgressBars = null;
+            this.StatusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+            this.StatusStrip.Size = new System.Drawing.Size(2176, 41);
+            this.StatusStrip.TabIndex = 3;
+            this.StatusStrip.Text = "kryptonStatusStrip1";
             // 
             // E_Name_Label
             // 
@@ -205,7 +205,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(2176, 1436);
-            this.Controls.Add(this.kryptonStatusStrip1);
+            this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.Main_TabControl);
             this.Controls.Add(this.MF_ToolStrip);
             this.DoubleBuffered = true;
@@ -219,8 +219,8 @@
             this.MF_ToolStrip.ResumeLayout(false);
             this.MF_ToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Main_TabControl)).EndInit();
-            this.kryptonStatusStrip1.ResumeLayout(false);
-            this.kryptonStatusStrip1.PerformLayout();
+            this.StatusStrip.ResumeLayout(false);
+            this.StatusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,7 +235,7 @@
         private ToolStripMenuItem S_ToolStripMenuItem;
         private ToolStripButton MF_CreateMR_StripButton;
         private Krypton.Docking.KryptonDockableNavigator Main_TabControl;
-        private Krypton.Toolkit.KryptonStatusStrip kryptonStatusStrip1;
+        private Krypton.Toolkit.KryptonStatusStrip StatusStrip;
         private ToolStripStatusLabel E_Name_Label;
         private ToolStripMenuItem E_MenuItem;
         private ToolStripButton signOutButton;
