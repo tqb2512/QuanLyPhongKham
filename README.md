@@ -1,6 +1,6 @@
 # Phần mềm Quản lý phòng khám
 ## I. Giới thiệu chung
-__Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#. Phần mềm tinh gọn, dễ dàng sử dụng, hướng tới tính ổn định cho những nhà quản lý, với các chức năng thiết yếu phục vụ cho việc quản lý phòng khám tư, công dễ dàng hơn__
+__Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#. Phần mềm tinh gọn, dễ dàng sử dụng, hướng tới tính ổn định cho những nhà quản lý phòng khám tư, với các chức năng thiết yếu phục vụ cho việc quản lý phòng khám dễ dàng hơn__
 ## II. Đối tượng người dùng
 ## III. Chức năng
 ### 1. Đăng nhập, đăng xuất
@@ -11,8 +11,9 @@ __Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#
 ### 6. Quản lý bệnh nhân (Thêm, sửa, xóa)
 ### 7. Quản lý dịch vụ (Thêm, sửa, xóa,)
 ### 8. Công cụ tìm kiếm và bộ lọc
+### 9. Hệ thống làm việc đa cửa sổ
 ### 9. Thống kê
-### 10. Hỗ trợ kết nối qua mạng thông qua SQL Server
+### 10. Hỗ trợ kết nối nhiều thiết bị thông qua SQL server
 ## IV. Cài đặt phần mềm
 ! Chú ý khi tải và sử dụng phần mềm !
 ## V. Người đóng góp
