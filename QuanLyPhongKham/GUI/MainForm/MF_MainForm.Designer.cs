@@ -59,7 +59,7 @@
             this.MF_ToolStrip.Location = new System.Drawing.Point(0, 0);
             this.MF_ToolStrip.Name = "MF_ToolStrip";
             this.MF_ToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.MF_ToolStrip.Size = new System.Drawing.Size(1384, 26);
+            this.MF_ToolStrip.Size = new System.Drawing.Size(1184, 26);
             this.MF_ToolStrip.TabIndex = 2;
             this.MF_ToolStrip.Text = "kryptonToolStrip1";
             // 
@@ -188,7 +188,7 @@
             this.StatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 8, 0);
             this.StatusStrip.ProgressBars = null;
             this.StatusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.StatusStrip.Size = new System.Drawing.Size(1384, 24);
+            this.StatusStrip.Size = new System.Drawing.Size(1184, 24);
             this.StatusStrip.TabIndex = 3;
             this.StatusStrip.Text = "kryptonStatusStrip1";
             // 
@@ -204,7 +204,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1384, 661);
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.Main_TabControl);
             this.Controls.Add(this.MF_ToolStrip);

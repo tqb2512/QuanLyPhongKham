@@ -367,5 +367,13 @@ namespace QuanLyPhongKham.GUI.DrugManagement
         {
             e.SuppressKeyPress = true;
         }
+
+        private void DM_DrugPrice_TextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!(Char.IsNumber((char)e.KeyCode) || e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete || e.KeyCode == Keys.Enter))
+            {
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }

@@ -642,7 +642,7 @@
             this.MR_diagnosis_groupBox.Size = new System.Drawing.Size(467, 135);
             this.MR_diagnosis_groupBox.TabIndex = 0;
             this.MR_diagnosis_groupBox.TabStop = false;
-            this.MR_diagnosis_groupBox.Text = "Chuẩn đoán";
+            this.MR_diagnosis_groupBox.Text = "Chẩn đoán";
             // 
             // MR_diagnosis_richTextBox
             // 

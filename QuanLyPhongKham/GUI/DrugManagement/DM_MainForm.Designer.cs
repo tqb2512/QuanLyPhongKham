@@ -381,6 +381,7 @@
             this.DM_DrugPrice_TextBox.Name = "DM_DrugPrice_TextBox";
             this.DM_DrugPrice_TextBox.Size = new System.Drawing.Size(352, 23);
             this.DM_DrugPrice_TextBox.TabIndex = 13;
+            this.DM_DrugPrice_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DM_DrugPrice_TextBox_KeyDown);
             // 
             // DM_DrugDescription_TextBox
             // 
