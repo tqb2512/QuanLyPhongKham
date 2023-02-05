@@ -96,13 +96,14 @@
             this.tableLayoutPanel1.Controls.Add(this.search_TableLayout, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.servicesDataGridView, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 34);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 19);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1437, 548);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(962, 395);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // search_TableLayout
@@ -121,11 +122,12 @@
             this.search_TableLayout.Controls.Add(this.unitSearch_textBox, 2, 0);
             this.search_TableLayout.Controls.Add(this.priceSearch_textBox, 3, 0);
             this.search_TableLayout.Controls.Add(this.descriptionSearch_textBox, 4, 0);
-            this.search_TableLayout.Location = new System.Drawing.Point(3, 3);
+            this.search_TableLayout.Location = new System.Drawing.Point(2, 2);
+            this.search_TableLayout.Margin = new System.Windows.Forms.Padding(2);
             this.search_TableLayout.Name = "search_TableLayout";
             this.search_TableLayout.RowCount = 1;
             this.search_TableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.search_TableLayout.Size = new System.Drawing.Size(1431, 38);
+            this.search_TableLayout.Size = new System.Drawing.Size(958, 21);
             this.search_TableLayout.TabIndex = 1;
             // 
             // idSearch_textBox
@@ -133,9 +135,10 @@
             this.idSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.idSearch_textBox.Location = new System.Drawing.Point(3, 3);
+            this.idSearch_textBox.Location = new System.Drawing.Point(2, 2);
+            this.idSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.idSearch_textBox.Name = "idSearch_textBox";
-            this.idSearch_textBox.Size = new System.Drawing.Size(280, 35);
+            this.idSearch_textBox.Size = new System.Drawing.Size(187, 23);
             this.idSearch_textBox.TabIndex = 0;
             this.idSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -144,9 +147,10 @@
             this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameSearch_textBox.Location = new System.Drawing.Point(289, 3);
+            this.nameSearch_textBox.Location = new System.Drawing.Point(193, 2);
+            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameSearch_textBox.Name = "nameSearch_textBox";
-            this.nameSearch_textBox.Size = new System.Drawing.Size(280, 35);
+            this.nameSearch_textBox.Size = new System.Drawing.Size(187, 23);
             this.nameSearch_textBox.TabIndex = 1;
             this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -155,9 +159,10 @@
             this.unitSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.unitSearch_textBox.Location = new System.Drawing.Point(575, 3);
+            this.unitSearch_textBox.Location = new System.Drawing.Point(384, 2);
+            this.unitSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.unitSearch_textBox.Name = "unitSearch_textBox";
-            this.unitSearch_textBox.Size = new System.Drawing.Size(280, 35);
+            this.unitSearch_textBox.Size = new System.Drawing.Size(187, 23);
             this.unitSearch_textBox.TabIndex = 2;
             this.unitSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -166,9 +171,10 @@
             this.priceSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.priceSearch_textBox.Location = new System.Drawing.Point(861, 3);
+            this.priceSearch_textBox.Location = new System.Drawing.Point(575, 2);
+            this.priceSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.priceSearch_textBox.Name = "priceSearch_textBox";
-            this.priceSearch_textBox.Size = new System.Drawing.Size(280, 35);
+            this.priceSearch_textBox.Size = new System.Drawing.Size(187, 23);
             this.priceSearch_textBox.TabIndex = 3;
             this.priceSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -177,9 +183,10 @@
             this.descriptionSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.descriptionSearch_textBox.Location = new System.Drawing.Point(1147, 3);
+            this.descriptionSearch_textBox.Location = new System.Drawing.Point(766, 2);
+            this.descriptionSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.descriptionSearch_textBox.Name = "descriptionSearch_textBox";
-            this.descriptionSearch_textBox.Size = new System.Drawing.Size(281, 35);
+            this.descriptionSearch_textBox.Size = new System.Drawing.Size(190, 23);
             this.descriptionSearch_textBox.TabIndex = 4;
             this.descriptionSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -193,14 +200,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.servicesDataGridView.ColumnHeadersHeight = 70;
-            this.servicesDataGridView.Location = new System.Drawing.Point(3, 47);
+            this.servicesDataGridView.Location = new System.Drawing.Point(2, 27);
+            this.servicesDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.servicesDataGridView.Name = "servicesDataGridView";
             this.servicesDataGridView.ReadOnly = true;
             this.servicesDataGridView.RowHeadersVisible = false;
             this.servicesDataGridView.RowHeadersWidth = 72;
             this.servicesDataGridView.RowTemplate.Height = 37;
             this.servicesDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.servicesDataGridView.Size = new System.Drawing.Size(1431, 418);
+            this.servicesDataGridView.Size = new System.Drawing.Size(958, 320);
             this.servicesDataGridView.TabIndex = 0;
             this.servicesDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.servicesDataGridView_CellContentClick);
             // 
@@ -211,24 +219,26 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tableLayoutPanel2.Controls.Add(this.add_button, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.refresh_button, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 471);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 351);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1431, 74);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(958, 42);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // add_button
             // 
             this.add_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.add_button.CornerRoundingRadius = -1F;
-            this.add_button.Location = new System.Drawing.Point(1054, 3);
+            this.add_button.Location = new System.Drawing.Point(742, 2);
+            this.add_button.Margin = new System.Windows.Forms.Padding(2);
             this.add_button.Name = "add_button";
-            this.add_button.Size = new System.Drawing.Size(184, 68);
+            this.add_button.Size = new System.Drawing.Size(105, 38);
             this.add_button.TabIndex = 0;
             this.add_button.Values.Text = "Thêm";
             this.add_button.Click += new System.EventHandler(this.add_button_Click);
@@ -237,9 +247,10 @@
             // 
             this.refresh_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.refresh_button.CornerRoundingRadius = -1F;
-            this.refresh_button.Location = new System.Drawing.Point(1244, 3);
+            this.refresh_button.Location = new System.Drawing.Point(851, 2);
+            this.refresh_button.Margin = new System.Windows.Forms.Padding(2);
             this.refresh_button.Name = "refresh_button";
-            this.refresh_button.Size = new System.Drawing.Size(184, 68);
+            this.refresh_button.Size = new System.Drawing.Size(105, 38);
             this.refresh_button.TabIndex = 1;
             this.refresh_button.Values.Text = "Làm mới";
             this.refresh_button.Click += new System.EventHandler(this.refresh_button_Click);
@@ -311,7 +322,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(32, 35);
+            this.textBox1.Size = new System.Drawing.Size(32, 23);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
@@ -321,7 +332,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(41, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(32, 35);
+            this.textBox2.Size = new System.Drawing.Size(32, 23);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
@@ -331,7 +342,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(79, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(32, 35);
+            this.textBox3.Size = new System.Drawing.Size(32, 23);
             this.textBox3.TabIndex = 2;
             // 
             // textBox4
@@ -341,7 +352,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(117, 3);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(32, 35);
+            this.textBox4.Size = new System.Drawing.Size(32, 23);
             this.textBox4.TabIndex = 3;
             // 
             // textBox5
@@ -351,7 +362,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.Location = new System.Drawing.Point(155, 3);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(36, 35);
+            this.textBox5.Size = new System.Drawing.Size(36, 23);
             this.textBox5.TabIndex = 4;
             // 
             // tableLayoutPanel5
@@ -388,13 +399,14 @@
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel11, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel10, 0, 1);
             this.tableLayoutPanel6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 34);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 19);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1437, 272);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(962, 198);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
             // tableLayoutPanel11
@@ -407,12 +419,13 @@
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.Controls.Add(this.tableLayoutPanel8, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.tableLayoutPanel9, 0, 0);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 174F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(1431, 186);
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 106F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(958, 148);
             this.tableLayoutPanel11.TabIndex = 1;
             // 
             // tableLayoutPanel8
@@ -426,11 +439,12 @@
             this.tableLayoutPanel8.Controls.Add(this.S_description_label, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.S_description_richTextBox, 1, 0);
             this.tableLayoutPanel8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(718, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(481, 2);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(710, 180);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(475, 144);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // S_description_label
@@ -440,9 +454,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.S_description_label.AutoSize = true;
             this.S_description_label.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.S_description_label.Location = new System.Drawing.Point(3, 0);
+            this.S_description_label.Location = new System.Drawing.Point(2, 0);
+            this.S_description_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.S_description_label.Name = "S_description_label";
-            this.S_description_label.Size = new System.Drawing.Size(171, 180);
+            this.S_description_label.Size = new System.Drawing.Size(114, 144);
             this.S_description_label.TabIndex = 1;
             this.S_description_label.Text = "Mô tả";
             this.S_description_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -453,9 +468,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.S_description_richTextBox.Enabled = false;
-            this.S_description_richTextBox.Location = new System.Drawing.Point(180, 3);
+            this.S_description_richTextBox.Location = new System.Drawing.Point(120, 2);
+            this.S_description_richTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.S_description_richTextBox.Name = "S_description_richTextBox";
-            this.S_description_richTextBox.Size = new System.Drawing.Size(527, 174);
+            this.S_description_richTextBox.Size = new System.Drawing.Size(353, 140);
             this.S_description_richTextBox.TabIndex = 0;
             this.S_description_richTextBox.Text = "";
             // 
@@ -476,14 +492,15 @@
             this.tableLayoutPanel9.Controls.Add(this.S_price_textBox, 1, 2);
             this.tableLayoutPanel9.Controls.Add(this.S_unit_textBox, 1, 3);
             this.tableLayoutPanel9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(709, 180);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(475, 144);
             this.tableLayoutPanel9.TabIndex = 0;
             // 
             // S_ID_label
@@ -491,9 +508,10 @@
             this.S_ID_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.S_ID_label.AutoSize = true;
-            this.S_ID_label.Location = new System.Drawing.Point(3, 0);
+            this.S_ID_label.Location = new System.Drawing.Point(2, 0);
+            this.S_ID_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.S_ID_label.Name = "S_ID_label";
-            this.S_ID_label.Size = new System.Drawing.Size(111, 45);
+            this.S_ID_label.Size = new System.Drawing.Size(64, 36);
             this.S_ID_label.TabIndex = 0;
             this.S_ID_label.Text = "ID Dịch vụ";
             this.S_ID_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -503,9 +521,10 @@
             this.S_name_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.S_name_label.AutoSize = true;
-            this.S_name_label.Location = new System.Drawing.Point(3, 45);
+            this.S_name_label.Location = new System.Drawing.Point(2, 36);
+            this.S_name_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.S_name_label.Name = "S_name_label";
-            this.S_name_label.Size = new System.Drawing.Size(121, 45);
+            this.S_name_label.Size = new System.Drawing.Size(68, 36);
             this.S_name_label.TabIndex = 1;
             this.S_name_label.Text = "Tên dịch vụ";
             this.S_name_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -515,9 +534,10 @@
             this.S_price_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.S_price_label.AutoSize = true;
-            this.S_price_label.Location = new System.Drawing.Point(3, 90);
+            this.S_price_label.Location = new System.Drawing.Point(2, 72);
+            this.S_price_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.S_price_label.Name = "S_price_label";
-            this.S_price_label.Size = new System.Drawing.Size(44, 45);
+            this.S_price_label.Size = new System.Drawing.Size(24, 36);
             this.S_price_label.TabIndex = 2;
             this.S_price_label.Text = "Giá";
             this.S_price_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -527,9 +547,10 @@
             this.S_unit_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.S_unit_label.AutoSize = true;
-            this.S_unit_label.Location = new System.Drawing.Point(3, 135);
+            this.S_unit_label.Location = new System.Drawing.Point(2, 108);
+            this.S_unit_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.S_unit_label.Name = "S_unit_label";
-            this.S_unit_label.Size = new System.Drawing.Size(118, 45);
+            this.S_unit_label.Size = new System.Drawing.Size(66, 36);
             this.S_unit_label.TabIndex = 3;
             this.S_unit_label.Text = "Đơn vị tính";
             this.S_unit_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,27 +559,30 @@
             // 
             this.S_ID_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.S_ID_textBox.Enabled = false;
-            this.S_ID_textBox.Location = new System.Drawing.Point(180, 5);
+            this.S_ID_textBox.Location = new System.Drawing.Point(120, 6);
+            this.S_ID_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.S_ID_textBox.Name = "S_ID_textBox";
-            this.S_ID_textBox.Size = new System.Drawing.Size(526, 35);
+            this.S_ID_textBox.Size = new System.Drawing.Size(353, 23);
             this.S_ID_textBox.TabIndex = 0;
             // 
             // S_name_textBox
             // 
             this.S_name_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.S_name_textBox.Enabled = false;
-            this.S_name_textBox.Location = new System.Drawing.Point(180, 50);
+            this.S_name_textBox.Location = new System.Drawing.Point(120, 42);
+            this.S_name_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.S_name_textBox.Name = "S_name_textBox";
-            this.S_name_textBox.Size = new System.Drawing.Size(526, 35);
+            this.S_name_textBox.Size = new System.Drawing.Size(353, 23);
             this.S_name_textBox.TabIndex = 1;
             // 
             // S_price_textBox
             // 
             this.S_price_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.S_price_textBox.Enabled = false;
-            this.S_price_textBox.Location = new System.Drawing.Point(180, 95);
+            this.S_price_textBox.Location = new System.Drawing.Point(120, 78);
+            this.S_price_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.S_price_textBox.Name = "S_price_textBox";
-            this.S_price_textBox.Size = new System.Drawing.Size(526, 35);
+            this.S_price_textBox.Size = new System.Drawing.Size(353, 23);
             this.S_price_textBox.TabIndex = 2;
             this.S_price_textBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.S_price_textBox_KeyDown);
             // 
@@ -566,9 +590,10 @@
             // 
             this.S_unit_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.S_unit_textBox.Enabled = false;
-            this.S_unit_textBox.Location = new System.Drawing.Point(180, 140);
+            this.S_unit_textBox.Location = new System.Drawing.Point(120, 114);
+            this.S_unit_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.S_unit_textBox.Name = "S_unit_textBox";
-            this.S_unit_textBox.Size = new System.Drawing.Size(526, 35);
+            this.S_unit_textBox.Size = new System.Drawing.Size(353, 23);
             this.S_unit_textBox.TabIndex = 3;
             // 
             // tableLayoutPanel10
@@ -577,24 +602,26 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tableLayoutPanel10.Controls.Add(this.edit_button, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.delete_button, 1, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 195);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(2, 154);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1431, 74);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(958, 42);
             this.tableLayoutPanel10.TabIndex = 1;
             // 
             // edit_button
             // 
             this.edit_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.edit_button.CornerRoundingRadius = -1F;
-            this.edit_button.Location = new System.Drawing.Point(1244, 3);
+            this.edit_button.Location = new System.Drawing.Point(851, 2);
+            this.edit_button.Margin = new System.Windows.Forms.Padding(2);
             this.edit_button.Name = "edit_button";
-            this.edit_button.Size = new System.Drawing.Size(184, 68);
+            this.edit_button.Size = new System.Drawing.Size(105, 38);
             this.edit_button.TabIndex = 1;
             this.edit_button.Values.Text = "Sửa";
             this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
@@ -603,9 +630,10 @@
             // 
             this.delete_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.delete_button.CornerRoundingRadius = -1F;
-            this.delete_button.Location = new System.Drawing.Point(1054, 3);
+            this.delete_button.Location = new System.Drawing.Point(742, 2);
+            this.delete_button.Margin = new System.Windows.Forms.Padding(2);
             this.delete_button.Name = "delete_button";
-            this.delete_button.Size = new System.Drawing.Size(184, 68);
+            this.delete_button.Size = new System.Drawing.Size(105, 38);
             this.delete_button.TabIndex = 0;
             this.delete_button.Values.Text = "Xóa";
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
@@ -617,9 +645,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.serviceList_groupBox.Controls.Add(this.tableLayoutPanel1);
             this.serviceList_groupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.serviceList_groupBox.Location = new System.Drawing.Point(3, 322);
+            this.serviceList_groupBox.Location = new System.Drawing.Point(2, 228);
+            this.serviceList_groupBox.Margin = new System.Windows.Forms.Padding(2);
             this.serviceList_groupBox.Name = "serviceList_groupBox";
-            this.serviceList_groupBox.Size = new System.Drawing.Size(1446, 587);
+            this.serviceList_groupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.serviceList_groupBox.Size = new System.Drawing.Size(967, 417);
             this.serviceList_groupBox.TabIndex = 5;
             this.serviceList_groupBox.TabStop = false;
             this.serviceList_groupBox.Text = "Danh sách dịch vụ";
@@ -633,12 +663,13 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.Controls.Add(this.serviceList_groupBox, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.groupBox1, 0, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(7, 7);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1452, 912);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(971, 647);
             this.tableLayoutPanel7.TabIndex = 6;
             // 
             // groupBox1
@@ -648,22 +679,24 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.tableLayoutPanel6);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Location = new System.Drawing.Point(2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1446, 313);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(967, 222);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin dịch vụ";
             // 
             // SM_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1476, 936);
+            this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.tableLayoutPanel7);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SM_MainForm";
             this.Text = "SM_TestForm";
             this.Load += new System.EventHandler(this.SM_TestForm_Load);

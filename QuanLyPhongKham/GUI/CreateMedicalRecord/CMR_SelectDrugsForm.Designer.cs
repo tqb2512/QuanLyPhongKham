@@ -51,17 +51,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tableLayoutPanel1.Controls.Add(this.search_tableLayout, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.Drugs_DataGridView, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 7);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(952, 712);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(544, 407);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // search_tableLayout
@@ -80,11 +81,12 @@
             this.search_tableLayout.Controls.Add(this.priceSearch_textBox, 2, 0);
             this.search_tableLayout.Controls.Add(this.unitSearch_textBox, 3, 0);
             this.search_tableLayout.Controls.Add(this.quantitySearch_textBox, 4, 0);
-            this.search_tableLayout.Location = new System.Drawing.Point(3, 3);
+            this.search_tableLayout.Location = new System.Drawing.Point(2, 2);
+            this.search_tableLayout.Margin = new System.Windows.Forms.Padding(2);
             this.search_tableLayout.Name = "search_tableLayout";
             this.search_tableLayout.RowCount = 1;
             this.search_tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.search_tableLayout.Size = new System.Drawing.Size(946, 37);
+            this.search_tableLayout.Size = new System.Drawing.Size(540, 21);
             this.search_tableLayout.TabIndex = 0;
             // 
             // idSearch_textBox
@@ -92,9 +94,10 @@
             this.idSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.idSearch_textBox.Location = new System.Drawing.Point(3, 3);
+            this.idSearch_textBox.Location = new System.Drawing.Point(2, 2);
+            this.idSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.idSearch_textBox.Name = "idSearch_textBox";
-            this.idSearch_textBox.Size = new System.Drawing.Size(183, 35);
+            this.idSearch_textBox.Size = new System.Drawing.Size(104, 23);
             this.idSearch_textBox.TabIndex = 0;
             // 
             // nameSearch_textBox
@@ -102,9 +105,10 @@
             this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameSearch_textBox.Location = new System.Drawing.Point(192, 3);
+            this.nameSearch_textBox.Location = new System.Drawing.Point(110, 2);
+            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameSearch_textBox.Name = "nameSearch_textBox";
-            this.nameSearch_textBox.Size = new System.Drawing.Size(183, 35);
+            this.nameSearch_textBox.Size = new System.Drawing.Size(104, 23);
             this.nameSearch_textBox.TabIndex = 1;
             // 
             // priceSearch_textBox
@@ -112,9 +116,10 @@
             this.priceSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.priceSearch_textBox.Location = new System.Drawing.Point(381, 3);
+            this.priceSearch_textBox.Location = new System.Drawing.Point(218, 2);
+            this.priceSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.priceSearch_textBox.Name = "priceSearch_textBox";
-            this.priceSearch_textBox.Size = new System.Drawing.Size(183, 35);
+            this.priceSearch_textBox.Size = new System.Drawing.Size(104, 23);
             this.priceSearch_textBox.TabIndex = 2;
             // 
             // unitSearch_textBox
@@ -122,9 +127,10 @@
             this.unitSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.unitSearch_textBox.Location = new System.Drawing.Point(570, 3);
+            this.unitSearch_textBox.Location = new System.Drawing.Point(326, 2);
+            this.unitSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.unitSearch_textBox.Name = "unitSearch_textBox";
-            this.unitSearch_textBox.Size = new System.Drawing.Size(183, 35);
+            this.unitSearch_textBox.Size = new System.Drawing.Size(104, 23);
             this.unitSearch_textBox.TabIndex = 3;
             // 
             // quantitySearch_textBox
@@ -132,9 +138,10 @@
             this.quantitySearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.quantitySearch_textBox.Location = new System.Drawing.Point(759, 3);
+            this.quantitySearch_textBox.Location = new System.Drawing.Point(434, 2);
+            this.quantitySearch_textBox.Margin = new System.Windows.Forms.Padding(2);
             this.quantitySearch_textBox.Name = "quantitySearch_textBox";
-            this.quantitySearch_textBox.Size = new System.Drawing.Size(184, 35);
+            this.quantitySearch_textBox.Size = new System.Drawing.Size(104, 23);
             this.quantitySearch_textBox.TabIndex = 4;
             // 
             // Drugs_DataGridView
@@ -149,14 +156,15 @@
             this.Drugs_DataGridView.ColumnHeadersHeight = 70;
             this.Drugs_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.Drugs_DataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.Drugs_DataGridView.Location = new System.Drawing.Point(3, 46);
+            this.Drugs_DataGridView.Location = new System.Drawing.Point(2, 27);
+            this.Drugs_DataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.Drugs_DataGridView.Name = "Drugs_DataGridView";
             this.Drugs_DataGridView.RowHeadersVisible = false;
             this.Drugs_DataGridView.RowHeadersWidth = 72;
             this.Drugs_DataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Drugs_DataGridView.RowTemplate.Height = 37;
             this.Drugs_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Drugs_DataGridView.Size = new System.Drawing.Size(946, 583);
+            this.Drugs_DataGridView.Size = new System.Drawing.Size(540, 332);
             this.Drugs_DataGridView.TabIndex = 1;
             this.Drugs_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Drugs_DataGridView_CellClick);
             this.Drugs_DataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.Drugs_DataGridView_EditingControlShowing);
@@ -171,32 +179,35 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.confirm_button, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 635);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 363);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(946, 74);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(540, 42);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // confirm_button
             // 
             this.confirm_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.confirm_button.CornerRoundingRadius = -1F;
-            this.confirm_button.Location = new System.Drawing.Point(759, 3);
+            this.confirm_button.Location = new System.Drawing.Point(433, 2);
+            this.confirm_button.Margin = new System.Windows.Forms.Padding(2);
             this.confirm_button.Name = "confirm_button";
-            this.confirm_button.Size = new System.Drawing.Size(184, 68);
+            this.confirm_button.Size = new System.Drawing.Size(105, 38);
             this.confirm_button.TabIndex = 0;
             this.confirm_button.Values.Text = "Xác Nhận";
             this.confirm_button.Click += new System.EventHandler(this.confirm_button_Click);
             // 
             // CMR_SelectDrugsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(976, 736);
+            this.ClientSize = new System.Drawing.Size(558, 421);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CMR_SelectDrugsForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

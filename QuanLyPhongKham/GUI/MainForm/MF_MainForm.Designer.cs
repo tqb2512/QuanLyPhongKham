@@ -58,8 +58,8 @@
             this.statisticalButton});
             this.MF_ToolStrip.Location = new System.Drawing.Point(0, 0);
             this.MF_ToolStrip.Name = "MF_ToolStrip";
-            this.MF_ToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.MF_ToolStrip.Size = new System.Drawing.Size(2221, 42);
+            this.MF_ToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.MF_ToolStrip.Size = new System.Drawing.Size(1384, 26);
             this.MF_ToolStrip.TabIndex = 2;
             this.MF_ToolStrip.Text = "kryptonToolStrip1";
             // 
@@ -76,14 +76,14 @@
             this.MF_Management_StripButton.Image = ((System.Drawing.Image)(resources.GetObject("MF_Management_StripButton.Image")));
             this.MF_Management_StripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MF_Management_StripButton.Name = "MF_Management_StripButton";
-            this.MF_Management_StripButton.Size = new System.Drawing.Size(119, 36);
+            this.MF_Management_StripButton.Size = new System.Drawing.Size(71, 23);
             this.MF_Management_StripButton.Text = "Quản lý";
             // 
             // MR_ToolStripMenuItem
             // 
             this.MR_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MR_ToolStripMenuItem.Name = "MR_ToolStripMenuItem";
-            this.MR_ToolStripMenuItem.Size = new System.Drawing.Size(249, 40);
+            this.MR_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.MR_ToolStripMenuItem.Text = "Bệnh án";
             this.MR_ToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecord_MenuItem_Click);
             // 
@@ -91,7 +91,7 @@
             // 
             this.P_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.P_ToolStripMenuItem.Name = "P_ToolStripMenuItem";
-            this.P_ToolStripMenuItem.Size = new System.Drawing.Size(249, 40);
+            this.P_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.P_ToolStripMenuItem.Text = "Bệnh nhân";
             this.P_ToolStripMenuItem.Click += new System.EventHandler(this.Patient_MenuItem_Click);
             // 
@@ -99,7 +99,7 @@
             // 
             this.D_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.D_ToolStripMenuItem.Name = "D_ToolStripMenuItem";
-            this.D_ToolStripMenuItem.Size = new System.Drawing.Size(249, 40);
+            this.D_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.D_ToolStripMenuItem.Text = "Thuốc";
             this.D_ToolStripMenuItem.Click += new System.EventHandler(this.D_ToolStripMenuItem_Click);
             // 
@@ -107,7 +107,7 @@
             // 
             this.S_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.S_ToolStripMenuItem.Name = "S_ToolStripMenuItem";
-            this.S_ToolStripMenuItem.Size = new System.Drawing.Size(249, 40);
+            this.S_ToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.S_ToolStripMenuItem.Text = "Dịch vụ";
             this.S_ToolStripMenuItem.Click += new System.EventHandler(this.Service_MenuItem_Click);
             // 
@@ -115,7 +115,7 @@
             // 
             this.E_MenuItem.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.E_MenuItem.Name = "E_MenuItem";
-            this.E_MenuItem.Size = new System.Drawing.Size(249, 40);
+            this.E_MenuItem.Size = new System.Drawing.Size(144, 24);
             this.E_MenuItem.Text = "Nhân Viên";
             this.E_MenuItem.Click += new System.EventHandler(this.E_MenuItem_Click_1);
             // 
@@ -126,7 +126,7 @@
             this.MF_CreateMR_StripButton.Image = ((System.Drawing.Image)(resources.GetObject("MF_CreateMR_StripButton.Image")));
             this.MF_CreateMR_StripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MF_CreateMR_StripButton.Name = "MF_CreateMR_StripButton";
-            this.MF_CreateMR_StripButton.Size = new System.Drawing.Size(143, 36);
+            this.MF_CreateMR_StripButton.Size = new System.Drawing.Size(84, 23);
             this.MF_CreateMR_StripButton.Text = "Khám bệnh";
             this.MF_CreateMR_StripButton.Click += new System.EventHandler(this.createMR_StripMenu_Click);
             // 
@@ -138,7 +138,7 @@
             this.signOutButton.Image = ((System.Drawing.Image)(resources.GetObject("signOutButton.Image")));
             this.signOutButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.signOutButton.Name = "signOutButton";
-            this.signOutButton.Size = new System.Drawing.Size(131, 36);
+            this.signOutButton.Size = new System.Drawing.Size(77, 23);
             this.signOutButton.Text = "Đăng xuất";
             this.signOutButton.Click += new System.EventHandler(this.signOutButton_Click);
             // 
@@ -149,7 +149,7 @@
             this.statisticalButton.Image = ((System.Drawing.Image)(resources.GetObject("statisticalButton.Image")));
             this.statisticalButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.statisticalButton.Name = "statisticalButton";
-            this.statisticalButton.Size = new System.Drawing.Size(120, 36);
+            this.statisticalButton.Size = new System.Drawing.Size(71, 23);
             this.statisticalButton.Text = "Thống kê";
             this.statisticalButton.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -168,8 +168,8 @@
             this.Main_TabControl.Bar.ItemSizing = Krypton.Navigator.BarItemSizing.SameHeight;
             this.Main_TabControl.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.RoundedOutsizeMedium;
             this.Main_TabControl.Bar.TabStyle = Krypton.Toolkit.TabStyle.HighProfile;
-            this.Main_TabControl.Location = new System.Drawing.Point(0, 42);
-            this.Main_TabControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Main_TabControl.Location = new System.Drawing.Point(0, 24);
+            this.Main_TabControl.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Main_TabControl.Name = "Main_TabControl";
             this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.Main_TabControl.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
@@ -183,12 +183,12 @@
             this.StatusStrip.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.E_Name_Label});
-            this.StatusStrip.Location = new System.Drawing.Point(0, 1215);
+            this.StatusStrip.Location = new System.Drawing.Point(0, 637);
             this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
+            this.StatusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 8, 0);
             this.StatusStrip.ProgressBars = null;
             this.StatusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.StatusStrip.Size = new System.Drawing.Size(2221, 41);
+            this.StatusStrip.Size = new System.Drawing.Size(1384, 24);
             this.StatusStrip.TabIndex = 3;
             this.StatusStrip.Text = "kryptonStatusStrip1";
             // 
@@ -196,20 +196,20 @@
             // 
             this.E_Name_Label.Font = new System.Drawing.Font("Segoe UI Semibold", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.E_Name_Label.Name = "E_Name_Label";
-            this.E_Name_Label.Size = new System.Drawing.Size(128, 32);
+            this.E_Name_Label.Size = new System.Drawing.Size(75, 19);
             this.E_Name_Label.Text = "Xin chào, !";
             // 
             // MF_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(2221, 1256);
+            this.ClientSize = new System.Drawing.Size(1384, 661);
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.Main_TabControl);
             this.Controls.Add(this.MF_ToolStrip);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "MF_MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

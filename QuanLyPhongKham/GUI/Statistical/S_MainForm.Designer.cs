@@ -95,7 +95,8 @@
             this.colChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.colChart.Legends.Add(legend1);
-            this.colChart.Location = new System.Drawing.Point(3, 3);
+            this.colChart.Location = new System.Drawing.Point(2, 2);
+            this.colChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.colChart.Name = "colChart";
             this.colChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
@@ -103,7 +104,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Số lượng bệnh án";
             this.colChart.Series.Add(series1);
-            this.colChart.Size = new System.Drawing.Size(717, 310);
+            this.colChart.Size = new System.Drawing.Size(479, 229);
             this.colChart.TabIndex = 0;
             this.colChart.Text = "chart1";
             // 
@@ -116,7 +117,8 @@
             this.pieChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.pieChart.Legends.Add(legend2);
-            this.pieChart.Location = new System.Drawing.Point(726, 3);
+            this.pieChart.Location = new System.Drawing.Point(485, 2);
+            this.pieChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pieChart.Name = "pieChart";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -124,7 +126,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.pieChart.Series.Add(series2);
-            this.pieChart.Size = new System.Drawing.Size(717, 310);
+            this.pieChart.Size = new System.Drawing.Size(480, 229);
             this.pieChart.TabIndex = 0;
             this.pieChart.Text = "chart2";
             // 
@@ -132,9 +134,10 @@
             // 
             this.refresh_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.refresh_button.CornerRoundingRadius = -1F;
-            this.refresh_button.Location = new System.Drawing.Point(1259, 3);
+            this.refresh_button.Location = new System.Drawing.Point(860, 2);
+            this.refresh_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.refresh_button.Name = "refresh_button";
-            this.refresh_button.Size = new System.Drawing.Size(184, 68);
+            this.refresh_button.Size = new System.Drawing.Size(105, 39);
             this.refresh_button.TabIndex = 0;
             this.refresh_button.Values.Text = "Làm mới";
             this.refresh_button.Click += new System.EventHandler(this.refresh_button_Click);
@@ -146,26 +149,28 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tableLayoutPanel5.Controls.Add(this.refresh_button, 1, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 834);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 602);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1446, 75);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(967, 43);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // toDate
             // 
             this.toDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.toDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.toDate.Location = new System.Drawing.Point(941, 19);
+            this.toDate.Location = new System.Drawing.Point(630, 9);
+            this.toDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toDate.Name = "toDate";
-            this.toDate.Size = new System.Drawing.Size(502, 35);
+            this.toDate.Size = new System.Drawing.Size(335, 23);
             this.toDate.TabIndex = 1;
             this.toDate.ValueChanged += new System.EventHandler(this.toDate_ValueChanged);
             // 
@@ -173,9 +178,10 @@
             // 
             this.fromDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.fromDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fromDate.Location = new System.Drawing.Point(219, 19);
+            this.fromDate.Location = new System.Drawing.Point(147, 9);
+            this.fromDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fromDate.Name = "fromDate";
-            this.fromDate.Size = new System.Drawing.Size(500, 35);
+            this.fromDate.Size = new System.Drawing.Size(334, 23);
             this.fromDate.TabIndex = 0;
             this.fromDate.ValueChanged += new System.EventHandler(this.toDate_ValueChanged);
             // 
@@ -186,9 +192,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(725, 0);
+            this.label2.Location = new System.Drawing.Point(485, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 74);
+            this.label2.Size = new System.Drawing.Size(141, 42);
             this.label2.TabIndex = 3;
             this.label2.Text = "Đến ngày";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -200,9 +207,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(2, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 74);
+            this.label1.Size = new System.Drawing.Size(141, 42);
             this.label1.TabIndex = 2;
             this.label1.Text = "Từ ngày";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,9 +221,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.tableLayoutPanel6);
-            this.groupBox1.Location = new System.Drawing.Point(3, 584);
+            this.groupBox1.Location = new System.Drawing.Point(2, 417);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1446, 244);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(967, 181);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống kê kho";
@@ -242,15 +252,16 @@
             this.tableLayoutPanel6.Controls.Add(this.totalPatient_textBox, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.label8, 2, 2);
             this.tableLayoutPanel6.Controls.Add(this.totalPaid_textBox, 3, 2);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(6, 34);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 19);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1434, 204);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(960, 159);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
             // label4
@@ -259,9 +270,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 68);
+            this.label4.Location = new System.Drawing.Point(2, 53);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(209, 68);
+            this.label4.Size = new System.Drawing.Size(140, 53);
             this.label4.TabIndex = 1;
             this.label4.Text = "Số lượng bệnh nhân";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,9 +282,10 @@
             // 
             this.totalMR_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.totalMR_textBox.Enabled = false;
-            this.totalMR_textBox.Location = new System.Drawing.Point(218, 16);
+            this.totalMR_textBox.Location = new System.Drawing.Point(146, 15);
+            this.totalMR_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.totalMR_textBox.Name = "totalMR_textBox";
-            this.totalMR_textBox.Size = new System.Drawing.Size(495, 35);
+            this.totalMR_textBox.Size = new System.Drawing.Size(332, 23);
             this.totalMR_textBox.TabIndex = 6;
             this.totalMR_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -282,9 +295,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(2, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(209, 68);
+            this.label3.Size = new System.Drawing.Size(140, 53);
             this.label3.TabIndex = 0;
             this.label3.Text = "Số lượng bệnh án";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -295,9 +309,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(719, 0);
+            this.label5.Location = new System.Drawing.Point(482, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(209, 68);
+            this.label5.Size = new System.Drawing.Size(140, 53);
             this.label5.TabIndex = 2;
             this.label5.Text = "Số lượng thuốc";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -306,9 +321,10 @@
             // 
             this.totalDrug_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.totalDrug_textBox.Enabled = false;
-            this.totalDrug_textBox.Location = new System.Drawing.Point(934, 16);
+            this.totalDrug_textBox.Location = new System.Drawing.Point(626, 15);
+            this.totalDrug_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.totalDrug_textBox.Name = "totalDrug_textBox";
-            this.totalDrug_textBox.Size = new System.Drawing.Size(497, 35);
+            this.totalDrug_textBox.Size = new System.Drawing.Size(332, 23);
             this.totalDrug_textBox.TabIndex = 8;
             this.totalDrug_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -318,9 +334,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(719, 68);
+            this.label6.Location = new System.Drawing.Point(482, 53);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 68);
+            this.label6.Size = new System.Drawing.Size(140, 53);
             this.label6.TabIndex = 3;
             this.label6.Text = "Số lượng dịch vụ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -329,9 +346,10 @@
             // 
             this.totalService_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.totalService_textBox.Enabled = false;
-            this.totalService_textBox.Location = new System.Drawing.Point(934, 84);
+            this.totalService_textBox.Location = new System.Drawing.Point(626, 68);
+            this.totalService_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.totalService_textBox.Name = "totalService_textBox";
-            this.totalService_textBox.Size = new System.Drawing.Size(497, 35);
+            this.totalService_textBox.Size = new System.Drawing.Size(332, 23);
             this.totalService_textBox.TabIndex = 9;
             this.totalService_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -341,9 +359,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 136);
+            this.label7.Location = new System.Drawing.Point(2, 106);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(209, 68);
+            this.label7.Size = new System.Drawing.Size(140, 53);
             this.label7.TabIndex = 4;
             this.label7.Text = "Số lượng nhân viên";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -352,9 +371,10 @@
             // 
             this.totalEmployee_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.totalEmployee_textBox.Enabled = false;
-            this.totalEmployee_textBox.Location = new System.Drawing.Point(218, 152);
+            this.totalEmployee_textBox.Location = new System.Drawing.Point(146, 121);
+            this.totalEmployee_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.totalEmployee_textBox.Name = "totalEmployee_textBox";
-            this.totalEmployee_textBox.Size = new System.Drawing.Size(495, 35);
+            this.totalEmployee_textBox.Size = new System.Drawing.Size(332, 23);
             this.totalEmployee_textBox.TabIndex = 10;
             this.totalEmployee_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -362,9 +382,10 @@
             // 
             this.totalPatient_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.totalPatient_textBox.Enabled = false;
-            this.totalPatient_textBox.Location = new System.Drawing.Point(218, 84);
+            this.totalPatient_textBox.Location = new System.Drawing.Point(146, 68);
+            this.totalPatient_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.totalPatient_textBox.Name = "totalPatient_textBox";
-            this.totalPatient_textBox.Size = new System.Drawing.Size(495, 35);
+            this.totalPatient_textBox.Size = new System.Drawing.Size(332, 23);
             this.totalPatient_textBox.TabIndex = 7;
             this.totalPatient_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -374,9 +395,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(719, 136);
+            this.label8.Location = new System.Drawing.Point(482, 106);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(209, 68);
+            this.label8.Size = new System.Drawing.Size(140, 53);
             this.label8.TabIndex = 5;
             this.label8.Text = "Doanh thu";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -385,9 +407,10 @@
             // 
             this.totalPaid_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.totalPaid_textBox.Enabled = false;
-            this.totalPaid_textBox.Location = new System.Drawing.Point(934, 152);
+            this.totalPaid_textBox.Location = new System.Drawing.Point(626, 121);
+            this.totalPaid_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.totalPaid_textBox.Name = "totalPaid_textBox";
-            this.totalPaid_textBox.Size = new System.Drawing.Size(497, 35);
+            this.totalPaid_textBox.Size = new System.Drawing.Size(332, 23);
             this.totalPaid_textBox.TabIndex = 11;
             this.totalPaid_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -404,15 +427,16 @@
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.groupBox3, 0, 2);
             this.tableLayoutPanel7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(7, 7);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 5;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.85714F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.80952F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1452, 912);
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(971, 647);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
             // tableLayoutPanel8
@@ -425,11 +449,12 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Controls.Add(this.pieChart, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.colChart, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(1446, 316);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(967, 233);
             this.tableLayoutPanel8.TabIndex = 2;
             // 
             // tableLayoutPanel2
@@ -446,12 +471,13 @@
             this.tableLayoutPanel2.Controls.Add(this.toDate, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.fromDate, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 325);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 239);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1446, 74);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(967, 42);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // groupBox3
@@ -460,9 +486,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.tableLayoutPanel3);
-            this.groupBox3.Location = new System.Drawing.Point(3, 405);
+            this.groupBox3.Location = new System.Drawing.Point(2, 285);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1446, 173);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(967, 128);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chi tiết";
@@ -485,12 +513,13 @@
             this.tableLayoutPanel3.Controls.Add(this.detail_totalPaid_textBox, 3, 1);
             this.tableLayoutPanel3.Controls.Add(this.detal_percentPaid, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.detail_percentPaid_textBox, 1, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 35);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 20);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1434, 132);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(960, 104);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label10
@@ -499,9 +528,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 0);
+            this.label10.Location = new System.Drawing.Point(2, 0);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(209, 66);
+            this.label10.Size = new System.Drawing.Size(140, 52);
             this.label10.TabIndex = 2;
             this.label10.Text = "Số lượng bệnh án";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -512,9 +542,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(719, 0);
+            this.label12.Location = new System.Drawing.Point(482, 0);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(209, 66);
+            this.label12.Size = new System.Drawing.Size(140, 52);
             this.label12.TabIndex = 4;
             this.label12.Text = "Số lượng bệnh nhân";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -525,9 +556,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(719, 66);
+            this.label13.Location = new System.Drawing.Point(482, 52);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(209, 66);
+            this.label13.Size = new System.Drawing.Size(140, 52);
             this.label13.TabIndex = 5;
             this.label13.Text = "Doanh thu";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -536,10 +568,11 @@
             // 
             this.detail_totalMR_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.detail_totalMR_textBox.Enabled = false;
-            this.detail_totalMR_textBox.Location = new System.Drawing.Point(218, 15);
+            this.detail_totalMR_textBox.Location = new System.Drawing.Point(146, 14);
+            this.detail_totalMR_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.detail_totalMR_textBox.Name = "detail_totalMR_textBox";
             this.detail_totalMR_textBox.ReadOnly = true;
-            this.detail_totalMR_textBox.Size = new System.Drawing.Size(495, 35);
+            this.detail_totalMR_textBox.Size = new System.Drawing.Size(332, 23);
             this.detail_totalMR_textBox.TabIndex = 6;
             this.detail_totalMR_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -547,10 +580,11 @@
             // 
             this.detail_totalPatient_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.detail_totalPatient_textBox.Enabled = false;
-            this.detail_totalPatient_textBox.Location = new System.Drawing.Point(934, 15);
+            this.detail_totalPatient_textBox.Location = new System.Drawing.Point(626, 14);
+            this.detail_totalPatient_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.detail_totalPatient_textBox.Name = "detail_totalPatient_textBox";
             this.detail_totalPatient_textBox.ReadOnly = true;
-            this.detail_totalPatient_textBox.Size = new System.Drawing.Size(497, 35);
+            this.detail_totalPatient_textBox.Size = new System.Drawing.Size(332, 23);
             this.detail_totalPatient_textBox.TabIndex = 7;
             this.detail_totalPatient_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -558,10 +592,11 @@
             // 
             this.detail_totalPaid_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.detail_totalPaid_textBox.Enabled = false;
-            this.detail_totalPaid_textBox.Location = new System.Drawing.Point(934, 81);
+            this.detail_totalPaid_textBox.Location = new System.Drawing.Point(626, 66);
+            this.detail_totalPaid_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.detail_totalPaid_textBox.Name = "detail_totalPaid_textBox";
             this.detail_totalPaid_textBox.ReadOnly = true;
-            this.detail_totalPaid_textBox.Size = new System.Drawing.Size(497, 35);
+            this.detail_totalPaid_textBox.Size = new System.Drawing.Size(332, 23);
             this.detail_totalPaid_textBox.TabIndex = 8;
             this.detail_totalPaid_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -571,9 +606,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.detal_percentPaid.AutoSize = true;
-            this.detal_percentPaid.Location = new System.Drawing.Point(3, 66);
+            this.detal_percentPaid.Location = new System.Drawing.Point(2, 52);
+            this.detal_percentPaid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.detal_percentPaid.Name = "detal_percentPaid";
-            this.detal_percentPaid.Size = new System.Drawing.Size(209, 66);
+            this.detal_percentPaid.Size = new System.Drawing.Size(140, 52);
             this.detal_percentPaid.TabIndex = 9;
             this.detal_percentPaid.Text = "Tỉ lệ thanh toán";
             this.detal_percentPaid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -582,10 +618,11 @@
             // 
             this.detail_percentPaid_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.detail_percentPaid_textBox.Enabled = false;
-            this.detail_percentPaid_textBox.Location = new System.Drawing.Point(218, 81);
+            this.detail_percentPaid_textBox.Location = new System.Drawing.Point(146, 66);
+            this.detail_percentPaid_textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.detail_percentPaid_textBox.Name = "detail_percentPaid_textBox";
             this.detail_percentPaid_textBox.ReadOnly = true;
-            this.detail_percentPaid_textBox.Size = new System.Drawing.Size(495, 35);
+            this.detail_percentPaid_textBox.Size = new System.Drawing.Size(332, 23);
             this.detail_percentPaid_textBox.TabIndex = 10;
             this.detail_percentPaid_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -625,7 +662,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 450);
+            this.label9.Size = new System.Drawing.Size(24, 105);
             this.label9.TabIndex = 1;
             this.label9.Text = "Số lượng bệnh nhân";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -635,17 +672,18 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(33, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(64, 35);
+            this.textBox1.Size = new System.Drawing.Size(64, 23);
             this.textBox1.TabIndex = 6;
             // 
             // S_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1476, 936);
+            this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.tableLayoutPanel7);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "S_MainForm";
             this.Text = "S_MainForm";
             this.Load += new System.EventHandler(this.S_MainForm_Load);

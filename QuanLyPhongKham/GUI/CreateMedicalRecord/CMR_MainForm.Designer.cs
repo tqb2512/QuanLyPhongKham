@@ -116,7 +116,7 @@
             this.MainLayout_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.MainLayout_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.MainLayout_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.MainLayout_TableLayoutPanel.Size = new System.Drawing.Size(1450, 911);
+            this.MainLayout_TableLayoutPanel.Size = new System.Drawing.Size(958, 636);
             this.MainLayout_TableLayoutPanel.TabIndex = 0;
             // 
             // Prescription_GroupBox
@@ -126,9 +126,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Prescription_GroupBox.Controls.Add(this.Prescription_TableLayoutPanel);
             this.Prescription_GroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Prescription_GroupBox.Location = new System.Drawing.Point(3, 428);
+            this.Prescription_GroupBox.Location = new System.Drawing.Point(3, 291);
             this.Prescription_GroupBox.Name = "Prescription_GroupBox";
-            this.Prescription_GroupBox.Size = new System.Drawing.Size(719, 419);
+            this.Prescription_GroupBox.Size = new System.Drawing.Size(473, 282);
             this.Prescription_GroupBox.TabIndex = 2;
             this.Prescription_GroupBox.TabStop = false;
             this.Prescription_GroupBox.Text = "Toa thuốc";
@@ -147,7 +147,7 @@
             this.Prescription_TableLayoutPanel.RowCount = 2;
             this.Prescription_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.Prescription_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Prescription_TableLayoutPanel.Size = new System.Drawing.Size(706, 378);
+            this.Prescription_TableLayoutPanel.Size = new System.Drawing.Size(460, 241);
             this.Prescription_TableLayoutPanel.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -164,13 +164,13 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(700, 54);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(454, 54);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // D_AddDrugToList_Button
             // 
             this.D_AddDrugToList_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.D_AddDrugToList_Button.Location = new System.Drawing.Point(513, 3);
+            this.D_AddDrugToList_Button.Location = new System.Drawing.Point(267, 3);
             this.D_AddDrugToList_Button.Name = "D_AddDrugToList_Button";
             this.D_AddDrugToList_Button.Size = new System.Drawing.Size(184, 48);
             this.D_AddDrugToList_Button.TabIndex = 0;
@@ -197,7 +197,7 @@
             this.Drugs_DataGridView.RowHeadersWidth = 72;
             this.Drugs_DataGridView.RowTemplate.Height = 37;
             this.Drugs_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Drugs_DataGridView.Size = new System.Drawing.Size(700, 312);
+            this.Drugs_DataGridView.Size = new System.Drawing.Size(454, 175);
             this.Drugs_DataGridView.TabIndex = 3;
             // 
             // Service_GroupBox
@@ -207,9 +207,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Service_GroupBox.Controls.Add(this.tableLayoutPanel2);
             this.Service_GroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Service_GroupBox.Location = new System.Drawing.Point(728, 428);
+            this.Service_GroupBox.Location = new System.Drawing.Point(482, 291);
             this.Service_GroupBox.Name = "Service_GroupBox";
-            this.Service_GroupBox.Size = new System.Drawing.Size(719, 419);
+            this.Service_GroupBox.Size = new System.Drawing.Size(473, 282);
             this.Service_GroupBox.TabIndex = 3;
             this.Service_GroupBox.TabStop = false;
             this.Service_GroupBox.Text = "Dịch vụ";
@@ -228,7 +228,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(706, 378);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(460, 241);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -245,13 +245,13 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(700, 54);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(454, 54);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // S_AddServiceToList_Button
             // 
             this.S_AddServiceToList_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.S_AddServiceToList_Button.Location = new System.Drawing.Point(513, 3);
+            this.S_AddServiceToList_Button.Location = new System.Drawing.Point(267, 3);
             this.S_AddServiceToList_Button.Name = "S_AddServiceToList_Button";
             this.S_AddServiceToList_Button.Size = new System.Drawing.Size(184, 48);
             this.S_AddServiceToList_Button.TabIndex = 0;
@@ -278,7 +278,7 @@
             this.Services_DataGridView.RowHeadersWidth = 72;
             this.Services_DataGridView.RowTemplate.Height = 37;
             this.Services_DataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Services_DataGridView.Size = new System.Drawing.Size(700, 312);
+            this.Services_DataGridView.Size = new System.Drawing.Size(454, 175);
             this.Services_DataGridView.TabIndex = 3;
             // 
             // Patient_GroupBox
@@ -290,7 +290,7 @@
             this.Patient_GroupBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Patient_GroupBox.Location = new System.Drawing.Point(3, 3);
             this.Patient_GroupBox.Name = "Patient_GroupBox";
-            this.Patient_GroupBox.Size = new System.Drawing.Size(719, 419);
+            this.Patient_GroupBox.Size = new System.Drawing.Size(473, 282);
             this.Patient_GroupBox.TabIndex = 0;
             this.Patient_GroupBox.TabStop = false;
             this.Patient_GroupBox.Text = "Thông tin bệnh nhân";
@@ -317,13 +317,13 @@
             this.Patient_TableLayoutPanel.Location = new System.Drawing.Point(6, 35);
             this.Patient_TableLayoutPanel.Name = "Patient_TableLayoutPanel";
             this.Patient_TableLayoutPanel.RowCount = 6;
-            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Patient_TableLayoutPanel.Size = new System.Drawing.Size(706, 378);
+            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.Patient_TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.Patient_TableLayoutPanel.Size = new System.Drawing.Size(460, 241);
             this.Patient_TableLayoutPanel.TabIndex = 0;
             // 
             // P_DateOfBirth_Label
@@ -331,9 +331,9 @@
             this.P_DateOfBirth_Label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.P_DateOfBirth_Label.AutoSize = true;
-            this.P_DateOfBirth_Label.Location = new System.Drawing.Point(3, 248);
+            this.P_DateOfBirth_Label.Location = new System.Drawing.Point(3, 168);
             this.P_DateOfBirth_Label.Name = "P_DateOfBirth_Label";
-            this.P_DateOfBirth_Label.Size = new System.Drawing.Size(108, 62);
+            this.P_DateOfBirth_Label.Size = new System.Drawing.Size(60, 36);
             this.P_DateOfBirth_Label.TabIndex = 3;
             this.P_DateOfBirth_Label.Text = "Ngày sinh";
             this.P_DateOfBirth_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -343,9 +343,9 @@
             this.P_PhoneNumber_Label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.P_PhoneNumber_Label.AutoSize = true;
-            this.P_PhoneNumber_Label.Location = new System.Drawing.Point(3, 186);
+            this.P_PhoneNumber_Label.Location = new System.Drawing.Point(3, 132);
             this.P_PhoneNumber_Label.Name = "P_PhoneNumber_Label";
-            this.P_PhoneNumber_Label.Size = new System.Drawing.Size(139, 62);
+            this.P_PhoneNumber_Label.Size = new System.Drawing.Size(77, 36);
             this.P_PhoneNumber_Label.TabIndex = 2;
             this.P_PhoneNumber_Label.Text = "Số điện thoại";
             this.P_PhoneNumber_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -355,9 +355,9 @@
             this.P_Address_Label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.P_Address_Label.AutoSize = true;
-            this.P_Address_Label.Location = new System.Drawing.Point(3, 124);
+            this.P_Address_Label.Location = new System.Drawing.Point(3, 96);
             this.P_Address_Label.Name = "P_Address_Label";
-            this.P_Address_Label.Size = new System.Drawing.Size(77, 62);
+            this.P_Address_Label.Size = new System.Drawing.Size(44, 36);
             this.P_Address_Label.TabIndex = 1;
             this.P_Address_Label.Text = "Địa chỉ";
             this.P_Address_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -367,9 +367,9 @@
             this.P_Name_Label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.P_Name_Label.AutoSize = true;
-            this.P_Name_Label.Location = new System.Drawing.Point(3, 62);
+            this.P_Name_Label.Location = new System.Drawing.Point(3, 60);
             this.P_Name_Label.Name = "P_Name_Label";
-            this.P_Name_Label.Size = new System.Drawing.Size(106, 62);
+            this.P_Name_Label.Size = new System.Drawing.Size(58, 36);
             this.P_Name_Label.TabIndex = 0;
             this.P_Name_Label.Text = "Họ và tên";
             this.P_Name_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -384,11 +384,11 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.Controls.Add(this.SelectPatient_Button, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.AddPantient_Button, 1, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(179, 3);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(118, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(524, 56);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(339, 54);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // SelectPatient_Button
@@ -397,7 +397,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectPatient_Button.Location = new System.Drawing.Point(3, 3);
             this.SelectPatient_Button.Name = "SelectPatient_Button";
-            this.SelectPatient_Button.Size = new System.Drawing.Size(256, 48);
+            this.SelectPatient_Button.Size = new System.Drawing.Size(163, 48);
             this.SelectPatient_Button.TabIndex = 0;
             this.SelectPatient_Button.Text = "Chọn bệnh nhân";
             this.SelectPatient_Button.UseVisualStyleBackColor = true;
@@ -407,9 +407,9 @@
             // 
             this.AddPantient_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddPantient_Button.Location = new System.Drawing.Point(265, 3);
+            this.AddPantient_Button.Location = new System.Drawing.Point(172, 3);
             this.AddPantient_Button.Name = "AddPantient_Button";
-            this.AddPantient_Button.Size = new System.Drawing.Size(256, 48);
+            this.AddPantient_Button.Size = new System.Drawing.Size(164, 48);
             this.AddPantient_Button.TabIndex = 1;
             this.AddPantient_Button.Text = "Thêm bệnh nhân";
             this.AddPantient_Button.UseVisualStyleBackColor = true;
@@ -427,28 +427,28 @@
             this.tableLayoutPanel5.Controls.Add(this.MR_pTemp_TextBox, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.MR_pWeight_TextBox, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.MR_pWeight_label, 1, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(179, 313);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(118, 207);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(524, 62);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(339, 31);
             this.tableLayoutPanel5.TabIndex = 8;
             // 
             // MR_pTemp_TextBox
             // 
             this.MR_pTemp_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.MR_pTemp_TextBox.Location = new System.Drawing.Point(3, 13);
+            this.MR_pTemp_TextBox.Location = new System.Drawing.Point(3, 4);
             this.MR_pTemp_TextBox.Name = "MR_pTemp_TextBox";
-            this.MR_pTemp_TextBox.Size = new System.Drawing.Size(168, 35);
+            this.MR_pTemp_TextBox.Size = new System.Drawing.Size(107, 23);
             this.MR_pTemp_TextBox.TabIndex = 0;
             this.MR_pTemp_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MR_pTemp_TextBox_KeyDown);
             // 
             // MR_pWeight_TextBox
             // 
             this.MR_pWeight_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.MR_pWeight_TextBox.Location = new System.Drawing.Point(351, 13);
+            this.MR_pWeight_TextBox.Location = new System.Drawing.Point(229, 4);
             this.MR_pWeight_TextBox.Name = "MR_pWeight_TextBox";
-            this.MR_pWeight_TextBox.Size = new System.Drawing.Size(170, 35);
+            this.MR_pWeight_TextBox.Size = new System.Drawing.Size(107, 23);
             this.MR_pWeight_TextBox.TabIndex = 0;
             this.MR_pWeight_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MR_pWeight_TextBox_KeyDown);
             // 
@@ -458,9 +458,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MR_pWeight_label.AutoSize = true;
-            this.MR_pWeight_label.Location = new System.Drawing.Point(177, 0);
+            this.MR_pWeight_label.Location = new System.Drawing.Point(116, 0);
             this.MR_pWeight_label.Name = "MR_pWeight_label";
-            this.MR_pWeight_label.Size = new System.Drawing.Size(168, 62);
+            this.MR_pWeight_label.Size = new System.Drawing.Size(107, 31);
             this.MR_pWeight_label.TabIndex = 2;
             this.MR_pWeight_label.Text = "Cân nặng";
             this.MR_pWeight_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -470,9 +470,9 @@
             this.MR_pTemp_Label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.MR_pTemp_Label.AutoSize = true;
-            this.MR_pTemp_Label.Location = new System.Drawing.Point(3, 310);
+            this.MR_pTemp_Label.Location = new System.Drawing.Point(3, 204);
             this.MR_pTemp_Label.Name = "MR_pTemp_Label";
-            this.MR_pTemp_Label.Size = new System.Drawing.Size(97, 68);
+            this.MR_pTemp_Label.Size = new System.Drawing.Size(53, 37);
             this.MR_pTemp_Label.TabIndex = 11;
             this.MR_pTemp_Label.Text = "Nhiệt độ";
             this.MR_pTemp_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -489,21 +489,21 @@
             this.tableLayoutPanel7.Controls.Add(this.P_PhoneNumber_TextBox, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.P_Sex_ComboBox, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.P_Sex_Label, 1, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(179, 189);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(118, 135);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(524, 56);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(339, 30);
             this.tableLayoutPanel7.TabIndex = 5;
             // 
             // P_PhoneNumber_TextBox
             // 
             this.P_PhoneNumber_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_PhoneNumber_TextBox.Enabled = false;
-            this.P_PhoneNumber_TextBox.Location = new System.Drawing.Point(3, 10);
+            this.P_PhoneNumber_TextBox.Location = new System.Drawing.Point(3, 3);
             this.P_PhoneNumber_TextBox.Name = "P_PhoneNumber_TextBox";
             this.P_PhoneNumber_TextBox.ReadOnly = true;
-            this.P_PhoneNumber_TextBox.Size = new System.Drawing.Size(168, 35);
+            this.P_PhoneNumber_TextBox.Size = new System.Drawing.Size(106, 23);
             this.P_PhoneNumber_TextBox.TabIndex = 0;
             this.P_PhoneNumber_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_PhoneNumber_TextBox_KeyDown);
             // 
@@ -517,9 +517,9 @@
             this.P_Sex_ComboBox.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.P_Sex_ComboBox.Location = new System.Drawing.Point(351, 11);
+            this.P_Sex_ComboBox.Location = new System.Drawing.Point(227, 4);
             this.P_Sex_ComboBox.Name = "P_Sex_ComboBox";
-            this.P_Sex_ComboBox.Size = new System.Drawing.Size(170, 33);
+            this.P_Sex_ComboBox.Size = new System.Drawing.Size(109, 21);
             this.P_Sex_ComboBox.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.P_Sex_ComboBox.TabIndex = 0;
             this.P_Sex_ComboBox.Text = "Nam";
@@ -531,9 +531,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.P_Sex_Label.AutoSize = true;
-            this.P_Sex_Label.Location = new System.Drawing.Point(177, 0);
+            this.P_Sex_Label.Location = new System.Drawing.Point(115, 0);
             this.P_Sex_Label.Name = "P_Sex_Label";
-            this.P_Sex_Label.Size = new System.Drawing.Size(168, 56);
+            this.P_Sex_Label.Size = new System.Drawing.Size(106, 30);
             this.P_Sex_Label.TabIndex = 1;
             this.P_Sex_Label.Text = "Giới tính";
             this.P_Sex_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -546,21 +546,21 @@
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.Controls.Add(this.P_Address_TextBox, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(179, 127);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(118, 99);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(524, 56);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(339, 30);
             this.tableLayoutPanel8.TabIndex = 3;
             // 
             // P_Address_TextBox
             // 
             this.P_Address_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_Address_TextBox.Enabled = false;
-            this.P_Address_TextBox.Location = new System.Drawing.Point(3, 10);
+            this.P_Address_TextBox.Location = new System.Drawing.Point(3, 3);
             this.P_Address_TextBox.Name = "P_Address_TextBox";
             this.P_Address_TextBox.ReadOnly = true;
-            this.P_Address_TextBox.Size = new System.Drawing.Size(518, 35);
+            this.P_Address_TextBox.Size = new System.Drawing.Size(333, 23);
             this.P_Address_TextBox.TabIndex = 0;
             // 
             // tableLayoutPanel9
@@ -571,21 +571,21 @@
             this.tableLayoutPanel9.ColumnCount = 1;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.Controls.Add(this.P_Name_TextBox, 0, 0);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(179, 65);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(118, 63);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(524, 56);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(339, 30);
             this.tableLayoutPanel9.TabIndex = 2;
             // 
             // P_Name_TextBox
             // 
             this.P_Name_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.P_Name_TextBox.Enabled = false;
-            this.P_Name_TextBox.Location = new System.Drawing.Point(3, 10);
+            this.P_Name_TextBox.Location = new System.Drawing.Point(3, 3);
             this.P_Name_TextBox.Name = "P_Name_TextBox";
             this.P_Name_TextBox.ReadOnly = true;
-            this.P_Name_TextBox.Size = new System.Drawing.Size(518, 35);
+            this.P_Name_TextBox.Size = new System.Drawing.Size(333, 23);
             this.P_Name_TextBox.TabIndex = 0;
             // 
             // tableLayoutPanel11
@@ -596,11 +596,11 @@
             this.tableLayoutPanel11.ColumnCount = 1;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.Controls.Add(this.P_DateOfBirth_DateTimePicker, 0, 0);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(179, 251);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(118, 171);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(524, 56);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(339, 30);
             this.tableLayoutPanel11.TabIndex = 6;
             // 
             // P_DateOfBirth_DateTimePicker
@@ -609,9 +609,9 @@
             this.P_DateOfBirth_DateTimePicker.CustomFormat = "";
             this.P_DateOfBirth_DateTimePicker.Enabled = false;
             this.P_DateOfBirth_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.P_DateOfBirth_DateTimePicker.Location = new System.Drawing.Point(3, 10);
+            this.P_DateOfBirth_DateTimePicker.Location = new System.Drawing.Point(3, 3);
             this.P_DateOfBirth_DateTimePicker.Name = "P_DateOfBirth_DateTimePicker";
-            this.P_DateOfBirth_DateTimePicker.Size = new System.Drawing.Size(518, 35);
+            this.P_DateOfBirth_DateTimePicker.Size = new System.Drawing.Size(333, 23);
             this.P_DateOfBirth_DateTimePicker.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -623,12 +623,12 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.MR_diagnosis_groupBox, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.MR_note_groupBox, 0, 1);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(728, 3);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(482, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(719, 419);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(473, 282);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // MR_diagnosis_groupBox
@@ -639,7 +639,7 @@
             this.MR_diagnosis_groupBox.Controls.Add(this.MR_diagnosis_richTextBox);
             this.MR_diagnosis_groupBox.Location = new System.Drawing.Point(3, 3);
             this.MR_diagnosis_groupBox.Name = "MR_diagnosis_groupBox";
-            this.MR_diagnosis_groupBox.Size = new System.Drawing.Size(713, 203);
+            this.MR_diagnosis_groupBox.Size = new System.Drawing.Size(467, 135);
             this.MR_diagnosis_groupBox.TabIndex = 0;
             this.MR_diagnosis_groupBox.TabStop = false;
             this.MR_diagnosis_groupBox.Text = "Chuẩn đoán";
@@ -651,7 +651,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MR_diagnosis_richTextBox.Location = new System.Drawing.Point(3, 32);
             this.MR_diagnosis_richTextBox.Name = "MR_diagnosis_richTextBox";
-            this.MR_diagnosis_richTextBox.Size = new System.Drawing.Size(706, 165);
+            this.MR_diagnosis_richTextBox.Size = new System.Drawing.Size(460, 97);
             this.MR_diagnosis_richTextBox.TabIndex = 0;
             this.MR_diagnosis_richTextBox.Text = "";
             // 
@@ -661,9 +661,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MR_note_groupBox.Controls.Add(this.MR_note_richTextBox);
-            this.MR_note_groupBox.Location = new System.Drawing.Point(3, 212);
+            this.MR_note_groupBox.Location = new System.Drawing.Point(3, 144);
             this.MR_note_groupBox.Name = "MR_note_groupBox";
-            this.MR_note_groupBox.Size = new System.Drawing.Size(713, 204);
+            this.MR_note_groupBox.Size = new System.Drawing.Size(467, 135);
             this.MR_note_groupBox.TabIndex = 1;
             this.MR_note_groupBox.TabStop = false;
             this.MR_note_groupBox.Text = "Ghi chú";
@@ -675,7 +675,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MR_note_richTextBox.Location = new System.Drawing.Point(3, 31);
             this.MR_note_richTextBox.Name = "MR_note_richTextBox";
-            this.MR_note_richTextBox.Size = new System.Drawing.Size(706, 167);
+            this.MR_note_richTextBox.Size = new System.Drawing.Size(460, 98);
             this.MR_note_richTextBox.TabIndex = 0;
             this.MR_note_richTextBox.Text = "";
             // 
@@ -691,17 +691,17 @@
             this.tableLayoutPanel10.Controls.Add(this.confirm_Button, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.total_Label, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.total_textBox, 1, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(728, 853);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(482, 579);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(719, 55);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(473, 54);
             this.tableLayoutPanel10.TabIndex = 5;
             // 
             // confirm_Button
             // 
             this.confirm_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.confirm_Button.Location = new System.Drawing.Point(532, 3);
+            this.confirm_Button.Location = new System.Drawing.Point(286, 3);
             this.confirm_Button.Name = "confirm_Button";
             this.confirm_Button.Size = new System.Drawing.Size(184, 48);
             this.confirm_Button.TabIndex = 0;
@@ -717,7 +717,7 @@
             this.total_Label.AutoSize = true;
             this.total_Label.Location = new System.Drawing.Point(3, 0);
             this.total_Label.Name = "total_Label";
-            this.total_Label.Size = new System.Drawing.Size(148, 55);
+            this.total_Label.Size = new System.Drawing.Size(67, 54);
             this.total_Label.TabIndex = 1;
             this.total_Label.Text = "Thành tiền";
             this.total_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -726,21 +726,21 @@
             // 
             this.total_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.total_textBox.Enabled = false;
-            this.total_textBox.Location = new System.Drawing.Point(157, 10);
+            this.total_textBox.Location = new System.Drawing.Point(76, 9);
             this.total_textBox.Multiline = true;
             this.total_textBox.Name = "total_textBox";
             this.total_textBox.ReadOnly = true;
-            this.total_textBox.Size = new System.Drawing.Size(308, 35);
+            this.total_textBox.Size = new System.Drawing.Size(143, 35);
             this.total_textBox.TabIndex = 2;
             this.total_textBox.Text = "0";
             this.total_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CMR_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1476, 936);
+            this.ClientSize = new System.Drawing.Size(984, 661);
             this.Controls.Add(this.MainLayout_TableLayoutPanel);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);

@@ -30,11 +30,11 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
             em_MainForm.Dock = DockStyle.Fill;
             em_MainForm.Visible = true;
             em_MainForm.Show();
-            em_MainForm.Employee_DataGridView.CellDoubleClick += new DataGridViewCellEventHandler(Employee_DataGridView_CellDoubleClick);
+            em_MainForm.Employee_DataGridView.CellClick += new DataGridViewCellEventHandler(Employee_DataGridView_CellClick);
             em_MainForm.add_button.Click += new EventHandler(add_button_Click);
         }
 
-        private void Employee_DataGridView_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
+        private void Employee_DataGridView_CellClick(object? sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
