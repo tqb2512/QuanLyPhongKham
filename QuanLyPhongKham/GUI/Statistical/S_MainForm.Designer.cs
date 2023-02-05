@@ -640,11 +640,12 @@
             // 
             // S_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1476, 936);
             this.Controls.Add(this.tableLayoutPanel7);
+            this.DoubleBuffered = true;
             this.Name = "S_MainForm";
             this.Text = "S_MainForm";
             this.Load += new System.EventHandler(this.S_MainForm_Load);

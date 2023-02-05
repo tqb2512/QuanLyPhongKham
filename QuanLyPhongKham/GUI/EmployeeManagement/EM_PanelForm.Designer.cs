@@ -47,10 +47,11 @@
             // 
             // EM_PanelForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(776, 436);
             this.Controls.Add(this.mainPanel);
+            this.DoubleBuffered = true;
             this.Name = "EM_PanelForm";
             this.Text = "EM_PanelForm";
             this.Load += new System.EventHandler(this.EM_PanelForm_Load);

@@ -58,8 +58,8 @@
             this.statisticalButton});
             this.MF_ToolStrip.Location = new System.Drawing.Point(0, 0);
             this.MF_ToolStrip.Name = "MF_ToolStrip";
-            this.MF_ToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.MF_ToolStrip.Size = new System.Drawing.Size(2176, 42);
+            this.MF_ToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.MF_ToolStrip.Size = new System.Drawing.Size(2221, 42);
             this.MF_ToolStrip.TabIndex = 2;
             this.MF_ToolStrip.Text = "kryptonToolStrip1";
             // 
@@ -168,12 +168,12 @@
             this.Main_TabControl.Bar.ItemSizing = Krypton.Navigator.BarItemSizing.SameHeight;
             this.Main_TabControl.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.RoundedOutsizeMedium;
             this.Main_TabControl.Bar.TabStyle = Krypton.Toolkit.TabStyle.HighProfile;
-            this.Main_TabControl.Location = new System.Drawing.Point(0, 48);
-            this.Main_TabControl.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.Main_TabControl.Location = new System.Drawing.Point(0, 42);
+            this.Main_TabControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Main_TabControl.Name = "Main_TabControl";
             this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.Main_TabControl.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.Main_TabControl.Size = new System.Drawing.Size(1676, 580);
+            this.Main_TabControl.Size = new System.Drawing.Size(1676, 1168);
             this.Main_TabControl.TabIndex = 1;
             this.Main_TabControl.Text = "kryptonDockableNavigator1";
             // 
@@ -183,12 +183,12 @@
             this.StatusStrip.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.E_Name_Label});
-            this.StatusStrip.Location = new System.Drawing.Point(0, 1395);
+            this.StatusStrip.Location = new System.Drawing.Point(0, 1215);
             this.StatusStrip.Name = "StatusStrip";
             this.StatusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
             this.StatusStrip.ProgressBars = null;
             this.StatusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.StatusStrip.Size = new System.Drawing.Size(2176, 41);
+            this.StatusStrip.Size = new System.Drawing.Size(2221, 41);
             this.StatusStrip.TabIndex = 3;
             this.StatusStrip.Text = "kryptonStatusStrip1";
             // 
@@ -201,15 +201,15 @@
             // 
             // MF_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(2176, 1436);
+            this.ClientSize = new System.Drawing.Size(2221, 1256);
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.Main_TabControl);
             this.Controls.Add(this.MF_ToolStrip);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MF_MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
