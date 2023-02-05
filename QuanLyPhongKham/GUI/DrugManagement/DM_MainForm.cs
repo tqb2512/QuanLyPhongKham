@@ -225,11 +225,6 @@ namespace QuanLyPhongKham.GUI.DrugManagement
         {
             if (DM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_DRUG") == true)
             {
-                if (String.IsNullOrEmpty(DM_DrugID_TextBox.Text) || String.IsNullOrEmpty(DM_DrugName_TextBox.Text) || String.IsNullOrEmpty(DM_DrugTypeName_ComboBox.Text) || String.IsNullOrEmpty(DM_DrugUnit_TextBox.Text) || String.IsNullOrEmpty(DM_DrugManufacturer_TextBox.Text) || String.IsNullOrEmpty(DM_DrugPrice_TextBox.Text) || String.IsNullOrEmpty(DM_DrugDescription_TextBox.Text))
-                {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
                 if (DM_DrugID_TextBox.Text != "")
                 {
                     currentDrug.ID = Convert.ToInt32(DM_DrugID_TextBox.Text);
@@ -250,6 +245,11 @@ namespace QuanLyPhongKham.GUI.DrugManagement
 
                 if (DM_editButton.Text == "Thêm")
                 {
+                    if (String.IsNullOrEmpty(DM_DrugID_TextBox.Text) || String.IsNullOrEmpty(DM_DrugName_TextBox.Text) || String.IsNullOrEmpty(DM_DrugTypeName_ComboBox.Text) || String.IsNullOrEmpty(DM_DrugUnit_TextBox.Text) || String.IsNullOrEmpty(DM_DrugManufacturer_TextBox.Text) || String.IsNullOrEmpty(DM_DrugPrice_TextBox.Text) || String.IsNullOrEmpty(DM_DrugDescription_TextBox.Text))
+                    {
+                        MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                     if (DM_Functions.addDrug(currentDrug))
                     {
                         MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

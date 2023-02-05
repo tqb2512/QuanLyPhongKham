@@ -168,13 +168,12 @@
             this.Main_TabControl.Bar.ItemSizing = Krypton.Navigator.BarItemSizing.SameHeight;
             this.Main_TabControl.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.RoundedOutsizeMedium;
             this.Main_TabControl.Bar.TabStyle = Krypton.Toolkit.TabStyle.HighProfile;
-            this.Main_TabControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Main_TabControl.Location = new System.Drawing.Point(0, 42);
+            this.Main_TabControl.Location = new System.Drawing.Point(0, 48);
             this.Main_TabControl.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Main_TabControl.Name = "Main_TabControl";
             this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
             this.Main_TabControl.PageBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlClient;
-            this.Main_TabControl.Size = new System.Drawing.Size(2176, 1147);
+            this.Main_TabControl.Size = new System.Drawing.Size(1922, 660);
             this.Main_TabControl.TabIndex = 1;
             this.Main_TabControl.Text = "kryptonDockableNavigator1";
             // 
@@ -184,7 +183,7 @@
             this.kryptonStatusStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.kryptonStatusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.E_Name_Label});
-            this.kryptonStatusStrip1.Location = new System.Drawing.Point(0, 1195);
+            this.kryptonStatusStrip1.Location = new System.Drawing.Point(0, 1395);
             this.kryptonStatusStrip1.Name = "kryptonStatusStrip1";
             this.kryptonStatusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 14, 0);
             this.kryptonStatusStrip1.ProgressBars = null;
@@ -205,7 +204,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(2176, 1236);
+            this.ClientSize = new System.Drawing.Size(2176, 1436);
             this.Controls.Add(this.kryptonStatusStrip1);
             this.Controls.Add(this.Main_TabControl);
             this.Controls.Add(this.MF_ToolStrip);

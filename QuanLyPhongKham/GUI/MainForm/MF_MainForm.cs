@@ -32,6 +32,7 @@ namespace QuanLyPhongKham.GUI.MainForm
             InitializeComponent();
             this.currentUser = MF_Functions.getUserInfo(currentUserID);
             E_Name_Label.Text = "Xin chào " + this.currentUser.Name + "!";
+            Main_TabControl.Size = new Size(this.Size.Width - 27, this.Size.Height - 155);
         }
         private void addToTabControl(Form form, string tabName)
         {
@@ -93,7 +94,7 @@ namespace QuanLyPhongKham.GUI.MainForm
 
         private void MF_MainForm_SizeChanged(object sender, EventArgs e)
         {
-            //Main_TabControl.Size = new Size(this.Size.Width - 20, this.Size.Height - 100);
+            Main_TabControl.Size = new Size(this.Size.Width - 27, this.Size.Height - 155);
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
