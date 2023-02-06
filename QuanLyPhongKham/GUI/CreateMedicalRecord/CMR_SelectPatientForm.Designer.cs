@@ -221,7 +221,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CMR_SelectPatientForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CMR_SelectPatientForm";
+            this.Text = "Chọn bệnh nhân";
             this.Load += new System.EventHandler(this.CMR_SelectPatientForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

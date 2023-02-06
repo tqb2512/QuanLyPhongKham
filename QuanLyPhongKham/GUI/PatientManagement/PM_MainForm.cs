@@ -169,6 +169,13 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                         MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
+
+                    if (P_dateofbirth_dateTimePicker.Value.Date > DateTime.Now.Date)
+                    {
+                        MessageBox.Show("Ngày sinh không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    
                     if (PM_Functions.addPatient(currentPatient))
                     {
                         MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

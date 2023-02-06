@@ -4,27 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
+using System.Security.Cryptography;
 
 namespace QuanLyPhongKham.Function
 {
     internal class LF_Functions
     {
         static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["sql"].ConnectionString;
-        public static int checkLogin(string username, string password)
+        public static int loginAndGetID(string username, string password)
         {
             try
             {
                 int userId;
                 SqlConnection connection = new SqlConnection(connectionString);
-                string query = "SELECT COUNT(*) FROM EMPLOYEE WHERE USERNAME = '" + username + "' AND PASSWORD = '" + password + "'";
-                SqlCommand command = new SqlCommand(query, connection);
-                connection.Open();
-                int result = (int)command.ExecuteScalar();
-                connection.Close();
-                if (result == 1)
+                bool result = login(username, password);
+                if (result == true)
                 {
-                    query = "SELECT EMPLOYEE_ID FROM EMPLOYEE WHERE USERNAME = '" + username + "'";
-                    command = new SqlCommand(query, connection);
+                    string query = "SELECT EMPLOYEE_ID FROM EMPLOYEE WHERE USERNAME = '" + username + "'";
+                    SqlCommand command = new SqlCommand(query, connection);
                     connection.Open();
                     userId = (int)command.ExecuteScalar();
                     connection.Close();
@@ -40,6 +38,28 @@ namespace QuanLyPhongKham.Function
                 MessageBox.Show(ex.Message);
             }
             return -1;
+        }
+
+        public static bool login(string userName, string password)
+        {
+            byte[] temp = ASCIIEncoding.ASCII.GetBytes(password);
+            byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+            string hasPass = "";
+            foreach (byte item in hasData)
+            {
+                hasPass += item;
+            }
+            string query = string.Format("SELECT COUNT(EMPLOYEE_ID) FROM EMPLOYEE WHERE USERNAME = '{0}' AND PASSWORD = '{1}'", userName, hasPass);
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+            sqlConnection.Open();
+            int result = (int)sqlCommand.ExecuteScalar();
+            sqlConnection.Close();
+            if (result == 1)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

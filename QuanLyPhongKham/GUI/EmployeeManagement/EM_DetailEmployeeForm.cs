@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyPhongKham.Classes;
 using QuanLyPhongKham.Function;
+using System.Security.Cryptography;
 
 namespace QuanLyPhongKham.GUI.EmployeeManagement
 {
@@ -92,11 +93,24 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
+
+                if (E_UserName_textBox.Text.Length < 6)
+                {
+                    MessageBox.Show("Tên đăng nhập phải có ít nhất 6 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                if (E_Password_textBox.Text.Length < 6)
+                {
+                    MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                
                 if (EM_Functions.getSqlData("Select * from Employee where USERNAME = '" + E_UserName_textBox.Text + "' and EMPLOYEE_ID <> " + E_ID_textBox.Text).Rows.Count > 0)
                 {
                     MessageBox.Show("Tên đăng nhập đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
+                
                 E_Name_textBox.ReadOnly = true;
                 E_Position_textBox.ReadOnly = true;
                 E_UserName_textBox.ReadOnly = true;
@@ -110,7 +124,14 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                 MakePayment.Enabled = false;
                 if (editButton.Text == "Lưu")
                 {
-                    string sql = "Update Employee set EMPLOYEE_NAME = N'" + E_Name_textBox.Text + "', EMPLOYEE_POSITION = N'" + E_Position_textBox.Text + "', USERNAME = '" + E_UserName_textBox.Text + "', PASSWORD = '" + E_Password_textBox.Text + "' where EMPLOYEE_ID = " + employeeID;
+                    byte[] temp = ASCIIEncoding.ASCII.GetBytes(E_Password_textBox.Text);
+                    byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+                    string hasPass = "";
+                    foreach (byte item in hasData)
+                    {
+                        hasPass += item;
+                    }
+                    string sql = "Update Employee set EMPLOYEE_NAME = N'" + E_Name_textBox.Text + "', EMPLOYEE_POSITION = N'" + E_Position_textBox.Text + "', USERNAME = '" + E_UserName_textBox.Text + "', PASSWORD = '" + hasPass + "' where EMPLOYEE_ID = " + employeeID;
                     EM_Functions.sqlQueryExcute(sql);
                     sql = "Update Permission set CREATE_MEDICALRECORD = " + Convert.ToInt32(CreateMedicalRecord.Checked) 
                         + ", EDIT_PATIENT = " + Convert.ToInt32(EditPatient.Checked) 
@@ -124,7 +145,14 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                 } 
                 else
                 {
-                    string sql = "INSERT INTO EMPLOYEE VALUES (" + E_ID_textBox.Text + ", N'" + E_Name_textBox.Text + "', N'" + E_Position_textBox.Text + "', '" + E_UserName_textBox.Text + "', '" + E_Password_textBox.Text + "')";
+                    byte[] temp = ASCIIEncoding.ASCII.GetBytes(E_Password_textBox.Text);
+                    byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+                    string hasPass = "";
+                    foreach (byte item in hasData)
+                    {
+                        hasPass += item;
+                    }
+                    string sql = "INSERT INTO EMPLOYEE VALUES (" + E_ID_textBox.Text + ", N'" + E_Name_textBox.Text + "', N'" + E_Position_textBox.Text + "', '" + E_UserName_textBox.Text + "', '" + hasPass + "')";
                     EM_Functions.sqlQueryExcute(sql);
                     sql = "INSERT INTO PERMISSION (EMPLOYEE_ID, CREATE_MEDICALRECORD, REMOVE_MEDICALRECORD, MAKEPAYMENT_MEDICALRECORD, EDIT_EMPLOYEE, EDIT_PATIENT, EDIT_DRUG, EDIT_SERVICE) VALUES ("
                         + E_ID_textBox.Text + ", " + Convert.ToInt32(CreateMedicalRecord.Checked)

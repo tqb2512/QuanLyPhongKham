@@ -22,7 +22,7 @@ namespace QuanLyPhongKham.GUI.LoginForm
 
         private void confirm_button_Click(object sender, EventArgs e)
         {
-            int userId = LF_Functions.checkLogin(userName_textBox.Text, password_textBox.Text);
+            int userId = LF_Functions.loginAndGetID(userName_textBox.Text, password_textBox.Text);
             if (userId != -1)
             {
                 System.Configuration.ConfigurationManager.AppSettings["currentUserId"] = userId.ToString();

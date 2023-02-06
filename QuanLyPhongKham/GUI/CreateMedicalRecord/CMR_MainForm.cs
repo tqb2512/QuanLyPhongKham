@@ -125,9 +125,15 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
 
             MedicalRecord medicalRecord = new MedicalRecord();
 
-            if (P_Name_TextBox.Text == "")
+            if (String.IsNullOrEmpty(P_Name_TextBox.Text) || String.IsNullOrEmpty(P_PhoneNumber_TextBox.Text) || String.IsNullOrEmpty(P_Address_TextBox.Text))
             {
                 MessageBox.Show("Vui lòng thông tin bệnh nhân", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (P_DateOfBirth_DateTimePicker.Value.Date > DateTime.Now.Date)
+            {
+                MessageBox.Show("Ngày sinh không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
