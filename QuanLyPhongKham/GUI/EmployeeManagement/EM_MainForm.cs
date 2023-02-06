@@ -30,15 +30,14 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
         }
         public void dataLoad()
         {
-            Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE");
-            if (EM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT") == false)
+            
+            if (EM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT") == true)
             {
-                Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE WHERE EMPLOYEE_ID = " + System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString());
-                add_button.Enabled = false;
+                Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE");
             }
             else
             {
-                Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE");
+                Employee_DataGridView.DataSource = EM_Functions.getSqlData("SELECT * FROM EMPLOYEE WHERE EMPLOYEE_ID = " + System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString());
             }
             Employee_DataGridView.Columns["EMPLOYEE_ID"].HeaderText = "ID";
             Employee_DataGridView.Columns["EMPLOYEE_NAME"].HeaderText = "Tên nhân viên";

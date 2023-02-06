@@ -33,6 +33,7 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
             if (EM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT") == false)
             {
                 deleteButton.Enabled = false;
+                editButton.Enabled = false;
             }
             if (EM_Functions.getMaxID("SELECT MAX(EMPLOYEE_ID) AS MAX FROM EMPLOYEE") + 1 == employeeID)
             {
@@ -66,16 +67,16 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
         {
             if (editButton.Text == "Sửa")
             {
-                E_Name_textBox.Enabled = true;
-                E_Position_textBox.Enabled = true;
-                E_UserName_textBox.Enabled = true;
-                E_Password_textBox.Enabled = true;
-                E_Name_textBox.ReadOnly = false;
-                E_Position_textBox.ReadOnly = false;
-                E_UserName_textBox.ReadOnly = false;
-                E_Password_textBox.ReadOnly = false;
                 if (EM_Functions.checkPermission(Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["currentUserId"].ToString()), "EDIT_PATIENT") == true)
                 {
+                    E_Name_textBox.Enabled = true;
+                    E_Position_textBox.Enabled = true;
+                    E_UserName_textBox.Enabled = true;
+                    E_Password_textBox.Enabled = true;
+                    E_Name_textBox.ReadOnly = false;
+                    E_Position_textBox.ReadOnly = false;
+                    E_UserName_textBox.ReadOnly = false;
+                    E_Password_textBox.ReadOnly = false;
                     CreateMedicalRecord.Enabled = true;
                     EditPatient.Enabled = true;
                     EditEmployee.Enabled = true;

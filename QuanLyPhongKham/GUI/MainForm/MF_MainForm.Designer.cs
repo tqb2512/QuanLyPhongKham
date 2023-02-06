@@ -39,6 +39,7 @@
             this.MF_CreateMR_StripButton = new System.Windows.Forms.ToolStripButton();
             this.signOutButton = new System.Windows.Forms.ToolStripButton();
             this.statisticalButton = new System.Windows.Forms.ToolStripButton();
+            this.changePasswordButton = new System.Windows.Forms.ToolStripButton();
             this.Main_TabControl = new Krypton.Docking.KryptonDockableNavigator();
             this.StatusStrip = new Krypton.Toolkit.KryptonStatusStrip();
             this.E_Name_Label = new System.Windows.Forms.ToolStripStatusLabel();
@@ -55,7 +56,8 @@
             this.MF_Management_StripButton,
             this.MF_CreateMR_StripButton,
             this.signOutButton,
-            this.statisticalButton});
+            this.statisticalButton,
+            this.changePasswordButton});
             this.MF_ToolStrip.Location = new System.Drawing.Point(0, 0);
             this.MF_ToolStrip.Name = "MF_ToolStrip";
             this.MF_ToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
@@ -153,6 +155,18 @@
             this.statisticalButton.Text = "Thống kê";
             this.statisticalButton.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // changePasswordButton
+            // 
+            this.changePasswordButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.changePasswordButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.changePasswordButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.changePasswordButton.Image = ((System.Drawing.Image)(resources.GetObject("changePasswordButton.Image")));
+            this.changePasswordButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.changePasswordButton.Name = "changePasswordButton";
+            this.changePasswordButton.Size = new System.Drawing.Size(97, 23);
+            this.changePasswordButton.Text = "Đổi mật khẩu";
+            this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
+            // 
             // Main_TabControl
             // 
             this.Main_TabControl.Bar.BarMapExtraText = Krypton.Navigator.MapKryptonPageText.None;
@@ -168,7 +182,7 @@
             this.Main_TabControl.Bar.ItemSizing = Krypton.Navigator.BarItemSizing.SameHeight;
             this.Main_TabControl.Bar.TabBorderStyle = Krypton.Toolkit.TabBorderStyle.RoundedOutsizeMedium;
             this.Main_TabControl.Bar.TabStyle = Krypton.Toolkit.TabStyle.HighProfile;
-            this.Main_TabControl.Location = new System.Drawing.Point(0, 24);
+            this.Main_TabControl.Location = new System.Drawing.Point(0, 29);
             this.Main_TabControl.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Main_TabControl.Name = "Main_TabControl";
             this.Main_TabControl.NavigatorMode = Krypton.Navigator.NavigatorMode.BarTabGroup;
@@ -240,5 +254,6 @@
         private ToolStripMenuItem E_MenuItem;
         private ToolStripButton signOutButton;
         private ToolStripButton statisticalButton;
+        private ToolStripButton changePasswordButton;
     }
 }

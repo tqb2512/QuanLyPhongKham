@@ -110,5 +110,11 @@ namespace QuanLyPhongKham.GUI.MainForm
         {
             addToTabControl(new DM_MainForm(), "Quản lý thuốc");
         }
+
+        private void changePasswordButton_Click(object sender, EventArgs e)
+        {
+            MF_ChangePasswordForm changePasswordForm = new MF_ChangePasswordForm();
+            changePasswordForm.ShowDialog();
+        }
     }
 }
