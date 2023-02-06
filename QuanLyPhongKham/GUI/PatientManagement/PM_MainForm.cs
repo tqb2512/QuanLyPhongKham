@@ -201,6 +201,11 @@ namespace QuanLyPhongKham.GUI.PatientManagement
                 }
                 else if (edit_button.Text == "Lưu")
                 {
+                    if (P_dateofbirth_dateTimePicker.Value.Date > DateTime.Now.Date)
+                    {
+                        MessageBox.Show("Ngày sinh không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                     if (PM_Functions.updatePatient(currentPatient))
                     {
                         MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
