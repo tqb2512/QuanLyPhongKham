@@ -240,11 +240,11 @@ INSERT INTO SERVICE VALUES (17, N'Định lượng Glucose', N'Lần', 81000, ''
 INSERT INTO SERVICE VALUES (18, N'Định lượng Glucose', N'Lần', 81000, '')
 INSERT INTO SERVICE VALUES (19, N'Tổng phân tích tế bào ngoại vi', N'Lần', 138000, '')
 
-INSERT INTO SERVICE VALUES (20, N'Chụp Xquang', N'Lần', 240000, 'Chụp Xquang ngực thẳng, cột sống, tiếp tuyến, tuyến vú,...')
-INSERT INTO SERVICE VALUES (21, N'Chụp cắt lớp', N'Lần', 1500000, 'Chụp CT Scanner cột sống ngực, thắt lưng, (tùy chọn tiêm thuốc căn quang)')
-INSERT INTO SERVICE VALUES (22, N'Điện tim đồ', N'Lần', 120000, 'Điện tim thường, điện tiêm 12 chuyển đạo')
+INSERT INTO SERVICE VALUES (20, N'Chụp Xquang', N'Lần', 240000, N'Chụp Xquang ngực thẳng, cột sống, tiếp tuyến, tuyến vú,...')
+INSERT INTO SERVICE VALUES (21, N'Chụp cắt lớp', N'Lần', 1500000, N'Chụp CT Scanner cột sống ngực, thắt lưng, (tùy chọn tiêm thuốc căn quang)')
+INSERT INTO SERVICE VALUES (22, N'Điện tim đồ', N'Lần', 120000, N'Điện tim thường, điện tiêm 12 chuyển đạo')
 INSERT INTO SERVICE VALUES (23, N'Ghi điện não đồ', N'Lần', 270000, '')
-INSERT INTO SERVICE VALUES (24, N'Chup cộng hưởng từ', N'Lần', 2400000, 'Cộng hưởng từ vòng mắt, cột sống cổ , sọ não, ...')
+INSERT INTO SERVICE VALUES (24, N'Chup cộng hưởng từ', N'Lần', 2400000, N'Cộng hưởng từ vòng mắt, cột sống cổ , sọ não, ...')
 INSERT INTO SERVICE VALUES (25, N'Nội soi dạ dày', N'Lần', 1200000, '')
 INSERT INTO SERVICE VALUES (26, N'Nội soi trực tràng', N'Lần', 1500000, '')
 
