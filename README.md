@@ -48,11 +48,10 @@ Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#. 
 ## Hướng dẫn sử dụng
 
 Đối với lần đầu sử dụng hãy đăng nhập bằng tài khoản admin để thiết lập tài khoản người dùng (Khuyến khích thay đổi mật khẩu admin sau khi đăng nhập)
-
-username: admin1
-
-password: admin1
-
+	```
+	username: admin1
+	password: admin1
+	```
 ## Một số lỗi có thể gặp
 
 * Lỗi button bị mất, layout bị khuất khỏi cửa sổ, và các vấn đề liên quan đến layout của các mục. Lỗi này thường xảy ra đối với các màn hình quá nhỏ hoặc quá lớn để khắc phục tạm thời có thể mở ứng dụng thay đổi `scale` trong `display setting` thấp hơn hoặc lớn hơn, xác nhận và thay đổi `scale` về lại như cũ.
