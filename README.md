@@ -6,9 +6,7 @@ Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#. 
 ### Công nghệ
 
 * ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
-
 * ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
-
 * ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
 
 <!-- FEATURE -->
@@ -52,6 +50,7 @@ Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#. 
 Đối với lần đầu sử dụng hãy đăng nhập bằng tài khoản admin để thiết lập tài khoản người dùng (Khuyến khích thay đổi mật khẩu admin sau khi đăng nhập)
 
 username: admin1
+
 password: admin1
 
 ## Một số lỗi có thể gặp
