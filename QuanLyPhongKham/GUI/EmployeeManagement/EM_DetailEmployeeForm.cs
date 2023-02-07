@@ -51,7 +51,7 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                     E_Name_textBox.Text = employeeDT.Rows[0]["EMPLOYEE_NAME"].ToString();
                     E_Position_textBox.Text = employeeDT.Rows[0]["EMPLOYEE_POSITION"].ToString();
                     E_UserName_textBox.Text = employeeDT.Rows[0]["USERNAME"].ToString();
-                    E_Password_textBox.Text = employeeDT.Rows[0]["PASSWORD"].ToString();
+                    E_Password_textBox.Text = "";
                     CreateMedicalRecord.Checked = Convert.ToBoolean(permission.Rows[0]["CREATE_MEDICALRECORD"]);
                     EditPatient.Checked = Convert.ToBoolean(permission.Rows[0]["EDIT_PATIENT"]);
                     EditEmployee.Checked = Convert.ToBoolean(permission.Rows[0]["EDIT_EMPLOYEE"]);
@@ -89,18 +89,17 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
             }
             else
             {
-                if (String.IsNullOrEmpty(E_ID_textBox.Text) || String.IsNullOrEmpty(E_Name_textBox.Text) || String.IsNullOrEmpty(E_Position_textBox.Text) || String.IsNullOrEmpty(E_UserName_textBox.Text) || String.IsNullOrEmpty(E_Password_textBox.Text))
+                if (String.IsNullOrEmpty(E_ID_textBox.Text) || String.IsNullOrEmpty(E_Name_textBox.Text) || String.IsNullOrEmpty(E_Position_textBox.Text) || String.IsNullOrEmpty(E_UserName_textBox.Text))
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-
                 if (E_UserName_textBox.Text.Length < 6)
                 {
                     MessageBox.Show("Tên đăng nhập phải có ít nhất 6 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                if (E_Password_textBox.Text.Length < 6)
+                if (E_Password_textBox.Text.Length > 1 && E_Password_textBox.Text.Length < 6)
                 {
                     MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
@@ -132,7 +131,11 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                     {
                         hasPass += item;
                     }
-                    string sql = "Update Employee set EMPLOYEE_NAME = N'" + E_Name_textBox.Text + "', EMPLOYEE_POSITION = N'" + E_Position_textBox.Text + "', USERNAME = '" + E_UserName_textBox.Text + "', PASSWORD = '" + hasPass + "' where EMPLOYEE_ID = " + employeeID;
+                    string sql;
+                    if (String.IsNullOrEmpty(E_Password_textBox.Text) == false)
+                        sql = "Update Employee set EMPLOYEE_NAME = N'" + E_Name_textBox.Text + "', EMPLOYEE_POSITION = N'" + E_Position_textBox.Text + "', USERNAME = '" + E_UserName_textBox.Text + "', PASSWORD = '" + hasPass + "' where EMPLOYEE_ID = " + employeeID;
+                    else
+                        sql = "Update Employee set EMPLOYEE_NAME = N'" + E_Name_textBox.Text + "', EMPLOYEE_POSITION = N'" + E_Position_textBox.Text + "', USERNAME = '" + E_UserName_textBox.Text + "' where EMPLOYEE_ID = " + employeeID;
                     EM_Functions.sqlQueryExcute(sql);
                     sql = "Update Permission set CREATE_MEDICALRECORD = " + Convert.ToInt32(CreateMedicalRecord.Checked) 
                         + ", EDIT_PATIENT = " + Convert.ToInt32(EditPatient.Checked) 
@@ -146,6 +149,11 @@ namespace QuanLyPhongKham.GUI.EmployeeManagement
                 } 
                 else
                 {
+                    if (E_Password_textBox.Text.Length < 6)
+                    {
+                        MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
                     byte[] temp = ASCIIEncoding.ASCII.GetBytes(E_Password_textBox.Text);
                     byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
                     string hasPass = "";
