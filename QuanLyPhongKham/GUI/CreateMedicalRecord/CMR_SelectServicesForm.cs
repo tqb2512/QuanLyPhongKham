@@ -26,9 +26,9 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
         float idColumnWidth = 0.1f;
         float nameColumnWidth = 0.3f;
         float unitColumnWidth = 0.1f;
-        float priceColumnWidth = 0.2f;
+        float priceColumnWidth = 0.15f;
         float descriptionColumnWidth = 0.2f;
-        float quantityColumnWidth = 0.1f;
+        float quantityColumnWidth = 0.15f;
         internal List<Service> services;
 
         private void CMR_SelectServicesForm_Load(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             servicesDataGridView.Columns["SERVICE_UNIT"].HeaderText = "Đơn vị";
             servicesDataGridView.Columns["SERVICE_PRICE"].HeaderText = "Giá";
             servicesDataGridView.Columns["SERVICE_DESCRIPTION"].HeaderText = "Mô tả";
-            servicesDataGridView.Columns["Quantity"].HeaderText = "SL";
+            servicesDataGridView.Columns["Quantity"].HeaderText = "Nhập SL";
             servicesDataGridView.Columns["SERVICE_ID"].Width = (int)(servicesDataGridView.Width * idColumnWidth);
             servicesDataGridView.Columns["SERVICE_NAME"].Width = (int)(servicesDataGridView.Width * nameColumnWidth);
             servicesDataGridView.Columns["SERVICE_UNIT"].Width = (int)(servicesDataGridView.Width * unitColumnWidth);

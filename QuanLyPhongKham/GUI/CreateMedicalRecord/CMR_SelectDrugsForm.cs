@@ -28,9 +28,9 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
         internal List<Drug> drugs;
         float D_ID_Width = 0.1f;
         float D_Name_Width = 0.3f;
-        float D_Quantity_Width = 0.1f;
-        float D_Unit_Width = 0.2f;
-        float D_Price_Width = 0.3f;
+        float D_Quantity_Width = 0.2f;
+        float D_Unit_Width = 0.15f;
+        float D_Price_Width = 0.25f;
 
         private void CMR_SelectDrugsForm_Load(object sender, EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace QuanLyPhongKham.GUI.CreateMedicalRecord
             Drugs_DataGridView.Columns[1].HeaderText = "Tên thuốc";
             Drugs_DataGridView.Columns[2].HeaderText = "Đơn giá";
             Drugs_DataGridView.Columns[3].HeaderText = "Đơn vị";
-            Drugs_DataGridView.Columns[4].HeaderText = "SL";
+            Drugs_DataGridView.Columns[4].HeaderText = "Nhập SL";
             Drugs_DataGridView.Columns[2].DefaultCellStyle.Format = "N0";
             Drugs_DataGridView.Columns[0].Width = (int)(Drugs_DataGridView.Width * D_ID_Width);
             Drugs_DataGridView.Columns[1].Width = (int)(Drugs_DataGridView.Width * D_Name_Width);

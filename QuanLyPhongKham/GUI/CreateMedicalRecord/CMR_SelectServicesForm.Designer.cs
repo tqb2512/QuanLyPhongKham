@@ -55,14 +55,14 @@
             this.tableLayoutPanel1.Controls.Add(this.servicesDataGridView, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.search_TableLayout, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(7, 7);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(544, 407);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(952, 712);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // servicesDataGridView
@@ -77,14 +77,15 @@
             this.servicesDataGridView.ColumnHeadersHeight = 70;
             this.servicesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.servicesDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.servicesDataGridView.Location = new System.Drawing.Point(2, 27);
-            this.servicesDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.servicesDataGridView.Location = new System.Drawing.Point(4, 48);
+            this.servicesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.servicesDataGridView.Name = "servicesDataGridView";
             this.servicesDataGridView.RowHeadersVisible = false;
             this.servicesDataGridView.RowHeadersWidth = 72;
             this.servicesDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.servicesDataGridView.RowTemplate.Height = 37;
-            this.servicesDataGridView.Size = new System.Drawing.Size(540, 332);
+            this.servicesDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.servicesDataGridView.Size = new System.Drawing.Size(944, 580);
             this.servicesDataGridView.TabIndex = 0;
             this.servicesDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.servicesDataGridView_CellClick);
             this.servicesDataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.servicesDataGridView_EditingControlShowing);
@@ -107,12 +108,12 @@
             this.search_TableLayout.Controls.Add(this.priceSearch_textBox, 3, 0);
             this.search_TableLayout.Controls.Add(this.descriptionSearch_textBox, 4, 0);
             this.search_TableLayout.Controls.Add(this.quantitySearch_textBox, 5, 0);
-            this.search_TableLayout.Location = new System.Drawing.Point(2, 2);
-            this.search_TableLayout.Margin = new System.Windows.Forms.Padding(2);
+            this.search_TableLayout.Location = new System.Drawing.Point(4, 4);
+            this.search_TableLayout.Margin = new System.Windows.Forms.Padding(4);
             this.search_TableLayout.Name = "search_TableLayout";
             this.search_TableLayout.RowCount = 1;
             this.search_TableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.search_TableLayout.Size = new System.Drawing.Size(540, 21);
+            this.search_TableLayout.Size = new System.Drawing.Size(944, 36);
             this.search_TableLayout.TabIndex = 1;
             // 
             // idSearch_textBox
@@ -120,10 +121,10 @@
             this.idSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.idSearch_textBox.Location = new System.Drawing.Point(2, 2);
-            this.idSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.idSearch_textBox.Location = new System.Drawing.Point(4, 4);
+            this.idSearch_textBox.Margin = new System.Windows.Forms.Padding(4);
             this.idSearch_textBox.Name = "idSearch_textBox";
-            this.idSearch_textBox.Size = new System.Drawing.Size(86, 23);
+            this.idSearch_textBox.Size = new System.Drawing.Size(149, 35);
             this.idSearch_textBox.TabIndex = 0;
             this.idSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -132,10 +133,10 @@
             this.nameSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameSearch_textBox.Location = new System.Drawing.Point(92, 2);
-            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.nameSearch_textBox.Location = new System.Drawing.Point(161, 4);
+            this.nameSearch_textBox.Margin = new System.Windows.Forms.Padding(4);
             this.nameSearch_textBox.Name = "nameSearch_textBox";
-            this.nameSearch_textBox.Size = new System.Drawing.Size(86, 23);
+            this.nameSearch_textBox.Size = new System.Drawing.Size(149, 35);
             this.nameSearch_textBox.TabIndex = 1;
             this.nameSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -144,10 +145,10 @@
             this.unitSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.unitSearch_textBox.Location = new System.Drawing.Point(182, 2);
-            this.unitSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.unitSearch_textBox.Location = new System.Drawing.Point(318, 4);
+            this.unitSearch_textBox.Margin = new System.Windows.Forms.Padding(4);
             this.unitSearch_textBox.Name = "unitSearch_textBox";
-            this.unitSearch_textBox.Size = new System.Drawing.Size(86, 23);
+            this.unitSearch_textBox.Size = new System.Drawing.Size(149, 35);
             this.unitSearch_textBox.TabIndex = 2;
             this.unitSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -156,10 +157,10 @@
             this.priceSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.priceSearch_textBox.Location = new System.Drawing.Point(272, 2);
-            this.priceSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.priceSearch_textBox.Location = new System.Drawing.Point(475, 4);
+            this.priceSearch_textBox.Margin = new System.Windows.Forms.Padding(4);
             this.priceSearch_textBox.Name = "priceSearch_textBox";
-            this.priceSearch_textBox.Size = new System.Drawing.Size(86, 23);
+            this.priceSearch_textBox.Size = new System.Drawing.Size(149, 35);
             this.priceSearch_textBox.TabIndex = 3;
             this.priceSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -168,10 +169,10 @@
             this.descriptionSearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.descriptionSearch_textBox.Location = new System.Drawing.Point(362, 2);
-            this.descriptionSearch_textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.descriptionSearch_textBox.Location = new System.Drawing.Point(632, 4);
+            this.descriptionSearch_textBox.Margin = new System.Windows.Forms.Padding(4);
             this.descriptionSearch_textBox.Name = "descriptionSearch_textBox";
-            this.descriptionSearch_textBox.Size = new System.Drawing.Size(86, 23);
+            this.descriptionSearch_textBox.Size = new System.Drawing.Size(149, 35);
             this.descriptionSearch_textBox.TabIndex = 4;
             this.descriptionSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -180,10 +181,10 @@
             this.quantitySearch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.quantitySearch_textBox.Location = new System.Drawing.Point(452, 2);
-            this.quantitySearch_textBox.Margin = new System.Windows.Forms.Padding(2);
+            this.quantitySearch_textBox.Location = new System.Drawing.Point(789, 4);
+            this.quantitySearch_textBox.Margin = new System.Windows.Forms.Padding(4);
             this.quantitySearch_textBox.Name = "quantitySearch_textBox";
-            this.quantitySearch_textBox.Size = new System.Drawing.Size(86, 23);
+            this.quantitySearch_textBox.Size = new System.Drawing.Size(151, 35);
             this.quantitySearch_textBox.TabIndex = 5;
             this.quantitySearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -196,35 +197,35 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.confirm_button, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 363);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 636);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(540, 42);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(944, 72);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // confirm_button
             // 
             this.confirm_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.confirm_button.CornerRoundingRadius = -1F;
-            this.confirm_button.Location = new System.Drawing.Point(433, 2);
-            this.confirm_button.Margin = new System.Windows.Forms.Padding(2);
+            this.confirm_button.Location = new System.Drawing.Point(756, 4);
+            this.confirm_button.Margin = new System.Windows.Forms.Padding(4);
             this.confirm_button.Name = "confirm_button";
-            this.confirm_button.Size = new System.Drawing.Size(105, 38);
+            this.confirm_button.Size = new System.Drawing.Size(184, 64);
             this.confirm_button.TabIndex = 0;
             this.confirm_button.Values.Text = "Xác nhận";
             this.confirm_button.Click += new System.EventHandler(this.confirm_button_Click);
             // 
             // CMR_SelectServicesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(558, 421);
+            this.ClientSize = new System.Drawing.Size(976, 737);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CMR_SelectServicesForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
