@@ -36,7 +36,7 @@ Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#. 
 1. Cài đặt [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (Khuyến kích sử dụng bản developer).
 2. Chạy [file sql](https://github.com/tqb2512/QuanLyPhongKham/blob/master/SQL%20Scripts/file.sql) để tạo database bằng [SQL Server Management Studio](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) hoặc dùng chạy scirpt bên dưới bằng cmd.
 	```
-	sqlcmd -S .\ -i "Đường dẫn file sql"
+	sqlcmd -S .\ -i "Đường dẫn file sql" -f 65001
 	```
 3. Cài đặt phần mềm bằng file [setup](https://github.com/tqb2512/QuanLyPhongKham/releases/download/release/QuanLyPhongKham_Setup.msi).
 4. Nêu sử dụng MSQL phiên bản dev thì có thể bắt đầu sử dụng ngay. Đối với MSQL Express thì truy cập đường dẫn của phần mềm đã cài, mở file `QuanLyPhongKham.dll.config` và thay đổi trường `connectionString` bằng
@@ -49,7 +49,7 @@ Phần mềm quản lý phòng khám được xây dựng trên ngôn ngữ C#. 
 
 Đối với lần đầu sử dụng hãy đăng nhập bằng tài khoản admin để thiết lập tài khoản người dùng (Khuyến khích thay đổi mật khẩu admin sau khi đăng nhập)
 	```
-	username: admin1
+	username: admin
 	password: admin1
 	```
 ## Một số lỗi có thể gặp
