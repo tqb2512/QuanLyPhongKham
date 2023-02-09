@@ -333,7 +333,7 @@
             this.P_DateOfBirth_Label.AutoSize = true;
             this.P_DateOfBirth_Label.Location = new System.Drawing.Point(3, 168);
             this.P_DateOfBirth_Label.Name = "P_DateOfBirth_Label";
-            this.P_DateOfBirth_Label.Size = new System.Drawing.Size(60, 36);
+            this.P_DateOfBirth_Label.Size = new System.Drawing.Size(108, 36);
             this.P_DateOfBirth_Label.TabIndex = 3;
             this.P_DateOfBirth_Label.Text = "Ngày sinh";
             this.P_DateOfBirth_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -345,7 +345,7 @@
             this.P_PhoneNumber_Label.AutoSize = true;
             this.P_PhoneNumber_Label.Location = new System.Drawing.Point(3, 132);
             this.P_PhoneNumber_Label.Name = "P_PhoneNumber_Label";
-            this.P_PhoneNumber_Label.Size = new System.Drawing.Size(77, 36);
+            this.P_PhoneNumber_Label.Size = new System.Drawing.Size(90, 36);
             this.P_PhoneNumber_Label.TabIndex = 2;
             this.P_PhoneNumber_Label.Text = "Số điện thoại";
             this.P_PhoneNumber_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -357,7 +357,7 @@
             this.P_Address_Label.AutoSize = true;
             this.P_Address_Label.Location = new System.Drawing.Point(3, 96);
             this.P_Address_Label.Name = "P_Address_Label";
-            this.P_Address_Label.Size = new System.Drawing.Size(44, 36);
+            this.P_Address_Label.Size = new System.Drawing.Size(77, 36);
             this.P_Address_Label.TabIndex = 1;
             this.P_Address_Label.Text = "Địa chỉ";
             this.P_Address_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -369,7 +369,7 @@
             this.P_Name_Label.AutoSize = true;
             this.P_Name_Label.Location = new System.Drawing.Point(3, 60);
             this.P_Name_Label.Name = "P_Name_Label";
-            this.P_Name_Label.Size = new System.Drawing.Size(58, 36);
+            this.P_Name_Label.Size = new System.Drawing.Size(106, 36);
             this.P_Name_Label.TabIndex = 0;
             this.P_Name_Label.Text = "Họ và tên";
             this.P_Name_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -437,18 +437,18 @@
             // MR_pTemp_TextBox
             // 
             this.MR_pTemp_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.MR_pTemp_TextBox.Location = new System.Drawing.Point(3, 4);
+            this.MR_pTemp_TextBox.Location = new System.Drawing.Point(3, 3);
             this.MR_pTemp_TextBox.Name = "MR_pTemp_TextBox";
-            this.MR_pTemp_TextBox.Size = new System.Drawing.Size(107, 23);
+            this.MR_pTemp_TextBox.Size = new System.Drawing.Size(107, 35);
             this.MR_pTemp_TextBox.TabIndex = 0;
             this.MR_pTemp_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MR_pTemp_TextBox_KeyDown);
             // 
             // MR_pWeight_TextBox
             // 
             this.MR_pWeight_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.MR_pWeight_TextBox.Location = new System.Drawing.Point(229, 4);
+            this.MR_pWeight_TextBox.Location = new System.Drawing.Point(229, 3);
             this.MR_pWeight_TextBox.Name = "MR_pWeight_TextBox";
-            this.MR_pWeight_TextBox.Size = new System.Drawing.Size(107, 23);
+            this.MR_pWeight_TextBox.Size = new System.Drawing.Size(107, 35);
             this.MR_pWeight_TextBox.TabIndex = 0;
             this.MR_pWeight_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MR_pWeight_TextBox_KeyDown);
             // 
@@ -472,7 +472,7 @@
             this.MR_pTemp_Label.AutoSize = true;
             this.MR_pTemp_Label.Location = new System.Drawing.Point(3, 204);
             this.MR_pTemp_Label.Name = "MR_pTemp_Label";
-            this.MR_pTemp_Label.Size = new System.Drawing.Size(53, 37);
+            this.MR_pTemp_Label.Size = new System.Drawing.Size(97, 37);
             this.MR_pTemp_Label.TabIndex = 11;
             this.MR_pTemp_Label.Text = "Nhiệt độ";
             this.MR_pTemp_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -503,7 +503,7 @@
             this.P_PhoneNumber_TextBox.Location = new System.Drawing.Point(3, 3);
             this.P_PhoneNumber_TextBox.Name = "P_PhoneNumber_TextBox";
             this.P_PhoneNumber_TextBox.ReadOnly = true;
-            this.P_PhoneNumber_TextBox.Size = new System.Drawing.Size(106, 23);
+            this.P_PhoneNumber_TextBox.Size = new System.Drawing.Size(106, 35);
             this.P_PhoneNumber_TextBox.TabIndex = 0;
             this.P_PhoneNumber_TextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.P_PhoneNumber_TextBox_KeyDown);
             // 
@@ -517,9 +517,9 @@
             this.P_Sex_ComboBox.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.P_Sex_ComboBox.Location = new System.Drawing.Point(227, 4);
+            this.P_Sex_ComboBox.Location = new System.Drawing.Point(227, 3);
             this.P_Sex_ComboBox.Name = "P_Sex_ComboBox";
-            this.P_Sex_ComboBox.Size = new System.Drawing.Size(109, 21);
+            this.P_Sex_ComboBox.Size = new System.Drawing.Size(109, 33);
             this.P_Sex_ComboBox.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
             this.P_Sex_ComboBox.TabIndex = 0;
             this.P_Sex_ComboBox.Text = "Nam";
@@ -560,7 +560,7 @@
             this.P_Address_TextBox.Location = new System.Drawing.Point(3, 3);
             this.P_Address_TextBox.Name = "P_Address_TextBox";
             this.P_Address_TextBox.ReadOnly = true;
-            this.P_Address_TextBox.Size = new System.Drawing.Size(333, 23);
+            this.P_Address_TextBox.Size = new System.Drawing.Size(333, 35);
             this.P_Address_TextBox.TabIndex = 0;
             // 
             // tableLayoutPanel9
@@ -585,7 +585,7 @@
             this.P_Name_TextBox.Location = new System.Drawing.Point(3, 3);
             this.P_Name_TextBox.Name = "P_Name_TextBox";
             this.P_Name_TextBox.ReadOnly = true;
-            this.P_Name_TextBox.Size = new System.Drawing.Size(333, 23);
+            this.P_Name_TextBox.Size = new System.Drawing.Size(333, 35);
             this.P_Name_TextBox.TabIndex = 0;
             // 
             // tableLayoutPanel11
@@ -606,12 +606,12 @@
             // P_DateOfBirth_DateTimePicker
             // 
             this.P_DateOfBirth_DateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_DateOfBirth_DateTimePicker.CustomFormat = "";
+            this.P_DateOfBirth_DateTimePicker.CustomFormat = "      dd/ MM/ yyyy";
             this.P_DateOfBirth_DateTimePicker.Enabled = false;
-            this.P_DateOfBirth_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.P_DateOfBirth_DateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.P_DateOfBirth_DateTimePicker.Location = new System.Drawing.Point(3, 3);
             this.P_DateOfBirth_DateTimePicker.Name = "P_DateOfBirth_DateTimePicker";
-            this.P_DateOfBirth_DateTimePicker.Size = new System.Drawing.Size(333, 23);
+            this.P_DateOfBirth_DateTimePicker.Size = new System.Drawing.Size(333, 35);
             this.P_DateOfBirth_DateTimePicker.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -737,7 +737,7 @@
             // 
             // CMR_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 661);

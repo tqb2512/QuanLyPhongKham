@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using QuanLyPhongKham.GUI.MainForm;
 using QuanLyPhongKham.Function;
+using Krypton.Toolkit.Suite.Extended.Common;
 
 namespace QuanLyPhongKham.GUI.LoginForm
 {

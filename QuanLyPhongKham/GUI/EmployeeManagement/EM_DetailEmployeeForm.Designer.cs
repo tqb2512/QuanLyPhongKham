@@ -128,7 +128,7 @@
             this.CreateMedicalRecord.Location = new System.Drawing.Point(240, 3);
             this.CreateMedicalRecord.Name = "CreateMedicalRecord";
             this.CreateMedicalRecord.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.CreateMedicalRecord.Size = new System.Drawing.Size(91, 19);
+            this.CreateMedicalRecord.Size = new System.Drawing.Size(151, 27);
             this.CreateMedicalRecord.TabIndex = 0;
             this.CreateMedicalRecord.Values.Text = "Tạo bệnh án";
             // 
@@ -139,7 +139,7 @@
             this.MakePayment.Location = new System.Drawing.Point(240, 36);
             this.MakePayment.Name = "MakePayment";
             this.MakePayment.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.MakePayment.Size = new System.Drawing.Size(141, 19);
+            this.MakePayment.Size = new System.Drawing.Size(239, 27);
             this.MakePayment.TabIndex = 1;
             this.MakePayment.Values.Text = "Thực hiện thanh toán";
             // 
@@ -150,7 +150,7 @@
             this.RemoveMedicalRecord.Location = new System.Drawing.Point(240, 69);
             this.RemoveMedicalRecord.Name = "RemoveMedicalRecord";
             this.RemoveMedicalRecord.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.RemoveMedicalRecord.Size = new System.Drawing.Size(92, 19);
+            this.RemoveMedicalRecord.Size = new System.Drawing.Size(153, 27);
             this.RemoveMedicalRecord.TabIndex = 2;
             this.RemoveMedicalRecord.Values.Text = "Xóa bệnh án";
             // 
@@ -161,7 +161,7 @@
             this.EditService.Location = new System.Drawing.Point(240, 168);
             this.EditService.Name = "EditService";
             this.EditService.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.EditService.Size = new System.Drawing.Size(180, 19);
+            this.EditService.Size = new System.Drawing.Size(307, 27);
             this.EditService.TabIndex = 5;
             this.EditService.Values.Text = "Chỉnh sửa danh sách dịch vụ";
             // 
@@ -172,7 +172,7 @@
             this.EditDrug.Location = new System.Drawing.Point(240, 135);
             this.EditDrug.Name = "EditDrug";
             this.EditDrug.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.EditDrug.Size = new System.Drawing.Size(172, 19);
+            this.EditDrug.Size = new System.Drawing.Size(293, 27);
             this.EditDrug.TabIndex = 4;
             this.EditDrug.Values.Text = "Chỉnh sửa danh sách thuốc";
             // 
@@ -183,7 +183,7 @@
             this.EditPatient.Location = new System.Drawing.Point(240, 102);
             this.EditPatient.Name = "EditPatient";
             this.EditPatient.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.EditPatient.Size = new System.Drawing.Size(197, 19);
+            this.EditPatient.Size = new System.Drawing.Size(336, 27);
             this.EditPatient.TabIndex = 3;
             this.EditPatient.Values.Text = " Chỉnh sửa thông tin bệnh nhân";
             // 
@@ -194,7 +194,7 @@
             this.EditEmployee.Location = new System.Drawing.Point(240, 201);
             this.EditEmployee.Name = "EditEmployee";
             this.EditEmployee.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.EditEmployee.Size = new System.Drawing.Size(135, 19);
+            this.EditEmployee.Size = new System.Drawing.Size(229, 28);
             this.EditEmployee.TabIndex = 6;
             this.EditEmployee.Values.Text = "Chỉnh sửa nhân viên";
             // 
@@ -245,7 +245,7 @@
             this.E_ID_Label.AutoSize = true;
             this.E_ID_Label.Location = new System.Drawing.Point(3, 0);
             this.E_ID_Label.Name = "E_ID_Label";
-            this.E_ID_Label.Size = new System.Drawing.Size(77, 15);
+            this.E_ID_Label.Size = new System.Drawing.Size(136, 30);
             this.E_ID_Label.TabIndex = 0;
             this.E_ID_Label.Text = "ID Nhân viên";
             // 
@@ -254,7 +254,7 @@
             this.E_Name_Label.AutoSize = true;
             this.E_Name_Label.Location = new System.Drawing.Point(3, 46);
             this.E_Name_Label.Name = "E_Name_Label";
-            this.E_Name_Label.Size = new System.Drawing.Size(81, 15);
+            this.E_Name_Label.Size = new System.Drawing.Size(144, 30);
             this.E_Name_Label.TabIndex = 1;
             this.E_Name_Label.Text = "Tên nhân viên";
             // 
@@ -263,7 +263,7 @@
             this.E_Position_Label.AutoSize = true;
             this.E_Position_Label.Location = new System.Drawing.Point(3, 92);
             this.E_Position_Label.Name = "E_Position_Label";
-            this.E_Position_Label.Size = new System.Drawing.Size(50, 15);
+            this.E_Position_Label.Size = new System.Drawing.Size(90, 30);
             this.E_Position_Label.TabIndex = 2;
             this.E_Position_Label.Text = "Chức vụ";
             // 
@@ -272,7 +272,7 @@
             this.E_UserName_Label.AutoSize = true;
             this.E_UserName_Label.Location = new System.Drawing.Point(3, 138);
             this.E_UserName_Label.Name = "E_UserName_Label";
-            this.E_UserName_Label.Size = new System.Drawing.Size(86, 15);
+            this.E_UserName_Label.Size = new System.Drawing.Size(155, 30);
             this.E_UserName_Label.TabIndex = 3;
             this.E_UserName_Label.Text = "Tên đăng nhập";
             // 
@@ -281,7 +281,7 @@
             this.E_Password_Label.AutoSize = true;
             this.E_Password_Label.Location = new System.Drawing.Point(3, 184);
             this.E_Password_Label.Name = "E_Password_Label";
-            this.E_Password_Label.Size = new System.Drawing.Size(57, 15);
+            this.E_Password_Label.Size = new System.Drawing.Size(103, 30);
             this.E_Password_Label.TabIndex = 4;
             this.E_Password_Label.Text = "Mật khẩu";
             // 
@@ -294,7 +294,7 @@
             this.E_ID_textBox.Location = new System.Drawing.Point(239, 3);
             this.E_ID_textBox.Name = "E_ID_textBox";
             this.E_ID_textBox.ReadOnly = true;
-            this.E_ID_textBox.Size = new System.Drawing.Size(703, 23);
+            this.E_ID_textBox.Size = new System.Drawing.Size(703, 35);
             this.E_ID_textBox.TabIndex = 5;
             // 
             // E_Name_textBox
@@ -305,7 +305,7 @@
             this.E_Name_textBox.Enabled = false;
             this.E_Name_textBox.Location = new System.Drawing.Point(239, 49);
             this.E_Name_textBox.Name = "E_Name_textBox";
-            this.E_Name_textBox.Size = new System.Drawing.Size(703, 23);
+            this.E_Name_textBox.Size = new System.Drawing.Size(703, 35);
             this.E_Name_textBox.TabIndex = 6;
             // 
             // E_Position_textBox
@@ -317,7 +317,7 @@
             this.E_Position_textBox.Location = new System.Drawing.Point(239, 95);
             this.E_Position_textBox.Name = "E_Position_textBox";
             this.E_Position_textBox.ReadOnly = true;
-            this.E_Position_textBox.Size = new System.Drawing.Size(703, 23);
+            this.E_Position_textBox.Size = new System.Drawing.Size(703, 35);
             this.E_Position_textBox.TabIndex = 7;
             // 
             // E_UserName_textBox
@@ -329,7 +329,7 @@
             this.E_UserName_textBox.Location = new System.Drawing.Point(239, 141);
             this.E_UserName_textBox.Name = "E_UserName_textBox";
             this.E_UserName_textBox.ReadOnly = true;
-            this.E_UserName_textBox.Size = new System.Drawing.Size(703, 23);
+            this.E_UserName_textBox.Size = new System.Drawing.Size(703, 35);
             this.E_UserName_textBox.TabIndex = 8;
             // 
             // E_Password_textBox
@@ -341,7 +341,7 @@
             this.E_Password_textBox.Location = new System.Drawing.Point(239, 187);
             this.E_Password_textBox.Name = "E_Password_textBox";
             this.E_Password_textBox.PasswordChar = '*';
-            this.E_Password_textBox.Size = new System.Drawing.Size(703, 23);
+            this.E_Password_textBox.Size = new System.Drawing.Size(703, 35);
             this.E_Password_textBox.TabIndex = 9;
             // 
             // tableLayoutPanel4
@@ -385,7 +385,7 @@
             // 
             // EM_DetailEmployeeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 661);

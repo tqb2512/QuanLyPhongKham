@@ -121,7 +121,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idSearch_textBox.Location = new System.Drawing.Point(3, 3);
             this.idSearch_textBox.Name = "idSearch_textBox";
-            this.idSearch_textBox.Size = new System.Drawing.Size(130, 23);
+            this.idSearch_textBox.Size = new System.Drawing.Size(130, 35);
             this.idSearch_textBox.TabIndex = 0;
             this.idSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -132,7 +132,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dateSearch_textBox.Location = new System.Drawing.Point(139, 3);
             this.dateSearch_textBox.Name = "dateSearch_textBox";
-            this.dateSearch_textBox.Size = new System.Drawing.Size(130, 23);
+            this.dateSearch_textBox.Size = new System.Drawing.Size(130, 35);
             this.dateSearch_textBox.TabIndex = 1;
             this.dateSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -143,7 +143,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pNameSearch_textBox.Location = new System.Drawing.Point(275, 3);
             this.pNameSearch_textBox.Name = "pNameSearch_textBox";
-            this.pNameSearch_textBox.Size = new System.Drawing.Size(130, 23);
+            this.pNameSearch_textBox.Size = new System.Drawing.Size(130, 35);
             this.pNameSearch_textBox.TabIndex = 2;
             this.pNameSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -154,7 +154,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.eNameSearch_textBox.Location = new System.Drawing.Point(411, 3);
             this.eNameSearch_textBox.Name = "eNameSearch_textBox";
-            this.eNameSearch_textBox.Size = new System.Drawing.Size(130, 23);
+            this.eNameSearch_textBox.Size = new System.Drawing.Size(130, 35);
             this.eNameSearch_textBox.TabIndex = 3;
             this.eNameSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -165,7 +165,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.diagnosisSearch_textBox.Location = new System.Drawing.Point(547, 3);
             this.diagnosisSearch_textBox.Name = "diagnosisSearch_textBox";
-            this.diagnosisSearch_textBox.Size = new System.Drawing.Size(130, 23);
+            this.diagnosisSearch_textBox.Size = new System.Drawing.Size(130, 35);
             this.diagnosisSearch_textBox.TabIndex = 4;
             this.diagnosisSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -176,7 +176,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.noteSearch_textBox.Location = new System.Drawing.Point(683, 3);
             this.noteSearch_textBox.Name = "noteSearch_textBox";
-            this.noteSearch_textBox.Size = new System.Drawing.Size(130, 23);
+            this.noteSearch_textBox.Size = new System.Drawing.Size(130, 35);
             this.noteSearch_textBox.TabIndex = 5;
             this.noteSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -187,7 +187,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.paymentStatusSearch_textBox.Location = new System.Drawing.Point(819, 3);
             this.paymentStatusSearch_textBox.Name = "paymentStatusSearch_textBox";
-            this.paymentStatusSearch_textBox.Size = new System.Drawing.Size(132, 23);
+            this.paymentStatusSearch_textBox.Size = new System.Drawing.Size(132, 35);
             this.paymentStatusSearch_textBox.TabIndex = 6;
             this.paymentStatusSearch_textBox.TextChanged += new System.EventHandler(this.Search_textBox_TextChanged);
             // 
@@ -220,7 +220,7 @@
             // 
             // MRM_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 661);

@@ -142,16 +142,14 @@ namespace QuanLyPhongKham.GUI.DrugManagement
                 DM_DrugManufacturer_TextBox.Text = "";
                 DM_DrugPrice_TextBox.Text = "";
                 DM_DrugDescription_TextBox.Text = "";
-
-                DM_DrugID_TextBox.Enabled = true;
+                
                 DM_DrugName_TextBox.Enabled = true;
                 DM_DrugTypeID_TextBox.Enabled = false;
                 DM_DrugUnit_TextBox.Enabled = true;
                 DM_DrugManufacturer_TextBox.Enabled = true;
                 DM_DrugPrice_TextBox.Enabled = true;
                 DM_DrugDescription_TextBox.Enabled = true;
-
-                DM_DrugID_TextBox.ReadOnly = false;
+                
                 DM_DrugName_TextBox.ReadOnly = false;
                 DM_DrugTypeID_TextBox.ReadOnly = true;
                 DM_DrugUnit_TextBox.ReadOnly = false;
