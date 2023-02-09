@@ -47,6 +47,7 @@ namespace QuanLyPhongKham.GUI.MainForm
             tabPage.Controls.Add(form);
             Main_TabControl.Pages.Add(tabPage);
             form.Show();
+            Main_TabControl.SelectedPage = tabPage;
         }
 
         private void MedicalRecord_MenuItem_Click(object sender, EventArgs e)
